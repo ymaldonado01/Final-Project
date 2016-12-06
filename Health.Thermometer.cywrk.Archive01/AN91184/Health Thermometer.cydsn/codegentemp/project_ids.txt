@@ -1,0 +1,5 @@
+C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Health Thermometer.cyprj|e195b9a4-f223-495c-b367-e7fd02cbf954
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|036be02e-bd14-4b52-bd11-926951e52d03
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|63b1da07-9b2b-4122-99f8-21b3bd1a5c5d
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|0044409d-17b4-4160-8a05-5cd3da5451d4
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4806519f-580b-44fe-b144-432b3d4501a4

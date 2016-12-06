@@ -1,0 +1,98 @@
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/CortexM0/ARM_GCC_484/Debug/main.o : C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/ADC.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/ADC_IRQ.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/ADC_intClock.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/AMuxSeq.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_HAL_PVT.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_STACK_PVT.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_Stack.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGap.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGatt.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGattClient.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGattDb.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGattServer.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackHostMain.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackL2cap.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_bless_isr.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_dis.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_eventHandler.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_gatt.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_hts.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/SW.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/SW_aliases.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/Thermistor.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_HIGH.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_HIGH_aliases.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_LOW.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_LOW_aliases.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_THERM.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_THERM_aliases.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cmFunc.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cmInstr.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/project.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/BLE_HTSS.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/CommonFunctions.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Temperature.h C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/main.c 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/ADC.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/ADC_IRQ.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/ADC_intClock.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/AMuxSeq.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_HAL_PVT.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_STACK_PVT.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_Stack.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGap.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGatt.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGattClient.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGattDb.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackGattServer.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackHostMain.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_StackL2cap.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_bless_isr.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_dis.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_eventHandler.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_gatt.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/BLE_hts.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/SW.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/SW_aliases.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/Thermistor.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_HIGH.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_HIGH_aliases.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_LOW.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_LOW_aliases.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_THERM.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/V_THERM_aliases.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cmFunc.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/core_cmInstr.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cyPm.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cypins.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Generated_Source/PSoC4/project.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/BLE_HTSS.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/CommonFunctions.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/Temperature.h : 
+
+C:/Users/Yobely/Desktop/Health\ Thermometer.cywrk.Archive01/AN91184/Health\ Thermometer.cydsn/main.c : 
+

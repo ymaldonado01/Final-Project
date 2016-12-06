@@ -1,0 +1,5324 @@
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"BLE_gatt.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.comm	cyBle_state,1,1
+  18              		.global	cyBle_gatts
+  19              		.section	.rodata
+  20              		.align	2
+  21              		.type	cyBle_gatts, %object
+  22              		.size	cyBle_gatts, 6
+  23              	cyBle_gatts:
+  24 0000 0800     		.short	8
+  25 0002 0A00     		.short	10
+  26 0004 0B00     		.short	11
+  27              		.data
+  28              		.align	2
+  29              		.type	cyBle_attValues, %object
+  30              		.size	cyBle_attValues, 119
+  31              	cyBle_attValues:
+  32 0000 4D       		.byte	77
+  33 0001 79       		.byte	121
+  34 0002 54       		.byte	84
+  35 0003 68       		.byte	104
+  36 0004 65       		.byte	101
+  37 0005 72       		.byte	114
+  38 0006 6D       		.byte	109
+  39 0007 6F       		.byte	111
+  40 0008 6D       		.byte	109
+  41 0009 65       		.byte	101
+  42 000a 74       		.byte	116
+  43 000b 65       		.byte	101
+  44 000c 72       		.byte	114
+  45 000d 00       		.byte	0
+  46 000e 03       		.byte	3
+  47 000f 06       		.byte	6
+  48 0010 00       		.byte	0
+  49 0011 28       		.byte	40
+  50 0012 00       		.byte	0
+  51 0013 00       		.byte	0
+  52 0014 00       		.byte	0
+  53 0015 E8       		.byte	-24
+  54 0016 03       		.byte	3
+  55 0017 00       		.byte	0
+  56 0018 00       		.byte	0
+  57 0019 00       		.byte	0
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 2
+
+
+  58 001a 00       		.byte	0
+  59 001b 00       		.byte	0
+  60 001c 00       		.byte	0
+  61 001d 00       		.byte	0
+  62 001e 00       		.byte	0
+  63 001f 00       		.byte	0
+  64 0020 02       		.byte	2
+  65 0021 00       		.byte	0
+  66 0022 00       		.byte	0
+  67 0023 00       		.byte	0
+  68 0024 00       		.byte	0
+  69 0025 00       		.byte	0
+  70 0026 01       		.byte	1
+  71 0027 00       		.byte	0
+  72 0028 01       		.byte	1
+  73 0029 00       		.byte	0
+  74 002a 3C       		.byte	60
+  75 002b 00       		.byte	0
+  76 002c 43       		.byte	67
+  77 002d 79       		.byte	121
+  78 002e 70       		.byte	112
+  79 002f 72       		.byte	114
+  80 0030 65       		.byte	101
+  81 0031 73       		.byte	115
+  82 0032 73       		.byte	115
+  83 0033 20       		.byte	32
+  84 0034 53       		.byte	83
+  85 0035 65       		.byte	101
+  86 0036 6D       		.byte	109
+  87 0037 69       		.byte	105
+  88 0038 63       		.byte	99
+  89 0039 6F       		.byte	111
+  90 003a 6E       		.byte	110
+  91 003b 64       		.byte	100
+  92 003c 75       		.byte	117
+  93 003d 63       		.byte	99
+  94 003e 74       		.byte	116
+  95 003f 6F       		.byte	111
+  96 0040 72       		.byte	114
+  97 0041 31       		.byte	49
+  98 0042 2E       		.byte	46
+  99 0043 30       		.byte	48
+ 100 0044 2A       		.byte	42
+ 101 0045 2A       		.byte	42
+ 102 0046 43       		.byte	67
+ 103 0047 59       		.byte	89
+ 104 0048 38       		.byte	56
+ 105 0049 43       		.byte	67
+ 106 004a 4B       		.byte	75
+ 107 004b 49       		.byte	73
+ 108 004c 54       		.byte	84
+ 109 004d 2D       		.byte	45
+ 110 004e 30       		.byte	48
+ 111 004f 34       		.byte	52
+ 112 0050 32       		.byte	50
+ 113 0051 2D       		.byte	45
+ 114 0052 42       		.byte	66
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 3
+
+
+ 115 0053 4C       		.byte	76
+ 116 0054 45       		.byte	69
+ 117 0055 2A       		.byte	42
+ 118 0056 2A       		.byte	42
+ 119 0057 50       		.byte	80
+ 120 0058 53       		.byte	83
+ 121 0059 6F       		.byte	111
+ 122 005a 43       		.byte	67
+ 123 005b 20       		.byte	32
+ 124 005c 43       		.byte	67
+ 125 005d 72       		.byte	114
+ 126 005e 65       		.byte	101
+ 127 005f 61       		.byte	97
+ 128 0060 74       		.byte	116
+ 129 0061 6F       		.byte	111
+ 130 0062 72       		.byte	114
+ 131 0063 20       		.byte	32
+ 132 0064 33       		.byte	51
+ 133 0065 2E       		.byte	46
+ 134 0066 31       		.byte	49
+ 135 0067 00       		.byte	0
+ 136 0068 00       		.byte	0
+ 137 0069 00       		.byte	0
+ 138 006a 00       		.byte	0
+ 139 006b 00       		.byte	0
+ 140 006c 00       		.byte	0
+ 141 006d 00       		.byte	0
+ 142 006e 00       		.byte	0
+ 143 006f 00       		.byte	0
+ 144 0070 01       		.byte	1
+ 145 0071 00       		.byte	0
+ 146 0072 00       		.byte	0
+ 147 0073 00       		.byte	0
+ 148 0074 00       		.byte	0
+ 149 0075 00       		.byte	0
+ 150 0076 00       		.byte	0
+ 151              		.global	cyBle_attValuesCCCDFlashMemory
+ 152 0077 00       		.section	.rodata
+ 153 0006 00000000 		.align	7
+ 153      00000000 
+ 153      00000000 
+ 153      00000000 
+ 153      00000000 
+ 154              		.type	cyBle_attValuesCCCDFlashMemory, %object
+ 155              		.size	cyBle_attValuesCCCDFlashMemory, 40
+ 156              	cyBle_attValuesCCCDFlashMemory:
+ 157 0080 00000000 		.space	40
+ 157      00000000 
+ 157      00000000 
+ 157      00000000 
+ 157      00000000 
+ 158              		.comm	cyBle_attValuesCCCD,8,4
+ 159              		.global	cyBle_gattDB
+ 160              		.align	2
+ 161              		.type	cyBle_gattDB, %object
+ 162              		.size	cyBle_gattDB, 860
+ 163              	cyBle_gattDB:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 4
+
+
+ 164 00a8 0100     		.short	1
+ 165 00aa 0028     		.short	10240
+ 166 00ac 01000000 		.word	1
+ 167 00b0 0700     		.short	7
+ 168 00b2 0000     		.space	2
+ 169 00b4 0018     		.short	6144
+ 170 00b6 0000     		.space	2
+ 171 00b8 00000000 		.word	0
+ 172 00bc 0200     		.short	2
+ 173 00be 0328     		.short	10243
+ 174 00c0 01020000 		.word	513
+ 175 00c4 0300     		.short	3
+ 176 00c6 0000     		.space	2
+ 177 00c8 002A     		.short	10752
+ 178 00ca 0000     		.space	2
+ 179 00cc 00000000 		.word	0
+ 180 00d0 0300     		.short	3
+ 181 00d2 002A     		.short	10752
+ 182 00d4 01020000 		.word	513
+ 183 00d8 0300     		.short	3
+ 184 00da 0000     		.space	2
+ 185 00dc 0D00     		.short	13
+ 186 00de 0000     		.space	2
+ 187 00e0 00000000 		.word	cyBle_attValues
+ 188 00e4 0400     		.short	4
+ 189 00e6 0328     		.short	10243
+ 190 00e8 01020000 		.word	513
+ 191 00ec 0500     		.short	5
+ 192 00ee 0000     		.space	2
+ 193 00f0 012A     		.short	10753
+ 194 00f2 0000     		.space	2
+ 195 00f4 00000000 		.word	0
+ 196 00f8 0500     		.short	5
+ 197 00fa 012A     		.short	10753
+ 198 00fc 01020000 		.word	513
+ 199 0100 0500     		.short	5
+ 200 0102 0000     		.space	2
+ 201 0104 0200     		.short	2
+ 202 0106 0000     		.space	2
+ 203 0108 0D000000 		.word	cyBle_attValues+13
+ 204 010c 0600     		.short	6
+ 205 010e 0328     		.short	10243
+ 206 0110 01020000 		.word	513
+ 207 0114 0700     		.short	7
+ 208 0116 0000     		.space	2
+ 209 0118 042A     		.short	10756
+ 210 011a 0000     		.space	2
+ 211 011c 00000000 		.word	0
+ 212 0120 0700     		.short	7
+ 213 0122 042A     		.short	10756
+ 214 0124 01020000 		.word	513
+ 215 0128 0700     		.short	7
+ 216 012a 0000     		.space	2
+ 217 012c 0800     		.short	8
+ 218 012e 0000     		.space	2
+ 219 0130 0F000000 		.word	cyBle_attValues+15
+ 220 0134 0800     		.short	8
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 5
+
+
+ 221 0136 0028     		.short	10240
+ 222 0138 01000000 		.word	1
+ 223 013c 0B00     		.short	11
+ 224 013e 0000     		.space	2
+ 225 0140 0118     		.short	6145
+ 226 0142 0000     		.space	2
+ 227 0144 00000000 		.word	0
+ 228 0148 0900     		.short	9
+ 229 014a 0328     		.short	10243
+ 230 014c 01220000 		.word	8705
+ 231 0150 0B00     		.short	11
+ 232 0152 0000     		.space	2
+ 233 0154 052A     		.short	10757
+ 234 0156 0000     		.space	2
+ 235 0158 00000000 		.word	0
+ 236 015c 0A00     		.short	10
+ 237 015e 052A     		.short	10757
+ 238 0160 01220000 		.word	8705
+ 239 0164 0B00     		.short	11
+ 240 0166 0000     		.space	2
+ 241 0168 0400     		.short	4
+ 242 016a 0000     		.space	2
+ 243 016c 17000000 		.word	cyBle_attValues+23
+ 244 0170 0B00     		.short	11
+ 245 0172 0229     		.short	10498
+ 246 0174 040A0000 		.word	2564
+ 247 0178 0B00     		.short	11
+ 248 017a 0000     		.space	2
+ 249 017c 0200     		.short	2
+ 250 017e 0000     		.space	2
+ 251 0180 00000000 		.word	cyBle_attValuesCCCD
+ 252 0184 0C00     		.short	12
+ 253 0186 0028     		.short	10240
+ 254 0188 01000000 		.word	1
+ 255 018c 1800     		.short	24
+ 256 018e 0000     		.space	2
+ 257 0190 0918     		.short	6153
+ 258 0192 0000     		.space	2
+ 259 0194 00000000 		.word	0
+ 260 0198 0D00     		.short	13
+ 261 019a 0328     		.short	10243
+ 262 019c 01200000 		.word	8193
+ 263 01a0 0F00     		.short	15
+ 264 01a2 0000     		.space	2
+ 265 01a4 1C2A     		.short	10780
+ 266 01a6 0000     		.space	2
+ 267 01a8 00000000 		.word	0
+ 268 01ac 0E00     		.short	14
+ 269 01ae 1C2A     		.short	10780
+ 270 01b0 00200000 		.word	8192
+ 271 01b4 0F00     		.short	15
+ 272 01b6 0000     		.space	2
+ 273 01b8 0500     		.short	5
+ 274 01ba 0000     		.space	2
+ 275 01bc 1B000000 		.word	cyBle_attValues+27
+ 276 01c0 0F00     		.short	15
+ 277 01c2 0229     		.short	10498
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 6
+
+
+ 278 01c4 040A0000 		.word	2564
+ 279 01c8 0F00     		.short	15
+ 280 01ca 0000     		.space	2
+ 281 01cc 0200     		.short	2
+ 282 01ce 0000     		.space	2
+ 283 01d0 02000000 		.word	cyBle_attValuesCCCD+2
+ 284 01d4 1000     		.short	16
+ 285 01d6 0328     		.short	10243
+ 286 01d8 01020000 		.word	513
+ 287 01dc 1100     		.short	17
+ 288 01de 0000     		.space	2
+ 289 01e0 1D2A     		.short	10781
+ 290 01e2 0000     		.space	2
+ 291 01e4 00000000 		.word	0
+ 292 01e8 1100     		.short	17
+ 293 01ea 1D2A     		.short	10781
+ 294 01ec 01020000 		.word	513
+ 295 01f0 1100     		.short	17
+ 296 01f2 0000     		.space	2
+ 297 01f4 0100     		.short	1
+ 298 01f6 0000     		.space	2
+ 299 01f8 20000000 		.word	cyBle_attValues+32
+ 300 01fc 1200     		.short	18
+ 301 01fe 0328     		.short	10243
+ 302 0200 01100000 		.word	4097
+ 303 0204 1400     		.short	20
+ 304 0206 0000     		.space	2
+ 305 0208 1E2A     		.short	10782
+ 306 020a 0000     		.space	2
+ 307 020c 00000000 		.word	0
+ 308 0210 1300     		.short	19
+ 309 0212 1E2A     		.short	10782
+ 310 0214 00100000 		.word	4096
+ 311 0218 1400     		.short	20
+ 312 021a 0000     		.space	2
+ 313 021c 0500     		.short	5
+ 314 021e 0000     		.space	2
+ 315 0220 21000000 		.word	cyBle_attValues+33
+ 316 0224 1400     		.short	20
+ 317 0226 0229     		.short	10498
+ 318 0228 040A0000 		.word	2564
+ 319 022c 1400     		.short	20
+ 320 022e 0000     		.space	2
+ 321 0230 0200     		.short	2
+ 322 0232 0000     		.space	2
+ 323 0234 04000000 		.word	cyBle_attValuesCCCD+4
+ 324 0238 1500     		.short	21
+ 325 023a 0328     		.short	10243
+ 326 023c 010A0000 		.word	2561
+ 327 0240 1800     		.short	24
+ 328 0242 0000     		.space	2
+ 329 0244 212A     		.short	10785
+ 330 0246 0000     		.space	2
+ 331 0248 00000000 		.word	0
+ 332 024c 1600     		.short	22
+ 333 024e 212A     		.short	10785
+ 334 0250 040A0000 		.word	2564
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 7
+
+
+ 335 0254 1800     		.short	24
+ 336 0256 0000     		.space	2
+ 337 0258 0200     		.short	2
+ 338 025a 0000     		.space	2
+ 339 025c 26000000 		.word	cyBle_attValues+38
+ 340 0260 1700     		.short	23
+ 341 0262 0229     		.short	10498
+ 342 0264 040A0000 		.word	2564
+ 343 0268 1700     		.short	23
+ 344 026a 0000     		.space	2
+ 345 026c 0200     		.short	2
+ 346 026e 0000     		.space	2
+ 347 0270 06000000 		.word	cyBle_attValuesCCCD+6
+ 348 0274 1800     		.short	24
+ 349 0276 0629     		.short	10502
+ 350 0278 01020000 		.word	513
+ 351 027c 1800     		.short	24
+ 352 027e 0000     		.space	2
+ 353 0280 0400     		.short	4
+ 354 0282 0000     		.space	2
+ 355 0284 28000000 		.word	cyBle_attValues+40
+ 356 0288 1900     		.short	25
+ 357 028a 0028     		.short	10240
+ 358 028c 01000000 		.word	1
+ 359 0290 2B00     		.short	43
+ 360 0292 0000     		.space	2
+ 361 0294 0A18     		.short	6154
+ 362 0296 0000     		.space	2
+ 363 0298 00000000 		.word	0
+ 364 029c 1A00     		.short	26
+ 365 029e 0328     		.short	10243
+ 366 02a0 01020000 		.word	513
+ 367 02a4 1B00     		.short	27
+ 368 02a6 0000     		.space	2
+ 369 02a8 292A     		.short	10793
+ 370 02aa 0000     		.space	2
+ 371 02ac 00000000 		.word	0
+ 372 02b0 1B00     		.short	27
+ 373 02b2 292A     		.short	10793
+ 374 02b4 01020000 		.word	513
+ 375 02b8 1B00     		.short	27
+ 376 02ba 0000     		.space	2
+ 377 02bc 1500     		.short	21
+ 378 02be 0000     		.space	2
+ 379 02c0 2C000000 		.word	cyBle_attValues+44
+ 380 02c4 1C00     		.short	28
+ 381 02c6 0328     		.short	10243
+ 382 02c8 01020000 		.word	513
+ 383 02cc 1D00     		.short	29
+ 384 02ce 0000     		.space	2
+ 385 02d0 242A     		.short	10788
+ 386 02d2 0000     		.space	2
+ 387 02d4 00000000 		.word	0
+ 388 02d8 1D00     		.short	29
+ 389 02da 242A     		.short	10788
+ 390 02dc 01020000 		.word	513
+ 391 02e0 1D00     		.short	29
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 8
+
+
+ 392 02e2 0000     		.space	2
+ 393 02e4 0300     		.short	3
+ 394 02e6 0000     		.space	2
+ 395 02e8 41000000 		.word	cyBle_attValues+65
+ 396 02ec 1E00     		.short	30
+ 397 02ee 0328     		.short	10243
+ 398 02f0 01020000 		.word	513
+ 399 02f4 1F00     		.short	31
+ 400 02f6 0000     		.space	2
+ 401 02f8 252A     		.short	10789
+ 402 02fa 0000     		.space	2
+ 403 02fc 00000000 		.word	0
+ 404 0300 1F00     		.short	31
+ 405 0302 252A     		.short	10789
+ 406 0304 01020000 		.word	513
+ 407 0308 1F00     		.short	31
+ 408 030a 0000     		.space	2
+ 409 030c 0200     		.short	2
+ 410 030e 0000     		.space	2
+ 411 0310 44000000 		.word	cyBle_attValues+68
+ 412 0314 2000     		.short	32
+ 413 0316 0328     		.short	10243
+ 414 0318 01020000 		.word	513
+ 415 031c 2100     		.short	33
+ 416 031e 0000     		.space	2
+ 417 0320 272A     		.short	10791
+ 418 0322 0000     		.space	2
+ 419 0324 00000000 		.word	0
+ 420 0328 2100     		.short	33
+ 421 032a 272A     		.short	10791
+ 422 032c 01020000 		.word	513
+ 423 0330 2100     		.short	33
+ 424 0332 0000     		.space	2
+ 425 0334 0F00     		.short	15
+ 426 0336 0000     		.space	2
+ 427 0338 46000000 		.word	cyBle_attValues+70
+ 428 033c 2200     		.short	34
+ 429 033e 0328     		.short	10243
+ 430 0340 01020000 		.word	513
+ 431 0344 2300     		.short	35
+ 432 0346 0000     		.space	2
+ 433 0348 262A     		.short	10790
+ 434 034a 0000     		.space	2
+ 435 034c 00000000 		.word	0
+ 436 0350 2300     		.short	35
+ 437 0352 262A     		.short	10790
+ 438 0354 01020000 		.word	513
+ 439 0358 2300     		.short	35
+ 440 035a 0000     		.space	2
+ 441 035c 0200     		.short	2
+ 442 035e 0000     		.space	2
+ 443 0360 55000000 		.word	cyBle_attValues+85
+ 444 0364 2400     		.short	36
+ 445 0366 0328     		.short	10243
+ 446 0368 01020000 		.word	513
+ 447 036c 2500     		.short	37
+ 448 036e 0000     		.space	2
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 9
+
+
+ 449 0370 282A     		.short	10792
+ 450 0372 0000     		.space	2
+ 451 0374 00000000 		.word	0
+ 452 0378 2500     		.short	37
+ 453 037a 282A     		.short	10792
+ 454 037c 01020000 		.word	513
+ 455 0380 2500     		.short	37
+ 456 0382 0000     		.space	2
+ 457 0384 1000     		.short	16
+ 458 0386 0000     		.space	2
+ 459 0388 57000000 		.word	cyBle_attValues+87
+ 460 038c 2600     		.short	38
+ 461 038e 0328     		.short	10243
+ 462 0390 01020000 		.word	513
+ 463 0394 2700     		.short	39
+ 464 0396 0000     		.space	2
+ 465 0398 232A     		.short	10787
+ 466 039a 0000     		.space	2
+ 467 039c 00000000 		.word	0
+ 468 03a0 2700     		.short	39
+ 469 03a2 232A     		.short	10787
+ 470 03a4 01020000 		.word	513
+ 471 03a8 2700     		.short	39
+ 472 03aa 0000     		.space	2
+ 473 03ac 0800     		.short	8
+ 474 03ae 0000     		.space	2
+ 475 03b0 67000000 		.word	cyBle_attValues+103
+ 476 03b4 2800     		.short	40
+ 477 03b6 0328     		.short	10243
+ 478 03b8 01020000 		.word	513
+ 479 03bc 2900     		.short	41
+ 480 03be 0000     		.space	2
+ 481 03c0 2A2A     		.short	10794
+ 482 03c2 0000     		.space	2
+ 483 03c4 00000000 		.word	0
+ 484 03c8 2900     		.short	41
+ 485 03ca 2A2A     		.short	10794
+ 486 03cc 01020000 		.word	513
+ 487 03d0 2900     		.short	41
+ 488 03d2 0000     		.space	2
+ 489 03d4 0100     		.short	1
+ 490 03d6 0000     		.space	2
+ 491 03d8 6F000000 		.word	cyBle_attValues+111
+ 492 03dc 2A00     		.short	42
+ 493 03de 0328     		.short	10243
+ 494 03e0 01020000 		.word	513
+ 495 03e4 2B00     		.short	43
+ 496 03e6 0000     		.space	2
+ 497 03e8 502A     		.short	10832
+ 498 03ea 0000     		.space	2
+ 499 03ec 00000000 		.word	0
+ 500 03f0 2B00     		.short	43
+ 501 03f2 502A     		.short	10832
+ 502 03f4 01020000 		.word	513
+ 503 03f8 2B00     		.short	43
+ 504 03fa 0000     		.space	2
+ 505 03fc 0700     		.short	7
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 10
+
+
+ 506 03fe 0000     		.space	2
+ 507 0400 70000000 		.word	cyBle_attValues+112
+ 508 0404 00000000 		.section	.text.CyBle_GattsReInitGattDb,"ax",%progbits
+ 508      00000000 
+ 508      00000000 
+ 508      00000000 
+ 508      00000000 
+ 509              		.align	2
+ 510              		.global	CyBle_GattsReInitGattDb
+ 511              		.code	16
+ 512              		.thumb_func
+ 513              		.type	CyBle_GattsReInitGattDb, %function
+ 514              	CyBle_GattsReInitGattDb:
+ 515              	.LFB2:
+ 516              		.file 1 ".\\Generated_Source\\PSoC4\\BLE_gatt.c"
+   1:.\Generated_Source\PSoC4/BLE_gatt.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/BLE_gatt.c **** File Name: CYBLE_gatt.c
+   3:.\Generated_Source\PSoC4/BLE_gatt.c **** Version 1.10
+   4:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+   5:.\Generated_Source\PSoC4/BLE_gatt.c **** Description:
+   6:.\Generated_Source\PSoC4/BLE_gatt.c ****  This file contains the source code for the GATT API of the BLE Component.
+   7:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+   8:.\Generated_Source\PSoC4/BLE_gatt.c **** ********************************************************************************
+   9:.\Generated_Source\PSoC4/BLE_gatt.c **** Copyright 2014, Cypress Semiconductor Corporation.  All rights reserved.
+  10:.\Generated_Source\PSoC4/BLE_gatt.c **** You may use this file only in accordance with the license, terms, conditions,
+  11:.\Generated_Source\PSoC4/BLE_gatt.c **** disclaimers, and limitations in the end user license agreement accompanying
+  12:.\Generated_Source\PSoC4/BLE_gatt.c **** the software package with which this file was provided.
+  13:.\Generated_Source\PSoC4/BLE_gatt.c **** *******************************************************************************/
+  14:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  15:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  16:.\Generated_Source\PSoC4/BLE_gatt.c **** #include "BLE_eventHandler.h"
+  17:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  18:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  19:.\Generated_Source\PSoC4/BLE_gatt.c **** /***************************************
+  20:.\Generated_Source\PSoC4/BLE_gatt.c **** ##Global variables
+  21:.\Generated_Source\PSoC4/BLE_gatt.c **** ***************************************/
+  22:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  23:.\Generated_Source\PSoC4/BLE_gatt.c **** CYBLE_STATE_T cyBle_state;
+  24:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  25:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  26:.\Generated_Source\PSoC4/BLE_gatt.c **** #if(CYBLE_GATT_ROLE_SERVER)
+  27:.\Generated_Source\PSoC4/BLE_gatt.c ****     
+  28:.\Generated_Source\PSoC4/BLE_gatt.c ****     const CYBLE_GATTS_T cyBle_gatts =
+  29:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+  30:.\Generated_Source\PSoC4/BLE_gatt.c ****     0x0008u,    /* Handle of the GATT service */
+  31:.\Generated_Source\PSoC4/BLE_gatt.c ****     0x000Au,    /* Handle of the Service Changed characteristic */
+  32:.\Generated_Source\PSoC4/BLE_gatt.c ****     0x000Bu,    /* Handle of the Client Characteristic Configuration descriptor */
+  33:.\Generated_Source\PSoC4/BLE_gatt.c **** };
+  34:.\Generated_Source\PSoC4/BLE_gatt.c ****     
+  35:.\Generated_Source\PSoC4/BLE_gatt.c ****     static uint8 cyBle_attValues[0x77u] = {
+  36:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Device Name */
+  37:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'M', (uint8)'y', (uint8)'T', (uint8)'h', (uint8)'e', (uint8)'r', (uint8)'m', (uint8)'o', (ui
+  38:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'t', (uint8)'e', (uint8)'r', 
+  39:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  40:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Appearance */
+  41:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x03u, 
+  42:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 11
+
+
+  43:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Peripheral Preferred Connection Parameters */
+  44:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x06u, 0x00u, 0x28u, 0x00u, 0x00u, 0x00u, 0xE8u, 0x03u, 
+  45:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  46:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Service Changed */
+  47:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 0x00u, 0x00u, 
+  48:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  49:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Temperature Measurement */
+  50:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
+  51:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  52:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Temperature Type */
+  53:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x02u, 
+  54:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  55:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Intermediate Temperature */
+  56:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
+  57:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  58:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Measurement Interval */
+  59:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x01u, 0x00u, 
+  60:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  61:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Valid Range */
+  62:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x01u, 0x00u, 0x3Cu, 0x00u, 
+  63:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  64:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Manufacturer Name String */
+  65:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'C', (uint8)'y', (uint8)'p', (uint8)'r', (uint8)'e', (uint8)'s', (uint8)'s', (uint8)' ', (ui
+  66:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'m', (uint8)'i', (uint8)'c', (uint8)'o', (uint8)'n', (uint8)'d', (uint8)'u', (uint8)'c', (ui
+  67:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'r', 
+  68:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  69:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Model Number String */
+  70:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'1', (uint8)'.', (uint8)'0', 
+  71:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  72:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Serial Number String */
+  73:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'*', (uint8)'*', 
+  74:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  75:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Hardware Revision String */
+  76:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'C', (uint8)'Y', (uint8)'8', (uint8)'C', (uint8)'K', (uint8)'I', (uint8)'T', (uint8)'-', (ui
+  77:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'2', (uint8)'-', (uint8)'B', (uint8)'L', (uint8)'E', 
+  78:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  79:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Firmware Revision String */
+  80:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'*', (uint8)'*', 
+  81:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  82:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Software Revision String */
+  83:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'P', (uint8)'S', (uint8)'o', (uint8)'C', (uint8)' ', (uint8)'C', (uint8)'r', (uint8)'e', (ui
+  84:.\Generated_Source\PSoC4/BLE_gatt.c **** (uint8)'o', (uint8)'r', (uint8)' ', (uint8)'3', (uint8)'.', (uint8)'1', 
+  85:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  86:.\Generated_Source\PSoC4/BLE_gatt.c **** /* System ID */
+  87:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
+  88:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  89:.\Generated_Source\PSoC4/BLE_gatt.c **** /* IEEE 11073-20601 Regulatory Certification Data List */
+  90:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 
+  91:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  92:.\Generated_Source\PSoC4/BLE_gatt.c **** /* PnP ID */
+  93:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x01u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 
+  94:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  95:.\Generated_Source\PSoC4/BLE_gatt.c **** };
+  96:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+  97:.\Generated_Source\PSoC4/BLE_gatt.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
+  98:.\Generated_Source\PSoC4/BLE_gatt.c **** const uint8 cyBle_attValuesCCCDFlashMemory[CYBLE_GAP_MAX_BONDED_DEVICE + 1u][CYBLE_GATT_DB_CCCD_COU
+  99:.\Generated_Source\PSoC4/BLE_gatt.c **** #elif defined(__ICCARM__)
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 12
+
+
+ 100:.\Generated_Source\PSoC4/BLE_gatt.c **** /* The cyBle_attValuesCCCDFlashMemory[] should be aligned to the size of a Flash row */
+ 101:.\Generated_Source\PSoC4/BLE_gatt.c **** #pragma data_alignment=CY_FLASH_SIZEOF_ROW
+ 102:.\Generated_Source\PSoC4/BLE_gatt.c **** const uint8 cyBle_attValuesCCCDFlashMemory[CYBLE_GAP_MAX_BONDED_DEVICE + 1u][CYBLE_GATT_DB_CCCD_COU
+ 103:.\Generated_Source\PSoC4/BLE_gatt.c **** #endif /* defined(__GNUC__) || defined(__ARMCC_VERSION) */
+ 104:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+ 105:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 106:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 107:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 108:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 109:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 110:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 111:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 112:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 113:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 114:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 115:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 116:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 117:.\Generated_Source\PSoC4/BLE_gatt.c **** },
+ 118:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+ 119:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 120:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 121:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 122:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 123:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 124:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 125:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 126:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 127:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 128:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 129:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 130:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 131:.\Generated_Source\PSoC4/BLE_gatt.c **** },
+ 132:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+ 133:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 134:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 135:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 136:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 137:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 138:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 139:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 140:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 141:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 142:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 143:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 144:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 145:.\Generated_Source\PSoC4/BLE_gatt.c **** },
+ 146:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+ 147:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 148:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 149:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 150:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 151:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 152:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 153:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 154:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 155:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 156:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 13
+
+
+ 157:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 158:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 159:.\Generated_Source\PSoC4/BLE_gatt.c **** },
+ 160:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+ 161:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 162:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 163:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 164:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 165:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 166:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 167:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 168:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 169:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 170:.\Generated_Source\PSoC4/BLE_gatt.c **** /* Client Characteristic Configuration */
+ 171:.\Generated_Source\PSoC4/BLE_gatt.c **** 0x00u, 0x00u, 
+ 172:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 173:.\Generated_Source\PSoC4/BLE_gatt.c **** },
+ 174:.\Generated_Source\PSoC4/BLE_gatt.c **** };
+ 175:.\Generated_Source\PSoC4/BLE_gatt.c **** uint8 cyBle_attValuesCCCD[CYBLE_GATT_DB_CCCD_COUNT];
+ 176:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 177:.\Generated_Source\PSoC4/BLE_gatt.c **** const CYBLE_GATTS_DB_T cyBle_gattDB[0x2Bu] = {
+ 178:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0001u, 0x2800u /* Primary service                     */, 0x00000001u /*        */, 0x0007u, {{
+ 179:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0002u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0003u, {{
+ 180:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0003u, 0x2A00u /* Device Name                         */, 0x00000201u /* rd     */, 0x0003u, {{
+ 181:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0004u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0005u, {{
+ 182:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0005u, 0x2A01u /* Appearance                          */, 0x00000201u /* rd     */, 0x0005u, {{
+ 183:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0006u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0007u, {{
+ 184:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0007u, 0x2A04u /* Peripheral Preferred Connection Par */, 0x00000201u /* rd     */, 0x0007u, {{
+ 185:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0008u, 0x2800u /* Primary service                     */, 0x00000001u /*        */, 0x000Bu, {{
+ 186:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0009u, 0x2803u /* Characteristic                      */, 0x00002201u /* rd,ind */, 0x000Bu, {{
+ 187:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x000Au, 0x2A05u /* Service Changed                     */, 0x00002201u /* rd,ind */, 0x000Bu, {{
+ 188:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x000Bu, 0x2902u /* Client Characteristic Configuration */, 0x00000A04u /* rd,wr  */, 0x000Bu, {{
+ 189:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x000Cu, 0x2800u /* Primary service                     */, 0x00000001u /*        */, 0x0018u, {{
+ 190:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x000Du, 0x2803u /* Characteristic                      */, 0x00002001u /* ind    */, 0x000Fu, {{
+ 191:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x000Eu, 0x2A1Cu /* Temperature Measurement             */, 0x00002000u /* ind    */, 0x000Fu, {{
+ 192:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x000Fu, 0x2902u /* Client Characteristic Configuration */, 0x00000A04u /* rd,wr  */, 0x000Fu, {{
+ 193:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0010u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0011u, {{
+ 194:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0011u, 0x2A1Du /* Temperature Type                    */, 0x00000201u /* rd     */, 0x0011u, {{
+ 195:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0012u, 0x2803u /* Characteristic                      */, 0x00001001u /* ntf    */, 0x0014u, {{
+ 196:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0013u, 0x2A1Eu /* Intermediate Temperature            */, 0x00001000u /* ntf    */, 0x0014u, {{
+ 197:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0014u, 0x2902u /* Client Characteristic Configuration */, 0x00000A04u /* rd,wr  */, 0x0014u, {{
+ 198:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0015u, 0x2803u /* Characteristic                      */, 0x00000A01u /* rd,wr  */, 0x0018u, {{
+ 199:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0016u, 0x2A21u /* Measurement Interval                */, 0x00000A04u /* rd,wr  */, 0x0018u, {{
+ 200:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0017u, 0x2902u /* Client Characteristic Configuration */, 0x00000A04u /* rd,wr  */, 0x0017u, {{
+ 201:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0018u, 0x2906u /* Valid Range                         */, 0x00000201u /* rd     */, 0x0018u, {{
+ 202:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0019u, 0x2800u /* Primary service                     */, 0x00000001u /*        */, 0x002Bu, {{
+ 203:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x001Au, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x001Bu, {{
+ 204:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x001Bu, 0x2A29u /* Manufacturer Name String            */, 0x00000201u /* rd     */, 0x001Bu, {{
+ 205:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x001Cu, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x001Du, {{
+ 206:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x001Du, 0x2A24u /* Model Number String                 */, 0x00000201u /* rd     */, 0x001Du, {{
+ 207:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x001Eu, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x001Fu, {{
+ 208:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x001Fu, 0x2A25u /* Serial Number String                */, 0x00000201u /* rd     */, 0x001Fu, {{
+ 209:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0020u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0021u, {{
+ 210:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0021u, 0x2A27u /* Hardware Revision String            */, 0x00000201u /* rd     */, 0x0021u, {{
+ 211:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0022u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0023u, {{
+ 212:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0023u, 0x2A26u /* Firmware Revision String            */, 0x00000201u /* rd     */, 0x0023u, {{
+ 213:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0024u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0025u, {{
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 14
+
+
+ 214:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0025u, 0x2A28u /* Software Revision String            */, 0x00000201u /* rd     */, 0x0025u, {{
+ 215:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0026u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0027u, {{
+ 216:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0027u, 0x2A23u /* System ID                           */, 0x00000201u /* rd     */, 0x0027u, {{
+ 217:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0028u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0029u, {{
+ 218:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x0029u, 0x2A2Au /* IEEE 11073-20601 Regulatory Certifi */, 0x00000201u /* rd     */, 0x0029u, {{
+ 219:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x002Au, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x002Bu, {{
+ 220:.\Generated_Source\PSoC4/BLE_gatt.c **** { 0x002Bu, 0x2A50u /* PnP ID                              */, 0x00000201u /* rd     */, 0x002Bu, {{
+ 221:.\Generated_Source\PSoC4/BLE_gatt.c **** };
+ 222:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 223:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 224:.\Generated_Source\PSoC4/BLE_gatt.c **** #endif /* (CYBLE_GATT_ROLE_SERVER) */
+ 225:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 226:.\Generated_Source\PSoC4/BLE_gatt.c **** #if(CYBLE_GATT_ROLE_CLIENT)
+ 227:.\Generated_Source\PSoC4/BLE_gatt.c ****     
+ 228:.\Generated_Source\PSoC4/BLE_gatt.c **** CYBLE_CLIENT_STATE_T cyBle_clientState;
+ 229:.\Generated_Source\PSoC4/BLE_gatt.c **** CYBLE_GATTC_T cyBle_gattc;
+ 230:.\Generated_Source\PSoC4/BLE_gatt.c ****     
+ 231:.\Generated_Source\PSoC4/BLE_gatt.c **** #endif /* (CYBLE_GATT_ROLE_CLIENT) */
+ 232:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 233:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 234:.\Generated_Source\PSoC4/BLE_gatt.c **** #if(CYBLE_GATT_ROLE_SERVER)
+ 235:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 236:.\Generated_Source\PSoC4/BLE_gatt.c **** /****************************************************************************** 
+ 237:.\Generated_Source\PSoC4/BLE_gatt.c **** ##Function Name: CyBle_GattsReInitGattDb
+ 238:.\Generated_Source\PSoC4/BLE_gatt.c **** *******************************************************************************
+ 239:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 240:.\Generated_Source\PSoC4/BLE_gatt.c **** Summary:
+ 241:.\Generated_Source\PSoC4/BLE_gatt.c ****  Reinitializes the GATT database.
+ 242:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 243:.\Generated_Source\PSoC4/BLE_gatt.c **** Parameters:
+ 244:.\Generated_Source\PSoC4/BLE_gatt.c ****  None
+ 245:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 246:.\Generated_Source\PSoC4/BLE_gatt.c **** Return:
+ 247:.\Generated_Source\PSoC4/BLE_gatt.c ****  CYBLE_API_RESULT_T: An API result states if the API succeeded or failed with
+ 248:.\Generated_Source\PSoC4/BLE_gatt.c ****  error codes:
+ 249:.\Generated_Source\PSoC4/BLE_gatt.c ****   * CYBLE_ERROR_OK: GATT database was reinitialized successfully
+ 250:.\Generated_Source\PSoC4/BLE_gatt.c ****   * CYBLE_ERROR_INVALID_STATE: If the function is called in any state except
+ 251:.\Generated_Source\PSoC4/BLE_gatt.c ****                                 CYBLE_STATE_DISCONNECTED.
+ 252:.\Generated_Source\PSoC4/BLE_gatt.c ****   * Any of the CyBle_GattsDbRegister() stack API function return values.
+ 253:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 254:.\Generated_Source\PSoC4/BLE_gatt.c **** ******************************************************************************/
+ 255:.\Generated_Source\PSoC4/BLE_gatt.c **** CYBLE_API_RESULT_T CyBle_GattsReInitGattDb(void)
+ 256:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+ 517              		.loc 1 256 0
+ 518              		.cfi_startproc
+ 519 0000 90B5     		push	{r4, r7, lr}
+ 520              		.cfi_def_cfa_offset 12
+ 521              		.cfi_offset 4, -12
+ 522              		.cfi_offset 7, -8
+ 523              		.cfi_offset 14, -4
+ 524 0002 83B0     		sub	sp, sp, #12
+ 525              		.cfi_def_cfa_offset 24
+ 526 0004 00AF     		add	r7, sp, #0
+ 527              		.cfi_def_cfa_register 7
+ 257:.\Generated_Source\PSoC4/BLE_gatt.c ****     CYBLE_API_RESULT_T apiResult;
+ 258:.\Generated_Source\PSoC4/BLE_gatt.c ****     
+ 259:.\Generated_Source\PSoC4/BLE_gatt.c ****     if(CYBLE_STATE_DISCONNECTED == CyBle_GetState())
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 15
+
+
+ 528              		.loc 1 259 0
+ 529 0006 0C4B     		ldr	r3, .L5
+ 530 0008 1B78     		ldrb	r3, [r3]
+ 531 000a 042B     		cmp	r3, #4
+ 532 000c 09D1     		bne	.L2
+ 260:.\Generated_Source\PSoC4/BLE_gatt.c ****     {
+ 261:.\Generated_Source\PSoC4/BLE_gatt.c ****         apiResult = CyBle_GattsDbRegister(cyBle_gattDB, CYBLE_GATT_DB_INDEX_COUNT, CYBLE_GATT_DB_MA
+ 533              		.loc 1 261 0
+ 534 000e BC1D     		add	r4, r7, #6
+ 535 0010 0A4B     		ldr	r3, .L5+4
+ 536 0012 181C     		mov	r0, r3
+ 537 0014 2B21     		mov	r1, #43
+ 538 0016 1522     		mov	r2, #21
+ 539 0018 FFF7FEFF 		bl	CyBle_GattsDbRegister
+ 540 001c 031C     		mov	r3, r0
+ 541 001e 2380     		strh	r3, [r4]
+ 542 0020 03E0     		b	.L3
+ 543              	.L2:
+ 262:.\Generated_Source\PSoC4/BLE_gatt.c ****     }
+ 263:.\Generated_Source\PSoC4/BLE_gatt.c ****     else
+ 264:.\Generated_Source\PSoC4/BLE_gatt.c ****     {
+ 265:.\Generated_Source\PSoC4/BLE_gatt.c ****         apiResult = CYBLE_ERROR_INVALID_STATE;
+ 544              		.loc 1 265 0
+ 545 0022 BB1D     		add	r3, r7, #6
+ 546 0024 8322     		mov	r2, #131
+ 547 0026 5200     		lsl	r2, r2, #1
+ 548 0028 1A80     		strh	r2, [r3]
+ 549              	.L3:
+ 266:.\Generated_Source\PSoC4/BLE_gatt.c ****     }
+ 267:.\Generated_Source\PSoC4/BLE_gatt.c ****     
+ 268:.\Generated_Source\PSoC4/BLE_gatt.c ****     return(apiResult);
+ 550              		.loc 1 268 0
+ 551 002a BB1D     		add	r3, r7, #6
+ 552 002c 1B88     		ldrh	r3, [r3]
+ 269:.\Generated_Source\PSoC4/BLE_gatt.c **** }
+ 553              		.loc 1 269 0
+ 554 002e 181C     		mov	r0, r3
+ 555 0030 BD46     		mov	sp, r7
+ 556 0032 03B0     		add	sp, sp, #12
+ 557              		@ sp needed
+ 558 0034 90BD     		pop	{r4, r7, pc}
+ 559              	.L6:
+ 560 0036 C046     		.align	2
+ 561              	.L5:
+ 562 0038 00000000 		.word	cyBle_state
+ 563 003c 00000000 		.word	cyBle_gattDB
+ 564              		.cfi_endproc
+ 565              	.LFE2:
+ 566              		.size	CyBle_GattsReInitGattDb, .-CyBle_GattsReInitGattDb
+ 567              		.section	.text.CyBle_GattsWriteEventHandler,"ax",%progbits
+ 568              		.align	2
+ 569              		.global	CyBle_GattsWriteEventHandler
+ 570              		.code	16
+ 571              		.thumb_func
+ 572              		.type	CyBle_GattsWriteEventHandler, %function
+ 573              	CyBle_GattsWriteEventHandler:
+ 574              	.LFB3:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 16
+
+
+ 270:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 271:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 272:.\Generated_Source\PSoC4/BLE_gatt.c **** /****************************************************************************** 
+ 273:.\Generated_Source\PSoC4/BLE_gatt.c **** ##Function Name: CyBle_GattsWriteEventHandler
+ 274:.\Generated_Source\PSoC4/BLE_gatt.c **** *******************************************************************************
+ 275:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 276:.\Generated_Source\PSoC4/BLE_gatt.c **** Summary:
+ 277:.\Generated_Source\PSoC4/BLE_gatt.c ****  Handles the Write Request Event for GATT service.
+ 278:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 279:.\Generated_Source\PSoC4/BLE_gatt.c **** Parameters:
+ 280:.\Generated_Source\PSoC4/BLE_gatt.c ****  *eventParam: The pointer to the data structure specified by the event.
+ 281:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 282:.\Generated_Source\PSoC4/BLE_gatt.c **** Return:
+ 283:.\Generated_Source\PSoC4/BLE_gatt.c ****  * CYBLE_GATT_ERR_CODE_T: An API result returns one of the following status 
+ 284:.\Generated_Source\PSoC4/BLE_gatt.c ****     values
+ 285:.\Generated_Source\PSoC4/BLE_gatt.c ****  * CYBLE_GATT_ERR_NONE - Write is successful.
+ 286:.\Generated_Source\PSoC4/BLE_gatt.c **** 
+ 287:.\Generated_Source\PSoC4/BLE_gatt.c **** ******************************************************************************/
+ 288:.\Generated_Source\PSoC4/BLE_gatt.c **** CYBLE_GATT_ERR_CODE_T CyBle_GattsWriteEventHandler(CYBLE_GATTS_WRITE_REQ_PARAM_T *eventParam)
+ 289:.\Generated_Source\PSoC4/BLE_gatt.c **** {
+ 575              		.loc 1 289 0
+ 576              		.cfi_startproc
+ 577 0000 90B5     		push	{r4, r7, lr}
+ 578              		.cfi_def_cfa_offset 12
+ 579              		.cfi_offset 4, -12
+ 580              		.cfi_offset 7, -8
+ 581              		.cfi_offset 14, -4
+ 582 0002 85B0     		sub	sp, sp, #20
+ 583              		.cfi_def_cfa_offset 32
+ 584 0004 00AF     		add	r7, sp, #0
+ 585              		.cfi_def_cfa_register 7
+ 586 0006 7860     		str	r0, [r7, #4]
+ 290:.\Generated_Source\PSoC4/BLE_gatt.c ****     CYBLE_GATT_ERR_CODE_T gattErr = CYBLE_GATT_ERR_NONE;
+ 587              		.loc 1 290 0
+ 588 0008 3B1C     		mov	r3, r7
+ 589 000a 0F33     		add	r3, r3, #15
+ 590 000c 0022     		mov	r2, #0
+ 591 000e 1A70     		strb	r2, [r3]
+ 291:.\Generated_Source\PSoC4/BLE_gatt.c ****     
+ 292:.\Generated_Source\PSoC4/BLE_gatt.c ****     /* Client Characteristic Configuration descriptor write request */
+ 293:.\Generated_Source\PSoC4/BLE_gatt.c ****     if(eventParam->handleValPair.attrHandle == cyBle_gatts.cccdHandle)
+ 592              		.loc 1 293 0
+ 593 0010 7B68     		ldr	r3, [r7, #4]
+ 594 0012 9A89     		ldrh	r2, [r3, #12]
+ 595 0014 0B23     		mov	r3, #11
+ 596 0016 9A42     		cmp	r2, r3
+ 597 0018 37D1     		bne	.L8
+ 294:.\Generated_Source\PSoC4/BLE_gatt.c ****     {
+ 295:.\Generated_Source\PSoC4/BLE_gatt.c ****         /* Store value to database */
+ 296:.\Generated_Source\PSoC4/BLE_gatt.c ****         gattErr = CyBle_GattsWriteAttributeValue(&eventParam->handleValPair, 0u, 
+ 598              		.loc 1 296 0
+ 599 001a 7B68     		ldr	r3, [r7, #4]
+ 600 001c 1A1D     		add	r2, r3, #4
+ 601 001e 7B68     		ldr	r3, [r7, #4]
+ 602 0020 3C1C     		mov	r4, r7
+ 603 0022 0F34     		add	r4, r4, #15
+ 604 0024 101C     		mov	r0, r2
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 17
+
+
+ 605 0026 0021     		mov	r1, #0
+ 606 0028 1A1C     		mov	r2, r3
+ 607 002a 4023     		mov	r3, #64
+ 608 002c FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
+ 609 0030 031C     		mov	r3, r0
+ 610 0032 2370     		strb	r3, [r4]
+ 297:.\Generated_Source\PSoC4/BLE_gatt.c ****                         &eventParam->connHandle, CYBLE_GATT_DB_PEER_INITIATED);
+ 298:.\Generated_Source\PSoC4/BLE_gatt.c ****         
+ 299:.\Generated_Source\PSoC4/BLE_gatt.c ****         if(CYBLE_GATT_ERR_NONE == gattErr)
+ 611              		.loc 1 299 0
+ 612 0034 3B1C     		mov	r3, r7
+ 613 0036 0F33     		add	r3, r3, #15
+ 614 0038 1B78     		ldrb	r3, [r3]
+ 615 003a 002B     		cmp	r3, #0
+ 616 003c 1DD1     		bne	.L9
+ 300:.\Generated_Source\PSoC4/BLE_gatt.c ****         {
+ 301:.\Generated_Source\PSoC4/BLE_gatt.c ****             if(CYBLE_IS_INDICATION_ENABLED_IN_PTR(eventParam->handleValPair.value.val))
+ 617              		.loc 1 301 0
+ 618 003e 7B68     		ldr	r3, [r7, #4]
+ 619 0040 5B68     		ldr	r3, [r3, #4]
+ 620 0042 181C     		mov	r0, r3
+ 621 0044 FFF7FEFF 		bl	CyBle_Get16ByPtr
+ 622 0048 031C     		mov	r3, r0
+ 623 004a 1A1C     		mov	r2, r3
+ 624 004c 0223     		mov	r3, #2
+ 625 004e 1340     		and	r3, r2
+ 626 0050 9BB2     		uxth	r3, r3
+ 627 0052 002B     		cmp	r3, #0
+ 628 0054 08D0     		beq	.L10
+ 302:.\Generated_Source\PSoC4/BLE_gatt.c ****             {
+ 303:.\Generated_Source\PSoC4/BLE_gatt.c ****                 CyBle_ApplCallback((uint32)CYBLE_EVT_GATTS_INDICATION_ENABLED, eventParam);
+ 629              		.loc 1 303 0
+ 630 0056 104B     		ldr	r3, .L12
+ 631 0058 1B68     		ldr	r3, [r3]
+ 632 005a 8222     		mov	r2, #130
+ 633 005c 5100     		lsl	r1, r2, #1
+ 634 005e 7A68     		ldr	r2, [r7, #4]
+ 635 0060 081C     		mov	r0, r1
+ 636 0062 111C     		mov	r1, r2
+ 637 0064 9847     		blx	r3
+ 638 0066 08E0     		b	.L9
+ 639              	.L10:
+ 304:.\Generated_Source\PSoC4/BLE_gatt.c ****             }
+ 305:.\Generated_Source\PSoC4/BLE_gatt.c ****             else
+ 306:.\Generated_Source\PSoC4/BLE_gatt.c ****             {
+ 307:.\Generated_Source\PSoC4/BLE_gatt.c ****                 CyBle_ApplCallback((uint32)CYBLE_EVT_GATTS_INDICATION_DISABLED, eventParam);
+ 640              		.loc 1 307 0
+ 641 0068 0B4B     		ldr	r3, .L12
+ 642 006a 1B68     		ldr	r3, [r3]
+ 643 006c 0622     		mov	r2, #6
+ 644 006e 111C     		mov	r1, r2
+ 645 0070 FF31     		add	r1, r1, #255
+ 646 0072 7A68     		ldr	r2, [r7, #4]
+ 647 0074 081C     		mov	r0, r1
+ 648 0076 111C     		mov	r1, r2
+ 649 0078 9847     		blx	r3
+ 650              	.L9:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 18
+
+
+ 308:.\Generated_Source\PSoC4/BLE_gatt.c ****             }
+ 309:.\Generated_Source\PSoC4/BLE_gatt.c ****         }
+ 310:.\Generated_Source\PSoC4/BLE_gatt.c ****         cyBle_eventHandlerFlag &= (uint8)~CYBLE_CALLBACK;
+ 651              		.loc 1 310 0
+ 652 007a 084B     		ldr	r3, .L12+4
+ 653 007c 1B78     		ldrb	r3, [r3]
+ 654 007e DBB2     		uxtb	r3, r3
+ 655 0080 0122     		mov	r2, #1
+ 656 0082 9343     		bic	r3, r2
+ 657 0084 DAB2     		uxtb	r2, r3
+ 658 0086 054B     		ldr	r3, .L12+4
+ 659 0088 1A70     		strb	r2, [r3]
+ 660              	.L8:
+ 311:.\Generated_Source\PSoC4/BLE_gatt.c ****     }
+ 312:.\Generated_Source\PSoC4/BLE_gatt.c ****     return (gattErr);
+ 661              		.loc 1 312 0
+ 662 008a 3B1C     		mov	r3, r7
+ 663 008c 0F33     		add	r3, r3, #15
+ 664 008e 1B78     		ldrb	r3, [r3]
+ 313:.\Generated_Source\PSoC4/BLE_gatt.c **** }
+ 665              		.loc 1 313 0
+ 666 0090 181C     		mov	r0, r3
+ 667 0092 BD46     		mov	sp, r7
+ 668 0094 05B0     		add	sp, sp, #20
+ 669              		@ sp needed
+ 670 0096 90BD     		pop	{r4, r7, pc}
+ 671              	.L13:
+ 672              		.align	2
+ 673              	.L12:
+ 674 0098 00000000 		.word	CyBle_ApplCallback
+ 675 009c 00000000 		.word	cyBle_eventHandlerFlag
+ 676              		.cfi_endproc
+ 677              	.LFE3:
+ 678              		.size	CyBle_GattsWriteEventHandler, .-CyBle_GattsWriteEventHandler
+ 679              		.text
+ 680              	.Letext0:
+ 681              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
+ 682              		.file 3 ".\\Generated_Source\\PSoC4\\BLE_Stack.h"
+ 683              		.file 4 ".\\Generated_Source\\PSoC4\\BLE_StackGatt.h"
+ 684              		.file 5 ".\\Generated_Source\\PSoC4\\BLE_StackGattServer.h"
+ 685              		.file 6 ".\\Generated_Source\\PSoC4\\BLE_StackGattDb.h"
+ 686              		.file 7 ".\\Generated_Source\\PSoC4\\BLE.h"
+ 687              		.file 8 ".\\Generated_Source\\PSoC4\\BLE_gatt.h"
+ 688              		.file 9 ".\\Generated_Source\\PSoC4\\BLE_dis.h"
+ 689              		.file 10 ".\\Generated_Source\\PSoC4\\BLE_hts.h"
+ 690              		.file 11 ".\\Generated_Source\\PSoC4\\BLE_eventHandler.h"
+ 691              		.section	.debug_info,"",%progbits
+ 692              	.Ldebug_info0:
+ 693 0000 410C0000 		.4byte	0xc41
+ 694 0004 0400     		.2byte	0x4
+ 695 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 696 000a 04       		.byte	0x4
+ 697 000b 01       		.uleb128 0x1
+ 698 000c 21190000 		.4byte	.LASF367
+ 699 0010 01       		.byte	0x1
+ 700 0011 BD140000 		.4byte	.LASF368
+ 701 0015 11070000 		.4byte	.LASF369
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 19
+
+
+ 702 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 703 001d 00000000 		.4byte	0
+ 704 0021 00000000 		.4byte	.Ldebug_line0
+ 705 0025 02       		.uleb128 0x2
+ 706 0026 01       		.byte	0x1
+ 707 0027 06       		.byte	0x6
+ 708 0028 6E090000 		.4byte	.LASF0
+ 709 002c 02       		.uleb128 0x2
+ 710 002d 01       		.byte	0x1
+ 711 002e 08       		.byte	0x8
+ 712 002f 230A0000 		.4byte	.LASF1
+ 713 0033 02       		.uleb128 0x2
+ 714 0034 02       		.byte	0x2
+ 715 0035 05       		.byte	0x5
+ 716 0036 6E230000 		.4byte	.LASF2
+ 717 003a 02       		.uleb128 0x2
+ 718 003b 02       		.byte	0x2
+ 719 003c 07       		.byte	0x7
+ 720 003d 06280000 		.4byte	.LASF3
+ 721 0041 02       		.uleb128 0x2
+ 722 0042 04       		.byte	0x4
+ 723 0043 05       		.byte	0x5
+ 724 0044 E4060000 		.4byte	.LASF4
+ 725 0048 02       		.uleb128 0x2
+ 726 0049 04       		.byte	0x4
+ 727 004a 07       		.byte	0x7
+ 728 004b F8110000 		.4byte	.LASF5
+ 729 004f 02       		.uleb128 0x2
+ 730 0050 08       		.byte	0x8
+ 731 0051 05       		.byte	0x5
+ 732 0052 FD140000 		.4byte	.LASF6
+ 733 0056 02       		.uleb128 0x2
+ 734 0057 08       		.byte	0x8
+ 735 0058 07       		.byte	0x7
+ 736 0059 6E1E0000 		.4byte	.LASF7
+ 737 005d 03       		.uleb128 0x3
+ 738 005e 04       		.byte	0x4
+ 739 005f 05       		.byte	0x5
+ 740 0060 696E7400 		.ascii	"int\000"
+ 741 0064 02       		.uleb128 0x2
+ 742 0065 04       		.byte	0x4
+ 743 0066 07       		.byte	0x7
+ 744 0067 37180000 		.4byte	.LASF8
+ 745 006b 04       		.uleb128 0x4
+ 746 006c 21230000 		.4byte	.LASF9
+ 747 0070 02       		.byte	0x2
+ 748 0071 A1       		.byte	0xa1
+ 749 0072 2C000000 		.4byte	0x2c
+ 750 0076 04       		.uleb128 0x4
+ 751 0077 772A0000 		.4byte	.LASF10
+ 752 007b 02       		.byte	0x2
+ 753 007c A2       		.byte	0xa2
+ 754 007d 3A000000 		.4byte	0x3a
+ 755 0081 04       		.uleb128 0x4
+ 756 0082 AD010000 		.4byte	.LASF11
+ 757 0086 02       		.byte	0x2
+ 758 0087 A3       		.byte	0xa3
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 20
+
+
+ 759 0088 48000000 		.4byte	0x48
+ 760 008c 02       		.uleb128 0x2
+ 761 008d 04       		.byte	0x4
+ 762 008e 04       		.byte	0x4
+ 763 008f 48170000 		.4byte	.LASF12
+ 764 0093 02       		.uleb128 0x2
+ 765 0094 08       		.byte	0x8
+ 766 0095 04       		.byte	0x4
+ 767 0096 EE150000 		.4byte	.LASF13
+ 768 009a 02       		.uleb128 0x2
+ 769 009b 01       		.byte	0x1
+ 770 009c 08       		.byte	0x8
+ 771 009d A30B0000 		.4byte	.LASF14
+ 772 00a1 05       		.uleb128 0x5
+ 773 00a2 6B000000 		.4byte	0x6b
+ 774 00a6 02       		.uleb128 0x2
+ 775 00a7 04       		.byte	0x4
+ 776 00a8 07       		.byte	0x7
+ 777 00a9 3A000000 		.4byte	.LASF15
+ 778 00ad 06       		.uleb128 0x6
+ 779 00ae 04       		.byte	0x4
+ 780 00af 07       		.uleb128 0x7
+ 781 00b0 01       		.byte	0x1
+ 782 00b1 03       		.byte	0x3
+ 783 00b2 52       		.byte	0x52
+ 784 00b3 1F020000 		.4byte	0x21f
+ 785 00b7 08       		.uleb128 0x8
+ 786 00b8 0B0C0000 		.4byte	.LASF16
+ 787 00bc 00       		.sleb128 0
+ 788 00bd 08       		.uleb128 0x8
+ 789 00be C9070000 		.4byte	.LASF17
+ 790 00c2 01       		.sleb128 1
+ 791 00c3 08       		.uleb128 0x8
+ 792 00c4 A31E0000 		.4byte	.LASF18
+ 793 00c8 02       		.sleb128 2
+ 794 00c9 08       		.uleb128 0x8
+ 795 00ca 9D090000 		.4byte	.LASF19
+ 796 00ce 03       		.sleb128 3
+ 797 00cf 08       		.uleb128 0x8
+ 798 00d0 35290000 		.4byte	.LASF20
+ 799 00d4 04       		.sleb128 4
+ 800 00d5 08       		.uleb128 0x8
+ 801 00d6 16270000 		.4byte	.LASF21
+ 802 00da 05       		.sleb128 5
+ 803 00db 08       		.uleb128 0x8
+ 804 00dc E9240000 		.4byte	.LASF22
+ 805 00e0 20       		.sleb128 32
+ 806 00e1 08       		.uleb128 0x8
+ 807 00e2 42050000 		.4byte	.LASF23
+ 808 00e6 21       		.sleb128 33
+ 809 00e7 08       		.uleb128 0x8
+ 810 00e8 31140000 		.4byte	.LASF24
+ 811 00ec 22       		.sleb128 34
+ 812 00ed 08       		.uleb128 0x8
+ 813 00ee E91A0000 		.4byte	.LASF25
+ 814 00f2 23       		.sleb128 35
+ 815 00f3 08       		.uleb128 0x8
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 21
+
+
+ 816 00f4 D5100000 		.4byte	.LASF26
+ 817 00f8 24       		.sleb128 36
+ 818 00f9 08       		.uleb128 0x8
+ 819 00fa 15110000 		.4byte	.LASF27
+ 820 00fe 25       		.sleb128 37
+ 821 00ff 08       		.uleb128 0x8
+ 822 0100 C7220000 		.4byte	.LASF28
+ 823 0104 26       		.sleb128 38
+ 824 0105 08       		.uleb128 0x8
+ 825 0106 42010000 		.4byte	.LASF29
+ 826 010a 27       		.sleb128 39
+ 827 010b 08       		.uleb128 0x8
+ 828 010c F0290000 		.4byte	.LASF30
+ 829 0110 28       		.sleb128 40
+ 830 0111 08       		.uleb128 0x8
+ 831 0112 F41C0000 		.4byte	.LASF31
+ 832 0116 29       		.sleb128 41
+ 833 0117 08       		.uleb128 0x8
+ 834 0118 71130000 		.4byte	.LASF32
+ 835 011c 2A       		.sleb128 42
+ 836 011d 08       		.uleb128 0x8
+ 837 011e 8C1A0000 		.4byte	.LASF33
+ 838 0122 2B       		.sleb128 43
+ 839 0123 08       		.uleb128 0x8
+ 840 0124 56270000 		.4byte	.LASF34
+ 841 0128 2C       		.sleb128 44
+ 842 0129 08       		.uleb128 0x8
+ 843 012a 08240000 		.4byte	.LASF35
+ 844 012e C000     		.sleb128 64
+ 845 0130 08       		.uleb128 0x8
+ 846 0131 84010000 		.4byte	.LASF36
+ 847 0135 C100     		.sleb128 65
+ 848 0137 08       		.uleb128 0x8
+ 849 0138 4A290000 		.4byte	.LASF37
+ 850 013c C200     		.sleb128 66
+ 851 013e 08       		.uleb128 0x8
+ 852 013f 831D0000 		.4byte	.LASF38
+ 853 0143 C300     		.sleb128 67
+ 854 0145 08       		.uleb128 0x8
+ 855 0146 310A0000 		.4byte	.LASF39
+ 856 014a C400     		.sleb128 68
+ 857 014c 08       		.uleb128 0x8
+ 858 014d C5090000 		.4byte	.LASF40
+ 859 0151 C500     		.sleb128 69
+ 860 0153 08       		.uleb128 0x8
+ 861 0154 3E210000 		.4byte	.LASF41
+ 862 0158 C600     		.sleb128 70
+ 863 015a 08       		.uleb128 0x8
+ 864 015b 20210000 		.4byte	.LASF42
+ 865 015f C700     		.sleb128 71
+ 866 0161 08       		.uleb128 0x8
+ 867 0162 7C0B0000 		.4byte	.LASF43
+ 868 0166 C800     		.sleb128 72
+ 869 0168 08       		.uleb128 0x8
+ 870 0169 411B0000 		.4byte	.LASF44
+ 871 016d C900     		.sleb128 73
+ 872 016f 08       		.uleb128 0x8
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 22
+
+
+ 873 0170 800C0000 		.4byte	.LASF45
+ 874 0174 CA00     		.sleb128 74
+ 875 0176 08       		.uleb128 0x8
+ 876 0177 EC0B0000 		.4byte	.LASF46
+ 877 017b CB00     		.sleb128 75
+ 878 017d 08       		.uleb128 0x8
+ 879 017e CF1A0000 		.4byte	.LASF47
+ 880 0182 CC00     		.sleb128 76
+ 881 0184 08       		.uleb128 0x8
+ 882 0185 5F220000 		.4byte	.LASF48
+ 883 0189 CD00     		.sleb128 77
+ 884 018b 08       		.uleb128 0x8
+ 885 018c A2060000 		.4byte	.LASF49
+ 886 0190 CE00     		.sleb128 78
+ 887 0192 08       		.uleb128 0x8
+ 888 0193 44180000 		.4byte	.LASF50
+ 889 0197 CF00     		.sleb128 79
+ 890 0199 08       		.uleb128 0x8
+ 891 019a CA240000 		.4byte	.LASF51
+ 892 019e D000     		.sleb128 80
+ 893 01a0 08       		.uleb128 0x8
+ 894 01a1 E40C0000 		.4byte	.LASF52
+ 895 01a5 D100     		.sleb128 81
+ 896 01a7 08       		.uleb128 0x8
+ 897 01a8 21050000 		.4byte	.LASF53
+ 898 01ac D200     		.sleb128 82
+ 899 01ae 08       		.uleb128 0x8
+ 900 01af 96260000 		.4byte	.LASF54
+ 901 01b3 D300     		.sleb128 83
+ 902 01b5 08       		.uleb128 0x8
+ 903 01b6 322A0000 		.4byte	.LASF55
+ 904 01ba D400     		.sleb128 84
+ 905 01bc 08       		.uleb128 0x8
+ 906 01bd DB030000 		.4byte	.LASF56
+ 907 01c1 D500     		.sleb128 85
+ 908 01c3 08       		.uleb128 0x8
+ 909 01c4 7A270000 		.4byte	.LASF57
+ 910 01c8 F000     		.sleb128 112
+ 911 01ca 08       		.uleb128 0x8
+ 912 01cb 68100000 		.4byte	.LASF58
+ 913 01cf F100     		.sleb128 113
+ 914 01d1 08       		.uleb128 0x8
+ 915 01d2 ED080000 		.4byte	.LASF59
+ 916 01d6 F200     		.sleb128 114
+ 917 01d8 08       		.uleb128 0x8
+ 918 01d9 AC240000 		.4byte	.LASF60
+ 919 01dd F300     		.sleb128 115
+ 920 01df 08       		.uleb128 0x8
+ 921 01e0 B41B0000 		.4byte	.LASF61
+ 922 01e4 F400     		.sleb128 116
+ 923 01e6 08       		.uleb128 0x8
+ 924 01e7 D7130000 		.4byte	.LASF62
+ 925 01eb F500     		.sleb128 117
+ 926 01ed 08       		.uleb128 0x8
+ 927 01ee 5B0B0000 		.4byte	.LASF63
+ 928 01f2 F600     		.sleb128 118
+ 929 01f4 08       		.uleb128 0x8
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 23
+
+
+ 930 01f5 151F0000 		.4byte	.LASF64
+ 931 01f9 F700     		.sleb128 119
+ 932 01fb 08       		.uleb128 0x8
+ 933 01fc FF030000 		.4byte	.LASF65
+ 934 0200 F800     		.sleb128 120
+ 935 0202 08       		.uleb128 0x8
+ 936 0203 C90A0000 		.4byte	.LASF66
+ 937 0207 F900     		.sleb128 121
+ 938 0209 08       		.uleb128 0x8
+ 939 020a 8E290000 		.4byte	.LASF67
+ 940 020e FA00     		.sleb128 122
+ 941 0210 08       		.uleb128 0x8
+ 942 0211 17160000 		.4byte	.LASF68
+ 943 0215 FA01     		.sleb128 250
+ 944 0217 08       		.uleb128 0x8
+ 945 0218 7E1A0000 		.4byte	.LASF69
+ 946 021c FF01     		.sleb128 255
+ 947 021e 00       		.byte	0
+ 948 021f 09       		.uleb128 0x9
+ 949 0220 02       		.byte	0x2
+ 950 0221 03       		.byte	0x3
+ 951 0222 8401     		.2byte	0x184
+ 952 0224 F1020000 		.4byte	0x2f1
+ 953 0228 08       		.uleb128 0x8
+ 954 0229 B6090000 		.4byte	.LASF70
+ 955 022d 00       		.sleb128 0
+ 956 022e 08       		.uleb128 0x8
+ 957 022f 3C0E0000 		.4byte	.LASF71
+ 958 0233 01       		.sleb128 1
+ 959 0234 08       		.uleb128 0x8
+ 960 0235 17290000 		.4byte	.LASF72
+ 961 0239 02       		.sleb128 2
+ 962 023a 08       		.uleb128 0x8
+ 963 023b 610F0000 		.4byte	.LASF73
+ 964 023f 03       		.sleb128 3
+ 965 0240 08       		.uleb128 0x8
+ 966 0241 8B110000 		.4byte	.LASF74
+ 967 0245 04       		.sleb128 4
+ 968 0246 08       		.uleb128 0x8
+ 969 0247 D0150000 		.4byte	.LASF75
+ 970 024b 05       		.sleb128 5
+ 971 024c 08       		.uleb128 0x8
+ 972 024d 0E260000 		.4byte	.LASF76
+ 973 0251 06       		.sleb128 6
+ 974 0252 08       		.uleb128 0x8
+ 975 0253 630C0000 		.4byte	.LASF77
+ 976 0257 07       		.sleb128 7
+ 977 0258 08       		.uleb128 0x8
+ 978 0259 2A170000 		.4byte	.LASF78
+ 979 025d 08       		.sleb128 8
+ 980 025e 08       		.uleb128 0x8
+ 981 025f 0D250000 		.4byte	.LASF79
+ 982 0263 09       		.sleb128 9
+ 983 0264 08       		.uleb128 0x8
+ 984 0265 7E2A0000 		.4byte	.LASF80
+ 985 0269 0A       		.sleb128 10
+ 986 026a 08       		.uleb128 0x8
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 24
+
+
+ 987 026b B8050000 		.4byte	.LASF81
+ 988 026f 0B       		.sleb128 11
+ 989 0270 08       		.uleb128 0x8
+ 990 0271 FF260000 		.4byte	.LASF82
+ 991 0275 0C       		.sleb128 12
+ 992 0276 08       		.uleb128 0x8
+ 993 0277 EE190000 		.4byte	.LASF83
+ 994 027b 0D       		.sleb128 13
+ 995 027c 08       		.uleb128 0x8
+ 996 027d 8C120000 		.4byte	.LASF84
+ 997 0281 0E       		.sleb128 14
+ 998 0282 08       		.uleb128 0x8
+ 999 0283 AB150000 		.4byte	.LASF85
+ 1000 0287 0F       		.sleb128 15
+ 1001 0288 08       		.uleb128 0x8
+ 1002 0289 6B030000 		.4byte	.LASF86
+ 1003 028d 10       		.sleb128 16
+ 1004 028e 08       		.uleb128 0x8
+ 1005 028f F9160000 		.4byte	.LASF87
+ 1006 0293 11       		.sleb128 17
+ 1007 0294 08       		.uleb128 0x8
+ 1008 0295 EC0A0000 		.4byte	.LASF88
+ 1009 0299 12       		.sleb128 18
+ 1010 029a 08       		.uleb128 0x8
+ 1011 029b DC070000 		.4byte	.LASF89
+ 1012 029f 13       		.sleb128 19
+ 1013 02a0 08       		.uleb128 0x8
+ 1014 02a1 46090000 		.4byte	.LASF90
+ 1015 02a5 14       		.sleb128 20
+ 1016 02a6 08       		.uleb128 0x8
+ 1017 02a7 F5150000 		.4byte	.LASF91
+ 1018 02ab 27       		.sleb128 39
+ 1019 02ac 08       		.uleb128 0x8
+ 1020 02ad 8D170000 		.4byte	.LASF92
+ 1021 02b1 28       		.sleb128 40
+ 1022 02b2 08       		.uleb128 0x8
+ 1023 02b3 99030000 		.4byte	.LASF93
+ 1024 02b7 29       		.sleb128 41
+ 1025 02b8 08       		.uleb128 0x8
+ 1026 02b9 35100000 		.4byte	.LASF94
+ 1027 02bd FF01     		.sleb128 255
+ 1028 02bf 08       		.uleb128 0x8
+ 1029 02c0 4C110000 		.4byte	.LASF95
+ 1030 02c4 8002     		.sleb128 256
+ 1031 02c6 08       		.uleb128 0x8
+ 1032 02c7 A8270000 		.4byte	.LASF96
+ 1033 02cb 8102     		.sleb128 257
+ 1034 02cd 08       		.uleb128 0x8
+ 1035 02ce 100F0000 		.4byte	.LASF97
+ 1036 02d2 8202     		.sleb128 258
+ 1037 02d4 08       		.uleb128 0x8
+ 1038 02d5 281B0000 		.4byte	.LASF98
+ 1039 02d9 8302     		.sleb128 259
+ 1040 02db 08       		.uleb128 0x8
+ 1041 02dc 0F1B0000 		.4byte	.LASF99
+ 1042 02e0 8402     		.sleb128 260
+ 1043 02e2 08       		.uleb128 0x8
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 25
+
+
+ 1044 02e3 86080000 		.4byte	.LASF100
+ 1045 02e7 8502     		.sleb128 261
+ 1046 02e9 08       		.uleb128 0x8
+ 1047 02ea DF1E0000 		.4byte	.LASF101
+ 1048 02ee 8602     		.sleb128 262
+ 1049 02f0 00       		.byte	0
+ 1050 02f1 0A       		.uleb128 0xa
+ 1051 02f2 28260000 		.4byte	.LASF102
+ 1052 02f6 03       		.byte	0x3
+ 1053 02f7 E101     		.2byte	0x1e1
+ 1054 02f9 1F020000 		.4byte	0x21f
+ 1055 02fd 0B       		.uleb128 0xb
+ 1056 02fe 04       		.byte	0x4
+ 1057 02ff 6B000000 		.4byte	0x6b
+ 1058 0303 07       		.uleb128 0x7
+ 1059 0304 01       		.byte	0x1
+ 1060 0305 04       		.byte	0x4
+ 1061 0306 A4       		.byte	0xa4
+ 1062 0307 B0030000 		.4byte	0x3b0
+ 1063 030b 08       		.uleb128 0x8
+ 1064 030c 341F0000 		.4byte	.LASF103
+ 1065 0310 00       		.sleb128 0
+ 1066 0311 08       		.uleb128 0x8
+ 1067 0312 851E0000 		.4byte	.LASF104
+ 1068 0316 01       		.sleb128 1
+ 1069 0317 08       		.uleb128 0x8
+ 1070 0318 EF020000 		.4byte	.LASF105
+ 1071 031c 02       		.sleb128 2
+ 1072 031d 08       		.uleb128 0x8
+ 1073 031e E3270000 		.4byte	.LASF106
+ 1074 0322 03       		.sleb128 3
+ 1075 0323 08       		.uleb128 0x8
+ 1076 0324 6B080000 		.4byte	.LASF107
+ 1077 0328 04       		.sleb128 4
+ 1078 0329 08       		.uleb128 0x8
+ 1079 032a 70180000 		.4byte	.LASF108
+ 1080 032e 05       		.sleb128 5
+ 1081 032f 08       		.uleb128 0x8
+ 1082 0330 CC230000 		.4byte	.LASF109
+ 1083 0334 06       		.sleb128 6
+ 1084 0335 08       		.uleb128 0x8
+ 1085 0336 741B0000 		.4byte	.LASF110
+ 1086 033a 07       		.sleb128 7
+ 1087 033b 08       		.uleb128 0x8
+ 1088 033c E4170000 		.4byte	.LASF111
+ 1089 0340 08       		.sleb128 8
+ 1090 0341 08       		.uleb128 0x8
+ 1091 0342 83150000 		.4byte	.LASF112
+ 1092 0346 09       		.sleb128 9
+ 1093 0347 08       		.uleb128 0x8
+ 1094 0348 381A0000 		.4byte	.LASF113
+ 1095 034c 0A       		.sleb128 10
+ 1096 034d 08       		.uleb128 0x8
+ 1097 034e 390D0000 		.4byte	.LASF114
+ 1098 0352 0B       		.sleb128 11
+ 1099 0353 08       		.uleb128 0x8
+ 1100 0354 35160000 		.4byte	.LASF115
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 26
+
+
+ 1101 0358 0C       		.sleb128 12
+ 1102 0359 08       		.uleb128 0x8
+ 1103 035a 09090000 		.4byte	.LASF116
+ 1104 035e 0D       		.sleb128 13
+ 1105 035f 08       		.uleb128 0x8
+ 1106 0360 220C0000 		.4byte	.LASF117
+ 1107 0364 0E       		.sleb128 14
+ 1108 0365 08       		.uleb128 0x8
+ 1109 0366 19280000 		.4byte	.LASF118
+ 1110 036a 0F       		.sleb128 15
+ 1111 036b 08       		.uleb128 0x8
+ 1112 036c 45030000 		.4byte	.LASF119
+ 1113 0370 10       		.sleb128 16
+ 1114 0371 08       		.uleb128 0x8
+ 1115 0372 11030000 		.4byte	.LASF120
+ 1116 0376 11       		.sleb128 17
+ 1117 0377 08       		.uleb128 0x8
+ 1118 0378 030D0000 		.4byte	.LASF121
+ 1119 037c 8001     		.sleb128 128
+ 1120 037e 08       		.uleb128 0x8
+ 1121 037f 95230000 		.4byte	.LASF122
+ 1122 0383 8001     		.sleb128 128
+ 1123 0385 08       		.uleb128 0x8
+ 1124 0386 9D190000 		.4byte	.LASF123
+ 1125 038a 8001     		.sleb128 128
+ 1126 038c 08       		.uleb128 0x8
+ 1127 038d 0A100000 		.4byte	.LASF124
+ 1128 0391 8101     		.sleb128 129
+ 1129 0393 08       		.uleb128 0x8
+ 1130 0394 82250000 		.4byte	.LASF125
+ 1131 0398 A001     		.sleb128 160
+ 1132 039a 08       		.uleb128 0x8
+ 1133 039b 61110000 		.4byte	.LASF126
+ 1134 039f FD01     		.sleb128 253
+ 1135 03a1 08       		.uleb128 0x8
+ 1136 03a2 5E160000 		.4byte	.LASF127
+ 1137 03a6 FE01     		.sleb128 254
+ 1138 03a8 08       		.uleb128 0x8
+ 1139 03a9 0F1C0000 		.4byte	.LASF128
+ 1140 03ad FF01     		.sleb128 255
+ 1141 03af 00       		.byte	0
+ 1142 03b0 0A       		.uleb128 0xa
+ 1143 03b1 F61F0000 		.4byte	.LASF129
+ 1144 03b5 04       		.byte	0x4
+ 1145 03b6 2801     		.2byte	0x128
+ 1146 03b8 03030000 		.4byte	0x303
+ 1147 03bc 0A       		.uleb128 0xa
+ 1148 03bd F91E0000 		.4byte	.LASF130
+ 1149 03c1 04       		.byte	0x4
+ 1150 03c2 4A01     		.2byte	0x14a
+ 1151 03c4 76000000 		.4byte	0x76
+ 1152 03c8 0C       		.uleb128 0xc
+ 1153 03c9 02       		.byte	0x2
+ 1154 03ca 04       		.byte	0x4
+ 1155 03cb 4D01     		.2byte	0x14d
+ 1156 03cd EC030000 		.4byte	0x3ec
+ 1157 03d1 0D       		.uleb128 0xd
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 27
+
+
+ 1158 03d2 0D060000 		.4byte	.LASF131
+ 1159 03d6 04       		.byte	0x4
+ 1160 03d7 5001     		.2byte	0x150
+ 1161 03d9 6B000000 		.4byte	0x6b
+ 1162 03dd 00       		.byte	0
+ 1163 03de 0D       		.uleb128 0xd
+ 1164 03df 11290000 		.4byte	.LASF132
+ 1165 03e3 04       		.byte	0x4
+ 1166 03e4 5301     		.2byte	0x153
+ 1167 03e6 6B000000 		.4byte	0x6b
+ 1168 03ea 01       		.byte	0x1
+ 1169 03eb 00       		.byte	0
+ 1170 03ec 0A       		.uleb128 0xa
+ 1171 03ed 81050000 		.4byte	.LASF133
+ 1172 03f1 04       		.byte	0x4
+ 1173 03f2 5501     		.2byte	0x155
+ 1174 03f4 C8030000 		.4byte	0x3c8
+ 1175 03f8 0C       		.uleb128 0xc
+ 1176 03f9 08       		.byte	0x8
+ 1177 03fa 04       		.byte	0x4
+ 1178 03fb 6A01     		.2byte	0x16a
+ 1179 03fd 29040000 		.4byte	0x429
+ 1180 0401 0E       		.uleb128 0xe
+ 1181 0402 76616C00 		.ascii	"val\000"
+ 1182 0406 04       		.byte	0x4
+ 1183 0407 6D01     		.2byte	0x16d
+ 1184 0409 FD020000 		.4byte	0x2fd
+ 1185 040d 00       		.byte	0
+ 1186 040e 0E       		.uleb128 0xe
+ 1187 040f 6C656E00 		.ascii	"len\000"
+ 1188 0413 04       		.byte	0x4
+ 1189 0414 7001     		.2byte	0x170
+ 1190 0416 76000000 		.4byte	0x76
+ 1191 041a 04       		.byte	0x4
+ 1192 041b 0D       		.uleb128 0xd
+ 1193 041c 9C280000 		.4byte	.LASF134
+ 1194 0420 04       		.byte	0x4
+ 1195 0421 7401     		.2byte	0x174
+ 1196 0423 76000000 		.4byte	0x76
+ 1197 0427 06       		.byte	0x6
+ 1198 0428 00       		.byte	0
+ 1199 0429 0A       		.uleb128 0xa
+ 1200 042a 22040000 		.4byte	.LASF135
+ 1201 042e 04       		.byte	0x4
+ 1202 042f 7601     		.2byte	0x176
+ 1203 0431 F8030000 		.4byte	0x3f8
+ 1204 0435 0C       		.uleb128 0xc
+ 1205 0436 0C       		.byte	0xc
+ 1206 0437 04       		.byte	0x4
+ 1207 0438 7901     		.2byte	0x179
+ 1208 043a 59040000 		.4byte	0x459
+ 1209 043e 0D       		.uleb128 0xd
+ 1210 043f 481F0000 		.4byte	.LASF136
+ 1211 0443 04       		.byte	0x4
+ 1212 0444 7C01     		.2byte	0x17c
+ 1213 0446 29040000 		.4byte	0x429
+ 1214 044a 00       		.byte	0
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 28
+
+
+ 1215 044b 0D       		.uleb128 0xd
+ 1216 044c 0E180000 		.4byte	.LASF137
+ 1217 0450 04       		.byte	0x4
+ 1218 0451 7F01     		.2byte	0x17f
+ 1219 0453 BC030000 		.4byte	0x3bc
+ 1220 0457 08       		.byte	0x8
+ 1221 0458 00       		.byte	0
+ 1222 0459 0A       		.uleb128 0xa
+ 1223 045a A9080000 		.4byte	.LASF138
+ 1224 045e 04       		.byte	0x4
+ 1225 045f 8101     		.2byte	0x181
+ 1226 0461 35040000 		.4byte	0x435
+ 1227 0465 0F       		.uleb128 0xf
+ 1228 0466 10       		.byte	0x10
+ 1229 0467 05       		.byte	0x5
+ 1230 0468 52       		.byte	0x52
+ 1231 0469 86040000 		.4byte	0x486
+ 1232 046d 10       		.uleb128 0x10
+ 1233 046e 8B200000 		.4byte	.LASF139
+ 1234 0472 05       		.byte	0x5
+ 1235 0473 55       		.byte	0x55
+ 1236 0474 EC030000 		.4byte	0x3ec
+ 1237 0478 00       		.byte	0
+ 1238 0479 10       		.uleb128 0x10
+ 1239 047a 78230000 		.4byte	.LASF140
+ 1240 047e 05       		.byte	0x5
+ 1241 047f 58       		.byte	0x58
+ 1242 0480 59040000 		.4byte	0x459
+ 1243 0484 04       		.byte	0x4
+ 1244 0485 00       		.byte	0
+ 1245 0486 04       		.uleb128 0x4
+ 1246 0487 19180000 		.4byte	.LASF141
+ 1247 048b 05       		.byte	0x5
+ 1248 048c 5A       		.byte	0x5a
+ 1249 048d 65040000 		.4byte	0x465
+ 1250 0491 0F       		.uleb128 0xf
+ 1251 0492 08       		.byte	0x8
+ 1252 0493 06       		.byte	0x6
+ 1253 0494 B8       		.byte	0xb8
+ 1254 0495 B2040000 		.4byte	0x4b2
+ 1255 0499 10       		.uleb128 0x10
+ 1256 049a D81E0000 		.4byte	.LASF142
+ 1257 049e 06       		.byte	0x6
+ 1258 049f BB       		.byte	0xbb
+ 1259 04a0 76000000 		.4byte	0x76
+ 1260 04a4 00       		.byte	0
+ 1261 04a5 10       		.uleb128 0x10
+ 1262 04a6 13230000 		.4byte	.LASF143
+ 1263 04aa 06       		.byte	0x6
+ 1264 04ab C0       		.byte	0xc0
+ 1265 04ac AD000000 		.4byte	0xad
+ 1266 04b0 04       		.byte	0x4
+ 1267 04b1 00       		.byte	0
+ 1268 04b2 04       		.uleb128 0x4
+ 1269 04b3 02210000 		.4byte	.LASF144
+ 1270 04b7 06       		.byte	0x6
+ 1271 04b8 C2       		.byte	0xc2
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 29
+
+
+ 1272 04b9 91040000 		.4byte	0x491
+ 1273 04bd 11       		.uleb128 0x11
+ 1274 04be 08       		.byte	0x8
+ 1275 04bf 06       		.byte	0x6
+ 1276 04c0 C5       		.byte	0xc5
+ 1277 04c1 DC040000 		.4byte	0x4dc
+ 1278 04c5 12       		.uleb128 0x12
+ 1279 04c6 86230000 		.4byte	.LASF145
+ 1280 04ca 06       		.byte	0x6
+ 1281 04cb CC       		.byte	0xcc
+ 1282 04cc B2040000 		.4byte	0x4b2
+ 1283 04d0 12       		.uleb128 0x12
+ 1284 04d1 CF120000 		.4byte	.LASF146
+ 1285 04d5 06       		.byte	0x6
+ 1286 04d6 CF       		.byte	0xcf
+ 1287 04d7 76000000 		.4byte	0x76
+ 1288 04db 00       		.byte	0
+ 1289 04dc 04       		.uleb128 0x4
+ 1290 04dd 92220000 		.4byte	.LASF147
+ 1291 04e1 06       		.byte	0x6
+ 1292 04e2 D1       		.byte	0xd1
+ 1293 04e3 BD040000 		.4byte	0x4bd
+ 1294 04e7 0F       		.uleb128 0xf
+ 1295 04e8 14       		.byte	0x14
+ 1296 04e9 06       		.byte	0x6
+ 1297 04ea D4       		.byte	0xd4
+ 1298 04eb 2C050000 		.4byte	0x52c
+ 1299 04ef 10       		.uleb128 0x10
+ 1300 04f0 110B0000 		.4byte	.LASF148
+ 1301 04f4 06       		.byte	0x6
+ 1302 04f5 D7       		.byte	0xd7
+ 1303 04f6 76000000 		.4byte	0x76
+ 1304 04fa 00       		.byte	0
+ 1305 04fb 10       		.uleb128 0x10
+ 1306 04fc C8080000 		.4byte	.LASF149
+ 1307 0500 06       		.byte	0x6
+ 1308 0501 DD       		.byte	0xdd
+ 1309 0502 76000000 		.4byte	0x76
+ 1310 0506 02       		.byte	0x2
+ 1311 0507 10       		.uleb128 0x10
+ 1312 0508 58040000 		.4byte	.LASF150
+ 1313 050c 06       		.byte	0x6
+ 1314 050d E7       		.byte	0xe7
+ 1315 050e 81000000 		.4byte	0x81
+ 1316 0512 04       		.byte	0x4
+ 1317 0513 10       		.uleb128 0x10
+ 1318 0514 63180000 		.4byte	.LASF151
+ 1319 0518 06       		.byte	0x6
+ 1320 0519 EA       		.byte	0xea
+ 1321 051a 76000000 		.4byte	0x76
+ 1322 051e 08       		.byte	0x8
+ 1323 051f 10       		.uleb128 0x10
+ 1324 0520 A21F0000 		.4byte	.LASF152
+ 1325 0524 06       		.byte	0x6
+ 1326 0525 F3       		.byte	0xf3
+ 1327 0526 DC040000 		.4byte	0x4dc
+ 1328 052a 0C       		.byte	0xc
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 30
+
+
+ 1329 052b 00       		.byte	0
+ 1330 052c 04       		.uleb128 0x4
+ 1331 052d D20D0000 		.4byte	.LASF153
+ 1332 0531 06       		.byte	0x6
+ 1333 0532 F4       		.byte	0xf4
+ 1334 0533 E7040000 		.4byte	0x4e7
+ 1335 0537 04       		.uleb128 0x4
+ 1336 0538 DE040000 		.4byte	.LASF154
+ 1337 053c 07       		.byte	0x7
+ 1338 053d F9       		.byte	0xf9
+ 1339 053e 42050000 		.4byte	0x542
+ 1340 0542 0B       		.uleb128 0xb
+ 1341 0543 04       		.byte	0x4
+ 1342 0544 48050000 		.4byte	0x548
+ 1343 0548 13       		.uleb128 0x13
+ 1344 0549 58050000 		.4byte	0x558
+ 1345 054d 14       		.uleb128 0x14
+ 1346 054e 81000000 		.4byte	0x81
+ 1347 0552 14       		.uleb128 0x14
+ 1348 0553 AD000000 		.4byte	0xad
+ 1349 0557 00       		.byte	0
+ 1350 0558 0F       		.uleb128 0xf
+ 1351 0559 06       		.byte	0x6
+ 1352 055a 08       		.byte	0x8
+ 1353 055b 71       		.byte	0x71
+ 1354 055c 85050000 		.4byte	0x585
+ 1355 0560 10       		.uleb128 0x10
+ 1356 0561 39080000 		.4byte	.LASF155
+ 1357 0565 08       		.byte	0x8
+ 1358 0566 73       		.byte	0x73
+ 1359 0567 BC030000 		.4byte	0x3bc
+ 1360 056b 00       		.byte	0
+ 1361 056c 10       		.uleb128 0x10
+ 1362 056d 2F200000 		.4byte	.LASF156
+ 1363 0571 08       		.byte	0x8
+ 1364 0572 74       		.byte	0x74
+ 1365 0573 BC030000 		.4byte	0x3bc
+ 1366 0577 02       		.byte	0x2
+ 1367 0578 10       		.uleb128 0x10
+ 1368 0579 A6280000 		.4byte	.LASF157
+ 1369 057d 08       		.byte	0x8
+ 1370 057e 75       		.byte	0x75
+ 1371 057f BC030000 		.4byte	0x3bc
+ 1372 0583 04       		.byte	0x4
+ 1373 0584 00       		.byte	0
+ 1374 0585 04       		.uleb128 0x4
+ 1375 0586 23140000 		.4byte	.LASF158
+ 1376 058a 08       		.byte	0x8
+ 1377 058b 76       		.byte	0x76
+ 1378 058c 58050000 		.4byte	0x558
+ 1379 0590 07       		.uleb128 0x7
+ 1380 0591 01       		.byte	0x1
+ 1381 0592 09       		.byte	0x9
+ 1382 0593 1D       		.byte	0x1d
+ 1383 0594 D5050000 		.4byte	0x5d5
+ 1384 0598 08       		.uleb128 0x8
+ 1385 0599 0B1E0000 		.4byte	.LASF159
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 31
+
+
+ 1386 059d 00       		.sleb128 0
+ 1387 059e 08       		.uleb128 0x8
+ 1388 059f BB0D0000 		.4byte	.LASF160
+ 1389 05a3 01       		.sleb128 1
+ 1390 05a4 08       		.uleb128 0x8
+ 1391 05a5 3E130000 		.4byte	.LASF161
+ 1392 05a9 02       		.sleb128 2
+ 1393 05aa 08       		.uleb128 0x8
+ 1394 05ab FF070000 		.4byte	.LASF162
+ 1395 05af 03       		.sleb128 3
+ 1396 05b0 08       		.uleb128 0x8
+ 1397 05b1 0A050000 		.4byte	.LASF163
+ 1398 05b5 04       		.sleb128 4
+ 1399 05b6 08       		.uleb128 0x8
+ 1400 05b7 7F0D0000 		.4byte	.LASF164
+ 1401 05bb 05       		.sleb128 5
+ 1402 05bc 08       		.uleb128 0x8
+ 1403 05bd 070E0000 		.4byte	.LASF165
+ 1404 05c1 06       		.sleb128 6
+ 1405 05c2 08       		.uleb128 0x8
+ 1406 05c3 E3180000 		.4byte	.LASF166
+ 1407 05c7 07       		.sleb128 7
+ 1408 05c8 08       		.uleb128 0x8
+ 1409 05c9 2D150000 		.4byte	.LASF167
+ 1410 05cd 08       		.sleb128 8
+ 1411 05ce 08       		.uleb128 0x8
+ 1412 05cf 25000000 		.4byte	.LASF168
+ 1413 05d3 09       		.sleb128 9
+ 1414 05d4 00       		.byte	0
+ 1415 05d5 07       		.uleb128 0x7
+ 1416 05d6 01       		.byte	0x1
+ 1417 05d7 0A       		.byte	0xa
+ 1418 05d8 1C       		.byte	0x1c
+ 1419 05d9 FC050000 		.4byte	0x5fc
+ 1420 05dd 08       		.uleb128 0x8
+ 1421 05de F1230000 		.4byte	.LASF169
+ 1422 05e2 00       		.sleb128 0
+ 1423 05e3 08       		.uleb128 0x8
+ 1424 05e4 8E1F0000 		.4byte	.LASF170
+ 1425 05e8 01       		.sleb128 1
+ 1426 05e9 08       		.uleb128 0x8
+ 1427 05ea 91070000 		.4byte	.LASF171
+ 1428 05ee 02       		.sleb128 2
+ 1429 05ef 08       		.uleb128 0x8
+ 1430 05f0 56130000 		.4byte	.LASF172
+ 1431 05f4 03       		.sleb128 3
+ 1432 05f5 08       		.uleb128 0x8
+ 1433 05f6 6E1D0000 		.4byte	.LASF173
+ 1434 05fa 04       		.sleb128 4
+ 1435 05fb 00       		.byte	0
+ 1436 05fc 07       		.uleb128 0x7
+ 1437 05fd 01       		.byte	0x1
+ 1438 05fe 0A       		.byte	0xa
+ 1439 05ff 27       		.byte	0x27
+ 1440 0600 17060000 		.4byte	0x617
+ 1441 0604 08       		.uleb128 0x8
+ 1442 0605 36030000 		.4byte	.LASF174
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 32
+
+
+ 1443 0609 00       		.sleb128 0
+ 1444 060a 08       		.uleb128 0x8
+ 1445 060b 9F010000 		.4byte	.LASF175
+ 1446 060f 01       		.sleb128 1
+ 1447 0610 08       		.uleb128 0x8
+ 1448 0611 730A0000 		.4byte	.LASF176
+ 1449 0615 02       		.sleb128 2
+ 1450 0616 00       		.byte	0
+ 1451 0617 07       		.uleb128 0x7
+ 1452 0618 02       		.byte	0x2
+ 1453 0619 0B       		.byte	0xb
+ 1454 061a 7A       		.byte	0x7a
+ 1455 061b D50A0000 		.4byte	0xad5
+ 1456 061f 08       		.uleb128 0x8
+ 1457 0620 CB190000 		.4byte	.LASF177
+ 1458 0624 8002     		.sleb128 256
+ 1459 0626 08       		.uleb128 0x8
+ 1460 0627 B2290000 		.4byte	.LASF178
+ 1461 062b 8102     		.sleb128 257
+ 1462 062d 08       		.uleb128 0x8
+ 1463 062e A7070000 		.4byte	.LASF179
+ 1464 0632 8202     		.sleb128 258
+ 1465 0634 08       		.uleb128 0x8
+ 1466 0635 68290000 		.4byte	.LASF180
+ 1467 0639 8302     		.sleb128 259
+ 1468 063b 08       		.uleb128 0x8
+ 1469 063c 4B1E0000 		.4byte	.LASF181
+ 1470 0640 8402     		.sleb128 260
+ 1471 0642 08       		.uleb128 0x8
+ 1472 0643 EA250000 		.4byte	.LASF182
+ 1473 0647 8502     		.sleb128 261
+ 1474 0649 08       		.uleb128 0x8
+ 1475 064a 1B0B0000 		.4byte	.LASF183
+ 1476 064e 8602     		.sleb128 262
+ 1477 0650 08       		.uleb128 0x8
+ 1478 0651 85000000 		.4byte	.LASF184
+ 1479 0655 8702     		.sleb128 263
+ 1480 0657 08       		.uleb128 0x8
+ 1481 0658 BD270000 		.4byte	.LASF185
+ 1482 065c 8802     		.sleb128 264
+ 1483 065e 08       		.uleb128 0x8
+ 1484 065f B5030000 		.4byte	.LASF186
+ 1485 0663 8902     		.sleb128 265
+ 1486 0665 08       		.uleb128 0x8
+ 1487 0666 B4010000 		.4byte	.LASF187
+ 1488 066a 8A02     		.sleb128 266
+ 1489 066c 08       		.uleb128 0x8
+ 1490 066d 1B0E0000 		.4byte	.LASF188
+ 1491 0671 8B02     		.sleb128 267
+ 1492 0673 08       		.uleb128 0x8
+ 1493 0674 3E150000 		.4byte	.LASF189
+ 1494 0678 8C02     		.sleb128 268
+ 1495 067a 08       		.uleb128 0x8
+ 1496 067b 341D0000 		.4byte	.LASF190
+ 1497 067f 8D02     		.sleb128 269
+ 1498 0681 08       		.uleb128 0x8
+ 1499 0682 45020000 		.4byte	.LASF191
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 33
+
+
+ 1500 0686 8E02     		.sleb128 270
+ 1501 0688 08       		.uleb128 0x8
+ 1502 0689 C40B0000 		.4byte	.LASF192
+ 1503 068d 8F02     		.sleb128 271
+ 1504 068f 08       		.uleb128 0x8
+ 1505 0690 59050000 		.4byte	.LASF193
+ 1506 0694 9002     		.sleb128 272
+ 1507 0696 08       		.uleb128 0x8
+ 1508 0697 4F260000 		.4byte	.LASF194
+ 1509 069b 9102     		.sleb128 273
+ 1510 069d 08       		.uleb128 0x8
+ 1511 069e AB1A0000 		.4byte	.LASF195
+ 1512 06a2 9202     		.sleb128 274
+ 1513 06a4 08       		.uleb128 0x8
+ 1514 06a5 BD2A0000 		.4byte	.LASF196
+ 1515 06a9 9302     		.sleb128 275
+ 1516 06ab 08       		.uleb128 0x8
+ 1517 06ac 92240000 		.4byte	.LASF197
+ 1518 06b0 9402     		.sleb128 276
+ 1519 06b2 08       		.uleb128 0x8
+ 1520 06b3 D4290000 		.4byte	.LASF198
+ 1521 06b7 9502     		.sleb128 277
+ 1522 06b9 08       		.uleb128 0x8
+ 1523 06ba 6A120000 		.4byte	.LASF199
+ 1524 06be 9602     		.sleb128 278
+ 1525 06c0 08       		.uleb128 0x8
+ 1526 06c1 8E100000 		.4byte	.LASF200
+ 1527 06c5 9702     		.sleb128 279
+ 1528 06c7 08       		.uleb128 0x8
+ 1529 06c8 CC020000 		.4byte	.LASF201
+ 1530 06cc 9802     		.sleb128 280
+ 1531 06ce 08       		.uleb128 0x8
+ 1532 06cf C51D0000 		.4byte	.LASF202
+ 1533 06d3 9902     		.sleb128 281
+ 1534 06d5 08       		.uleb128 0x8
+ 1535 06d6 DC120000 		.4byte	.LASF203
+ 1536 06da 9A02     		.sleb128 282
+ 1537 06dc 08       		.uleb128 0x8
+ 1538 06dd 96200000 		.4byte	.LASF204
+ 1539 06e1 9B02     		.sleb128 283
+ 1540 06e3 08       		.uleb128 0x8
+ 1541 06e4 30240000 		.4byte	.LASF205
+ 1542 06e8 9C02     		.sleb128 284
+ 1543 06ea 08       		.uleb128 0x8
+ 1544 06eb 44250000 		.4byte	.LASF206
+ 1545 06ef 9D02     		.sleb128 285
+ 1546 06f1 08       		.uleb128 0x8
+ 1547 06f2 7A090000 		.4byte	.LASF207
+ 1548 06f6 9E02     		.sleb128 286
+ 1549 06f8 08       		.uleb128 0x8
+ 1550 06f9 4C240000 		.4byte	.LASF208
+ 1551 06fd 9F02     		.sleb128 287
+ 1552 06ff 08       		.uleb128 0x8
+ 1553 0700 A0040000 		.4byte	.LASF209
+ 1554 0704 A002     		.sleb128 288
+ 1555 0706 08       		.uleb128 0x8
+ 1556 0707 C0180000 		.4byte	.LASF210
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 34
+
+
+ 1557 070b A102     		.sleb128 289
+ 1558 070d 08       		.uleb128 0x8
+ 1559 070e EF220000 		.4byte	.LASF211
+ 1560 0712 A202     		.sleb128 290
+ 1561 0714 08       		.uleb128 0x8
+ 1562 0715 E30D0000 		.4byte	.LASF212
+ 1563 0719 A302     		.sleb128 291
+ 1564 071b 08       		.uleb128 0x8
+ 1565 071c 131A0000 		.4byte	.LASF213
+ 1566 0720 A402     		.sleb128 292
+ 1567 0722 08       		.uleb128 0x8
+ 1568 0723 CE0F0000 		.4byte	.LASF214
+ 1569 0727 A502     		.sleb128 293
+ 1570 0729 08       		.uleb128 0x8
+ 1571 072a C2040000 		.4byte	.LASF215
+ 1572 072e A602     		.sleb128 294
+ 1573 0730 08       		.uleb128 0x8
+ 1574 0731 20010000 		.4byte	.LASF216
+ 1575 0735 A702     		.sleb128 295
+ 1576 0737 08       		.uleb128 0x8
+ 1577 0738 16060000 		.4byte	.LASF217
+ 1578 073c A802     		.sleb128 296
+ 1579 073e 08       		.uleb128 0x8
+ 1580 073f 6A1F0000 		.4byte	.LASF218
+ 1581 0743 A902     		.sleb128 297
+ 1582 0745 08       		.uleb128 0x8
+ 1583 0746 BB200000 		.4byte	.LASF219
+ 1584 074a AA02     		.sleb128 298
+ 1585 074c 08       		.uleb128 0x8
+ 1586 074d 890A0000 		.4byte	.LASF220
+ 1587 0751 AB02     		.sleb128 299
+ 1588 0753 08       		.uleb128 0x8
+ 1589 0754 5C060000 		.4byte	.LASF221
+ 1590 0758 AC02     		.sleb128 300
+ 1591 075a 08       		.uleb128 0x8
+ 1592 075b 39060000 		.4byte	.LASF222
+ 1593 075f AD02     		.sleb128 301
+ 1594 0761 08       		.uleb128 0x8
+ 1595 0762 4F0A0000 		.4byte	.LASF223
+ 1596 0766 AE02     		.sleb128 302
+ 1597 0768 08       		.uleb128 0x8
+ 1598 0769 7A140000 		.4byte	.LASF224
+ 1599 076d AF02     		.sleb128 303
+ 1600 076f 08       		.uleb128 0x8
+ 1601 0770 EF280000 		.4byte	.LASF225
+ 1602 0774 B002     		.sleb128 304
+ 1603 0776 08       		.uleb128 0x8
+ 1604 0777 85210000 		.4byte	.LASF226
+ 1605 077b B102     		.sleb128 305
+ 1606 077d 08       		.uleb128 0x8
+ 1607 077e 4E1F0000 		.4byte	.LASF227
+ 1608 0782 B202     		.sleb128 306
+ 1609 0784 08       		.uleb128 0x8
+ 1610 0785 5A1B0000 		.4byte	.LASF228
+ 1611 0789 B302     		.sleb128 307
+ 1612 078b 08       		.uleb128 0x8
+ 1613 078c AB000000 		.4byte	.LASF229
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 35
+
+
+ 1614 0790 B402     		.sleb128 308
+ 1615 0792 08       		.uleb128 0x8
+ 1616 0793 1B130000 		.4byte	.LASF230
+ 1617 0797 B502     		.sleb128 309
+ 1618 0799 08       		.uleb128 0x8
+ 1619 079a 43000000 		.4byte	.LASF231
+ 1620 079e B602     		.sleb128 310
+ 1621 07a0 08       		.uleb128 0x8
+ 1622 07a1 C0060000 		.4byte	.LASF232
+ 1623 07a5 B702     		.sleb128 311
+ 1624 07a7 08       		.uleb128 0x8
+ 1625 07a8 B7260000 		.4byte	.LASF233
+ 1626 07ac B802     		.sleb128 312
+ 1627 07ae 08       		.uleb128 0x8
+ 1628 07af A90F0000 		.4byte	.LASF234
+ 1629 07b3 B902     		.sleb128 313
+ 1630 07b5 08       		.uleb128 0x8
+ 1631 07b6 A20E0000 		.4byte	.LASF235
+ 1632 07ba BA02     		.sleb128 314
+ 1633 07bc 08       		.uleb128 0x8
+ 1634 07bd 35040000 		.4byte	.LASF236
+ 1635 07c1 BB02     		.sleb128 315
+ 1636 07c3 08       		.uleb128 0x8
+ 1637 07c4 ED060000 		.4byte	.LASF237
+ 1638 07c8 BC02     		.sleb128 316
+ 1639 07ca 08       		.uleb128 0x8
+ 1640 07cb D1160000 		.4byte	.LASF238
+ 1641 07cf BD02     		.sleb128 317
+ 1642 07d1 08       		.uleb128 0x8
+ 1643 07d2 08140000 		.4byte	.LASF239
+ 1644 07d6 BE02     		.sleb128 318
+ 1645 07d8 08       		.uleb128 0x8
+ 1646 07d9 D8050000 		.4byte	.LASF240
+ 1647 07dd BF02     		.sleb128 319
+ 1648 07df 08       		.uleb128 0x8
+ 1649 07e0 EF040000 		.4byte	.LASF241
+ 1650 07e4 C002     		.sleb128 320
+ 1651 07e6 08       		.uleb128 0x8
+ 1652 07e7 CD000000 		.4byte	.LASF242
+ 1653 07eb C102     		.sleb128 321
+ 1654 07ed 08       		.uleb128 0x8
+ 1655 07ee B3130000 		.4byte	.LASF243
+ 1656 07f2 C202     		.sleb128 322
+ 1657 07f4 08       		.uleb128 0x8
+ 1658 07f5 532A0000 		.4byte	.LASF244
+ 1659 07f9 C302     		.sleb128 323
+ 1660 07fb 08       		.uleb128 0x8
+ 1661 07fc 66200000 		.4byte	.LASF245
+ 1662 0800 C402     		.sleb128 324
+ 1663 0802 08       		.uleb128 0x8
+ 1664 0803 C80E0000 		.4byte	.LASF246
+ 1665 0807 C502     		.sleb128 325
+ 1666 0809 08       		.uleb128 0x8
+ 1667 080a 9B180000 		.4byte	.LASF247
+ 1668 080e C602     		.sleb128 326
+ 1669 0810 08       		.uleb128 0x8
+ 1670 0811 DA1F0000 		.4byte	.LASF248
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 36
+
+
+ 1671 0815 C702     		.sleb128 327
+ 1672 0817 08       		.uleb128 0x8
+ 1673 0818 23020000 		.4byte	.LASF249
+ 1674 081c C802     		.sleb128 328
+ 1675 081e 08       		.uleb128 0x8
+ 1676 081f B51E0000 		.4byte	.LASF250
+ 1677 0823 C902     		.sleb128 329
+ 1678 0825 08       		.uleb128 0x8
+ 1679 0826 5B0D0000 		.4byte	.LASF251
+ 1680 082a CA02     		.sleb128 330
+ 1681 082c 08       		.uleb128 0x8
+ 1682 082d 921B0000 		.4byte	.LASF252
+ 1683 0831 CB02     		.sleb128 331
+ 1684 0833 08       		.uleb128 0x8
+ 1685 0834 70240000 		.4byte	.LASF253
+ 1686 0838 CC02     		.sleb128 332
+ 1687 083a 08       		.uleb128 0x8
+ 1688 083b 0C200000 		.4byte	.LASF254
+ 1689 083f CD02     		.sleb128 333
+ 1690 0841 08       		.uleb128 0x8
+ 1691 0842 271E0000 		.4byte	.LASF255
+ 1692 0846 CE02     		.sleb128 334
+ 1693 0848 08       		.uleb128 0x8
+ 1694 0849 5F150000 		.4byte	.LASF256
+ 1695 084d CF02     		.sleb128 335
+ 1696 084f 08       		.uleb128 0x8
+ 1697 0850 F0000000 		.4byte	.LASF257
+ 1698 0854 D002     		.sleb128 336
+ 1699 0856 08       		.uleb128 0x8
+ 1700 0857 2B1C0000 		.4byte	.LASF258
+ 1701 085b D102     		.sleb128 337
+ 1702 085d 08       		.uleb128 0x8
+ 1703 085e D5280000 		.4byte	.LASF259
+ 1704 0862 D202     		.sleb128 338
+ 1705 0864 08       		.uleb128 0x8
+ 1706 0865 66250000 		.4byte	.LASF260
+ 1707 0869 D302     		.sleb128 339
+ 1708 086b 08       		.uleb128 0x8
+ 1709 086c 9B140000 		.4byte	.LASF261
+ 1710 0870 D402     		.sleb128 340
+ 1711 0872 08       		.uleb128 0x8
+ 1712 0873 40280000 		.4byte	.LASF262
+ 1713 0877 D502     		.sleb128 341
+ 1714 0879 08       		.uleb128 0x8
+ 1715 087a 400C0000 		.4byte	.LASF263
+ 1716 087e D602     		.sleb128 342
+ 1717 0880 08       		.uleb128 0x8
+ 1718 0881 72260000 		.4byte	.LASF264
+ 1719 0885 D702     		.sleb128 343
+ 1720 0887 08       		.uleb128 0x8
+ 1721 0888 FC2A0000 		.4byte	.LASF265
+ 1722 088c D802     		.sleb128 344
+ 1723 088e 08       		.uleb128 0x8
+ 1724 088f B2170000 		.4byte	.LASF266
+ 1725 0893 D902     		.sleb128 345
+ 1726 0895 08       		.uleb128 0x8
+ 1727 0896 122A0000 		.4byte	.LASF267
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 37
+
+
+ 1728 089a DA02     		.sleb128 346
+ 1729 089c 08       		.uleb128 0x8
+ 1730 089d 6B170000 		.4byte	.LASF268
+ 1731 08a1 DB02     		.sleb128 347
+ 1732 08a3 08       		.uleb128 0x8
+ 1733 08a4 2E090000 		.4byte	.LASF269
+ 1734 08a8 DC02     		.sleb128 348
+ 1735 08aa 08       		.uleb128 0x8
+ 1736 08ab 2F110000 		.4byte	.LASF270
+ 1737 08af DD02     		.sleb128 349
+ 1738 08b1 08       		.uleb128 0x8
+ 1739 08b2 E80F0000 		.4byte	.LASF271
+ 1740 08b6 DE02     		.sleb128 350
+ 1741 08b8 08       		.uleb128 0x8
+ 1742 08b9 D0080000 		.4byte	.LASF272
+ 1743 08bd DF02     		.sleb128 351
+ 1744 08bf 08       		.uleb128 0x8
+ 1745 08c0 9F210000 		.4byte	.LASF273
+ 1746 08c4 E002     		.sleb128 352
+ 1747 08c6 08       		.uleb128 0x8
+ 1748 08c7 D4110000 		.4byte	.LASF274
+ 1749 08cb E102     		.sleb128 353
+ 1750 08cd 08       		.uleb128 0x8
+ 1751 08ce AE1C0000 		.4byte	.LASF275
+ 1752 08d2 E202     		.sleb128 354
+ 1753 08d4 08       		.uleb128 0x8
+ 1754 08d5 88020000 		.4byte	.LASF276
+ 1755 08d9 E302     		.sleb128 355
+ 1756 08db 08       		.uleb128 0x8
+ 1757 08dc 960D0000 		.4byte	.LASF277
+ 1758 08e0 E402     		.sleb128 356
+ 1759 08e2 08       		.uleb128 0x8
+ 1760 08e3 B1100000 		.4byte	.LASF278
+ 1761 08e7 E502     		.sleb128 357
+ 1762 08e9 08       		.uleb128 0x8
+ 1763 08ea 452B0000 		.4byte	.LASF279
+ 1764 08ee E602     		.sleb128 358
+ 1765 08f0 08       		.uleb128 0x8
+ 1766 08f1 6A1C0000 		.4byte	.LASF280
+ 1767 08f5 E702     		.sleb128 359
+ 1768 08f7 08       		.uleb128 0x8
+ 1769 08f8 D21C0000 		.4byte	.LASF281
+ 1770 08fc E802     		.sleb128 360
+ 1771 08fe 08       		.uleb128 0x8
+ 1772 08ff 95050000 		.4byte	.LASF282
+ 1773 0903 E902     		.sleb128 361
+ 1774 0905 08       		.uleb128 0x8
+ 1775 0906 860F0000 		.4byte	.LASF283
+ 1776 090a EA02     		.sleb128 362
+ 1777 090c 08       		.uleb128 0x8
+ 1778 090d 21220000 		.4byte	.LASF284
+ 1779 0911 EB02     		.sleb128 363
+ 1780 0913 08       		.uleb128 0x8
+ 1781 0914 47080000 		.4byte	.LASF285
+ 1782 0918 EC02     		.sleb128 364
+ 1783 091a 08       		.uleb128 0x8
+ 1784 091b 00000000 		.4byte	.LASF286
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 38
+
+
+ 1785 091f ED02     		.sleb128 365
+ 1786 0921 08       		.uleb128 0x8
+ 1787 0922 22250000 		.4byte	.LASF287
+ 1788 0926 EE02     		.sleb128 366
+ 1789 0928 08       		.uleb128 0x8
+ 1790 0929 9E0C0000 		.4byte	.LASF288
+ 1791 092d EF02     		.sleb128 367
+ 1792 092f 08       		.uleb128 0x8
+ 1793 0930 212B0000 		.4byte	.LASF289
+ 1794 0934 F002     		.sleb128 368
+ 1795 0936 08       		.uleb128 0x8
+ 1796 0937 B5120000 		.4byte	.LASF290
+ 1797 093b F102     		.sleb128 369
+ 1798 093d 08       		.uleb128 0x8
+ 1799 093e E1140000 		.4byte	.LASF291
+ 1800 0942 F202     		.sleb128 370
+ 1801 0944 08       		.uleb128 0x8
+ 1802 0945 E22A0000 		.4byte	.LASF292
+ 1803 0949 F302     		.sleb128 371
+ 1804 094b 08       		.uleb128 0x8
+ 1805 094c 27230000 		.4byte	.LASF293
+ 1806 0950 F402     		.sleb128 372
+ 1807 0952 08       		.uleb128 0x8
+ 1808 0953 5B1A0000 		.4byte	.LASF294
+ 1809 0957 F502     		.sleb128 373
+ 1810 0959 08       		.uleb128 0x8
+ 1811 095a D21B0000 		.4byte	.LASF295
+ 1812 095e F602     		.sleb128 374
+ 1813 0960 08       		.uleb128 0x8
+ 1814 0961 32270000 		.4byte	.LASF296
+ 1815 0965 F702     		.sleb128 375
+ 1816 0967 08       		.uleb128 0x8
+ 1817 0968 0A120000 		.4byte	.LASF297
+ 1818 096c F802     		.sleb128 376
+ 1819 096e 08       		.uleb128 0x8
+ 1820 096f 430F0000 		.4byte	.LASF298
+ 1821 0973 F902     		.sleb128 377
+ 1822 0975 08       		.uleb128 0x8
+ 1823 0976 AF160000 		.4byte	.LASF299
+ 1824 097a FA02     		.sleb128 378
+ 1825 097c 08       		.uleb128 0x8
+ 1826 097d 61010000 		.4byte	.LASF300
+ 1827 0981 FB02     		.sleb128 379
+ 1828 0983 08       		.uleb128 0x8
+ 1829 0984 44200000 		.4byte	.LASF301
+ 1830 0988 FC02     		.sleb128 380
+ 1831 098a 08       		.uleb128 0x8
+ 1832 098b 00020000 		.4byte	.LASF302
+ 1833 098f FD02     		.sleb128 381
+ 1834 0991 08       		.uleb128 0x8
+ 1835 0992 A11D0000 		.4byte	.LASF303
+ 1836 0996 FE02     		.sleb128 382
+ 1837 0998 08       		.uleb128 0x8
+ 1838 0999 7E060000 		.4byte	.LASF304
+ 1839 099d FF02     		.sleb128 383
+ 1840 099f 08       		.uleb128 0x8
+ 1841 09a0 55140000 		.4byte	.LASF305
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 39
+
+
+ 1842 09a4 8003     		.sleb128 384
+ 1843 09a6 08       		.uleb128 0x8
+ 1844 09a7 45220000 		.4byte	.LASF306
+ 1845 09ab 8103     		.sleb128 385
+ 1846 09ad 08       		.uleb128 0x8
+ 1847 09ae 63040000 		.4byte	.LASF307
+ 1848 09b2 8203     		.sleb128 386
+ 1849 09b4 08       		.uleb128 0x8
+ 1850 09b5 AB1F0000 		.4byte	.LASF308
+ 1851 09b9 8303     		.sleb128 387
+ 1852 09bb 08       		.uleb128 0x8
+ 1853 09bc E91D0000 		.4byte	.LASF309
+ 1854 09c0 8403     		.sleb128 388
+ 1855 09c2 08       		.uleb128 0x8
+ 1856 09c3 45100000 		.4byte	.LASF310
+ 1857 09c7 8503     		.sleb128 389
+ 1858 09c9 08       		.uleb128 0x8
+ 1859 09ca 63280000 		.4byte	.LASF311
+ 1860 09ce 8603     		.sleb128 390
+ 1861 09d0 08       		.uleb128 0x8
+ 1862 09d1 8B160000 		.4byte	.LASF312
+ 1863 09d5 8703     		.sleb128 391
+ 1864 09d7 08       		.uleb128 0x8
+ 1865 09d8 111D0000 		.4byte	.LASF313
+ 1866 09dc 8803     		.sleb128 392
+ 1867 09de 08       		.uleb128 0x8
+ 1868 09df 28120000 		.4byte	.LASF314
+ 1869 09e3 8903     		.sleb128 393
+ 1870 09e5 08       		.uleb128 0x8
+ 1871 09e6 5F210000 		.4byte	.LASF315
+ 1872 09ea 8A03     		.sleb128 394
+ 1873 09ec 08       		.uleb128 0x8
+ 1874 09ed 00130000 		.4byte	.LASF316
+ 1875 09f1 8B03     		.sleb128 395
+ 1876 09f3 08       		.uleb128 0x8
+ 1877 09f4 4D120000 		.4byte	.LASF317
+ 1878 09f8 8C03     		.sleb128 396
+ 1879 09fa 08       		.uleb128 0x8
+ 1880 09fb 7D040000 		.4byte	.LASF318
+ 1881 09ff 8D03     		.sleb128 397
+ 1882 0a01 08       		.uleb128 0x8
+ 1883 0a02 6D070000 		.4byte	.LASF319
+ 1884 0a06 8E03     		.sleb128 398
+ 1885 0a08 08       		.uleb128 0x8
+ 1886 0a09 F1100000 		.4byte	.LASF320
+ 1887 0a0d 8F03     		.sleb128 399
+ 1888 0a0f 08       		.uleb128 0x8
+ 1889 0a10 49230000 		.4byte	.LASF321
+ 1890 0a14 9003     		.sleb128 400
+ 1891 0a16 08       		.uleb128 0x8
+ 1892 0a17 982A0000 		.4byte	.LASF322
+ 1893 0a1b 9103     		.sleb128 401
+ 1894 0a1d 08       		.uleb128 0x8
+ 1895 0a1e AE110000 		.4byte	.LASF323
+ 1896 0a22 9203     		.sleb128 402
+ 1897 0a24 08       		.uleb128 0x8
+ 1898 0a25 000A0000 		.4byte	.LASF324
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 40
+
+
+ 1899 0a29 9303     		.sleb128 403
+ 1900 0a2b 08       		.uleb128 0x8
+ 1901 0a2c EC0E0000 		.4byte	.LASF325
+ 1902 0a30 9403     		.sleb128 404
+ 1903 0a32 08       		.uleb128 0x8
+ 1904 0a33 861C0000 		.4byte	.LASF326
+ 1905 0a37 9503     		.sleb128 405
+ 1906 0a39 08       		.uleb128 0x8
+ 1907 0a3a 6D020000 		.4byte	.LASF327
+ 1908 0a3e 9603     		.sleb128 406
+ 1909 0a40 08       		.uleb128 0x8
+ 1910 0a41 AA220000 		.4byte	.LASF328
+ 1911 0a45 9703     		.sleb128 407
+ 1912 0a47 08       		.uleb128 0x8
+ 1913 0a48 AE0A0000 		.4byte	.LASF329
+ 1914 0a4c 9803     		.sleb128 408
+ 1915 0a4e 08       		.uleb128 0x8
+ 1916 0a4f 16080000 		.4byte	.LASF330
+ 1917 0a53 9903     		.sleb128 409
+ 1918 0a55 08       		.uleb128 0x8
+ 1919 0a56 5A0E0000 		.4byte	.LASF331
+ 1920 0a5a 9A03     		.sleb128 410
+ 1921 0a5c 08       		.uleb128 0x8
+ 1922 0a5d DB260000 		.4byte	.LASF332
+ 1923 0a61 9B03     		.sleb128 411
+ 1924 0a63 08       		.uleb128 0x8
+ 1925 0a64 DB010000 		.4byte	.LASF333
+ 1926 0a68 9C03     		.sleb128 412
+ 1927 0a6a 08       		.uleb128 0x8
+ 1928 0a6b 66000000 		.4byte	.LASF334
+ 1929 0a6f 9D03     		.sleb128 413
+ 1930 0a71 08       		.uleb128 0x8
+ 1931 0a72 C10C0000 		.4byte	.LASF335
+ 1932 0a76 9E03     		.sleb128 414
+ 1933 0a78 08       		.uleb128 0x8
+ 1934 0a79 360B0000 		.4byte	.LASF336
+ 1935 0a7d 9F03     		.sleb128 415
+ 1936 0a7f 08       		.uleb128 0x8
+ 1937 0a80 FB180000 		.4byte	.LASF337
+ 1938 0a84 A003     		.sleb128 416
+ 1939 0a86 08       		.uleb128 0x8
+ 1940 0a87 AB250000 		.4byte	.LASF338
+ 1941 0a8b A103     		.sleb128 417
+ 1942 0a8d 08       		.uleb128 0x8
+ 1943 0a8e 4E170000 		.4byte	.LASF339
+ 1944 0a92 A203     		.sleb128 418
+ 1945 0a94 08       		.uleb128 0x8
+ 1946 0a95 FD210000 		.4byte	.LASF340
+ 1947 0a99 A303     		.sleb128 419
+ 1948 0a9b 08       		.uleb128 0x8
+ 1949 0a9c 451C0000 		.4byte	.LASF341
+ 1950 0aa0 A403     		.sleb128 420
+ 1951 0aa2 08       		.uleb128 0x8
+ 1952 0aa3 B1280000 		.4byte	.LASF342
+ 1953 0aa7 A503     		.sleb128 421
+ 1954 0aa9 08       		.uleb128 0x8
+ 1955 0aaa D8210000 		.4byte	.LASF343
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 41
+
+
+ 1956 0aae A603     		.sleb128 422
+ 1957 0ab0 08       		.uleb128 0x8
+ 1958 0ab1 A80B0000 		.4byte	.LASF344
+ 1959 0ab5 A703     		.sleb128 423
+ 1960 0ab7 08       		.uleb128 0x8
+ 1961 0ab8 0B150000 		.4byte	.LASF345
+ 1962 0abc A803     		.sleb128 424
+ 1963 0abe 08       		.uleb128 0x8
+ 1964 0abf DF200000 		.4byte	.LASF346
+ 1965 0ac3 A903     		.sleb128 425
+ 1966 0ac5 08       		.uleb128 0x8
+ 1967 0ac6 7E0E0000 		.4byte	.LASF347
+ 1968 0aca AA03     		.sleb128 426
+ 1969 0acc 08       		.uleb128 0x8
+ 1970 0acd F51B0000 		.4byte	.LASF348
+ 1971 0ad1 80C003   		.sleb128 57344
+ 1972 0ad4 00       		.byte	0
+ 1973 0ad5 09       		.uleb128 0x9
+ 1974 0ad6 01       		.byte	0x1
+ 1975 0ad7 0B       		.byte	0xb
+ 1976 0ad8 F004     		.2byte	0x4f0
+ 1977 0ada FD0A0000 		.4byte	0xafd
+ 1978 0ade 08       		.uleb128 0x8
+ 1979 0adf EC090000 		.4byte	.LASF349
+ 1980 0ae3 00       		.sleb128 0
+ 1981 0ae4 08       		.uleb128 0x8
+ 1982 0ae5 9A130000 		.4byte	.LASF350
+ 1983 0ae9 01       		.sleb128 1
+ 1984 0aea 08       		.uleb128 0x8
+ 1985 0aeb 86280000 		.4byte	.LASF351
+ 1986 0aef 02       		.sleb128 2
+ 1987 0af0 08       		.uleb128 0x8
+ 1988 0af1 F5050000 		.4byte	.LASF352
+ 1989 0af5 03       		.sleb128 3
+ 1990 0af6 08       		.uleb128 0x8
+ 1991 0af7 79220000 		.4byte	.LASF353
+ 1992 0afb 04       		.sleb128 4
+ 1993 0afc 00       		.byte	0
+ 1994 0afd 0A       		.uleb128 0xa
+ 1995 0afe 22240000 		.4byte	.LASF354
+ 1996 0b02 0B       		.byte	0xb
+ 1997 0b03 FE04     		.2byte	0x4fe
+ 1998 0b05 D50A0000 		.4byte	0xad5
+ 1999 0b09 15       		.uleb128 0x15
+ 2000 0b0a 561D0000 		.4byte	.LASF355
+ 2001 0b0e 01       		.byte	0x1
+ 2002 0b0f FF       		.byte	0xff
+ 2003 0b10 F1020000 		.4byte	0x2f1
+ 2004 0b14 00000000 		.4byte	.LFB2
+ 2005 0b18 40000000 		.4byte	.LFE2-.LFB2
+ 2006 0b1c 01       		.uleb128 0x1
+ 2007 0b1d 9C       		.byte	0x9c
+ 2008 0b1e 320B0000 		.4byte	0xb32
+ 2009 0b22 16       		.uleb128 0x16
+ 2010 0b23 C2210000 		.4byte	.LASF357
+ 2011 0b27 01       		.byte	0x1
+ 2012 0b28 0101     		.2byte	0x101
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 42
+
+
+ 2013 0b2a F1020000 		.4byte	0x2f1
+ 2014 0b2e 02       		.uleb128 0x2
+ 2015 0b2f 91       		.byte	0x91
+ 2016 0b30 6E       		.sleb128 -18
+ 2017 0b31 00       		.byte	0
+ 2018 0b32 17       		.uleb128 0x17
+ 2019 0b33 260F0000 		.4byte	.LASF356
+ 2020 0b37 01       		.byte	0x1
+ 2021 0b38 2001     		.2byte	0x120
+ 2022 0b3a B0030000 		.4byte	0x3b0
+ 2023 0b3e 00000000 		.4byte	.LFB3
+ 2024 0b42 A0000000 		.4byte	.LFE3-.LFB3
+ 2025 0b46 01       		.uleb128 0x1
+ 2026 0b47 9C       		.byte	0x9c
+ 2027 0b48 6B0B0000 		.4byte	0xb6b
+ 2028 0b4c 18       		.uleb128 0x18
+ 2029 0b4d 15010000 		.4byte	.LASF370
+ 2030 0b51 01       		.byte	0x1
+ 2031 0b52 2001     		.2byte	0x120
+ 2032 0b54 6B0B0000 		.4byte	0xb6b
+ 2033 0b58 02       		.uleb128 0x2
+ 2034 0b59 91       		.byte	0x91
+ 2035 0b5a 64       		.sleb128 -28
+ 2036 0b5b 16       		.uleb128 0x16
+ 2037 0b5c A0270000 		.4byte	.LASF358
+ 2038 0b60 01       		.byte	0x1
+ 2039 0b61 2201     		.2byte	0x122
+ 2040 0b63 B0030000 		.4byte	0x3b0
+ 2041 0b67 02       		.uleb128 0x2
+ 2042 0b68 91       		.byte	0x91
+ 2043 0b69 6F       		.sleb128 -17
+ 2044 0b6a 00       		.byte	0
+ 2045 0b6b 0B       		.uleb128 0xb
+ 2046 0b6c 04       		.byte	0x4
+ 2047 0b6d 86040000 		.4byte	0x486
+ 2048 0b71 19       		.uleb128 0x19
+ 2049 0b72 6B000000 		.4byte	0x6b
+ 2050 0b76 810B0000 		.4byte	0xb81
+ 2051 0b7a 1A       		.uleb128 0x1a
+ 2052 0b7b A6000000 		.4byte	0xa6
+ 2053 0b7f 76       		.byte	0x76
+ 2054 0b80 00       		.byte	0
+ 2055 0b81 1B       		.uleb128 0x1b
+ 2056 0b82 F8130000 		.4byte	.LASF359
+ 2057 0b86 01       		.byte	0x1
+ 2058 0b87 23       		.byte	0x23
+ 2059 0b88 710B0000 		.4byte	0xb71
+ 2060 0b8c 05       		.uleb128 0x5
+ 2061 0b8d 03       		.byte	0x3
+ 2062 0b8e 00000000 		.4byte	cyBle_attValues
+ 2063 0b92 1C       		.uleb128 0x1c
+ 2064 0b93 C71F0000 		.4byte	.LASF360
+ 2065 0b97 07       		.byte	0x7
+ 2066 0b98 6401     		.2byte	0x164
+ 2067 0b9a 37050000 		.4byte	0x537
+ 2068 0b9e 1C       		.uleb128 0x1c
+ 2069 0b9f D3250000 		.4byte	.LASF361
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 43
+
+
+ 2070 0ba3 07       		.byte	0x7
+ 2071 0ba4 6601     		.2byte	0x166
+ 2072 0ba6 A1000000 		.4byte	0xa1
+ 2073 0baa 1D       		.uleb128 0x1d
+ 2074 0bab D8170000 		.4byte	.LASF362
+ 2075 0baf 01       		.byte	0x1
+ 2076 0bb0 1C       		.byte	0x1c
+ 2077 0bb1 BB0B0000 		.4byte	0xbbb
+ 2078 0bb5 05       		.uleb128 0x5
+ 2079 0bb6 03       		.byte	0x3
+ 2080 0bb7 00000000 		.4byte	cyBle_gatts
+ 2081 0bbb 1E       		.uleb128 0x1e
+ 2082 0bbc 85050000 		.4byte	0x585
+ 2083 0bc0 19       		.uleb128 0x19
+ 2084 0bc1 2C050000 		.4byte	0x52c
+ 2085 0bc5 D00B0000 		.4byte	0xbd0
+ 2086 0bc9 1A       		.uleb128 0x1a
+ 2087 0bca A6000000 		.4byte	0xa6
+ 2088 0bce 2A       		.byte	0x2a
+ 2089 0bcf 00       		.byte	0
+ 2090 0bd0 1D       		.uleb128 0x1d
+ 2091 0bd1 1D170000 		.4byte	.LASF363
+ 2092 0bd5 01       		.byte	0x1
+ 2093 0bd6 B1       		.byte	0xb1
+ 2094 0bd7 E10B0000 		.4byte	0xbe1
+ 2095 0bdb 05       		.uleb128 0x5
+ 2096 0bdc 03       		.byte	0x3
+ 2097 0bdd 00000000 		.4byte	cyBle_gattDB
+ 2098 0be1 1E       		.uleb128 0x1e
+ 2099 0be2 C00B0000 		.4byte	0xbc0
+ 2100 0be6 19       		.uleb128 0x19
+ 2101 0be7 6B000000 		.4byte	0x6b
+ 2102 0beb F60B0000 		.4byte	0xbf6
+ 2103 0bef 1A       		.uleb128 0x1a
+ 2104 0bf0 A6000000 		.4byte	0xa6
+ 2105 0bf4 07       		.byte	0x7
+ 2106 0bf5 00       		.byte	0
+ 2107 0bf6 1D       		.uleb128 0x1d
+ 2108 0bf7 3B260000 		.4byte	.LASF364
+ 2109 0bfb 01       		.byte	0x1
+ 2110 0bfc AF       		.byte	0xaf
+ 2111 0bfd E60B0000 		.4byte	0xbe6
+ 2112 0c01 05       		.uleb128 0x5
+ 2113 0c02 03       		.byte	0x3
+ 2114 0c03 00000000 		.4byte	cyBle_attValuesCCCD
+ 2115 0c07 19       		.uleb128 0x19
+ 2116 0c08 6B000000 		.4byte	0x6b
+ 2117 0c0c 1D0C0000 		.4byte	0xc1d
+ 2118 0c10 1A       		.uleb128 0x1a
+ 2119 0c11 A6000000 		.4byte	0xa6
+ 2120 0c15 04       		.byte	0x4
+ 2121 0c16 1A       		.uleb128 0x1a
+ 2122 0c17 A6000000 		.4byte	0xa6
+ 2123 0c1b 07       		.byte	0x7
+ 2124 0c1c 00       		.byte	0
+ 2125 0c1d 1D       		.uleb128 0x1d
+ 2126 0c1e AD020000 		.4byte	.LASF365
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 44
+
+
+ 2127 0c22 01       		.byte	0x1
+ 2128 0c23 62       		.byte	0x62
+ 2129 0c24 2E0C0000 		.4byte	0xc2e
+ 2130 0c28 05       		.uleb128 0x5
+ 2131 0c29 03       		.byte	0x3
+ 2132 0c2a 00000000 		.4byte	cyBle_attValuesCCCDFlashMemory
+ 2133 0c2e 1E       		.uleb128 0x1e
+ 2134 0c2f 070C0000 		.4byte	0xc07
+ 2135 0c33 1D       		.uleb128 0x1d
+ 2136 0c34 CC210000 		.4byte	.LASF366
+ 2137 0c38 01       		.byte	0x1
+ 2138 0c39 17       		.byte	0x17
+ 2139 0c3a FD0A0000 		.4byte	0xafd
+ 2140 0c3e 05       		.uleb128 0x5
+ 2141 0c3f 03       		.byte	0x3
+ 2142 0c40 00000000 		.4byte	cyBle_state
+ 2143 0c44 00       		.byte	0
+ 2144              		.section	.debug_abbrev,"",%progbits
+ 2145              	.Ldebug_abbrev0:
+ 2146 0000 01       		.uleb128 0x1
+ 2147 0001 11       		.uleb128 0x11
+ 2148 0002 01       		.byte	0x1
+ 2149 0003 25       		.uleb128 0x25
+ 2150 0004 0E       		.uleb128 0xe
+ 2151 0005 13       		.uleb128 0x13
+ 2152 0006 0B       		.uleb128 0xb
+ 2153 0007 03       		.uleb128 0x3
+ 2154 0008 0E       		.uleb128 0xe
+ 2155 0009 1B       		.uleb128 0x1b
+ 2156 000a 0E       		.uleb128 0xe
+ 2157 000b 55       		.uleb128 0x55
+ 2158 000c 17       		.uleb128 0x17
+ 2159 000d 11       		.uleb128 0x11
+ 2160 000e 01       		.uleb128 0x1
+ 2161 000f 10       		.uleb128 0x10
+ 2162 0010 17       		.uleb128 0x17
+ 2163 0011 00       		.byte	0
+ 2164 0012 00       		.byte	0
+ 2165 0013 02       		.uleb128 0x2
+ 2166 0014 24       		.uleb128 0x24
+ 2167 0015 00       		.byte	0
+ 2168 0016 0B       		.uleb128 0xb
+ 2169 0017 0B       		.uleb128 0xb
+ 2170 0018 3E       		.uleb128 0x3e
+ 2171 0019 0B       		.uleb128 0xb
+ 2172 001a 03       		.uleb128 0x3
+ 2173 001b 0E       		.uleb128 0xe
+ 2174 001c 00       		.byte	0
+ 2175 001d 00       		.byte	0
+ 2176 001e 03       		.uleb128 0x3
+ 2177 001f 24       		.uleb128 0x24
+ 2178 0020 00       		.byte	0
+ 2179 0021 0B       		.uleb128 0xb
+ 2180 0022 0B       		.uleb128 0xb
+ 2181 0023 3E       		.uleb128 0x3e
+ 2182 0024 0B       		.uleb128 0xb
+ 2183 0025 03       		.uleb128 0x3
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 45
+
+
+ 2184 0026 08       		.uleb128 0x8
+ 2185 0027 00       		.byte	0
+ 2186 0028 00       		.byte	0
+ 2187 0029 04       		.uleb128 0x4
+ 2188 002a 16       		.uleb128 0x16
+ 2189 002b 00       		.byte	0
+ 2190 002c 03       		.uleb128 0x3
+ 2191 002d 0E       		.uleb128 0xe
+ 2192 002e 3A       		.uleb128 0x3a
+ 2193 002f 0B       		.uleb128 0xb
+ 2194 0030 3B       		.uleb128 0x3b
+ 2195 0031 0B       		.uleb128 0xb
+ 2196 0032 49       		.uleb128 0x49
+ 2197 0033 13       		.uleb128 0x13
+ 2198 0034 00       		.byte	0
+ 2199 0035 00       		.byte	0
+ 2200 0036 05       		.uleb128 0x5
+ 2201 0037 35       		.uleb128 0x35
+ 2202 0038 00       		.byte	0
+ 2203 0039 49       		.uleb128 0x49
+ 2204 003a 13       		.uleb128 0x13
+ 2205 003b 00       		.byte	0
+ 2206 003c 00       		.byte	0
+ 2207 003d 06       		.uleb128 0x6
+ 2208 003e 0F       		.uleb128 0xf
+ 2209 003f 00       		.byte	0
+ 2210 0040 0B       		.uleb128 0xb
+ 2211 0041 0B       		.uleb128 0xb
+ 2212 0042 00       		.byte	0
+ 2213 0043 00       		.byte	0
+ 2214 0044 07       		.uleb128 0x7
+ 2215 0045 04       		.uleb128 0x4
+ 2216 0046 01       		.byte	0x1
+ 2217 0047 0B       		.uleb128 0xb
+ 2218 0048 0B       		.uleb128 0xb
+ 2219 0049 3A       		.uleb128 0x3a
+ 2220 004a 0B       		.uleb128 0xb
+ 2221 004b 3B       		.uleb128 0x3b
+ 2222 004c 0B       		.uleb128 0xb
+ 2223 004d 01       		.uleb128 0x1
+ 2224 004e 13       		.uleb128 0x13
+ 2225 004f 00       		.byte	0
+ 2226 0050 00       		.byte	0
+ 2227 0051 08       		.uleb128 0x8
+ 2228 0052 28       		.uleb128 0x28
+ 2229 0053 00       		.byte	0
+ 2230 0054 03       		.uleb128 0x3
+ 2231 0055 0E       		.uleb128 0xe
+ 2232 0056 1C       		.uleb128 0x1c
+ 2233 0057 0D       		.uleb128 0xd
+ 2234 0058 00       		.byte	0
+ 2235 0059 00       		.byte	0
+ 2236 005a 09       		.uleb128 0x9
+ 2237 005b 04       		.uleb128 0x4
+ 2238 005c 01       		.byte	0x1
+ 2239 005d 0B       		.uleb128 0xb
+ 2240 005e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 46
+
+
+ 2241 005f 3A       		.uleb128 0x3a
+ 2242 0060 0B       		.uleb128 0xb
+ 2243 0061 3B       		.uleb128 0x3b
+ 2244 0062 05       		.uleb128 0x5
+ 2245 0063 01       		.uleb128 0x1
+ 2246 0064 13       		.uleb128 0x13
+ 2247 0065 00       		.byte	0
+ 2248 0066 00       		.byte	0
+ 2249 0067 0A       		.uleb128 0xa
+ 2250 0068 16       		.uleb128 0x16
+ 2251 0069 00       		.byte	0
+ 2252 006a 03       		.uleb128 0x3
+ 2253 006b 0E       		.uleb128 0xe
+ 2254 006c 3A       		.uleb128 0x3a
+ 2255 006d 0B       		.uleb128 0xb
+ 2256 006e 3B       		.uleb128 0x3b
+ 2257 006f 05       		.uleb128 0x5
+ 2258 0070 49       		.uleb128 0x49
+ 2259 0071 13       		.uleb128 0x13
+ 2260 0072 00       		.byte	0
+ 2261 0073 00       		.byte	0
+ 2262 0074 0B       		.uleb128 0xb
+ 2263 0075 0F       		.uleb128 0xf
+ 2264 0076 00       		.byte	0
+ 2265 0077 0B       		.uleb128 0xb
+ 2266 0078 0B       		.uleb128 0xb
+ 2267 0079 49       		.uleb128 0x49
+ 2268 007a 13       		.uleb128 0x13
+ 2269 007b 00       		.byte	0
+ 2270 007c 00       		.byte	0
+ 2271 007d 0C       		.uleb128 0xc
+ 2272 007e 13       		.uleb128 0x13
+ 2273 007f 01       		.byte	0x1
+ 2274 0080 0B       		.uleb128 0xb
+ 2275 0081 0B       		.uleb128 0xb
+ 2276 0082 3A       		.uleb128 0x3a
+ 2277 0083 0B       		.uleb128 0xb
+ 2278 0084 3B       		.uleb128 0x3b
+ 2279 0085 05       		.uleb128 0x5
+ 2280 0086 01       		.uleb128 0x1
+ 2281 0087 13       		.uleb128 0x13
+ 2282 0088 00       		.byte	0
+ 2283 0089 00       		.byte	0
+ 2284 008a 0D       		.uleb128 0xd
+ 2285 008b 0D       		.uleb128 0xd
+ 2286 008c 00       		.byte	0
+ 2287 008d 03       		.uleb128 0x3
+ 2288 008e 0E       		.uleb128 0xe
+ 2289 008f 3A       		.uleb128 0x3a
+ 2290 0090 0B       		.uleb128 0xb
+ 2291 0091 3B       		.uleb128 0x3b
+ 2292 0092 05       		.uleb128 0x5
+ 2293 0093 49       		.uleb128 0x49
+ 2294 0094 13       		.uleb128 0x13
+ 2295 0095 38       		.uleb128 0x38
+ 2296 0096 0B       		.uleb128 0xb
+ 2297 0097 00       		.byte	0
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 47
+
+
+ 2298 0098 00       		.byte	0
+ 2299 0099 0E       		.uleb128 0xe
+ 2300 009a 0D       		.uleb128 0xd
+ 2301 009b 00       		.byte	0
+ 2302 009c 03       		.uleb128 0x3
+ 2303 009d 08       		.uleb128 0x8
+ 2304 009e 3A       		.uleb128 0x3a
+ 2305 009f 0B       		.uleb128 0xb
+ 2306 00a0 3B       		.uleb128 0x3b
+ 2307 00a1 05       		.uleb128 0x5
+ 2308 00a2 49       		.uleb128 0x49
+ 2309 00a3 13       		.uleb128 0x13
+ 2310 00a4 38       		.uleb128 0x38
+ 2311 00a5 0B       		.uleb128 0xb
+ 2312 00a6 00       		.byte	0
+ 2313 00a7 00       		.byte	0
+ 2314 00a8 0F       		.uleb128 0xf
+ 2315 00a9 13       		.uleb128 0x13
+ 2316 00aa 01       		.byte	0x1
+ 2317 00ab 0B       		.uleb128 0xb
+ 2318 00ac 0B       		.uleb128 0xb
+ 2319 00ad 3A       		.uleb128 0x3a
+ 2320 00ae 0B       		.uleb128 0xb
+ 2321 00af 3B       		.uleb128 0x3b
+ 2322 00b0 0B       		.uleb128 0xb
+ 2323 00b1 01       		.uleb128 0x1
+ 2324 00b2 13       		.uleb128 0x13
+ 2325 00b3 00       		.byte	0
+ 2326 00b4 00       		.byte	0
+ 2327 00b5 10       		.uleb128 0x10
+ 2328 00b6 0D       		.uleb128 0xd
+ 2329 00b7 00       		.byte	0
+ 2330 00b8 03       		.uleb128 0x3
+ 2331 00b9 0E       		.uleb128 0xe
+ 2332 00ba 3A       		.uleb128 0x3a
+ 2333 00bb 0B       		.uleb128 0xb
+ 2334 00bc 3B       		.uleb128 0x3b
+ 2335 00bd 0B       		.uleb128 0xb
+ 2336 00be 49       		.uleb128 0x49
+ 2337 00bf 13       		.uleb128 0x13
+ 2338 00c0 38       		.uleb128 0x38
+ 2339 00c1 0B       		.uleb128 0xb
+ 2340 00c2 00       		.byte	0
+ 2341 00c3 00       		.byte	0
+ 2342 00c4 11       		.uleb128 0x11
+ 2343 00c5 17       		.uleb128 0x17
+ 2344 00c6 01       		.byte	0x1
+ 2345 00c7 0B       		.uleb128 0xb
+ 2346 00c8 0B       		.uleb128 0xb
+ 2347 00c9 3A       		.uleb128 0x3a
+ 2348 00ca 0B       		.uleb128 0xb
+ 2349 00cb 3B       		.uleb128 0x3b
+ 2350 00cc 0B       		.uleb128 0xb
+ 2351 00cd 01       		.uleb128 0x1
+ 2352 00ce 13       		.uleb128 0x13
+ 2353 00cf 00       		.byte	0
+ 2354 00d0 00       		.byte	0
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 48
+
+
+ 2355 00d1 12       		.uleb128 0x12
+ 2356 00d2 0D       		.uleb128 0xd
+ 2357 00d3 00       		.byte	0
+ 2358 00d4 03       		.uleb128 0x3
+ 2359 00d5 0E       		.uleb128 0xe
+ 2360 00d6 3A       		.uleb128 0x3a
+ 2361 00d7 0B       		.uleb128 0xb
+ 2362 00d8 3B       		.uleb128 0x3b
+ 2363 00d9 0B       		.uleb128 0xb
+ 2364 00da 49       		.uleb128 0x49
+ 2365 00db 13       		.uleb128 0x13
+ 2366 00dc 00       		.byte	0
+ 2367 00dd 00       		.byte	0
+ 2368 00de 13       		.uleb128 0x13
+ 2369 00df 15       		.uleb128 0x15
+ 2370 00e0 01       		.byte	0x1
+ 2371 00e1 27       		.uleb128 0x27
+ 2372 00e2 19       		.uleb128 0x19
+ 2373 00e3 01       		.uleb128 0x1
+ 2374 00e4 13       		.uleb128 0x13
+ 2375 00e5 00       		.byte	0
+ 2376 00e6 00       		.byte	0
+ 2377 00e7 14       		.uleb128 0x14
+ 2378 00e8 05       		.uleb128 0x5
+ 2379 00e9 00       		.byte	0
+ 2380 00ea 49       		.uleb128 0x49
+ 2381 00eb 13       		.uleb128 0x13
+ 2382 00ec 00       		.byte	0
+ 2383 00ed 00       		.byte	0
+ 2384 00ee 15       		.uleb128 0x15
+ 2385 00ef 2E       		.uleb128 0x2e
+ 2386 00f0 01       		.byte	0x1
+ 2387 00f1 3F       		.uleb128 0x3f
+ 2388 00f2 19       		.uleb128 0x19
+ 2389 00f3 03       		.uleb128 0x3
+ 2390 00f4 0E       		.uleb128 0xe
+ 2391 00f5 3A       		.uleb128 0x3a
+ 2392 00f6 0B       		.uleb128 0xb
+ 2393 00f7 3B       		.uleb128 0x3b
+ 2394 00f8 0B       		.uleb128 0xb
+ 2395 00f9 27       		.uleb128 0x27
+ 2396 00fa 19       		.uleb128 0x19
+ 2397 00fb 49       		.uleb128 0x49
+ 2398 00fc 13       		.uleb128 0x13
+ 2399 00fd 11       		.uleb128 0x11
+ 2400 00fe 01       		.uleb128 0x1
+ 2401 00ff 12       		.uleb128 0x12
+ 2402 0100 06       		.uleb128 0x6
+ 2403 0101 40       		.uleb128 0x40
+ 2404 0102 18       		.uleb128 0x18
+ 2405 0103 9642     		.uleb128 0x2116
+ 2406 0105 19       		.uleb128 0x19
+ 2407 0106 01       		.uleb128 0x1
+ 2408 0107 13       		.uleb128 0x13
+ 2409 0108 00       		.byte	0
+ 2410 0109 00       		.byte	0
+ 2411 010a 16       		.uleb128 0x16
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 49
+
+
+ 2412 010b 34       		.uleb128 0x34
+ 2413 010c 00       		.byte	0
+ 2414 010d 03       		.uleb128 0x3
+ 2415 010e 0E       		.uleb128 0xe
+ 2416 010f 3A       		.uleb128 0x3a
+ 2417 0110 0B       		.uleb128 0xb
+ 2418 0111 3B       		.uleb128 0x3b
+ 2419 0112 05       		.uleb128 0x5
+ 2420 0113 49       		.uleb128 0x49
+ 2421 0114 13       		.uleb128 0x13
+ 2422 0115 02       		.uleb128 0x2
+ 2423 0116 18       		.uleb128 0x18
+ 2424 0117 00       		.byte	0
+ 2425 0118 00       		.byte	0
+ 2426 0119 17       		.uleb128 0x17
+ 2427 011a 2E       		.uleb128 0x2e
+ 2428 011b 01       		.byte	0x1
+ 2429 011c 3F       		.uleb128 0x3f
+ 2430 011d 19       		.uleb128 0x19
+ 2431 011e 03       		.uleb128 0x3
+ 2432 011f 0E       		.uleb128 0xe
+ 2433 0120 3A       		.uleb128 0x3a
+ 2434 0121 0B       		.uleb128 0xb
+ 2435 0122 3B       		.uleb128 0x3b
+ 2436 0123 05       		.uleb128 0x5
+ 2437 0124 27       		.uleb128 0x27
+ 2438 0125 19       		.uleb128 0x19
+ 2439 0126 49       		.uleb128 0x49
+ 2440 0127 13       		.uleb128 0x13
+ 2441 0128 11       		.uleb128 0x11
+ 2442 0129 01       		.uleb128 0x1
+ 2443 012a 12       		.uleb128 0x12
+ 2444 012b 06       		.uleb128 0x6
+ 2445 012c 40       		.uleb128 0x40
+ 2446 012d 18       		.uleb128 0x18
+ 2447 012e 9642     		.uleb128 0x2116
+ 2448 0130 19       		.uleb128 0x19
+ 2449 0131 01       		.uleb128 0x1
+ 2450 0132 13       		.uleb128 0x13
+ 2451 0133 00       		.byte	0
+ 2452 0134 00       		.byte	0
+ 2453 0135 18       		.uleb128 0x18
+ 2454 0136 05       		.uleb128 0x5
+ 2455 0137 00       		.byte	0
+ 2456 0138 03       		.uleb128 0x3
+ 2457 0139 0E       		.uleb128 0xe
+ 2458 013a 3A       		.uleb128 0x3a
+ 2459 013b 0B       		.uleb128 0xb
+ 2460 013c 3B       		.uleb128 0x3b
+ 2461 013d 05       		.uleb128 0x5
+ 2462 013e 49       		.uleb128 0x49
+ 2463 013f 13       		.uleb128 0x13
+ 2464 0140 02       		.uleb128 0x2
+ 2465 0141 18       		.uleb128 0x18
+ 2466 0142 00       		.byte	0
+ 2467 0143 00       		.byte	0
+ 2468 0144 19       		.uleb128 0x19
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 50
+
+
+ 2469 0145 01       		.uleb128 0x1
+ 2470 0146 01       		.byte	0x1
+ 2471 0147 49       		.uleb128 0x49
+ 2472 0148 13       		.uleb128 0x13
+ 2473 0149 01       		.uleb128 0x1
+ 2474 014a 13       		.uleb128 0x13
+ 2475 014b 00       		.byte	0
+ 2476 014c 00       		.byte	0
+ 2477 014d 1A       		.uleb128 0x1a
+ 2478 014e 21       		.uleb128 0x21
+ 2479 014f 00       		.byte	0
+ 2480 0150 49       		.uleb128 0x49
+ 2481 0151 13       		.uleb128 0x13
+ 2482 0152 2F       		.uleb128 0x2f
+ 2483 0153 0B       		.uleb128 0xb
+ 2484 0154 00       		.byte	0
+ 2485 0155 00       		.byte	0
+ 2486 0156 1B       		.uleb128 0x1b
+ 2487 0157 34       		.uleb128 0x34
+ 2488 0158 00       		.byte	0
+ 2489 0159 03       		.uleb128 0x3
+ 2490 015a 0E       		.uleb128 0xe
+ 2491 015b 3A       		.uleb128 0x3a
+ 2492 015c 0B       		.uleb128 0xb
+ 2493 015d 3B       		.uleb128 0x3b
+ 2494 015e 0B       		.uleb128 0xb
+ 2495 015f 49       		.uleb128 0x49
+ 2496 0160 13       		.uleb128 0x13
+ 2497 0161 02       		.uleb128 0x2
+ 2498 0162 18       		.uleb128 0x18
+ 2499 0163 00       		.byte	0
+ 2500 0164 00       		.byte	0
+ 2501 0165 1C       		.uleb128 0x1c
+ 2502 0166 34       		.uleb128 0x34
+ 2503 0167 00       		.byte	0
+ 2504 0168 03       		.uleb128 0x3
+ 2505 0169 0E       		.uleb128 0xe
+ 2506 016a 3A       		.uleb128 0x3a
+ 2507 016b 0B       		.uleb128 0xb
+ 2508 016c 3B       		.uleb128 0x3b
+ 2509 016d 05       		.uleb128 0x5
+ 2510 016e 49       		.uleb128 0x49
+ 2511 016f 13       		.uleb128 0x13
+ 2512 0170 3F       		.uleb128 0x3f
+ 2513 0171 19       		.uleb128 0x19
+ 2514 0172 3C       		.uleb128 0x3c
+ 2515 0173 19       		.uleb128 0x19
+ 2516 0174 00       		.byte	0
+ 2517 0175 00       		.byte	0
+ 2518 0176 1D       		.uleb128 0x1d
+ 2519 0177 34       		.uleb128 0x34
+ 2520 0178 00       		.byte	0
+ 2521 0179 03       		.uleb128 0x3
+ 2522 017a 0E       		.uleb128 0xe
+ 2523 017b 3A       		.uleb128 0x3a
+ 2524 017c 0B       		.uleb128 0xb
+ 2525 017d 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 51
+
+
+ 2526 017e 0B       		.uleb128 0xb
+ 2527 017f 49       		.uleb128 0x49
+ 2528 0180 13       		.uleb128 0x13
+ 2529 0181 3F       		.uleb128 0x3f
+ 2530 0182 19       		.uleb128 0x19
+ 2531 0183 02       		.uleb128 0x2
+ 2532 0184 18       		.uleb128 0x18
+ 2533 0185 00       		.byte	0
+ 2534 0186 00       		.byte	0
+ 2535 0187 1E       		.uleb128 0x1e
+ 2536 0188 26       		.uleb128 0x26
+ 2537 0189 00       		.byte	0
+ 2538 018a 49       		.uleb128 0x49
+ 2539 018b 13       		.uleb128 0x13
+ 2540 018c 00       		.byte	0
+ 2541 018d 00       		.byte	0
+ 2542 018e 00       		.byte	0
+ 2543              		.section	.debug_aranges,"",%progbits
+ 2544 0000 24000000 		.4byte	0x24
+ 2545 0004 0200     		.2byte	0x2
+ 2546 0006 00000000 		.4byte	.Ldebug_info0
+ 2547 000a 04       		.byte	0x4
+ 2548 000b 00       		.byte	0
+ 2549 000c 0000     		.2byte	0
+ 2550 000e 0000     		.2byte	0
+ 2551 0010 00000000 		.4byte	.LFB2
+ 2552 0014 40000000 		.4byte	.LFE2-.LFB2
+ 2553 0018 00000000 		.4byte	.LFB3
+ 2554 001c A0000000 		.4byte	.LFE3-.LFB3
+ 2555 0020 00000000 		.4byte	0
+ 2556 0024 00000000 		.4byte	0
+ 2557              		.section	.debug_ranges,"",%progbits
+ 2558              	.Ldebug_ranges0:
+ 2559 0000 00000000 		.4byte	.LFB2
+ 2560 0004 40000000 		.4byte	.LFE2
+ 2561 0008 00000000 		.4byte	.LFB3
+ 2562 000c A0000000 		.4byte	.LFE3
+ 2563 0010 00000000 		.4byte	0
+ 2564 0014 00000000 		.4byte	0
+ 2565              		.section	.debug_line,"",%progbits
+ 2566              	.Ldebug_line0:
+ 2567 0000 13010000 		.section	.debug_str,"MS",%progbits,1
+ 2567      0200DE00 
+ 2567      00000201 
+ 2567      FB0E0D00 
+ 2567      01010101 
+ 2568              	.LASF286:
+ 2569 0000 4359424C 		.ascii	"CYBLE_EVT_HTSS_NOTIFICATION_DISABLED\000"
+ 2569      455F4556 
+ 2569      545F4854 
+ 2569      53535F4E 
+ 2569      4F544946 
+ 2570              	.LASF168:
+ 2571 0025 4359424C 		.ascii	"CYBLE_DIS_CHAR_COUNT\000"
+ 2571      455F4449 
+ 2571      535F4348 
+ 2571      41525F43 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 52
+
+
+ 2571      4F554E54 
+ 2572              	.LASF15:
+ 2573 003a 73697A65 		.ascii	"sizetype\000"
+ 2573      74797065 
+ 2573      00
+ 2574              	.LASF231:
+ 2575 0043 4359424C 		.ascii	"CYBLE_EVT_CPSC_READ_DESCR_RESPONSE\000"
+ 2575      455F4556 
+ 2575      545F4350 
+ 2575      53435F52 
+ 2575      4541445F 
+ 2576              	.LASF334:
+ 2577 0066 4359424C 		.ascii	"CYBLE_EVT_RTUSS_WRITE_CHAR_CMD\000"
+ 2577      455F4556 
+ 2577      545F5254 
+ 2577      5553535F 
+ 2577      57524954 
+ 2578              	.LASF184:
+ 2579 0085 4359424C 		.ascii	"CYBLE_EVT_GATTC_SRVC_DISCOVERY_FAILED\000"
+ 2579      455F4556 
+ 2579      545F4741 
+ 2579      5454435F 
+ 2579      53525643 
+ 2580              	.LASF229:
+ 2581 00ab 4359424C 		.ascii	"CYBLE_EVT_CPSC_READ_CHAR_RESPONSE\000"
+ 2581      455F4556 
+ 2581      545F4350 
+ 2581      53435F52 
+ 2581      4541445F 
+ 2582              	.LASF242:
+ 2583 00cd 4359424C 		.ascii	"CYBLE_EVT_CSCSC_READ_CHAR_RESPONSE\000"
+ 2583      455F4556 
+ 2583      545F4353 
+ 2583      4353435F 
+ 2583      52454144 
+ 2584              	.LASF257:
+ 2585 00f0 4359424C 		.ascii	"CYBLE_EVT_GLSS_NOTIFICATION_DISABLED\000"
+ 2585      455F4556 
+ 2585      545F474C 
+ 2585      53535F4E 
+ 2585      4F544946 
+ 2586              	.LASF370:
+ 2587 0115 6576656E 		.ascii	"eventParam\000"
+ 2587      74506172 
+ 2587      616D00
+ 2588              	.LASF216:
+ 2589 0120 4359424C 		.ascii	"CYBLE_EVT_BLSC_READ_CHAR_RESPONSE\000"
+ 2589      455F4556 
+ 2589      545F424C 
+ 2589      53435F52 
+ 2589      4541445F 
+ 2590              	.LASF29:
+ 2591 0142 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 2591      455F4556 
+ 2591      545F4741 
+ 2591      505F4445 
+ 2591      56494345 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 53
+
+
+ 2592              	.LASF300:
+ 2593 0161 4359424C 		.ascii	"CYBLE_EVT_LLSC_WRITE_CHAR_RESPONSE\000"
+ 2593      455F4556 
+ 2593      545F4C4C 
+ 2593      53435F57 
+ 2593      52495445 
+ 2594              	.LASF36:
+ 2595 0184 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
+ 2595      455F4556 
+ 2595      545F4741 
+ 2595      54545F43 
+ 2595      4F4E4E45 
+ 2596              	.LASF175:
+ 2597 019f 4359424C 		.ascii	"CYBLE_HTS_VRD\000"
+ 2597      455F4854 
+ 2597      535F5652 
+ 2597      4400
+ 2598              	.LASF11:
+ 2599 01ad 75696E74 		.ascii	"uint32\000"
+ 2599      333200
+ 2600              	.LASF187:
+ 2601 01b4 4359424C 		.ascii	"CYBLE_EVT_GATTC_DESCR_DISCOVERY_FAILED\000"
+ 2601      455F4556 
+ 2601      545F4741 
+ 2601      5454435F 
+ 2601      44455343 
+ 2602              	.LASF333:
+ 2603 01db 4359424C 		.ascii	"CYBLE_EVT_RSCSC_WRITE_DESCR_RESPONSE\000"
+ 2603      455F4556 
+ 2603      545F5253 
+ 2603      4353435F 
+ 2603      57524954 
+ 2604              	.LASF302:
+ 2605 0200 4359424C 		.ascii	"CYBLE_EVT_LNSS_INDICATION_DISABLED\000"
+ 2605      455F4556 
+ 2605      545F4C4E 
+ 2605      53535F49 
+ 2605      4E444943 
+ 2606              	.LASF249:
+ 2607 0223 4359424C 		.ascii	"CYBLE_EVT_CTSC_READ_CHAR_RESPONSE\000"
+ 2607      455F4556 
+ 2607      545F4354 
+ 2607      53435F52 
+ 2607      4541445F 
+ 2608              	.LASF191:
+ 2609 0245 4359424C 		.ascii	"CYBLE_EVT_GATTC_SRVC_DISCOVERY_COMPLETE\000"
+ 2609      455F4556 
+ 2609      545F4741 
+ 2609      5454435F 
+ 2609      53525643 
+ 2610              	.LASF327:
+ 2611 026d 4359424C 		.ascii	"CYBLE_EVT_RSCSS_CHAR_WRITE\000"
+ 2611      455F4556 
+ 2611      545F5253 
+ 2611      4353535F 
+ 2611      43484152 
+ 2612              	.LASF276:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 54
+
+
+ 2613 0288 4359424C 		.ascii	"CYBLE_EVT_HIDSC_WRITE_DESCR_RESPONSE\000"
+ 2613      455F4556 
+ 2613      545F4849 
+ 2613      4453435F 
+ 2613      57524954 
+ 2614              	.LASF365:
+ 2615 02ad 6379426C 		.ascii	"cyBle_attValuesCCCDFlashMemory\000"
+ 2615      655F6174 
+ 2615      7456616C 
+ 2615      75657343 
+ 2615      43434446 
+ 2616              	.LASF201:
+ 2617 02cc 4359424C 		.ascii	"CYBLE_EVT_ANSC_READ_DESCR_RESPONSE\000"
+ 2617      455F4556 
+ 2617      545F414E 
+ 2617      53435F52 
+ 2617      4541445F 
+ 2618              	.LASF105:
+ 2619 02ef 4359424C 		.ascii	"CYBLE_GATT_ERR_READ_NOT_PERMITTED\000"
+ 2619      455F4741 
+ 2619      54545F45 
+ 2619      52525F52 
+ 2619      4541445F 
+ 2620              	.LASF120:
+ 2621 0311 4359424C 		.ascii	"CYBLE_GATT_ERR_INSUFFICIENT_RESOURCE\000"
+ 2621      455F4741 
+ 2621      54545F45 
+ 2621      52525F49 
+ 2621      4E535546 
+ 2622              	.LASF174:
+ 2623 0336 4359424C 		.ascii	"CYBLE_HTS_CCCD\000"
+ 2623      455F4854 
+ 2623      535F4343 
+ 2623      434400
+ 2624              	.LASF119:
+ 2625 0345 4359424C 		.ascii	"CYBLE_GATT_ERR_UNSUPPORTED_GROUP_TYPE\000"
+ 2625      455F4741 
+ 2625      54545F45 
+ 2625      52525F55 
+ 2625      4E535550 
+ 2626              	.LASF86:
+ 2627 036b 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CONNECTION_ENTITY_NOT_FOUND\000"
+ 2627      455F4552 
+ 2627      524F525F 
+ 2627      4C324341 
+ 2627      505F434F 
+ 2628              	.LASF93:
+ 2629 0399 4359424C 		.ascii	"CYBLE_ERROR_MIC_AUTH_FAILED\000"
+ 2629      455F4552 
+ 2629      524F525F 
+ 2629      4D49435F 
+ 2629      41555448 
+ 2630              	.LASF186:
+ 2631 03b5 4359424C 		.ascii	"CYBLE_EVT_GATTC_CHAR_DISCOVERY_FAILED\000"
+ 2631      455F4556 
+ 2631      545F4741 
+ 2631      5454435F 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 55
+
+
+ 2631      43484152 
+ 2632              	.LASF56:
+ 2633 03db 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 2633      455F4556 
+ 2633      545F4741 
+ 2633      5454535F 
+ 2633      44415441 
+ 2634              	.LASF65:
+ 2635 03ff 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
+ 2635      455F4556 
+ 2635      545F4C32 
+ 2635      4341505F 
+ 2635      43424643 
+ 2636              	.LASF135:
+ 2637 0422 4359424C 		.ascii	"CYBLE_GATT_VALUE_T\000"
+ 2637      455F4741 
+ 2637      54545F56 
+ 2637      414C5545 
+ 2637      5F5400
+ 2638              	.LASF236:
+ 2639 0435 4359424C 		.ascii	"CYBLE_EVT_CSCSS_INDICATION_ENABLED\000"
+ 2639      455F4556 
+ 2639      545F4353 
+ 2639      4353535F 
+ 2639      494E4449 
+ 2640              	.LASF150:
+ 2641 0458 7065726D 		.ascii	"permission\000"
+ 2641      69737369 
+ 2641      6F6E00
+ 2642              	.LASF307:
+ 2643 0463 4359424C 		.ascii	"CYBLE_EVT_LNSC_INDICATION\000"
+ 2643      455F4556 
+ 2643      545F4C4E 
+ 2643      53435F49 
+ 2643      4E444943 
+ 2644              	.LASF318:
+ 2645 047d 4359424C 		.ascii	"CYBLE_EVT_PASSC_READ_CHAR_RESPONSE\000"
+ 2645      455F4556 
+ 2645      545F5041 
+ 2645      5353435F 
+ 2645      52454144 
+ 2646              	.LASF209:
+ 2647 04a0 4359424C 		.ascii	"CYBLE_EVT_BLSS_INDICATION_ENABLED\000"
+ 2647      455F4556 
+ 2647      545F424C 
+ 2647      53535F49 
+ 2647      4E444943 
+ 2648              	.LASF215:
+ 2649 04c2 4359424C 		.ascii	"CYBLE_EVT_BLSC_NOTIFICATION\000"
+ 2649      455F4556 
+ 2649      545F424C 
+ 2649      53435F4E 
+ 2649      4F544946 
+ 2650              	.LASF154:
+ 2651 04de 4359424C 		.ascii	"CYBLE_CALLBACK_T\000"
+ 2651      455F4341 
+ 2651      4C4C4241 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 56
+
+
+ 2651      434B5F54 
+ 2651      00
+ 2652              	.LASF241:
+ 2653 04ef 4359424C 		.ascii	"CYBLE_EVT_CSCSC_INDICATION\000"
+ 2653      455F4556 
+ 2653      545F4353 
+ 2653      4353435F 
+ 2653      494E4449 
+ 2654              	.LASF163:
+ 2655 050a 4359424C 		.ascii	"CYBLE_DIS_FIRMWARE_REV\000"
+ 2655      455F4449 
+ 2655      535F4649 
+ 2655      524D5741 
+ 2655      52455F52 
+ 2656              	.LASF53:
+ 2657 0521 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
+ 2657      455F4556 
+ 2657      545F4741 
+ 2657      5454435F 
+ 2657      48414E44 
+ 2658              	.LASF23:
+ 2659 0542 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
+ 2659      455F4556 
+ 2659      545F4741 
+ 2659      505F4155 
+ 2659      54485F52 
+ 2660              	.LASF193:
+ 2661 0559 4359424C 		.ascii	"CYBLE_EVT_GATTC_CHAR_DISCOVERY_COMPLETE\000"
+ 2661      455F4556 
+ 2661      545F4741 
+ 2661      5454435F 
+ 2661      43484152 
+ 2662              	.LASF133:
+ 2663 0581 4359424C 		.ascii	"CYBLE_CONN_HANDLE_T\000"
+ 2663      455F434F 
+ 2663      4E4E5F48 
+ 2663      414E444C 
+ 2663      455F5400 
+ 2664              	.LASF282:
+ 2665 0595 4359424C 		.ascii	"CYBLE_EVT_HRSC_WRITE_CHAR_RESPONSE\000"
+ 2665      455F4556 
+ 2665      545F4852 
+ 2665      53435F57 
+ 2665      52495445 
+ 2666              	.LASF81:
+ 2667 05b8 4359424C 		.ascii	"CYBLE_ERROR_BT_ON_NOT_COMPLETED\000"
+ 2667      455F4552 
+ 2667      524F525F 
+ 2667      42545F4F 
+ 2667      4E5F4E4F 
+ 2668              	.LASF240:
+ 2669 05d8 4359424C 		.ascii	"CYBLE_EVT_CSCSC_NOTIFICATION\000"
+ 2669      455F4556 
+ 2669      545F4353 
+ 2669      4353435F 
+ 2669      4E4F5449 
+ 2670              	.LASF352:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 57
+
+
+ 2671 05f5 4359424C 		.ascii	"CYBLE_STATE_ADVERTISING\000"
+ 2671      455F5354 
+ 2671      4154455F 
+ 2671      41445645 
+ 2671      52544953 
+ 2672              	.LASF131:
+ 2673 060d 62644861 		.ascii	"bdHandle\000"
+ 2673      6E646C65 
+ 2673      00
+ 2674              	.LASF217:
+ 2675 0616 4359424C 		.ascii	"CYBLE_EVT_BLSC_READ_DESCR_RESPONSE\000"
+ 2675      455F4556 
+ 2675      545F424C 
+ 2675      53435F52 
+ 2675      4541445F 
+ 2676              	.LASF222:
+ 2677 0639 4359424C 		.ascii	"CYBLE_EVT_CPSS_INDICATION_DISABLED\000"
+ 2677      455F4556 
+ 2677      545F4350 
+ 2677      53535F49 
+ 2677      4E444943 
+ 2678              	.LASF221:
+ 2679 065c 4359424C 		.ascii	"CYBLE_EVT_CPSS_INDICATION_ENABLED\000"
+ 2679      455F4556 
+ 2679      545F4350 
+ 2679      53535F49 
+ 2679      4E444943 
+ 2680              	.LASF304:
+ 2681 067e 4359424C 		.ascii	"CYBLE_EVT_LNSS_NOTIFICATION_ENABLED\000"
+ 2681      455F4556 
+ 2681      545F4C4E 
+ 2681      53535F4E 
+ 2681      4F544946 
+ 2682              	.LASF49:
+ 2683 06a2 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 2683      455F4556 
+ 2683      545F4741 
+ 2683      5454535F 
+ 2683      57524954 
+ 2684              	.LASF232:
+ 2685 06c0 4359424C 		.ascii	"CYBLE_EVT_CPSC_WRITE_DESCR_RESPONSE\000"
+ 2685      455F4556 
+ 2685      545F4350 
+ 2685      53435F57 
+ 2685      52495445 
+ 2686              	.LASF4:
+ 2687 06e4 6C6F6E67 		.ascii	"long int\000"
+ 2687      20696E74 
+ 2687      00
+ 2688              	.LASF237:
+ 2689 06ed 4359424C 		.ascii	"CYBLE_EVT_CSCSS_INDICATION_DISABLED\000"
+ 2689      455F4556 
+ 2689      545F4353 
+ 2689      4353535F 
+ 2689      494E4449 
+ 2690              	.LASF369:
+ 2691 0711 433A5C55 		.ascii	"C:\\Users\\Yobely\\Desktop\\Health Thermometer.cywr"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 58
+
+
+ 2691      73657273 
+ 2691      5C596F62 
+ 2691      656C795C 
+ 2691      4465736B 
+ 2692 0740 6B2E4172 		.ascii	"k.Archive01\\AN91184\\Health Thermometer.cydsn\000"
+ 2692      63686976 
+ 2692      6530315C 
+ 2692      414E3931 
+ 2692      3138345C 
+ 2693              	.LASF319:
+ 2694 076d 4359424C 		.ascii	"CYBLE_EVT_PASSC_WRITE_CHAR_RESPONSE\000"
+ 2694      455F4556 
+ 2694      545F5041 
+ 2694      5353435F 
+ 2694      57524954 
+ 2695              	.LASF171:
+ 2696 0791 4359424C 		.ascii	"CYBLE_HTS_INTERM_TEMP\000"
+ 2696      455F4854 
+ 2696      535F494E 
+ 2696      5445524D 
+ 2696      5F54454D 
+ 2697              	.LASF179:
+ 2698 07a7 4359424C 		.ascii	"CYBLE_LONG_TERM_KEY_REQUEST_REPLY\000"
+ 2698      455F4C4F 
+ 2698      4E475F54 
+ 2698      45524D5F 
+ 2698      4B45595F 
+ 2699              	.LASF17:
+ 2700 07c9 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
+ 2700      455F4556 
+ 2700      545F5354 
+ 2700      41434B5F 
+ 2700      4F4E00
+ 2701              	.LASF89:
+ 2702 07dc 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_NOT_IN_RANGE\000"
+ 2702      455F4552 
+ 2702      524F525F 
+ 2702      4C324341 
+ 2702      505F5053 
+ 2703              	.LASF162:
+ 2704 07ff 4359424C 		.ascii	"CYBLE_DIS_HARDWARE_REV\000"
+ 2704      455F4449 
+ 2704      535F4841 
+ 2704      52445741 
+ 2704      52455F52 
+ 2705              	.LASF330:
+ 2706 0816 4359424C 		.ascii	"CYBLE_EVT_RSCSC_READ_CHAR_RESPONSE\000"
+ 2706      455F4556 
+ 2706      545F5253 
+ 2706      4353435F 
+ 2706      52454144 
+ 2707              	.LASF155:
+ 2708 0839 73657276 		.ascii	"serviceHandle\000"
+ 2708      69636548 
+ 2708      616E646C 
+ 2708      6500
+ 2709              	.LASF285:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 59
+
+
+ 2710 0847 4359424C 		.ascii	"CYBLE_EVT_HTSS_NOTIFICATION_ENABLED\000"
+ 2710      455F4556 
+ 2710      545F4854 
+ 2710      53535F4E 
+ 2710      4F544946 
+ 2711              	.LASF107:
+ 2712 086b 4359424C 		.ascii	"CYBLE_GATT_ERR_INVALID_PDU\000"
+ 2712      455F4741 
+ 2712      54545F45 
+ 2712      52525F49 
+ 2712      4E56414C 
+ 2713              	.LASF100:
+ 2714 0886 4359424C 		.ascii	"CYBLE_ERROR_CHAR_IS_NOT_DISCOVERED\000"
+ 2714      455F4552 
+ 2714      524F525F 
+ 2714      43484152 
+ 2714      5F49535F 
+ 2715              	.LASF138:
+ 2716 08a9 4359424C 		.ascii	"CYBLE_GATT_HANDLE_VALUE_PAIR_T\000"
+ 2716      455F4741 
+ 2716      54545F48 
+ 2716      414E444C 
+ 2716      455F5641 
+ 2717              	.LASF149:
+ 2718 08c8 61747454 		.ascii	"attType\000"
+ 2718      79706500 
+ 2719              	.LASF272:
+ 2720 08d0 4359424C 		.ascii	"CYBLE_EVT_HIDSC_NOTIFICATION\000"
+ 2720      455F4556 
+ 2720      545F4849 
+ 2720      4453435F 
+ 2720      4E4F5449 
+ 2721              	.LASF59:
+ 2722 08ed 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 2722      455F4556 
+ 2722      545F4C32 
+ 2722      4341505F 
+ 2722      434F4D4D 
+ 2723              	.LASF116:
+ 2724 0909 4359424C 		.ascii	"CYBLE_GATT_ERR_INVALID_ATTRIBUTE_LEN\000"
+ 2724      455F4741 
+ 2724      54545F45 
+ 2724      52525F49 
+ 2724      4E56414C 
+ 2725              	.LASF269:
+ 2726 092e 4359424C 		.ascii	"CYBLE_EVT_HIDSS_SUSPEND\000"
+ 2726      455F4556 
+ 2726      545F4849 
+ 2726      4453535F 
+ 2726      53555350 
+ 2727              	.LASF90:
+ 2728 0946 4359424C 		.ascii	"CYBLE_ERROR_GATT_DB_INVALID_ATTR_HANDLE\000"
+ 2728      455F4552 
+ 2728      524F525F 
+ 2728      47415454 
+ 2728      5F44425F 
+ 2729              	.LASF0:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 60
+
+
+ 2730 096e 7369676E 		.ascii	"signed char\000"
+ 2730      65642063 
+ 2730      68617200 
+ 2731              	.LASF207:
+ 2732 097a 4359424C 		.ascii	"CYBLE_EVT_BASC_READ_DESCR_RESPONSE\000"
+ 2732      455F4556 
+ 2732      545F4241 
+ 2732      53435F52 
+ 2732      4541445F 
+ 2733              	.LASF19:
+ 2734 099d 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 2734      455F4556 
+ 2734      545F4841 
+ 2734      52445741 
+ 2734      52455F45 
+ 2735              	.LASF70:
+ 2736 09b6 4359424C 		.ascii	"CYBLE_ERROR_OK\000"
+ 2736      455F4552 
+ 2736      524F525F 
+ 2736      4F4B00
+ 2737              	.LASF40:
+ 2738 09c5 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 2738      455F4556 
+ 2738      545F4741 
+ 2738      5454435F 
+ 2738      52454144 
+ 2739              	.LASF349:
+ 2740 09ec 4359424C 		.ascii	"CYBLE_STATE_STOPPED\000"
+ 2740      455F5354 
+ 2740      4154455F 
+ 2740      53544F50 
+ 2740      50454400 
+ 2741              	.LASF324:
+ 2742 0a00 4359424C 		.ascii	"CYBLE_EVT_RSCSS_INDICATION_ENABLED\000"
+ 2742      455F4556 
+ 2742      545F5253 
+ 2742      4353535F 
+ 2742      494E4449 
+ 2743              	.LASF1:
+ 2744 0a23 756E7369 		.ascii	"unsigned char\000"
+ 2744      676E6564 
+ 2744      20636861 
+ 2744      7200
+ 2745              	.LASF39:
+ 2746 0a31 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 2746      455F4556 
+ 2746      545F4741 
+ 2746      5454435F 
+ 2746      5843484E 
+ 2747              	.LASF223:
+ 2748 0a4f 4359424C 		.ascii	"CYBLE_EVT_CPSS_INDICATION_CONFIRMED\000"
+ 2748      455F4556 
+ 2748      545F4350 
+ 2748      53535F49 
+ 2748      4E444943 
+ 2749              	.LASF176:
+ 2750 0a73 4359424C 		.ascii	"CYBLE_HTS_DESCR_COUNT\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 61
+
+
+ 2750      455F4854 
+ 2750      535F4445 
+ 2750      5343525F 
+ 2750      434F554E 
+ 2751              	.LASF220:
+ 2752 0a89 4359424C 		.ascii	"CYBLE_EVT_CPSS_NOTIFICATION_DISABLED\000"
+ 2752      455F4556 
+ 2752      545F4350 
+ 2752      53535F4E 
+ 2752      4F544946 
+ 2753              	.LASF329:
+ 2754 0aae 4359424C 		.ascii	"CYBLE_EVT_RSCSC_INDICATION\000"
+ 2754      455F4556 
+ 2754      545F5253 
+ 2754      4353435F 
+ 2754      494E4449 
+ 2755              	.LASF66:
+ 2756 0ac9 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 2756      455F4556 
+ 2756      545F4C32 
+ 2756      4341505F 
+ 2756      43424643 
+ 2757              	.LASF88:
+ 2758 0aec 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_NOT_ENOUGH_CREDITS\000"
+ 2758      455F4552 
+ 2758      524F525F 
+ 2758      4C324341 
+ 2758      505F4E4F 
+ 2759              	.LASF148:
+ 2760 0b11 61747448 		.ascii	"attHandle\000"
+ 2760      616E646C 
+ 2760      6500
+ 2761              	.LASF183:
+ 2762 0b1b 4359424C 		.ascii	"CYBLE_EVT_GATTC_INDICATION\000"
+ 2762      455F4556 
+ 2762      545F4741 
+ 2762      5454435F 
+ 2762      494E4449 
+ 2763              	.LASF336:
+ 2764 0b36 4359424C 		.ascii	"CYBLE_EVT_SCPSS_NOTIFICATION_ENABLED\000"
+ 2764      455F4556 
+ 2764      545F5343 
+ 2764      5053535F 
+ 2764      4E4F5449 
+ 2765              	.LASF63:
+ 2766 0b5b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 2766      455F4556 
+ 2766      545F4C32 
+ 2766      4341505F 
+ 2766      43424643 
+ 2767              	.LASF43:
+ 2768 0b7c 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+ 2768      455F4556 
+ 2768      545F4741 
+ 2768      5454435F 
+ 2768      46494E44 
+ 2769              	.LASF14:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 62
+
+
+ 2770 0ba3 63686172 		.ascii	"char\000"
+ 2770      00
+ 2771              	.LASF344:
+ 2772 0ba8 4359424C 		.ascii	"CYBLE_EVT_TPSC_NOTIFICATION\000"
+ 2772      455F4556 
+ 2772      545F5450 
+ 2772      53435F4E 
+ 2772      4F544946 
+ 2773              	.LASF192:
+ 2774 0bc4 4359424C 		.ascii	"CYBLE_EVT_GATTC_INCL_DISCOVERY_COMPLETE\000"
+ 2774      455F4556 
+ 2774      545F4741 
+ 2774      5454435F 
+ 2774      494E434C 
+ 2775              	.LASF46:
+ 2776 0bec 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 2776      455F4556 
+ 2776      545F4741 
+ 2776      5454435F 
+ 2776      52454144 
+ 2777              	.LASF16:
+ 2778 0c0b 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 2778      455F4556 
+ 2778      545F484F 
+ 2778      53545F49 
+ 2778      4E56414C 
+ 2779              	.LASF117:
+ 2780 0c22 4359424C 		.ascii	"CYBLE_GATT_ERR_UNLIKELY_ERROR\000"
+ 2780      455F4741 
+ 2780      54545F45 
+ 2780      52525F55 
+ 2780      4E4C494B 
+ 2781              	.LASF263:
+ 2782 0c40 4359424C 		.ascii	"CYBLE_EVT_GLSC_READ_DESCR_RESPONSE\000"
+ 2782      455F4556 
+ 2782      545F474C 
+ 2782      53435F52 
+ 2782      4541445F 
+ 2783              	.LASF77:
+ 2784 0c63 4359424C 		.ascii	"CYBLE_ERROR_NO_DEVICE_ENTITY\000"
+ 2784      455F4552 
+ 2784      524F525F 
+ 2784      4E4F5F44 
+ 2784      45564943 
+ 2785              	.LASF45:
+ 2786 0c80 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 2786      455F4556 
+ 2786      545F4741 
+ 2786      5454435F 
+ 2786      52454144 
+ 2787              	.LASF288:
+ 2788 0c9e 4359424C 		.ascii	"CYBLE_EVT_HTSS_INDICATION_DISABLED\000"
+ 2788      455F4556 
+ 2788      545F4854 
+ 2788      53535F49 
+ 2788      4E444943 
+ 2789              	.LASF335:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 63
+
+
+ 2790 0cc1 4359424C 		.ascii	"CYBLE_EVT_RTUSC_READ_CHAR_RESPONSE\000"
+ 2790      455F4556 
+ 2790      545F5254 
+ 2790      5553435F 
+ 2790      52454144 
+ 2791              	.LASF52:
+ 2792 0ce4 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 2792      455F4556 
+ 2792      545F4741 
+ 2792      5454435F 
+ 2792      45584543 
+ 2793              	.LASF121:
+ 2794 0d03 4359424C 		.ascii	"CYBLE_GATT_ERR_HEART_RATE_CONTROL_POINT_NOT_SUPPORT"
+ 2794      455F4741 
+ 2794      54545F45 
+ 2794      52525F48 
+ 2794      45415254 
+ 2795 0d36 454400   		.ascii	"ED\000"
+ 2796              	.LASF114:
+ 2797 0d39 4359424C 		.ascii	"CYBLE_GATT_ERR_ATTRIBUTE_NOT_LONG\000"
+ 2797      455F4741 
+ 2797      54545F45 
+ 2797      52525F41 
+ 2797      54545249 
+ 2798              	.LASF251:
+ 2799 0d5b 4359424C 		.ascii	"CYBLE_EVT_CTSC_WRITE_DESCR_RESPONSE\000"
+ 2799      455F4556 
+ 2799      545F4354 
+ 2799      53435F57 
+ 2799      52495445 
+ 2800              	.LASF164:
+ 2801 0d7f 4359424C 		.ascii	"CYBLE_DIS_SOFTWARE_REV\000"
+ 2801      455F4449 
+ 2801      535F534F 
+ 2801      46545741 
+ 2801      52455F52 
+ 2802              	.LASF277:
+ 2803 0d96 4359424C 		.ascii	"CYBLE_EVT_HRSS_ENERGY_EXPENDED_RESET\000"
+ 2803      455F4556 
+ 2803      545F4852 
+ 2803      53535F45 
+ 2803      4E455247 
+ 2804              	.LASF160:
+ 2805 0dbb 4359424C 		.ascii	"CYBLE_DIS_MODEL_NUMBER\000"
+ 2805      455F4449 
+ 2805      535F4D4F 
+ 2805      44454C5F 
+ 2805      4E554D42 
+ 2806              	.LASF153:
+ 2807 0dd2 4359424C 		.ascii	"CYBLE_GATTS_DB_T\000"
+ 2807      455F4741 
+ 2807      5454535F 
+ 2807      44425F54 
+ 2807      00
+ 2808              	.LASF212:
+ 2809 0de3 4359424C 		.ascii	"CYBLE_EVT_BLSS_NOTIFICATION_ENABLED\000"
+ 2809      455F4556 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 64
+
+
+ 2809      545F424C 
+ 2809      53535F4E 
+ 2809      4F544946 
+ 2810              	.LASF165:
+ 2811 0e07 4359424C 		.ascii	"CYBLE_DIS_SYSTEM_ID\000"
+ 2811      455F4449 
+ 2811      535F5359 
+ 2811      5354454D 
+ 2811      5F494400 
+ 2812              	.LASF188:
+ 2813 0e1b 4359424C 		.ascii	"CYBLE_EVT_GATTC_SRVC_DUPLICATION\000"
+ 2813      455F4556 
+ 2813      545F4741 
+ 2813      5454435F 
+ 2813      53525643 
+ 2814              	.LASF71:
+ 2815 0e3c 4359424C 		.ascii	"CYBLE_ERROR_INVALID_PARAMETER\000"
+ 2815      455F4552 
+ 2815      524F525F 
+ 2815      494E5641 
+ 2815      4C49445F 
+ 2816              	.LASF331:
+ 2817 0e5a 4359424C 		.ascii	"CYBLE_EVT_RSCSC_WRITE_CHAR_RESPONSE\000"
+ 2817      455F4556 
+ 2817      545F5253 
+ 2817      4353435F 
+ 2817      57524954 
+ 2818              	.LASF347:
+ 2819 0e7e 4359424C 		.ascii	"CYBLE_EVT_TPSC_WRITE_DESCR_RESPONSE\000"
+ 2819      455F4556 
+ 2819      545F5450 
+ 2819      53435F57 
+ 2819      52495445 
+ 2820              	.LASF235:
+ 2821 0ea2 4359424C 		.ascii	"CYBLE_EVT_CSCSS_NOTIFICATION_DISABLED\000"
+ 2821      455F4556 
+ 2821      545F4353 
+ 2821      4353535F 
+ 2821      4E4F5449 
+ 2822              	.LASF246:
+ 2823 0ec8 4359424C 		.ascii	"CYBLE_EVT_CTSS_NOTIFICATION_ENABLED\000"
+ 2823      455F4556 
+ 2823      545F4354 
+ 2823      53535F4E 
+ 2823      4F544946 
+ 2824              	.LASF325:
+ 2825 0eec 4359424C 		.ascii	"CYBLE_EVT_RSCSS_INDICATION_DISABLED\000"
+ 2825      455F4556 
+ 2825      545F5253 
+ 2825      4353535F 
+ 2825      494E4449 
+ 2826              	.LASF97:
+ 2827 0f10 4359424C 		.ascii	"CYBLE_DESCR_DISC_DONE\000"
+ 2827      455F4445 
+ 2827      5343525F 
+ 2827      44495343 
+ 2827      5F444F4E 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 65
+
+
+ 2828              	.LASF356:
+ 2829 0f26 4379426C 		.ascii	"CyBle_GattsWriteEventHandler\000"
+ 2829      655F4761 
+ 2829      74747357 
+ 2829      72697465 
+ 2829      4576656E 
+ 2830              	.LASF298:
+ 2831 0f43 4359424C 		.ascii	"CYBLE_EVT_LLSS_WRITE_CHAR_REQ\000"
+ 2831      455F4556 
+ 2831      545F4C4C 
+ 2831      53535F57 
+ 2831      52495445 
+ 2832              	.LASF73:
+ 2833 0f61 4359424C 		.ascii	"CYBLE_ERROR_MEMORY_ALLOCATION_FAILED\000"
+ 2833      455F4552 
+ 2833      524F525F 
+ 2833      4D454D4F 
+ 2833      52595F41 
+ 2834              	.LASF283:
+ 2835 0f86 4359424C 		.ascii	"CYBLE_EVT_HRSC_READ_DESCR_RESPONSE\000"
+ 2835      455F4556 
+ 2835      545F4852 
+ 2835      53435F52 
+ 2835      4541445F 
+ 2836              	.LASF234:
+ 2837 0fa9 4359424C 		.ascii	"CYBLE_EVT_CSCSS_NOTIFICATION_ENABLED\000"
+ 2837      455F4556 
+ 2837      545F4353 
+ 2837      4353535F 
+ 2837      4E4F5449 
+ 2838              	.LASF214:
+ 2839 0fce 4359424C 		.ascii	"CYBLE_EVT_BLSC_INDICATION\000"
+ 2839      455F4556 
+ 2839      545F424C 
+ 2839      53435F49 
+ 2839      4E444943 
+ 2840              	.LASF271:
+ 2841 0fe8 4359424C 		.ascii	"CYBLE_EVT_HIDSS_REPORT_CHAR_WRITE\000"
+ 2841      455F4556 
+ 2841      545F4849 
+ 2841      4453535F 
+ 2841      5245504F 
+ 2842              	.LASF124:
+ 2843 100a 4359424C 		.ascii	"CYBLE_GATTS_ERR_CCCD_IMPROPERLY_CONFIGURED\000"
+ 2843      455F4741 
+ 2843      5454535F 
+ 2843      4552525F 
+ 2843      43434344 
+ 2844              	.LASF94:
+ 2845 1035 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
+ 2845      455F4552 
+ 2845      524F525F 
+ 2845      4D415800 
+ 2846              	.LASF310:
+ 2847 1045 4359424C 		.ascii	"CYBLE_EVT_LNSC_WRITE_CHAR_RESPONSE\000"
+ 2847      455F4556 
+ 2847      545F4C4E 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 66
+
+
+ 2847      53435F57 
+ 2847      52495445 
+ 2848              	.LASF58:
+ 2849 1068 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 2849      455F4556 
+ 2849      545F4C32 
+ 2849      4341505F 
+ 2849      434F4E4E 
+ 2850              	.LASF200:
+ 2851 108e 4359424C 		.ascii	"CYBLE_EVT_ANSC_WRITE_CHAR_RESPONSE\000"
+ 2851      455F4556 
+ 2851      545F414E 
+ 2851      53435F57 
+ 2851      52495445 
+ 2852              	.LASF278:
+ 2853 10b1 4359424C 		.ascii	"CYBLE_EVT_HRSS_NOTIFICATION_ENABLED\000"
+ 2853      455F4556 
+ 2853      545F4852 
+ 2853      53535F4E 
+ 2853      4F544946 
+ 2854              	.LASF26:
+ 2855 10d5 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 2855      455F4556 
+ 2855      545F4741 
+ 2855      505F4155 
+ 2855      54485F43 
+ 2856              	.LASF320:
+ 2857 10f1 4359424C 		.ascii	"CYBLE_EVT_PASSC_READ_DESCR_RESPONSE\000"
+ 2857      455F4556 
+ 2857      545F5041 
+ 2857      5353435F 
+ 2857      52454144 
+ 2858              	.LASF27:
+ 2859 1115 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 2859      455F4556 
+ 2859      545F4741 
+ 2859      505F4155 
+ 2859      54485F46 
+ 2860              	.LASF270:
+ 2861 112f 4359424C 		.ascii	"CYBLE_EVT_HIDSS_EXIT_SUSPEND\000"
+ 2861      455F4556 
+ 2861      545F4849 
+ 2861      4453535F 
+ 2861      45584954 
+ 2862              	.LASF95:
+ 2863 114c 4359424C 		.ascii	"CYBLE_INCL_DISC_DONE\000"
+ 2863      455F494E 
+ 2863      434C5F44 
+ 2863      4953435F 
+ 2863      444F4E45 
+ 2864              	.LASF126:
+ 2865 1161 4359424C 		.ascii	"CYBLE_GATT_ERR_CCCD_IMPROPERLY_CONFIGURED\000"
+ 2865      455F4741 
+ 2865      54545F45 
+ 2865      52525F43 
+ 2865      4343445F 
+ 2866              	.LASF74:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 67
+
+
+ 2867 118b 4359424C 		.ascii	"CYBLE_ERROR_INSUFFICIENT_RESOURCES\000"
+ 2867      455F4552 
+ 2867      524F525F 
+ 2867      494E5355 
+ 2867      46464943 
+ 2868              	.LASF323:
+ 2869 11ae 4359424C 		.ascii	"CYBLE_EVT_RSCSS_NOTIFICATION_DISABLED\000"
+ 2869      455F4556 
+ 2869      545F5253 
+ 2869      4353535F 
+ 2869      4E4F5449 
+ 2870              	.LASF274:
+ 2871 11d4 4359424C 		.ascii	"CYBLE_EVT_HIDSC_WRITE_CHAR_RESPONSE\000"
+ 2871      455F4556 
+ 2871      545F4849 
+ 2871      4453435F 
+ 2871      57524954 
+ 2872              	.LASF5:
+ 2873 11f8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2873      20756E73 
+ 2873      69676E65 
+ 2873      6420696E 
+ 2873      7400
+ 2874              	.LASF297:
+ 2875 120a 4359424C 		.ascii	"CYBLE_EVT_IASS_WRITE_CHAR_CMD\000"
+ 2875      455F4556 
+ 2875      545F4941 
+ 2875      53535F57 
+ 2875      52495445 
+ 2876              	.LASF314:
+ 2877 1228 4359424C 		.ascii	"CYBLE_EVT_PASSS_NOTIFICATION_ENABLED\000"
+ 2877      455F4556 
+ 2877      545F5041 
+ 2877      5353535F 
+ 2877      4E4F5449 
+ 2878              	.LASF317:
+ 2879 124d 4359424C 		.ascii	"CYBLE_EVT_PASSC_NOTIFICATION\000"
+ 2879      455F4556 
+ 2879      545F5041 
+ 2879      5353435F 
+ 2879      4E4F5449 
+ 2880              	.LASF199:
+ 2881 126a 4359424C 		.ascii	"CYBLE_EVT_ANSC_READ_CHAR_RESPONSE\000"
+ 2881      455F4556 
+ 2881      545F414E 
+ 2881      53435F52 
+ 2881      4541445F 
+ 2882              	.LASF84:
+ 2883 128c 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
+ 2883      455F4552 
+ 2883      524F525F 
+ 2883      4C324341 
+ 2883      505F5053 
+ 2884              	.LASF290:
+ 2885 12b5 4359424C 		.ascii	"CYBLE_EVT_HTSS_CHAR_WRITE\000"
+ 2885      455F4556 
+ 2885      545F4854 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 68
+
+
+ 2885      53535F43 
+ 2885      4841525F 
+ 2886              	.LASF146:
+ 2887 12cf 61747456 		.ascii	"attValueUuid\000"
+ 2887      616C7565 
+ 2887      55756964 
+ 2887      00
+ 2888              	.LASF203:
+ 2889 12dc 4359424C 		.ascii	"CYBLE_EVT_BASS_NOTIFICATION_ENABLED\000"
+ 2889      455F4556 
+ 2889      545F4241 
+ 2889      53535F4E 
+ 2889      4F544946 
+ 2890              	.LASF316:
+ 2891 1300 4359424C 		.ascii	"CYBLE_EVT_PASSS_WRITE_CHAR\000"
+ 2891      455F4556 
+ 2891      545F5041 
+ 2891      5353535F 
+ 2891      57524954 
+ 2892              	.LASF230:
+ 2893 131b 4359424C 		.ascii	"CYBLE_EVT_CPSC_WRITE_CHAR_RESPONSE\000"
+ 2893      455F4556 
+ 2893      545F4350 
+ 2893      53435F57 
+ 2893      52495445 
+ 2894              	.LASF161:
+ 2895 133e 4359424C 		.ascii	"CYBLE_DIS_SERIAL_NUMBER\000"
+ 2895      455F4449 
+ 2895      535F5345 
+ 2895      5249414C 
+ 2895      5F4E554D 
+ 2896              	.LASF172:
+ 2897 1356 4359424C 		.ascii	"CYBLE_HTS_MEASURE_INTERVAL\000"
+ 2897      455F4854 
+ 2897      535F4D45 
+ 2897      41535552 
+ 2897      455F494E 
+ 2898              	.LASF32:
+ 2899 1371 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 2899      455F4556 
+ 2899      545F4741 
+ 2899      505F434F 
+ 2899      4E4E4543 
+ 2900              	.LASF350:
+ 2901 139a 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
+ 2901      455F5354 
+ 2901      4154455F 
+ 2901      494E4954 
+ 2901      49414C49 
+ 2902              	.LASF243:
+ 2903 13b3 4359424C 		.ascii	"CYBLE_EVT_CSCSC_WRITE_CHAR_RESPONSE\000"
+ 2903      455F4556 
+ 2903      545F4353 
+ 2903      4353435F 
+ 2903      57524954 
+ 2904              	.LASF62:
+ 2905 13d7 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 69
+
+
+ 2905      455F4556 
+ 2905      545F4C32 
+ 2905      4341505F 
+ 2905      43424643 
+ 2906              	.LASF359:
+ 2907 13f8 6379426C 		.ascii	"cyBle_attValues\000"
+ 2907      655F6174 
+ 2907      7456616C 
+ 2907      75657300 
+ 2908              	.LASF239:
+ 2909 1408 4359424C 		.ascii	"CYBLE_EVT_CSCSS_CHAR_WRITE\000"
+ 2909      455F4556 
+ 2909      545F4353 
+ 2909      4353535F 
+ 2909      43484152 
+ 2910              	.LASF158:
+ 2911 1423 4359424C 		.ascii	"CYBLE_GATTS_T\000"
+ 2911      455F4741 
+ 2911      5454535F 
+ 2911      5400
+ 2912              	.LASF24:
+ 2913 1431 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 2913      455F4556 
+ 2913      545F4741 
+ 2913      505F5041 
+ 2913      53534B45 
+ 2914              	.LASF305:
+ 2915 1455 4359424C 		.ascii	"CYBLE_EVT_LNSS_NOTIFICATION_DISABLED\000"
+ 2915      455F4556 
+ 2915      545F4C4E 
+ 2915      53535F4E 
+ 2915      4F544946 
+ 2916              	.LASF224:
+ 2917 147a 4359424C 		.ascii	"CYBLE_EVT_CPSS_BROADCAST_ENABLED\000"
+ 2917      455F4556 
+ 2917      545F4350 
+ 2917      53535F42 
+ 2917      524F4144 
+ 2918              	.LASF261:
+ 2919 149b 4359424C 		.ascii	"CYBLE_EVT_GLSC_READ_CHAR_RESPONSE\000"
+ 2919      455F4556 
+ 2919      545F474C 
+ 2919      53435F52 
+ 2919      4541445F 
+ 2920              	.LASF368:
+ 2921 14bd 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\BLE_gatt.c\000"
+ 2921      6E657261 
+ 2921      7465645F 
+ 2921      536F7572 
+ 2921      63655C50 
+ 2922              	.LASF291:
+ 2923 14e1 4359424C 		.ascii	"CYBLE_EVT_HTSC_NOTIFICATION\000"
+ 2923      455F4556 
+ 2923      545F4854 
+ 2923      53435F4E 
+ 2923      4F544946 
+ 2924              	.LASF6:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 70
+
+
+ 2925 14fd 6C6F6E67 		.ascii	"long long int\000"
+ 2925      206C6F6E 
+ 2925      6720696E 
+ 2925      7400
+ 2926              	.LASF345:
+ 2927 150b 4359424C 		.ascii	"CYBLE_EVT_TPSC_READ_CHAR_RESPONSE\000"
+ 2927      455F4556 
+ 2927      545F5450 
+ 2927      53435F52 
+ 2927      4541445F 
+ 2928              	.LASF167:
+ 2929 152d 4359424C 		.ascii	"CYBLE_DIS_PNP_ID\000"
+ 2929      455F4449 
+ 2929      535F504E 
+ 2929      505F4944 
+ 2929      00
+ 2930              	.LASF189:
+ 2931 153e 4359424C 		.ascii	"CYBLE_EVT_GATTC_CHAR_DUPLICATION\000"
+ 2931      455F4556 
+ 2931      545F4741 
+ 2931      5454435F 
+ 2931      43484152 
+ 2932              	.LASF256:
+ 2933 155f 4359424C 		.ascii	"CYBLE_EVT_GLSS_NOTIFICATION_ENABLED\000"
+ 2933      455F4556 
+ 2933      545F474C 
+ 2933      53535F4E 
+ 2933      4F544946 
+ 2934              	.LASF112:
+ 2935 1583 4359424C 		.ascii	"CYBLE_GATT_ERR_PREPARE_WRITE_QUEUE_FULL\000"
+ 2935      455F4741 
+ 2935      54545F45 
+ 2935      52525F50 
+ 2935      52455041 
+ 2936              	.LASF85:
+ 2937 15ab 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_NOT_REGISTERED\000"
+ 2937      455F4552 
+ 2937      524F525F 
+ 2937      4C324341 
+ 2937      505F5053 
+ 2938              	.LASF75:
+ 2939 15d0 4359424C 		.ascii	"CYBLE_ERROR_OOB_NOT_AVAILABLE\000"
+ 2939      455F4552 
+ 2939      524F525F 
+ 2939      4F4F425F 
+ 2939      4E4F545F 
+ 2940              	.LASF13:
+ 2941 15ee 646F7562 		.ascii	"double\000"
+ 2941      6C6500
+ 2942              	.LASF91:
+ 2943 15f5 4359424C 		.ascii	"CYBLE_ERROR_DEVICE_ALREADY_EXISTS\000"
+ 2943      455F4552 
+ 2943      524F525F 
+ 2943      44455649 
+ 2943      43455F41 
+ 2944              	.LASF68:
+ 2945 1617 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 71
+
+
+ 2945      455F4556 
+ 2945      545F5045 
+ 2945      4E44494E 
+ 2945      475F464C 
+ 2946              	.LASF115:
+ 2947 1635 4359424C 		.ascii	"CYBLE_GATT_ERR_INSUFFICIENT_ENC_KEY_SIZE\000"
+ 2947      455F4741 
+ 2947      54545F45 
+ 2947      52525F49 
+ 2947      4E535546 
+ 2948              	.LASF127:
+ 2949 165e 4359424C 		.ascii	"CYBLE_GATT_ERR_PROCEDURE_ALREADY_IN_PROGRESS\000"
+ 2949      455F4741 
+ 2949      54545F45 
+ 2949      52525F50 
+ 2949      524F4345 
+ 2950              	.LASF312:
+ 2951 168b 4359424C 		.ascii	"CYBLE_EVT_LNSC_WRITE_DESCR_RESPONSE\000"
+ 2951      455F4556 
+ 2951      545F4C4E 
+ 2951      53435F57 
+ 2951      52495445 
+ 2952              	.LASF299:
+ 2953 16af 4359424C 		.ascii	"CYBLE_EVT_LLSC_READ_CHAR_RESPONSE\000"
+ 2953      455F4556 
+ 2953      545F4C4C 
+ 2953      53435F52 
+ 2953      4541445F 
+ 2954              	.LASF238:
+ 2955 16d1 4359424C 		.ascii	"CYBLE_EVT_CSCSS_INDICATION_CONFIRMATION\000"
+ 2955      455F4556 
+ 2955      545F4353 
+ 2955      4353535F 
+ 2955      494E4449 
+ 2956              	.LASF87:
+ 2957 16f9 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CHANNEL_NOT_FOUND\000"
+ 2957      455F4552 
+ 2957      524F525F 
+ 2957      4C324341 
+ 2957      505F4348 
+ 2958              	.LASF363:
+ 2959 171d 6379426C 		.ascii	"cyBle_gattDB\000"
+ 2959      655F6761 
+ 2959      74744442 
+ 2959      00
+ 2960              	.LASF78:
+ 2961 172a 4359424C 		.ascii	"CYBLE_ERROR_REPEATED_ATTEMPTS\000"
+ 2961      455F4552 
+ 2961      524F525F 
+ 2961      52455045 
+ 2961      41544544 
+ 2962              	.LASF12:
+ 2963 1748 666C6F61 		.ascii	"float\000"
+ 2963      7400
+ 2964              	.LASF339:
+ 2965 174e 4359424C 		.ascii	"CYBLE_EVT_SCPSC_NOTIFICATION\000"
+ 2965      455F4556 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 72
+
+
+ 2965      545F5343 
+ 2965      5053435F 
+ 2965      4E4F5449 
+ 2966              	.LASF268:
+ 2967 176b 4359424C 		.ascii	"CYBLE_EVT_HIDSS_REPORT_MODE_ENTER\000"
+ 2967      455F4556 
+ 2967      545F4849 
+ 2967      4453535F 
+ 2967      5245504F 
+ 2968              	.LASF92:
+ 2969 178d 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED\000"
+ 2969      455F4552 
+ 2969      524F525F 
+ 2969      464C4153 
+ 2969      485F5752 
+ 2970              	.LASF266:
+ 2971 17b2 4359424C 		.ascii	"CYBLE_EVT_HIDSS_NOTIFICATION_DISABLED\000"
+ 2971      455F4556 
+ 2971      545F4849 
+ 2971      4453535F 
+ 2971      4E4F5449 
+ 2972              	.LASF362:
+ 2973 17d8 6379426C 		.ascii	"cyBle_gatts\000"
+ 2973      655F6761 
+ 2973      74747300 
+ 2974              	.LASF111:
+ 2975 17e4 4359424C 		.ascii	"CYBLE_GATT_ERR_INSUFFICIENT_AUTHORIZATION\000"
+ 2975      455F4741 
+ 2975      54545F45 
+ 2975      52525F49 
+ 2975      4E535546 
+ 2976              	.LASF137:
+ 2977 180e 61747472 		.ascii	"attrHandle\000"
+ 2977      48616E64 
+ 2977      6C6500
+ 2978              	.LASF141:
+ 2979 1819 4359424C 		.ascii	"CYBLE_GATTS_WRITE_REQ_PARAM_T\000"
+ 2979      455F4741 
+ 2979      5454535F 
+ 2979      57524954 
+ 2979      455F5245 
+ 2980              	.LASF8:
+ 2981 1837 756E7369 		.ascii	"unsigned int\000"
+ 2981      676E6564 
+ 2981      20696E74 
+ 2981      00
+ 2982              	.LASF50:
+ 2983 1844 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 2983      455F4556 
+ 2983      545F4741 
+ 2983      5454535F 
+ 2983      50524550 
+ 2984              	.LASF151:
+ 2985 1863 61747445 		.ascii	"attEndHandle\000"
+ 2985      6E644861 
+ 2985      6E646C65 
+ 2985      00
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 73
+
+
+ 2986              	.LASF108:
+ 2987 1870 4359424C 		.ascii	"CYBLE_GATT_ERR_INSUFFICIENT_AUTHENTICATION\000"
+ 2987      455F4741 
+ 2987      54545F45 
+ 2987      52525F49 
+ 2987      4E535546 
+ 2988              	.LASF247:
+ 2989 189b 4359424C 		.ascii	"CYBLE_EVT_CTSS_NOTIFICATION_DISABLED\000"
+ 2989      455F4556 
+ 2989      545F4354 
+ 2989      53535F4E 
+ 2989      4F544946 
+ 2990              	.LASF210:
+ 2991 18c0 4359424C 		.ascii	"CYBLE_EVT_BLSS_INDICATION_DISABLED\000"
+ 2991      455F4556 
+ 2991      545F424C 
+ 2991      53535F49 
+ 2991      4E444943 
+ 2992              	.LASF166:
+ 2993 18e3 4359424C 		.ascii	"CYBLE_DIS_REG_CERT_DATA\000"
+ 2993      455F4449 
+ 2993      535F5245 
+ 2993      475F4345 
+ 2993      52545F44 
+ 2994              	.LASF337:
+ 2995 18fb 4359424C 		.ascii	"CYBLE_EVT_SCPSS_NOTIFICATION_DISABLED\000"
+ 2995      455F4556 
+ 2995      545F5343 
+ 2995      5053535F 
+ 2995      4E4F5449 
+ 2996              	.LASF367:
+ 2997 1921 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 2997      4320342E 
+ 2997      382E3420 
+ 2997      32303134 
+ 2997      30353236 
+ 2998 1954 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 2998      20726576 
+ 2998      6973696F 
+ 2998      6E203231 
+ 2998      31333538 
+ 2999 1987 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 2999      66756E63 
+ 2999      74696F6E 
+ 2999      2D736563 
+ 2999      74696F6E 
+ 3000              	.LASF123:
+ 3001 199d 4359424C 		.ascii	"CYBLE_GATTS_ERR_PROCEDURE_ALREADY_IN_PROGRESS\000"
+ 3001      455F4741 
+ 3001      5454535F 
+ 3001      4552525F 
+ 3001      50524F43 
+ 3002              	.LASF177:
+ 3003 19cb 4359424C 		.ascii	"CYBLE_AUTHENTICATION_REQUEST_REPLY\000"
+ 3003      455F4155 
+ 3003      5448454E 
+ 3003      54494341 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 74
+
+
+ 3003      54494F4E 
+ 3004              	.LASF83:
+ 3005 19ee 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_WRONG_ENCODING\000"
+ 3005      455F4552 
+ 3005      524F525F 
+ 3005      4C324341 
+ 3005      505F5053 
+ 3006              	.LASF213:
+ 3007 1a13 4359424C 		.ascii	"CYBLE_EVT_BLSS_NOTIFICATION_DISABLED\000"
+ 3007      455F4556 
+ 3007      545F424C 
+ 3007      53535F4E 
+ 3007      4F544946 
+ 3008              	.LASF113:
+ 3009 1a38 4359424C 		.ascii	"CYBLE_GATT_ERR_ATTRIBUTE_NOT_FOUND\000"
+ 3009      455F4741 
+ 3009      54545F45 
+ 3009      52525F41 
+ 3009      54545249 
+ 3010              	.LASF294:
+ 3011 1a5b 4359424C 		.ascii	"CYBLE_EVT_HTSC_WRITE_CHAR_RESPONSE\000"
+ 3011      455F4556 
+ 3011      545F4854 
+ 3011      53435F57 
+ 3011      52495445 
+ 3012              	.LASF69:
+ 3013 1a7e 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 3013      455F4556 
+ 3013      545F4D41 
+ 3013      5800
+ 3014              	.LASF33:
+ 3015 1a8c 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 3015      455F4556 
+ 3015      545F4741 
+ 3015      50435F53 
+ 3015      43414E5F 
+ 3016              	.LASF195:
+ 3017 1aab 4359424C 		.ascii	"CYBLE_EVT_ANSS_NOTIFICATION_ENABLED\000"
+ 3017      455F4556 
+ 3017      545F414E 
+ 3017      53535F4E 
+ 3017      4F544946 
+ 3018              	.LASF47:
+ 3019 1acf 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 3019      455F4556 
+ 3019      545F4741 
+ 3019      5454535F 
+ 3019      57524954 
+ 3020              	.LASF25:
+ 3021 1ae9 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 3021      455F4556 
+ 3021      545F4741 
+ 3021      505F5041 
+ 3021      53534B45 
+ 3022              	.LASF99:
+ 3023 1b0f 4359424C 		.ascii	"CYBLE_ERROR_IND_DISABLED\000"
+ 3023      455F4552 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 75
+
+
+ 3023      524F525F 
+ 3023      494E445F 
+ 3023      44495341 
+ 3024              	.LASF98:
+ 3025 1b28 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
+ 3025      455F4552 
+ 3025      524F525F 
+ 3025      4E54465F 
+ 3025      44495341 
+ 3026              	.LASF44:
+ 3027 1b41 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 3027      455F4556 
+ 3027      545F4741 
+ 3027      5454435F 
+ 3027      52454144 
+ 3028              	.LASF228:
+ 3029 1b5a 4359424C 		.ascii	"CYBLE_EVT_CPSC_INDICATION\000"
+ 3029      455F4556 
+ 3029      545F4350 
+ 3029      53435F49 
+ 3029      4E444943 
+ 3030              	.LASF110:
+ 3031 1b74 4359424C 		.ascii	"CYBLE_GATT_ERR_INVALID_OFFSET\000"
+ 3031      455F4741 
+ 3031      54545F45 
+ 3031      52525F49 
+ 3031      4E56414C 
+ 3032              	.LASF252:
+ 3033 1b92 4359424C 		.ascii	"CYBLE_EVT_DISC_READ_CHAR_RESPONSE\000"
+ 3033      455F4556 
+ 3033      545F4449 
+ 3033      53435F52 
+ 3033      4541445F 
+ 3034              	.LASF61:
+ 3035 1bb4 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 3035      455F4556 
+ 3035      545F4C32 
+ 3035      4341505F 
+ 3035      43424643 
+ 3036              	.LASF295:
+ 3037 1bd2 4359424C 		.ascii	"CYBLE_EVT_HTSC_READ_DESCR_RESPONSE\000"
+ 3037      455F4556 
+ 3037      545F4854 
+ 3037      53435F52 
+ 3037      4541445F 
+ 3038              	.LASF348:
+ 3039 1bf5 4359424C 		.ascii	"CYBLE_DEBUG_EVT_BLESS_INT\000"
+ 3039      455F4445 
+ 3039      4255475F 
+ 3039      4556545F 
+ 3039      424C4553 
+ 3040              	.LASF128:
+ 3041 1c0f 4359424C 		.ascii	"CYBLE_GATT_ERR_OUT_OF_RANGE\000"
+ 3041      455F4741 
+ 3041      54545F45 
+ 3041      52525F4F 
+ 3041      55545F4F 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 76
+
+
+ 3042              	.LASF258:
+ 3043 1c2b 4359424C 		.ascii	"CYBLE_EVT_GLSS_WRITE_CHAR\000"
+ 3043      455F4556 
+ 3043      545F474C 
+ 3043      53535F57 
+ 3043      52495445 
+ 3044              	.LASF341:
+ 3045 1c45 4359424C 		.ascii	"CYBLE_EVT_SCPSC_WRITE_DESCR_RESPONSE\000"
+ 3045      455F4556 
+ 3045      545F5343 
+ 3045      5053435F 
+ 3045      57524954 
+ 3046              	.LASF280:
+ 3047 1c6a 4359424C 		.ascii	"CYBLE_EVT_HRSC_NOTIFICATION\000"
+ 3047      455F4556 
+ 3047      545F4852 
+ 3047      53435F4E 
+ 3047      4F544946 
+ 3048              	.LASF326:
+ 3049 1c86 4359424C 		.ascii	"CYBLE_EVT_RSCSS_INDICATION_CONFIRMATION\000"
+ 3049      455F4556 
+ 3049      545F5253 
+ 3049      4353535F 
+ 3049      494E4449 
+ 3050              	.LASF275:
+ 3051 1cae 4359424C 		.ascii	"CYBLE_EVT_HIDSC_READ_DESCR_RESPONSE\000"
+ 3051      455F4556 
+ 3051      545F4849 
+ 3051      4453435F 
+ 3051      52454144 
+ 3052              	.LASF281:
+ 3053 1cd2 4359424C 		.ascii	"CYBLE_EVT_HRSC_READ_CHAR_RESPONSE\000"
+ 3053      455F4556 
+ 3053      545F4852 
+ 3053      53435F52 
+ 3053      4541445F 
+ 3054              	.LASF31:
+ 3055 1cf4 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 3055      455F4556 
+ 3055      545F4741 
+ 3055      505F454E 
+ 3055      43525950 
+ 3056              	.LASF313:
+ 3057 1d11 4359424C 		.ascii	"CYBLE_EVT_NDCSC_READ_CHAR_RESPONSE\000"
+ 3057      455F4556 
+ 3057      545F4E44 
+ 3057      4353435F 
+ 3057      52454144 
+ 3058              	.LASF190:
+ 3059 1d34 4359424C 		.ascii	"CYBLE_EVT_GATTC_DESCR_DUPLICATION\000"
+ 3059      455F4556 
+ 3059      545F4741 
+ 3059      5454435F 
+ 3059      44455343 
+ 3060              	.LASF355:
+ 3061 1d56 4379426C 		.ascii	"CyBle_GattsReInitGattDb\000"
+ 3061      655F4761 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 77
+
+
+ 3061      74747352 
+ 3061      65496E69 
+ 3061      74476174 
+ 3062              	.LASF173:
+ 3063 1d6e 4359424C 		.ascii	"CYBLE_HTS_CHAR_COUNT\000"
+ 3063      455F4854 
+ 3063      535F4348 
+ 3063      41525F43 
+ 3063      4F554E54 
+ 3064              	.LASF38:
+ 3065 1d83 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 3065      455F4556 
+ 3065      545F4741 
+ 3065      5454535F 
+ 3065      58434E48 
+ 3066              	.LASF303:
+ 3067 1da1 4359424C 		.ascii	"CYBLE_EVT_LNSS_INDICATION_CONFIRMED\000"
+ 3067      455F4556 
+ 3067      545F4C4E 
+ 3067      53535F49 
+ 3067      4E444943 
+ 3068              	.LASF202:
+ 3069 1dc5 4359424C 		.ascii	"CYBLE_EVT_ANSC_WRITE_DESCR_RESPONSE\000"
+ 3069      455F4556 
+ 3069      545F414E 
+ 3069      53435F57 
+ 3069      52495445 
+ 3070              	.LASF309:
+ 3071 1de9 4359424C 		.ascii	"CYBLE_EVT_LNSC_READ_CHAR_RESPONSE\000"
+ 3071      455F4556 
+ 3071      545F4C4E 
+ 3071      53435F52 
+ 3071      4541445F 
+ 3072              	.LASF159:
+ 3073 1e0b 4359424C 		.ascii	"CYBLE_DIS_MANUFACTURER_NAME\000"
+ 3073      455F4449 
+ 3073      535F4D41 
+ 3073      4E554641 
+ 3073      43545552 
+ 3074              	.LASF255:
+ 3075 1e27 4359424C 		.ascii	"CYBLE_EVT_GLSS_INDICATION_CONFIRMED\000"
+ 3075      455F4556 
+ 3075      545F474C 
+ 3075      53535F49 
+ 3075      4E444943 
+ 3076              	.LASF181:
+ 3077 1e4b 4359424C 		.ascii	"CYBLE_EVT_GATTS_INDICATION_ENABLED\000"
+ 3077      455F4556 
+ 3077      545F4741 
+ 3077      5454535F 
+ 3077      494E4449 
+ 3078              	.LASF7:
+ 3079 1e6e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3079      206C6F6E 
+ 3079      6720756E 
+ 3079      7369676E 
+ 3079      65642069 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 78
+
+
+ 3080              	.LASF104:
+ 3081 1e85 4359424C 		.ascii	"CYBLE_GATT_ERR_INVALID_HANDLE\000"
+ 3081      455F4741 
+ 3081      54545F45 
+ 3081      52525F49 
+ 3081      4E56414C 
+ 3082              	.LASF18:
+ 3083 1ea3 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 3083      455F4556 
+ 3083      545F5449 
+ 3083      4D454F55 
+ 3083      5400
+ 3084              	.LASF250:
+ 3085 1eb5 4359424C 		.ascii	"CYBLE_EVT_CTSC_READ_DESCR_RESPONSE\000"
+ 3085      455F4556 
+ 3085      545F4354 
+ 3085      53435F52 
+ 3085      4541445F 
+ 3086              	.LASF142:
+ 3087 1ed8 6C656E67 		.ascii	"length\000"
+ 3087      746800
+ 3088              	.LASF101:
+ 3089 1edf 4359424C 		.ascii	"CYBLE_ERROR_INVALID_STATE\000"
+ 3089      455F4552 
+ 3089      524F525F 
+ 3089      494E5641 
+ 3089      4C49445F 
+ 3090              	.LASF130:
+ 3091 1ef9 4359424C 		.ascii	"CYBLE_GATT_DB_ATTR_HANDLE_T\000"
+ 3091      455F4741 
+ 3091      54545F44 
+ 3091      425F4154 
+ 3091      54525F48 
+ 3092              	.LASF64:
+ 3093 1f15 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 3093      455F4556 
+ 3093      545F4C32 
+ 3093      4341505F 
+ 3093      43424643 
+ 3094              	.LASF103:
+ 3095 1f34 4359424C 		.ascii	"CYBLE_GATT_ERR_NONE\000"
+ 3095      455F4741 
+ 3095      54545F45 
+ 3095      52525F4E 
+ 3095      4F4E4500 
+ 3096              	.LASF136:
+ 3097 1f48 76616C75 		.ascii	"value\000"
+ 3097      6500
+ 3098              	.LASF227:
+ 3099 1f4e 4359424C 		.ascii	"CYBLE_EVT_CPSC_NOTIFICATION\000"
+ 3099      455F4556 
+ 3099      545F4350 
+ 3099      53435F4E 
+ 3099      4F544946 
+ 3100              	.LASF218:
+ 3101 1f6a 4359424C 		.ascii	"CYBLE_EVT_BLSC_WRITE_DESCR_RESPONSE\000"
+ 3101      455F4556 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 79
+
+
+ 3101      545F424C 
+ 3101      53435F57 
+ 3101      52495445 
+ 3102              	.LASF170:
+ 3103 1f8e 4359424C 		.ascii	"CYBLE_HTS_TEMP_TYPE\000"
+ 3103      455F4854 
+ 3103      535F5445 
+ 3103      4D505F54 
+ 3103      59504500 
+ 3104              	.LASF152:
+ 3105 1fa2 61747456 		.ascii	"attValue\000"
+ 3105      616C7565 
+ 3105      00
+ 3106              	.LASF308:
+ 3107 1fab 4359424C 		.ascii	"CYBLE_EVT_LNSC_NOTIFICATION\000"
+ 3107      455F4556 
+ 3107      545F4C4E 
+ 3107      53435F4E 
+ 3107      4F544946 
+ 3108              	.LASF360:
+ 3109 1fc7 4379426C 		.ascii	"CyBle_ApplCallback\000"
+ 3109      655F4170 
+ 3109      706C4361 
+ 3109      6C6C6261 
+ 3109      636B00
+ 3110              	.LASF248:
+ 3111 1fda 4359424C 		.ascii	"CYBLE_EVT_CTSC_NOTIFICATION\000"
+ 3111      455F4556 
+ 3111      545F4354 
+ 3111      53435F4E 
+ 3111      4F544946 
+ 3112              	.LASF129:
+ 3113 1ff6 4359424C 		.ascii	"CYBLE_GATT_ERR_CODE_T\000"
+ 3113      455F4741 
+ 3113      54545F45 
+ 3113      52525F43 
+ 3113      4F44455F 
+ 3114              	.LASF254:
+ 3115 200c 4359424C 		.ascii	"CYBLE_EVT_GLSS_INDICATION_DISABLED\000"
+ 3115      455F4556 
+ 3115      545F474C 
+ 3115      53535F49 
+ 3115      4E444943 
+ 3116              	.LASF156:
+ 3117 202f 73657276 		.ascii	"serviceChangedHandle\000"
+ 3117      69636543 
+ 3117      68616E67 
+ 3117      65644861 
+ 3117      6E646C65 
+ 3118              	.LASF301:
+ 3119 2044 4359424C 		.ascii	"CYBLE_EVT_LNSS_INDICATION_ENABLED\000"
+ 3119      455F4556 
+ 3119      545F4C4E 
+ 3119      53535F49 
+ 3119      4E444943 
+ 3120              	.LASF245:
+ 3121 2066 4359424C 		.ascii	"CYBLE_EVT_CSCSC_WRITE_DESCR_RESPONSE\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 80
+
+
+ 3121      455F4556 
+ 3121      545F4353 
+ 3121      4353435F 
+ 3121      57524954 
+ 3122              	.LASF139:
+ 3123 208b 636F6E6E 		.ascii	"connHandle\000"
+ 3123      48616E64 
+ 3123      6C6500
+ 3124              	.LASF204:
+ 3125 2096 4359424C 		.ascii	"CYBLE_EVT_BASS_NOTIFICATION_DISABLED\000"
+ 3125      455F4556 
+ 3125      545F4241 
+ 3125      53535F4E 
+ 3125      4F544946 
+ 3126              	.LASF219:
+ 3127 20bb 4359424C 		.ascii	"CYBLE_EVT_CPSS_NOTIFICATION_ENABLED\000"
+ 3127      455F4556 
+ 3127      545F4350 
+ 3127      53535F4E 
+ 3127      4F544946 
+ 3128              	.LASF346:
+ 3129 20df 4359424C 		.ascii	"CYBLE_EVT_TPSC_READ_DESCR_RESPONSE\000"
+ 3129      455F4556 
+ 3129      545F5450 
+ 3129      53435F52 
+ 3129      4541445F 
+ 3130              	.LASF144:
+ 3131 2102 4359424C 		.ascii	"CYBLE_GATTS_ATT_GENERIC_VAL_T\000"
+ 3131      455F4741 
+ 3131      5454535F 
+ 3131      4154545F 
+ 3131      47454E45 
+ 3132              	.LASF42:
+ 3133 2120 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 3133      455F4556 
+ 3133      545F4741 
+ 3133      5454435F 
+ 3133      46494E44 
+ 3134              	.LASF41:
+ 3135 213e 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 3135      455F4556 
+ 3135      545F4741 
+ 3135      5454435F 
+ 3135      52454144 
+ 3136              	.LASF315:
+ 3137 215f 4359424C 		.ascii	"CYBLE_EVT_PASSS_NOTIFICATION_DISABLED\000"
+ 3137      455F4556 
+ 3137      545F5041 
+ 3137      5353535F 
+ 3137      4E4F5449 
+ 3138              	.LASF226:
+ 3139 2185 4359424C 		.ascii	"CYBLE_EVT_CPSS_CHAR_WRITE\000"
+ 3139      455F4556 
+ 3139      545F4350 
+ 3139      53535F43 
+ 3139      4841525F 
+ 3140              	.LASF273:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 81
+
+
+ 3141 219f 4359424C 		.ascii	"CYBLE_EVT_HIDSC_READ_CHAR_RESPONSE\000"
+ 3141      455F4556 
+ 3141      545F4849 
+ 3141      4453435F 
+ 3141      52454144 
+ 3142              	.LASF357:
+ 3143 21c2 61706952 		.ascii	"apiResult\000"
+ 3143      6573756C 
+ 3143      7400
+ 3144              	.LASF366:
+ 3145 21cc 6379426C 		.ascii	"cyBle_state\000"
+ 3145      655F7374 
+ 3145      61746500 
+ 3146              	.LASF343:
+ 3147 21d8 4359424C 		.ascii	"CYBLE_EVT_TPSS_NOTIFICATION_DISABLED\000"
+ 3147      455F4556 
+ 3147      545F5450 
+ 3147      53535F4E 
+ 3147      4F544946 
+ 3148              	.LASF340:
+ 3149 21fd 4359424C 		.ascii	"CYBLE_EVT_SCPSC_READ_DESCR_RESPONSE\000"
+ 3149      455F4556 
+ 3149      545F5343 
+ 3149      5053435F 
+ 3149      52454144 
+ 3150              	.LASF284:
+ 3151 2221 4359424C 		.ascii	"CYBLE_EVT_HRSC_WRITE_DESCR_RESPONSE\000"
+ 3151      455F4556 
+ 3151      545F4852 
+ 3151      53435F57 
+ 3151      52495445 
+ 3152              	.LASF306:
+ 3153 2245 4359424C 		.ascii	"CYBLE_EVT_LNSS_WRITE_CHAR\000"
+ 3153      455F4556 
+ 3153      545F4C4E 
+ 3153      53535F57 
+ 3153      52495445 
+ 3154              	.LASF48:
+ 3155 225f 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 3155      455F4556 
+ 3155      545F4741 
+ 3155      5454435F 
+ 3155      57524954 
+ 3156              	.LASF353:
+ 3157 2279 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
+ 3157      455F5354 
+ 3157      4154455F 
+ 3157      44495343 
+ 3157      4F4E4E45 
+ 3158              	.LASF147:
+ 3159 2292 4359424C 		.ascii	"CYBLE_GATTS_ATT_VALUE_T\000"
+ 3159      455F4741 
+ 3159      5454535F 
+ 3159      4154545F 
+ 3159      56414C55 
+ 3160              	.LASF328:
+ 3161 22aa 4359424C 		.ascii	"CYBLE_EVT_RSCSC_NOTIFICATION\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 82
+
+
+ 3161      455F4556 
+ 3161      545F5253 
+ 3161      4353435F 
+ 3161      4E4F5449 
+ 3162              	.LASF28:
+ 3163 22c7 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 3163      455F4556 
+ 3163      545F4741 
+ 3163      50505F41 
+ 3163      44564552 
+ 3164              	.LASF211:
+ 3165 22ef 4359424C 		.ascii	"CYBLE_EVT_BLSS_INDICATION_CONFIRMED\000"
+ 3165      455F4556 
+ 3165      545F424C 
+ 3165      53535F49 
+ 3165      4E444943 
+ 3166              	.LASF143:
+ 3167 2313 61747447 		.ascii	"attGenericVal\000"
+ 3167      656E6572 
+ 3167      69635661 
+ 3167      6C00
+ 3168              	.LASF9:
+ 3169 2321 75696E74 		.ascii	"uint8\000"
+ 3169      3800
+ 3170              	.LASF293:
+ 3171 2327 4359424C 		.ascii	"CYBLE_EVT_HTSC_READ_CHAR_RESPONSE\000"
+ 3171      455F4556 
+ 3171      545F4854 
+ 3171      53435F52 
+ 3171      4541445F 
+ 3172              	.LASF321:
+ 3173 2349 4359424C 		.ascii	"CYBLE_EVT_PASSC_WRITE_DESCR_RESPONSE\000"
+ 3173      455F4556 
+ 3173      545F5041 
+ 3173      5353435F 
+ 3173      57524954 
+ 3174              	.LASF2:
+ 3175 236e 73686F72 		.ascii	"short int\000"
+ 3175      7420696E 
+ 3175      7400
+ 3176              	.LASF140:
+ 3177 2378 68616E64 		.ascii	"handleValPair\000"
+ 3177      6C655661 
+ 3177      6C506169 
+ 3177      7200
+ 3178              	.LASF145:
+ 3179 2386 61747446 		.ascii	"attFormatValue\000"
+ 3179      6F726D61 
+ 3179      7456616C 
+ 3179      756500
+ 3180              	.LASF122:
+ 3181 2395 4359424C 		.ascii	"CYBLE_GATT_ERR_CPS_INAPPROPRIATE_CONNECTION_PARAMET"
+ 3181      455F4741 
+ 3181      54545F45 
+ 3181      52525F43 
+ 3181      50535F49 
+ 3182 23c8 45525300 		.ascii	"ERS\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 83
+
+
+ 3183              	.LASF109:
+ 3184 23cc 4359424C 		.ascii	"CYBLE_GATT_ERR_REQUEST_NOT_SUPPORTED\000"
+ 3184      455F4741 
+ 3184      54545F45 
+ 3184      52525F52 
+ 3184      45515545 
+ 3185              	.LASF169:
+ 3186 23f1 4359424C 		.ascii	"CYBLE_HTS_TEMP_MEASURE\000"
+ 3186      455F4854 
+ 3186      535F5445 
+ 3186      4D505F4D 
+ 3186      45415355 
+ 3187              	.LASF35:
+ 3188 2408 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 3188      455F4556 
+ 3188      545F4741 
+ 3188      5454435F 
+ 3188      4552524F 
+ 3189              	.LASF354:
+ 3190 2422 4359424C 		.ascii	"CYBLE_STATE_T\000"
+ 3190      455F5354 
+ 3190      4154455F 
+ 3190      5400
+ 3191              	.LASF205:
+ 3192 2430 4359424C 		.ascii	"CYBLE_EVT_BASC_NOTIFICATION\000"
+ 3192      455F4556 
+ 3192      545F4241 
+ 3192      53435F4E 
+ 3192      4F544946 
+ 3193              	.LASF208:
+ 3194 244c 4359424C 		.ascii	"CYBLE_EVT_BASC_WRITE_DESCR_RESPONSE\000"
+ 3194      455F4556 
+ 3194      545F4241 
+ 3194      53435F57 
+ 3194      52495445 
+ 3195              	.LASF253:
+ 3196 2470 4359424C 		.ascii	"CYBLE_EVT_GLSS_INDICATION_ENABLED\000"
+ 3196      455F4556 
+ 3196      545F474C 
+ 3196      53535F49 
+ 3196      4E444943 
+ 3197              	.LASF197:
+ 3198 2492 4359424C 		.ascii	"CYBLE_EVT_ANSS_CHAR_WRITE\000"
+ 3198      455F4556 
+ 3198      545F414E 
+ 3198      53535F43 
+ 3198      4841525F 
+ 3199              	.LASF60:
+ 3200 24ac 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 3200      455F4556 
+ 3200      545F4C32 
+ 3200      4341505F 
+ 3200      43424643 
+ 3201              	.LASF51:
+ 3202 24ca 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 3202      455F4556 
+ 3202      545F4741 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 84
+
+
+ 3202      5454535F 
+ 3202      45584543 
+ 3203              	.LASF22:
+ 3204 24e9 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 3204      455F4556 
+ 3204      545F4741 
+ 3204      50435F53 
+ 3204      43414E5F 
+ 3205              	.LASF79:
+ 3206 250d 4359424C 		.ascii	"CYBLE_ERROR_GAP_ROLE\000"
+ 3206      455F4552 
+ 3206      524F525F 
+ 3206      4741505F 
+ 3206      524F4C45 
+ 3207              	.LASF287:
+ 3208 2522 4359424C 		.ascii	"CYBLE_EVT_HTSS_INDICATION_ENABLED\000"
+ 3208      455F4556 
+ 3208      545F4854 
+ 3208      53535F49 
+ 3208      4E444943 
+ 3209              	.LASF206:
+ 3210 2544 4359424C 		.ascii	"CYBLE_EVT_BASC_READ_CHAR_RESPONSE\000"
+ 3210      455F4556 
+ 3210      545F4241 
+ 3210      53435F52 
+ 3210      4541445F 
+ 3211              	.LASF260:
+ 3212 2566 4359424C 		.ascii	"CYBLE_EVT_GLSC_NOTIFICATION\000"
+ 3212      455F4556 
+ 3212      545F474C 
+ 3212      53435F4E 
+ 3212      4F544946 
+ 3213              	.LASF125:
+ 3214 2582 4359424C 		.ascii	"CYBLE_GATT_ERR_ANS_COMMAND_NOT_SUPPORTED\000"
+ 3214      455F4741 
+ 3214      54545F45 
+ 3214      52525F41 
+ 3214      4E535F43 
+ 3215              	.LASF338:
+ 3216 25ab 4359424C 		.ascii	"CYBLE_EVT_SCPSS_SCAN_INT_WIN_CHAR_WRITE\000"
+ 3216      455F4556 
+ 3216      545F5343 
+ 3216      5053535F 
+ 3216      5343414E 
+ 3217              	.LASF361:
+ 3218 25d3 6379426C 		.ascii	"cyBle_eventHandlerFlag\000"
+ 3218      655F6576 
+ 3218      656E7448 
+ 3218      616E646C 
+ 3218      6572466C 
+ 3219              	.LASF182:
+ 3220 25ea 4359424C 		.ascii	"CYBLE_EVT_GATTS_INDICATION_DISABLED\000"
+ 3220      455F4556 
+ 3220      545F4741 
+ 3220      5454535F 
+ 3220      494E4449 
+ 3221              	.LASF76:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 85
+
+
+ 3222 260e 4359424C 		.ascii	"CYBLE_ERROR_NO_CONNECTION\000"
+ 3222      455F4552 
+ 3222      524F525F 
+ 3222      4E4F5F43 
+ 3222      4F4E4E45 
+ 3223              	.LASF102:
+ 3224 2628 4359424C 		.ascii	"CYBLE_API_RESULT_T\000"
+ 3224      455F4150 
+ 3224      495F5245 
+ 3224      53554C54 
+ 3224      5F5400
+ 3225              	.LASF364:
+ 3226 263b 6379426C 		.ascii	"cyBle_attValuesCCCD\000"
+ 3226      655F6174 
+ 3226      7456616C 
+ 3226      75657343 
+ 3226      43434400 
+ 3227              	.LASF194:
+ 3228 264f 4359424C 		.ascii	"CYBLE_EVT_GATTC_DISCOVERY_COMPLETE\000"
+ 3228      455F4556 
+ 3228      545F4741 
+ 3228      5454435F 
+ 3228      44495343 
+ 3229              	.LASF264:
+ 3230 2672 4359424C 		.ascii	"CYBLE_EVT_GLSC_WRITE_DESCR_RESPONSE\000"
+ 3230      455F4556 
+ 3230      545F474C 
+ 3230      53435F57 
+ 3230      52495445 
+ 3231              	.LASF54:
+ 3232 2696 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 3232      455F4556 
+ 3232      545F4741 
+ 3232      5454435F 
+ 3232      48414E44 
+ 3233              	.LASF233:
+ 3234 26b7 4359424C 		.ascii	"CYBLE_EVT_CPSC_SCAN_PROGRESS_RESULT\000"
+ 3234      455F4556 
+ 3234      545F4350 
+ 3234      53435F53 
+ 3234      43414E5F 
+ 3235              	.LASF332:
+ 3236 26db 4359424C 		.ascii	"CYBLE_EVT_RSCSC_READ_DESCR_RESPONSE\000"
+ 3236      455F4556 
+ 3236      545F5253 
+ 3236      4353435F 
+ 3236      52454144 
+ 3237              	.LASF82:
+ 3238 26ff 4359424C 		.ascii	"CYBLE_ERROR_SEC_FAILED\000"
+ 3238      455F4552 
+ 3238      524F525F 
+ 3238      5345435F 
+ 3238      4641494C 
+ 3239              	.LASF21:
+ 3240 2716 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 3240      455F4556 
+ 3240      545F5354 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 86
+
+
+ 3240      41434B5F 
+ 3240      42555359 
+ 3241              	.LASF296:
+ 3242 2732 4359424C 		.ascii	"CYBLE_EVT_HTSC_WRITE_DESCR_RESPONSE\000"
+ 3242      455F4556 
+ 3242      545F4854 
+ 3242      53435F57 
+ 3242      52495445 
+ 3243              	.LASF34:
+ 3244 2756 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 3244      455F4556 
+ 3244      545F4741 
+ 3244      505F4B45 
+ 3244      59494E46 
+ 3245              	.LASF57:
+ 3246 277a 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 3246      455F4556 
+ 3246      545F4C32 
+ 3246      4341505F 
+ 3246      434F4E4E 
+ 3247              	.LASF358:
+ 3248 27a0 67617474 		.ascii	"gattErr\000"
+ 3248      45727200 
+ 3249              	.LASF96:
+ 3250 27a8 4359424C 		.ascii	"CYBLE_CHAR_DISC_DONE\000"
+ 3250      455F4348 
+ 3250      41525F44 
+ 3250      4953435F 
+ 3250      444F4E45 
+ 3251              	.LASF185:
+ 3252 27bd 4359424C 		.ascii	"CYBLE_EVT_GATTC_INCL_DISCOVERY_FAILED\000"
+ 3252      455F4556 
+ 3252      545F4741 
+ 3252      5454435F 
+ 3252      494E434C 
+ 3253              	.LASF106:
+ 3254 27e3 4359424C 		.ascii	"CYBLE_GATT_ERR_WRITE_NOT_PERMITTED\000"
+ 3254      455F4741 
+ 3254      54545F45 
+ 3254      52525F57 
+ 3254      52495445 
+ 3255              	.LASF3:
+ 3256 2806 73686F72 		.ascii	"short unsigned int\000"
+ 3256      7420756E 
+ 3256      7369676E 
+ 3256      65642069 
+ 3256      6E7400
+ 3257              	.LASF118:
+ 3258 2819 4359424C 		.ascii	"CYBLE_GATT_ERR_INSUFFICIENT_ENCRYPTION\000"
+ 3258      455F4741 
+ 3258      54545F45 
+ 3258      52525F49 
+ 3258      4E535546 
+ 3259              	.LASF262:
+ 3260 2840 4359424C 		.ascii	"CYBLE_EVT_GLSC_WRITE_CHAR_RESPONSE\000"
+ 3260      455F4556 
+ 3260      545F474C 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 87
+
+
+ 3260      53435F57 
+ 3260      52495445 
+ 3261              	.LASF311:
+ 3262 2863 4359424C 		.ascii	"CYBLE_EVT_LNSC_READ_DESCR_RESPONSE\000"
+ 3262      455F4556 
+ 3262      545F4C4E 
+ 3262      53435F52 
+ 3262      4541445F 
+ 3263              	.LASF351:
+ 3264 2886 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
+ 3264      455F5354 
+ 3264      4154455F 
+ 3264      434F4E4E 
+ 3264      45435445 
+ 3265              	.LASF134:
+ 3266 289c 61637475 		.ascii	"actualLen\000"
+ 3266      616C4C65 
+ 3266      6E00
+ 3267              	.LASF157:
+ 3268 28a6 63636364 		.ascii	"cccdHandle\000"
+ 3268      48616E64 
+ 3268      6C6500
+ 3269              	.LASF342:
+ 3270 28b1 4359424C 		.ascii	"CYBLE_EVT_TPSS_NOTIFICATION_ENABLED\000"
+ 3270      455F4556 
+ 3270      545F5450 
+ 3270      53535F4E 
+ 3270      4F544946 
+ 3271              	.LASF259:
+ 3272 28d5 4359424C 		.ascii	"CYBLE_EVT_GLSC_INDICATION\000"
+ 3272      455F4556 
+ 3272      545F474C 
+ 3272      53435F49 
+ 3272      4E444943 
+ 3273              	.LASF225:
+ 3274 28ef 4359424C 		.ascii	"CYBLE_EVT_CPSS_BROADCAST_DISABLED\000"
+ 3274      455F4556 
+ 3274      545F4350 
+ 3274      53535F42 
+ 3274      524F4144 
+ 3275              	.LASF132:
+ 3276 2911 61747449 		.ascii	"attId\000"
+ 3276      6400
+ 3277              	.LASF72:
+ 3278 2917 4359424C 		.ascii	"CYBLE_ERROR_INVALID_OPERATION\000"
+ 3278      455F4552 
+ 3278      524F525F 
+ 3278      494E5641 
+ 3278      4C49445F 
+ 3279              	.LASF20:
+ 3280 2935 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 3280      455F4556 
+ 3280      545F4843 
+ 3280      495F5354 
+ 3280      41545553 
+ 3281              	.LASF37:
+ 3282 294a 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 88
+
+
+ 3282      455F4556 
+ 3282      545F4741 
+ 3282      54545F44 
+ 3282      4953434F 
+ 3283              	.LASF180:
+ 3284 2968 4359424C 		.ascii	"CYBLE_KEY_EXCHANGE_INFO_REQUEST_REPLY\000"
+ 3284      455F4B45 
+ 3284      595F4558 
+ 3284      4348414E 
+ 3284      47455F49 
+ 3285              	.LASF67:
+ 3286 298e 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 3286      455F4556 
+ 3286      545F4C32 
+ 3286      4341505F 
+ 3286      43424643 
+ 3287              	.LASF178:
+ 3288 29b2 4359424C 		.ascii	"CYBLE_PASSKEY_ENTRY_REQUEST_REPLY\000"
+ 3288      455F5041 
+ 3288      53534B45 
+ 3288      595F454E 
+ 3288      5452595F 
+ 3289              	.LASF198:
+ 3290 29d4 4359424C 		.ascii	"CYBLE_EVT_ANSC_NOTIFICATION\000"
+ 3290      455F4556 
+ 3290      545F414E 
+ 3290      53435F4E 
+ 3290      4F544946 
+ 3291              	.LASF30:
+ 3292 29f0 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
+ 3292      455F4556 
+ 3292      545F4741 
+ 3292      505F4445 
+ 3292      56494345 
+ 3293              	.LASF267:
+ 3294 2a12 4359424C 		.ascii	"CYBLE_EVT_HIDSS_BOOT_MODE_ENTER\000"
+ 3294      455F4556 
+ 3294      545F4849 
+ 3294      4453535F 
+ 3294      424F4F54 
+ 3295              	.LASF55:
+ 3296 2a32 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 3296      455F4556 
+ 3296      545F4741 
+ 3296      5454535F 
+ 3296      48414E44 
+ 3297              	.LASF244:
+ 3298 2a53 4359424C 		.ascii	"CYBLE_EVT_CSCSC_READ_DESCR_RESPONSE\000"
+ 3298      455F4556 
+ 3298      545F4353 
+ 3298      4353435F 
+ 3298      52454144 
+ 3299              	.LASF10:
+ 3300 2a77 75696E74 		.ascii	"uint16\000"
+ 3300      313600
+ 3301              	.LASF80:
+ 3302 2a7e 4359424C 		.ascii	"CYBLE_ERROR_TX_POWER_READ\000"
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccMjvHHf.s 			page 89
+
+
+ 3302      455F4552 
+ 3302      524F525F 
+ 3302      54585F50 
+ 3302      4F574552 
+ 3303              	.LASF322:
+ 3304 2a98 4359424C 		.ascii	"CYBLE_EVT_RSCSS_NOTIFICATION_ENABLED\000"
+ 3304      455F4556 
+ 3304      545F5253 
+ 3304      4353535F 
+ 3304      4E4F5449 
+ 3305              	.LASF196:
+ 3306 2abd 4359424C 		.ascii	"CYBLE_EVT_ANSS_NOTIFICATION_DISABLED\000"
+ 3306      455F4556 
+ 3306      545F414E 
+ 3306      53535F4E 
+ 3306      4F544946 
+ 3307              	.LASF292:
+ 3308 2ae2 4359424C 		.ascii	"CYBLE_EVT_HTSC_INDICATION\000"
+ 3308      455F4556 
+ 3308      545F4854 
+ 3308      53435F49 
+ 3308      4E444943 
+ 3309              	.LASF265:
+ 3310 2afc 4359424C 		.ascii	"CYBLE_EVT_HIDSS_NOTIFICATION_ENABLED\000"
+ 3310      455F4556 
+ 3310      545F4849 
+ 3310      4453535F 
+ 3310      4E4F5449 
+ 3311              	.LASF289:
+ 3312 2b21 4359424C 		.ascii	"CYBLE_EVT_HTSS_INDICATION_CONFIRMED\000"
+ 3312      455F4556 
+ 3312      545F4854 
+ 3312      53535F49 
+ 3312      4E444943 
+ 3313              	.LASF279:
+ 3314 2b45 4359424C 		.ascii	"CYBLE_EVT_HRSS_NOTIFICATION_DISABLED\000"
+ 3314      455F4556 
+ 3314      545F4852 
+ 3314      53535F4E 
+ 3314      4F544946 
+ 3315              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

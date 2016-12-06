@@ -1,0 +1,845 @@
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"AMuxSeq.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.global	AMuxSeq_initVar
+  18              		.bss
+  19              		.type	AMuxSeq_initVar, %object
+  20              		.size	AMuxSeq_initVar, 1
+  21              	AMuxSeq_initVar:
+  22 0000 00       		.space	1
+  23              		.section	.text.AMuxSeq_Start,"ax",%progbits
+  24              		.align	2
+  25              		.global	AMuxSeq_Start
+  26              		.code	16
+  27              		.thumb_func
+  28              		.type	AMuxSeq_Start, %function
+  29              	AMuxSeq_Start:
+  30              	.LFB0:
+  31              		.file 1 ".\\Generated_Source\\PSoC4\\AMuxSeq.c"
+   1:.\Generated_Source\PSoC4/AMuxSeq.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/AMuxSeq.c **** * File Name: AMuxSeq.c
+   3:.\Generated_Source\PSoC4/AMuxSeq.c **** * Version 1.80
+   4:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+   5:.\Generated_Source\PSoC4/AMuxSeq.c **** *  Description:
+   6:.\Generated_Source\PSoC4/AMuxSeq.c **** *    This file contains functions for the AMuxSeq.
+   7:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+   8:.\Generated_Source\PSoC4/AMuxSeq.c **** *   Note:
+   9:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  10:.\Generated_Source\PSoC4/AMuxSeq.c **** *******************************************************************************
+  11:.\Generated_Source\PSoC4/AMuxSeq.c **** * Copyright 2008-2010, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC4/AMuxSeq.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:.\Generated_Source\PSoC4/AMuxSeq.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:.\Generated_Source\PSoC4/AMuxSeq.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC4/AMuxSeq.c **** ********************************************************************************/
+  16:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  17:.\Generated_Source\PSoC4/AMuxSeq.c **** #include "AMuxSeq.h"
+  18:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  19:.\Generated_Source\PSoC4/AMuxSeq.c **** uint8 AMuxSeq_initVar = 0u;
+  20:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  21:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  22:.\Generated_Source\PSoC4/AMuxSeq.c **** /*******************************************************************************
+  23:.\Generated_Source\PSoC4/AMuxSeq.c **** * Function Name: AMuxSeq_Start
+  24:.\Generated_Source\PSoC4/AMuxSeq.c **** ********************************************************************************
+  25:.\Generated_Source\PSoC4/AMuxSeq.c **** * Summary:
+  26:.\Generated_Source\PSoC4/AMuxSeq.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 2
+
+
+  27:.\Generated_Source\PSoC4/AMuxSeq.c **** *  connected.
+  28:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  29:.\Generated_Source\PSoC4/AMuxSeq.c **** * Parameters:
+  30:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  31:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  32:.\Generated_Source\PSoC4/AMuxSeq.c **** * Return:
+  33:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  34:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  35:.\Generated_Source\PSoC4/AMuxSeq.c **** *******************************************************************************/
+  36:.\Generated_Source\PSoC4/AMuxSeq.c **** void AMuxSeq_Start(void)
+  37:.\Generated_Source\PSoC4/AMuxSeq.c **** {
+  32              		.loc 1 37 0
+  33              		.cfi_startproc
+  34 0000 80B5     		push	{r7, lr}
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 7, -8
+  37              		.cfi_offset 14, -4
+  38 0002 00AF     		add	r7, sp, #0
+  39              		.cfi_def_cfa_register 7
+  38:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_DisconnectAll();
+  40              		.loc 1 38 0
+  41 0004 FFF7FEFF 		bl	AMuxSeq_DisconnectAll
+  39:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_initVar = 1u;
+  42              		.loc 1 39 0
+  43 0008 024B     		ldr	r3, .L2
+  44 000a 0122     		mov	r2, #1
+  45 000c 1A70     		strb	r2, [r3]
+  40:.\Generated_Source\PSoC4/AMuxSeq.c **** }
+  46              		.loc 1 40 0
+  47 000e BD46     		mov	sp, r7
+  48              		@ sp needed
+  49 0010 80BD     		pop	{r7, pc}
+  50              	.L3:
+  51 0012 C046     		.align	2
+  52              	.L2:
+  53 0014 00000000 		.word	AMuxSeq_initVar
+  54              		.cfi_endproc
+  55              	.LFE0:
+  56              		.size	AMuxSeq_Start, .-AMuxSeq_Start
+  57              		.section	.text.AMuxSeq_Init,"ax",%progbits
+  58              		.align	2
+  59              		.global	AMuxSeq_Init
+  60              		.code	16
+  61              		.thumb_func
+  62              		.type	AMuxSeq_Init, %function
+  63              	AMuxSeq_Init:
+  64              	.LFB1:
+  41:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  42:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  43:.\Generated_Source\PSoC4/AMuxSeq.c **** /*******************************************************************************
+  44:.\Generated_Source\PSoC4/AMuxSeq.c **** * Function Name: AMuxSeq_Init
+  45:.\Generated_Source\PSoC4/AMuxSeq.c **** ********************************************************************************
+  46:.\Generated_Source\PSoC4/AMuxSeq.c **** * Summary:
+  47:.\Generated_Source\PSoC4/AMuxSeq.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  48:.\Generated_Source\PSoC4/AMuxSeq.c **** *  connected.
+  49:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  50:.\Generated_Source\PSoC4/AMuxSeq.c **** * Parameters:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 3
+
+
+  51:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  52:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  53:.\Generated_Source\PSoC4/AMuxSeq.c **** * Return:
+  54:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  55:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  56:.\Generated_Source\PSoC4/AMuxSeq.c **** *******************************************************************************/
+  57:.\Generated_Source\PSoC4/AMuxSeq.c **** void AMuxSeq_Init(void)
+  58:.\Generated_Source\PSoC4/AMuxSeq.c **** {
+  65              		.loc 1 58 0
+  66              		.cfi_startproc
+  67 0000 80B5     		push	{r7, lr}
+  68              		.cfi_def_cfa_offset 8
+  69              		.cfi_offset 7, -8
+  70              		.cfi_offset 14, -4
+  71 0002 00AF     		add	r7, sp, #0
+  72              		.cfi_def_cfa_register 7
+  59:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_DisconnectAll();
+  73              		.loc 1 59 0
+  74 0004 FFF7FEFF 		bl	AMuxSeq_DisconnectAll
+  60:.\Generated_Source\PSoC4/AMuxSeq.c **** }
+  75              		.loc 1 60 0
+  76 0008 BD46     		mov	sp, r7
+  77              		@ sp needed
+  78 000a 80BD     		pop	{r7, pc}
+  79              		.cfi_endproc
+  80              	.LFE1:
+  81              		.size	AMuxSeq_Init, .-AMuxSeq_Init
+  82              		.section	.text.AMuxSeq_Stop,"ax",%progbits
+  83              		.align	2
+  84              		.global	AMuxSeq_Stop
+  85              		.code	16
+  86              		.thumb_func
+  87              		.type	AMuxSeq_Stop, %function
+  88              	AMuxSeq_Stop:
+  89              	.LFB2:
+  61:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  62:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  63:.\Generated_Source\PSoC4/AMuxSeq.c **** /*******************************************************************************
+  64:.\Generated_Source\PSoC4/AMuxSeq.c **** * Function Name: AMuxSeq_Stop
+  65:.\Generated_Source\PSoC4/AMuxSeq.c **** ********************************************************************************
+  66:.\Generated_Source\PSoC4/AMuxSeq.c **** * Summary:
+  67:.\Generated_Source\PSoC4/AMuxSeq.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  68:.\Generated_Source\PSoC4/AMuxSeq.c **** *  connected.
+  69:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  70:.\Generated_Source\PSoC4/AMuxSeq.c **** * Parameters:
+  71:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  72:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  73:.\Generated_Source\PSoC4/AMuxSeq.c **** * Return:
+  74:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  75:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  76:.\Generated_Source\PSoC4/AMuxSeq.c **** *******************************************************************************/
+  77:.\Generated_Source\PSoC4/AMuxSeq.c **** void AMuxSeq_Stop(void)
+  78:.\Generated_Source\PSoC4/AMuxSeq.c **** {
+  90              		.loc 1 78 0
+  91              		.cfi_startproc
+  92 0000 80B5     		push	{r7, lr}
+  93              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 4
+
+
+  94              		.cfi_offset 7, -8
+  95              		.cfi_offset 14, -4
+  96 0002 00AF     		add	r7, sp, #0
+  97              		.cfi_def_cfa_register 7
+  79:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_DisconnectAll();
+  98              		.loc 1 79 0
+  99 0004 FFF7FEFF 		bl	AMuxSeq_DisconnectAll
+  80:.\Generated_Source\PSoC4/AMuxSeq.c **** }
+ 100              		.loc 1 80 0
+ 101 0008 BD46     		mov	sp, r7
+ 102              		@ sp needed
+ 103 000a 80BD     		pop	{r7, pc}
+ 104              		.cfi_endproc
+ 105              	.LFE2:
+ 106              		.size	AMuxSeq_Stop, .-AMuxSeq_Stop
+ 107              		.section	.text.AMuxSeq_Next,"ax",%progbits
+ 108              		.align	2
+ 109              		.global	AMuxSeq_Next
+ 110              		.code	16
+ 111              		.thumb_func
+ 112              		.type	AMuxSeq_Next, %function
+ 113              	AMuxSeq_Next:
+ 114              	.LFB3:
+  81:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  82:.\Generated_Source\PSoC4/AMuxSeq.c **** #if (AMuxSeq_MUXTYPE == AMuxSeq_MUX_DIFF)
+  83:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+  84:.\Generated_Source\PSoC4/AMuxSeq.c **** /*******************************************************************************
+  85:.\Generated_Source\PSoC4/AMuxSeq.c **** * Function Name: AMuxSeq_Next
+  86:.\Generated_Source\PSoC4/AMuxSeq.c **** ********************************************************************************
+  87:.\Generated_Source\PSoC4/AMuxSeq.c **** * Summary:
+  88:.\Generated_Source\PSoC4/AMuxSeq.c **** *  Disconnects the previous channel and connects the next one in the sequence.
+  89:.\Generated_Source\PSoC4/AMuxSeq.c **** *  When Next is called for the first time after Init, Start, Enable, Stop, or
+  90:.\Generated_Source\PSoC4/AMuxSeq.c **** *  DisconnectAll, it connects channel 0.
+  91:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  92:.\Generated_Source\PSoC4/AMuxSeq.c **** * Parameters:
+  93:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  94:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  95:.\Generated_Source\PSoC4/AMuxSeq.c **** * Return:
+  96:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+  97:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+  98:.\Generated_Source\PSoC4/AMuxSeq.c **** *******************************************************************************/
+  99:.\Generated_Source\PSoC4/AMuxSeq.c **** void AMuxSeq_Next(void)
+ 100:.\Generated_Source\PSoC4/AMuxSeq.c **** {
+ 115              		.loc 1 100 0
+ 116              		.cfi_startproc
+ 117 0000 80B5     		push	{r7, lr}
+ 118              		.cfi_def_cfa_offset 8
+ 119              		.cfi_offset 7, -8
+ 120              		.cfi_offset 14, -4
+ 121 0002 00AF     		add	r7, sp, #0
+ 122              		.cfi_def_cfa_register 7
+ 101:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_A_Next();
+ 123              		.loc 1 101 0
+ 124 0004 FFF7FEFF 		bl	AMuxSeq_CYAMUXSIDE_A_Next
+ 102:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_B_Next();
+ 125              		.loc 1 102 0
+ 126 0008 FFF7FEFF 		bl	AMuxSeq_CYAMUXSIDE_B_Next
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 5
+
+
+ 103:.\Generated_Source\PSoC4/AMuxSeq.c **** }
+ 127              		.loc 1 103 0
+ 128 000c BD46     		mov	sp, r7
+ 129              		@ sp needed
+ 130 000e 80BD     		pop	{r7, pc}
+ 131              		.cfi_endproc
+ 132              	.LFE3:
+ 133              		.size	AMuxSeq_Next, .-AMuxSeq_Next
+ 134              		.section	.text.AMuxSeq_DisconnectAll,"ax",%progbits
+ 135              		.align	2
+ 136              		.global	AMuxSeq_DisconnectAll
+ 137              		.code	16
+ 138              		.thumb_func
+ 139              		.type	AMuxSeq_DisconnectAll, %function
+ 140              	AMuxSeq_DisconnectAll:
+ 141              	.LFB4:
+ 104:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+ 105:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+ 106:.\Generated_Source\PSoC4/AMuxSeq.c **** /*******************************************************************************
+ 107:.\Generated_Source\PSoC4/AMuxSeq.c **** * Function Name: AMuxSeq_DisconnectAll
+ 108:.\Generated_Source\PSoC4/AMuxSeq.c **** ********************************************************************************
+ 109:.\Generated_Source\PSoC4/AMuxSeq.c **** * Summary:
+ 110:.\Generated_Source\PSoC4/AMuxSeq.c **** *  This function disconnects all channels. The next time Next is called, channel
+ 111:.\Generated_Source\PSoC4/AMuxSeq.c **** *  0 will be connected.
+ 112:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+ 113:.\Generated_Source\PSoC4/AMuxSeq.c **** * Parameters:
+ 114:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+ 115:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+ 116:.\Generated_Source\PSoC4/AMuxSeq.c **** * Return:
+ 117:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+ 118:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+ 119:.\Generated_Source\PSoC4/AMuxSeq.c **** *******************************************************************************/
+ 120:.\Generated_Source\PSoC4/AMuxSeq.c **** void AMuxSeq_DisconnectAll(void)
+ 121:.\Generated_Source\PSoC4/AMuxSeq.c **** {
+ 142              		.loc 1 121 0
+ 143              		.cfi_startproc
+ 144 0000 80B5     		push	{r7, lr}
+ 145              		.cfi_def_cfa_offset 8
+ 146              		.cfi_offset 7, -8
+ 147              		.cfi_offset 14, -4
+ 148 0002 00AF     		add	r7, sp, #0
+ 149              		.cfi_def_cfa_register 7
+ 122:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_A_DisconnectAll();
+ 150              		.loc 1 122 0
+ 151 0004 FFF7FEFF 		bl	AMuxSeq_CYAMUXSIDE_A_DisconnectAll
+ 123:.\Generated_Source\PSoC4/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_B_DisconnectAll();
+ 152              		.loc 1 123 0
+ 153 0008 FFF7FEFF 		bl	AMuxSeq_CYAMUXSIDE_B_DisconnectAll
+ 124:.\Generated_Source\PSoC4/AMuxSeq.c **** }
+ 154              		.loc 1 124 0
+ 155 000c BD46     		mov	sp, r7
+ 156              		@ sp needed
+ 157 000e 80BD     		pop	{r7, pc}
+ 158              		.cfi_endproc
+ 159              	.LFE4:
+ 160              		.size	AMuxSeq_DisconnectAll, .-AMuxSeq_DisconnectAll
+ 161              		.section	.text.AMuxSeq_GetChannel,"ax",%progbits
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 6
+
+
+ 162              		.align	2
+ 163              		.global	AMuxSeq_GetChannel
+ 164              		.code	16
+ 165              		.thumb_func
+ 166              		.type	AMuxSeq_GetChannel, %function
+ 167              	AMuxSeq_GetChannel:
+ 168              	.LFB5:
+ 125:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+ 126:.\Generated_Source\PSoC4/AMuxSeq.c **** 
+ 127:.\Generated_Source\PSoC4/AMuxSeq.c **** /*******************************************************************************
+ 128:.\Generated_Source\PSoC4/AMuxSeq.c **** * Function Name: AMuxSeq_GetChannel
+ 129:.\Generated_Source\PSoC4/AMuxSeq.c **** ********************************************************************************
+ 130:.\Generated_Source\PSoC4/AMuxSeq.c **** * Summary:
+ 131:.\Generated_Source\PSoC4/AMuxSeq.c **** *  The currently connected channel is retuned. If no channel is connected
+ 132:.\Generated_Source\PSoC4/AMuxSeq.c **** *  returns -1.
+ 133:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+ 134:.\Generated_Source\PSoC4/AMuxSeq.c **** * Parameters:
+ 135:.\Generated_Source\PSoC4/AMuxSeq.c **** *  void
+ 136:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+ 137:.\Generated_Source\PSoC4/AMuxSeq.c **** * Return:
+ 138:.\Generated_Source\PSoC4/AMuxSeq.c **** *  The current channel or -1.
+ 139:.\Generated_Source\PSoC4/AMuxSeq.c **** *
+ 140:.\Generated_Source\PSoC4/AMuxSeq.c **** *******************************************************************************/
+ 141:.\Generated_Source\PSoC4/AMuxSeq.c **** int8 AMuxSeq_GetChannel(void)
+ 142:.\Generated_Source\PSoC4/AMuxSeq.c **** {
+ 169              		.loc 1 142 0
+ 170              		.cfi_startproc
+ 171 0000 80B5     		push	{r7, lr}
+ 172              		.cfi_def_cfa_offset 8
+ 173              		.cfi_offset 7, -8
+ 174              		.cfi_offset 14, -4
+ 175 0002 00AF     		add	r7, sp, #0
+ 176              		.cfi_def_cfa_register 7
+ 143:.\Generated_Source\PSoC4/AMuxSeq.c ****     return AMuxSeq_CYAMUXSIDE_A_curChannel;
+ 177              		.loc 1 143 0
+ 178 0004 024B     		ldr	r3, .L10
+ 179 0006 1B78     		ldrb	r3, [r3]
+ 180 0008 5BB2     		sxtb	r3, r3
+ 144:.\Generated_Source\PSoC4/AMuxSeq.c **** }
+ 181              		.loc 1 144 0
+ 182 000a 181C     		mov	r0, r3
+ 183 000c BD46     		mov	sp, r7
+ 184              		@ sp needed
+ 185 000e 80BD     		pop	{r7, pc}
+ 186              	.L11:
+ 187              		.align	2
+ 188              	.L10:
+ 189 0010 00000000 		.word	AMuxSeq_CYAMUXSIDE_A_curChannel
+ 190              		.cfi_endproc
+ 191              	.LFE5:
+ 192              		.size	AMuxSeq_GetChannel, .-AMuxSeq_GetChannel
+ 193              		.text
+ 194              	.Letext0:
+ 195              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
+ 196              		.file 3 ".\\Generated_Source\\PSoC4\\cyfitter_cfg.h"
+ 197              		.section	.debug_info,"",%progbits
+ 198              	.Ldebug_info0:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 7
+
+
+ 199 0000 19010000 		.4byte	0x119
+ 200 0004 0400     		.2byte	0x4
+ 201 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 202 000a 04       		.byte	0x4
+ 203 000b 01       		.uleb128 0x1
+ 204 000c 4B010000 		.4byte	.LASF21
+ 205 0010 01       		.byte	0x1
+ 206 0011 B2000000 		.4byte	.LASF22
+ 207 0015 00000000 		.4byte	.LASF23
+ 208 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 209 001d 00000000 		.4byte	0
+ 210 0021 00000000 		.4byte	.Ldebug_line0
+ 211 0025 02       		.uleb128 0x2
+ 212 0026 01       		.byte	0x1
+ 213 0027 06       		.byte	0x6
+ 214 0028 0E020000 		.4byte	.LASF0
+ 215 002c 02       		.uleb128 0x2
+ 216 002d 01       		.byte	0x1
+ 217 002e 08       		.byte	0x8
+ 218 002f F2000000 		.4byte	.LASF1
+ 219 0033 02       		.uleb128 0x2
+ 220 0034 02       		.byte	0x2
+ 221 0035 05       		.byte	0x5
+ 222 0036 E8010000 		.4byte	.LASF2
+ 223 003a 02       		.uleb128 0x2
+ 224 003b 02       		.byte	0x2
+ 225 003c 07       		.byte	0x7
+ 226 003d 12010000 		.4byte	.LASF3
+ 227 0041 02       		.uleb128 0x2
+ 228 0042 04       		.byte	0x4
+ 229 0043 05       		.byte	0x5
+ 230 0044 05020000 		.4byte	.LASF4
+ 231 0048 02       		.uleb128 0x2
+ 232 0049 04       		.byte	0x4
+ 233 004a 07       		.byte	0x7
+ 234 004b 00010000 		.4byte	.LASF5
+ 235 004f 02       		.uleb128 0x2
+ 236 0050 08       		.byte	0x8
+ 237 0051 05       		.byte	0x5
+ 238 0052 D5010000 		.4byte	.LASF6
+ 239 0056 02       		.uleb128 0x2
+ 240 0057 08       		.byte	0x8
+ 241 0058 07       		.byte	0x7
+ 242 0059 DB000000 		.4byte	.LASF7
+ 243 005d 03       		.uleb128 0x3
+ 244 005e 04       		.byte	0x4
+ 245 005f 05       		.byte	0x5
+ 246 0060 696E7400 		.ascii	"int\000"
+ 247 0064 02       		.uleb128 0x2
+ 248 0065 04       		.byte	0x4
+ 249 0066 07       		.byte	0x7
+ 250 0067 3E010000 		.4byte	.LASF8
+ 251 006b 04       		.uleb128 0x4
+ 252 006c F2010000 		.4byte	.LASF9
+ 253 0070 02       		.byte	0x2
+ 254 0071 A1       		.byte	0xa1
+ 255 0072 2C000000 		.4byte	0x2c
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 8
+
+
+ 256 0076 04       		.uleb128 0x4
+ 257 0077 39010000 		.4byte	.LASF10
+ 258 007b 02       		.byte	0x2
+ 259 007c A4       		.byte	0xa4
+ 260 007d 25000000 		.4byte	0x25
+ 261 0081 02       		.uleb128 0x2
+ 262 0082 04       		.byte	0x4
+ 263 0083 04       		.byte	0x4
+ 264 0084 D5000000 		.4byte	.LASF11
+ 265 0088 02       		.uleb128 0x2
+ 266 0089 08       		.byte	0x8
+ 267 008a 04       		.byte	0x4
+ 268 008b 32010000 		.4byte	.LASF12
+ 269 008f 02       		.uleb128 0x2
+ 270 0090 01       		.byte	0x1
+ 271 0091 08       		.byte	0x8
+ 272 0092 E3010000 		.4byte	.LASF13
+ 273 0096 05       		.uleb128 0x5
+ 274 0097 C7010000 		.4byte	.LASF14
+ 275 009b 01       		.byte	0x1
+ 276 009c 24       		.byte	0x24
+ 277 009d 00000000 		.4byte	.LFB0
+ 278 00a1 18000000 		.4byte	.LFE0-.LFB0
+ 279 00a5 01       		.uleb128 0x1
+ 280 00a6 9C       		.byte	0x9c
+ 281 00a7 05       		.uleb128 0x5
+ 282 00a8 6F000000 		.4byte	.LASF15
+ 283 00ac 01       		.byte	0x1
+ 284 00ad 39       		.byte	0x39
+ 285 00ae 00000000 		.4byte	.LFB1
+ 286 00b2 0C000000 		.4byte	.LFE1-.LFB1
+ 287 00b6 01       		.uleb128 0x1
+ 288 00b7 9C       		.byte	0x9c
+ 289 00b8 05       		.uleb128 0x5
+ 290 00b9 F8010000 		.4byte	.LASF16
+ 291 00bd 01       		.byte	0x1
+ 292 00be 4D       		.byte	0x4d
+ 293 00bf 00000000 		.4byte	.LFB2
+ 294 00c3 0C000000 		.4byte	.LFE2-.LFB2
+ 295 00c7 01       		.uleb128 0x1
+ 296 00c8 9C       		.byte	0x9c
+ 297 00c9 05       		.uleb128 0x5
+ 298 00ca 25010000 		.4byte	.LASF17
+ 299 00ce 01       		.byte	0x1
+ 300 00cf 63       		.byte	0x63
+ 301 00d0 00000000 		.4byte	.LFB3
+ 302 00d4 10000000 		.4byte	.LFE3-.LFB3
+ 303 00d8 01       		.uleb128 0x1
+ 304 00d9 9C       		.byte	0x9c
+ 305 00da 05       		.uleb128 0x5
+ 306 00db 7C000000 		.4byte	.LASF18
+ 307 00df 01       		.byte	0x1
+ 308 00e0 78       		.byte	0x78
+ 309 00e1 00000000 		.4byte	.LFB4
+ 310 00e5 10000000 		.4byte	.LFE4-.LFB4
+ 311 00e9 01       		.uleb128 0x1
+ 312 00ea 9C       		.byte	0x9c
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 9
+
+
+ 313 00eb 06       		.uleb128 0x6
+ 314 00ec 5C000000 		.4byte	.LASF24
+ 315 00f0 01       		.byte	0x1
+ 316 00f1 8D       		.byte	0x8d
+ 317 00f2 76000000 		.4byte	0x76
+ 318 00f6 00000000 		.4byte	.LFB5
+ 319 00fa 14000000 		.4byte	.LFE5-.LFB5
+ 320 00fe 01       		.uleb128 0x1
+ 321 00ff 9C       		.byte	0x9c
+ 322 0100 07       		.uleb128 0x7
+ 323 0101 92000000 		.4byte	.LASF19
+ 324 0105 03       		.byte	0x3
+ 325 0106 1C       		.byte	0x1c
+ 326 0107 76000000 		.4byte	0x76
+ 327 010b 08       		.uleb128 0x8
+ 328 010c 1A020000 		.4byte	.LASF20
+ 329 0110 01       		.byte	0x1
+ 330 0111 13       		.byte	0x13
+ 331 0112 6B000000 		.4byte	0x6b
+ 332 0116 05       		.uleb128 0x5
+ 333 0117 03       		.byte	0x3
+ 334 0118 00000000 		.4byte	AMuxSeq_initVar
+ 335 011c 00       		.byte	0
+ 336              		.section	.debug_abbrev,"",%progbits
+ 337              	.Ldebug_abbrev0:
+ 338 0000 01       		.uleb128 0x1
+ 339 0001 11       		.uleb128 0x11
+ 340 0002 01       		.byte	0x1
+ 341 0003 25       		.uleb128 0x25
+ 342 0004 0E       		.uleb128 0xe
+ 343 0005 13       		.uleb128 0x13
+ 344 0006 0B       		.uleb128 0xb
+ 345 0007 03       		.uleb128 0x3
+ 346 0008 0E       		.uleb128 0xe
+ 347 0009 1B       		.uleb128 0x1b
+ 348 000a 0E       		.uleb128 0xe
+ 349 000b 55       		.uleb128 0x55
+ 350 000c 17       		.uleb128 0x17
+ 351 000d 11       		.uleb128 0x11
+ 352 000e 01       		.uleb128 0x1
+ 353 000f 10       		.uleb128 0x10
+ 354 0010 17       		.uleb128 0x17
+ 355 0011 00       		.byte	0
+ 356 0012 00       		.byte	0
+ 357 0013 02       		.uleb128 0x2
+ 358 0014 24       		.uleb128 0x24
+ 359 0015 00       		.byte	0
+ 360 0016 0B       		.uleb128 0xb
+ 361 0017 0B       		.uleb128 0xb
+ 362 0018 3E       		.uleb128 0x3e
+ 363 0019 0B       		.uleb128 0xb
+ 364 001a 03       		.uleb128 0x3
+ 365 001b 0E       		.uleb128 0xe
+ 366 001c 00       		.byte	0
+ 367 001d 00       		.byte	0
+ 368 001e 03       		.uleb128 0x3
+ 369 001f 24       		.uleb128 0x24
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 10
+
+
+ 370 0020 00       		.byte	0
+ 371 0021 0B       		.uleb128 0xb
+ 372 0022 0B       		.uleb128 0xb
+ 373 0023 3E       		.uleb128 0x3e
+ 374 0024 0B       		.uleb128 0xb
+ 375 0025 03       		.uleb128 0x3
+ 376 0026 08       		.uleb128 0x8
+ 377 0027 00       		.byte	0
+ 378 0028 00       		.byte	0
+ 379 0029 04       		.uleb128 0x4
+ 380 002a 16       		.uleb128 0x16
+ 381 002b 00       		.byte	0
+ 382 002c 03       		.uleb128 0x3
+ 383 002d 0E       		.uleb128 0xe
+ 384 002e 3A       		.uleb128 0x3a
+ 385 002f 0B       		.uleb128 0xb
+ 386 0030 3B       		.uleb128 0x3b
+ 387 0031 0B       		.uleb128 0xb
+ 388 0032 49       		.uleb128 0x49
+ 389 0033 13       		.uleb128 0x13
+ 390 0034 00       		.byte	0
+ 391 0035 00       		.byte	0
+ 392 0036 05       		.uleb128 0x5
+ 393 0037 2E       		.uleb128 0x2e
+ 394 0038 00       		.byte	0
+ 395 0039 3F       		.uleb128 0x3f
+ 396 003a 19       		.uleb128 0x19
+ 397 003b 03       		.uleb128 0x3
+ 398 003c 0E       		.uleb128 0xe
+ 399 003d 3A       		.uleb128 0x3a
+ 400 003e 0B       		.uleb128 0xb
+ 401 003f 3B       		.uleb128 0x3b
+ 402 0040 0B       		.uleb128 0xb
+ 403 0041 27       		.uleb128 0x27
+ 404 0042 19       		.uleb128 0x19
+ 405 0043 11       		.uleb128 0x11
+ 406 0044 01       		.uleb128 0x1
+ 407 0045 12       		.uleb128 0x12
+ 408 0046 06       		.uleb128 0x6
+ 409 0047 40       		.uleb128 0x40
+ 410 0048 18       		.uleb128 0x18
+ 411 0049 9642     		.uleb128 0x2116
+ 412 004b 19       		.uleb128 0x19
+ 413 004c 00       		.byte	0
+ 414 004d 00       		.byte	0
+ 415 004e 06       		.uleb128 0x6
+ 416 004f 2E       		.uleb128 0x2e
+ 417 0050 00       		.byte	0
+ 418 0051 3F       		.uleb128 0x3f
+ 419 0052 19       		.uleb128 0x19
+ 420 0053 03       		.uleb128 0x3
+ 421 0054 0E       		.uleb128 0xe
+ 422 0055 3A       		.uleb128 0x3a
+ 423 0056 0B       		.uleb128 0xb
+ 424 0057 3B       		.uleb128 0x3b
+ 425 0058 0B       		.uleb128 0xb
+ 426 0059 27       		.uleb128 0x27
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 11
+
+
+ 427 005a 19       		.uleb128 0x19
+ 428 005b 49       		.uleb128 0x49
+ 429 005c 13       		.uleb128 0x13
+ 430 005d 11       		.uleb128 0x11
+ 431 005e 01       		.uleb128 0x1
+ 432 005f 12       		.uleb128 0x12
+ 433 0060 06       		.uleb128 0x6
+ 434 0061 40       		.uleb128 0x40
+ 435 0062 18       		.uleb128 0x18
+ 436 0063 9742     		.uleb128 0x2117
+ 437 0065 19       		.uleb128 0x19
+ 438 0066 00       		.byte	0
+ 439 0067 00       		.byte	0
+ 440 0068 07       		.uleb128 0x7
+ 441 0069 34       		.uleb128 0x34
+ 442 006a 00       		.byte	0
+ 443 006b 03       		.uleb128 0x3
+ 444 006c 0E       		.uleb128 0xe
+ 445 006d 3A       		.uleb128 0x3a
+ 446 006e 0B       		.uleb128 0xb
+ 447 006f 3B       		.uleb128 0x3b
+ 448 0070 0B       		.uleb128 0xb
+ 449 0071 49       		.uleb128 0x49
+ 450 0072 13       		.uleb128 0x13
+ 451 0073 3F       		.uleb128 0x3f
+ 452 0074 19       		.uleb128 0x19
+ 453 0075 3C       		.uleb128 0x3c
+ 454 0076 19       		.uleb128 0x19
+ 455 0077 00       		.byte	0
+ 456 0078 00       		.byte	0
+ 457 0079 08       		.uleb128 0x8
+ 458 007a 34       		.uleb128 0x34
+ 459 007b 00       		.byte	0
+ 460 007c 03       		.uleb128 0x3
+ 461 007d 0E       		.uleb128 0xe
+ 462 007e 3A       		.uleb128 0x3a
+ 463 007f 0B       		.uleb128 0xb
+ 464 0080 3B       		.uleb128 0x3b
+ 465 0081 0B       		.uleb128 0xb
+ 466 0082 49       		.uleb128 0x49
+ 467 0083 13       		.uleb128 0x13
+ 468 0084 3F       		.uleb128 0x3f
+ 469 0085 19       		.uleb128 0x19
+ 470 0086 02       		.uleb128 0x2
+ 471 0087 18       		.uleb128 0x18
+ 472 0088 00       		.byte	0
+ 473 0089 00       		.byte	0
+ 474 008a 00       		.byte	0
+ 475              		.section	.debug_aranges,"",%progbits
+ 476 0000 44000000 		.4byte	0x44
+ 477 0004 0200     		.2byte	0x2
+ 478 0006 00000000 		.4byte	.Ldebug_info0
+ 479 000a 04       		.byte	0x4
+ 480 000b 00       		.byte	0
+ 481 000c 0000     		.2byte	0
+ 482 000e 0000     		.2byte	0
+ 483 0010 00000000 		.4byte	.LFB0
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 12
+
+
+ 484 0014 18000000 		.4byte	.LFE0-.LFB0
+ 485 0018 00000000 		.4byte	.LFB1
+ 486 001c 0C000000 		.4byte	.LFE1-.LFB1
+ 487 0020 00000000 		.4byte	.LFB2
+ 488 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 489 0028 00000000 		.4byte	.LFB3
+ 490 002c 10000000 		.4byte	.LFE3-.LFB3
+ 491 0030 00000000 		.4byte	.LFB4
+ 492 0034 10000000 		.4byte	.LFE4-.LFB4
+ 493 0038 00000000 		.4byte	.LFB5
+ 494 003c 14000000 		.4byte	.LFE5-.LFB5
+ 495 0040 00000000 		.4byte	0
+ 496 0044 00000000 		.4byte	0
+ 497              		.section	.debug_ranges,"",%progbits
+ 498              	.Ldebug_ranges0:
+ 499 0000 00000000 		.4byte	.LFB0
+ 500 0004 18000000 		.4byte	.LFE0
+ 501 0008 00000000 		.4byte	.LFB1
+ 502 000c 0C000000 		.4byte	.LFE1
+ 503 0010 00000000 		.4byte	.LFB2
+ 504 0014 0C000000 		.4byte	.LFE2
+ 505 0018 00000000 		.4byte	.LFB3
+ 506 001c 10000000 		.4byte	.LFE3
+ 507 0020 00000000 		.4byte	.LFB4
+ 508 0024 10000000 		.4byte	.LFE4
+ 509 0028 00000000 		.4byte	.LFB5
+ 510 002c 14000000 		.4byte	.LFE5
+ 511 0030 00000000 		.4byte	0
+ 512 0034 00000000 		.4byte	0
+ 513              		.section	.debug_line,"",%progbits
+ 514              	.Ldebug_line0:
+ 515 0000 CB000000 		.section	.debug_str,"MS",%progbits,1
+ 515      02005800 
+ 515      00000201 
+ 515      FB0E0D00 
+ 515      01010101 
+ 516              	.LASF23:
+ 517 0000 433A5C55 		.ascii	"C:\\Users\\Yobely\\Desktop\\Health Thermometer.cywr"
+ 517      73657273 
+ 517      5C596F62 
+ 517      656C795C 
+ 517      4465736B 
+ 518 002f 6B2E4172 		.ascii	"k.Archive01\\AN91184\\Health Thermometer.cydsn\000"
+ 518      63686976 
+ 518      6530315C 
+ 518      414E3931 
+ 518      3138345C 
+ 519              	.LASF24:
+ 520 005c 414D7578 		.ascii	"AMuxSeq_GetChannel\000"
+ 520      5365715F 
+ 520      47657443 
+ 520      68616E6E 
+ 520      656C00
+ 521              	.LASF15:
+ 522 006f 414D7578 		.ascii	"AMuxSeq_Init\000"
+ 522      5365715F 
+ 522      496E6974 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 13
+
+
+ 522      00
+ 523              	.LASF18:
+ 524 007c 414D7578 		.ascii	"AMuxSeq_DisconnectAll\000"
+ 524      5365715F 
+ 524      44697363 
+ 524      6F6E6E65 
+ 524      6374416C 
+ 525              	.LASF19:
+ 526 0092 414D7578 		.ascii	"AMuxSeq_CYAMUXSIDE_A_curChannel\000"
+ 526      5365715F 
+ 526      4359414D 
+ 526      55585349 
+ 526      44455F41 
+ 527              	.LASF22:
+ 528 00b2 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\AMuxSeq.c\000"
+ 528      6E657261 
+ 528      7465645F 
+ 528      536F7572 
+ 528      63655C50 
+ 529              	.LASF11:
+ 530 00d5 666C6F61 		.ascii	"float\000"
+ 530      7400
+ 531              	.LASF7:
+ 532 00db 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 532      206C6F6E 
+ 532      6720756E 
+ 532      7369676E 
+ 532      65642069 
+ 533              	.LASF1:
+ 534 00f2 756E7369 		.ascii	"unsigned char\000"
+ 534      676E6564 
+ 534      20636861 
+ 534      7200
+ 535              	.LASF5:
+ 536 0100 6C6F6E67 		.ascii	"long unsigned int\000"
+ 536      20756E73 
+ 536      69676E65 
+ 536      6420696E 
+ 536      7400
+ 537              	.LASF3:
+ 538 0112 73686F72 		.ascii	"short unsigned int\000"
+ 538      7420756E 
+ 538      7369676E 
+ 538      65642069 
+ 538      6E7400
+ 539              	.LASF17:
+ 540 0125 414D7578 		.ascii	"AMuxSeq_Next\000"
+ 540      5365715F 
+ 540      4E657874 
+ 540      00
+ 541              	.LASF12:
+ 542 0132 646F7562 		.ascii	"double\000"
+ 542      6C6500
+ 543              	.LASF10:
+ 544 0139 696E7438 		.ascii	"int8\000"
+ 544      00
+ 545              	.LASF8:
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 14
+
+
+ 546 013e 756E7369 		.ascii	"unsigned int\000"
+ 546      676E6564 
+ 546      20696E74 
+ 546      00
+ 547              	.LASF21:
+ 548 014b 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 548      4320342E 
+ 548      382E3420 
+ 548      32303134 
+ 548      30353236 
+ 549 017e 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 549      20726576 
+ 549      6973696F 
+ 549      6E203231 
+ 549      31333538 
+ 550 01b1 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 550      66756E63 
+ 550      74696F6E 
+ 550      2D736563 
+ 550      74696F6E 
+ 551              	.LASF14:
+ 552 01c7 414D7578 		.ascii	"AMuxSeq_Start\000"
+ 552      5365715F 
+ 552      53746172 
+ 552      7400
+ 553              	.LASF6:
+ 554 01d5 6C6F6E67 		.ascii	"long long int\000"
+ 554      206C6F6E 
+ 554      6720696E 
+ 554      7400
+ 555              	.LASF13:
+ 556 01e3 63686172 		.ascii	"char\000"
+ 556      00
+ 557              	.LASF2:
+ 558 01e8 73686F72 		.ascii	"short int\000"
+ 558      7420696E 
+ 558      7400
+ 559              	.LASF9:
+ 560 01f2 75696E74 		.ascii	"uint8\000"
+ 560      3800
+ 561              	.LASF16:
+ 562 01f8 414D7578 		.ascii	"AMuxSeq_Stop\000"
+ 562      5365715F 
+ 562      53746F70 
+ 562      00
+ 563              	.LASF4:
+ 564 0205 6C6F6E67 		.ascii	"long int\000"
+ 564      20696E74 
+ 564      00
+ 565              	.LASF0:
+ 566 020e 7369676E 		.ascii	"signed char\000"
+ 566      65642063 
+ 566      68617200 
+ 567              	.LASF20:
+ 568 021a 414D7578 		.ascii	"AMuxSeq_initVar\000"
+ 568      5365715F 
+ 568      696E6974 
+ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccRpY4zM.s 			page 15
+
+
+ 568      56617200 
+ 569              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
