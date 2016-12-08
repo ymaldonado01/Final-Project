@@ -42,9 +42,14 @@
 #include <V_THERM_aliases.h>
 #include <V_LOW.h>
 #include <V_LOW_aliases.h>
-#include <SW.h>
-#include <SW_aliases.h>
-#include <Wakeup_ISR.h>
+#include <PWM_1.h>
+#include <Pin_LED.h>
+#include <Pin_LED_aliases.h>
+#include <Clock_1.h>
+#include <Clock_2.h>
+#include <Pin_LED_1.h>
+#include <Pin_LED_1_aliases.h>
+#include <PWM_2.h>
 #include <ADC_IRQ.h>
 #include <ADC_intClock.h>
 #include <BLE_bless_isr.h>

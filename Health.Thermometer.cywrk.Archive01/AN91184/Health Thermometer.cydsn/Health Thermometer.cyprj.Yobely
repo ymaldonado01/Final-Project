@@ -843,7 +843,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131255096319929894" />
+<deps_time v="131241692535508031" />
 <top_block v="TopDesign" />
 <last_generation v="10" />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
@@ -855,6 +855,102 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM0\ARM_GCC_484\Debug\Temperature.o">
+<dep name=".\Generated_Source\PSoC4\ADC.h" />
+<dep name=".\Generated_Source\PSoC4\ADC_IRQ.h" />
+<dep name=".\Generated_Source\PSoC4\ADC_intClock.h" />
+<dep name=".\Generated_Source\PSoC4\AMuxSeq.h" />
+<dep name=".\Generated_Source\PSoC4\BLE.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_HAL_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_STACK_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_Stack.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_StackGap.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_StackGatt.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_StackGattClient.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_StackGattDb.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_StackGattServer.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_StackHostMain.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_StackL2cap.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_bless_isr.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_dis.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_eventHandler.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_gatt.h" />
+<dep name=".\Generated_Source\PSoC4\BLE_hts.h" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SW.h" />
+<dep name=".\Generated_Source\PSoC4\SW_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Thermistor.h" />
+<dep name=".\Generated_Source\PSoC4\V_HIGH.h" />
+<dep name=".\Generated_Source\PSoC4\V_HIGH_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\V_LOW.h" />
+<dep name=".\Generated_Source\PSoC4\V_LOW_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\V_THERM.h" />
+<dep name=".\Generated_Source\PSoC4\V_THERM_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Wakeup_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
+<dep name=".\Generated_Source\PSoC4\core_cmFunc.h" />
+<dep name=".\Generated_Source\PSoC4\core_cmInstr.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name=".\CommonFunctions.h" />
+<dep name=".\Temperature.c" />
+<dep name=".\Temperature.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\ADC.h" />
+<file name=".\Generated_Source\PSoC4\ADC_IRQ.h" />
+<file name=".\Generated_Source\PSoC4\ADC_intClock.h" />
+<file name=".\Generated_Source\PSoC4\AMuxSeq.h" />
+<file name=".\Generated_Source\PSoC4\BLE.h" />
+<file name=".\Generated_Source\PSoC4\BLE_HAL_PVT.h" />
+<file name=".\Generated_Source\PSoC4\BLE_STACK_PVT.h" />
+<file name=".\Generated_Source\PSoC4\BLE_Stack.h" />
+<file name=".\Generated_Source\PSoC4\BLE_StackGap.h" />
+<file name=".\Generated_Source\PSoC4\BLE_StackGatt.h" />
+<file name=".\Generated_Source\PSoC4\BLE_StackGattClient.h" />
+<file name=".\Generated_Source\PSoC4\BLE_StackGattDb.h" />
+<file name=".\Generated_Source\PSoC4\BLE_StackGattServer.h" />
+<file name=".\Generated_Source\PSoC4\BLE_StackHostMain.h" />
+<file name=".\Generated_Source\PSoC4\BLE_StackL2cap.h" />
+<file name=".\Generated_Source\PSoC4\BLE_bless_isr.h" />
+<file name=".\Generated_Source\PSoC4\BLE_dis.h" />
+<file name=".\Generated_Source\PSoC4\BLE_eventHandler.h" />
+<file name=".\Generated_Source\PSoC4\BLE_gatt.h" />
+<file name=".\Generated_Source\PSoC4\BLE_hts.h" />
+<file name=".\Generated_Source\PSoC4\CyFlash.h" />
+<file name=".\Generated_Source\PSoC4\CyLib.h" />
+<file name=".\Generated_Source\PSoC4\SW.h" />
+<file name=".\Generated_Source\PSoC4\SW_aliases.h" />
+<file name=".\Generated_Source\PSoC4\Thermistor.h" />
+<file name=".\Generated_Source\PSoC4\V_HIGH.h" />
+<file name=".\Generated_Source\PSoC4\V_HIGH_aliases.h" />
+<file name=".\Generated_Source\PSoC4\V_LOW.h" />
+<file name=".\Generated_Source\PSoC4\V_LOW_aliases.h" />
+<file name=".\Generated_Source\PSoC4\V_THERM.h" />
+<file name=".\Generated_Source\PSoC4\V_THERM_aliases.h" />
+<file name=".\Generated_Source\PSoC4\Wakeup_ISR.h" />
+<file name=".\Generated_Source\PSoC4\core_cm0.h" />
+<file name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
+<file name=".\Generated_Source\PSoC4\core_cmFunc.h" />
+<file name=".\Generated_Source\PSoC4\core_cmInstr.h" />
+<file name=".\Generated_Source\PSoC4\cyPm.h" />
+<file name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC4\cyfitter.h" />
+<file name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<file name=".\Generated_Source\PSoC4\cypins.h" />
+<file name=".\Generated_Source\PSoC4\cytypes.h" />
+<file name=".\Generated_Source\PSoC4\project.h" />
+<file name=".\CommonFunctions.h" />
+<file name=".\Temperature.c" />
+<file name=".\Temperature.h" />
 <file name=".\CortexM0\ARM_GCC_484\Debug\main.o">
 <dep name=".\Generated_Source\PSoC4\ADC.h" />
 <dep name=".\Generated_Source\PSoC4\ADC_IRQ.h" />
@@ -905,104 +1001,8 @@
 <dep name=".\Temperature.h" />
 <dep name=".\main.c" />
 </file>
-<file name=".\Generated_Source\PSoC4\ADC.h" />
-<file name=".\Generated_Source\PSoC4\ADC_IRQ.h" />
-<file name=".\Generated_Source\PSoC4\ADC_intClock.h" />
-<file name=".\Generated_Source\PSoC4\AMuxSeq.h" />
-<file name=".\Generated_Source\PSoC4\BLE.h" />
-<file name=".\Generated_Source\PSoC4\BLE_HAL_PVT.h" />
-<file name=".\Generated_Source\PSoC4\BLE_STACK_PVT.h" />
-<file name=".\Generated_Source\PSoC4\BLE_Stack.h" />
-<file name=".\Generated_Source\PSoC4\BLE_StackGap.h" />
-<file name=".\Generated_Source\PSoC4\BLE_StackGatt.h" />
-<file name=".\Generated_Source\PSoC4\BLE_StackGattClient.h" />
-<file name=".\Generated_Source\PSoC4\BLE_StackGattDb.h" />
-<file name=".\Generated_Source\PSoC4\BLE_StackGattServer.h" />
-<file name=".\Generated_Source\PSoC4\BLE_StackHostMain.h" />
-<file name=".\Generated_Source\PSoC4\BLE_StackL2cap.h" />
-<file name=".\Generated_Source\PSoC4\BLE_bless_isr.h" />
-<file name=".\Generated_Source\PSoC4\BLE_dis.h" />
-<file name=".\Generated_Source\PSoC4\BLE_eventHandler.h" />
-<file name=".\Generated_Source\PSoC4\BLE_gatt.h" />
-<file name=".\Generated_Source\PSoC4\BLE_hts.h" />
-<file name=".\Generated_Source\PSoC4\CyFlash.h" />
-<file name=".\Generated_Source\PSoC4\CyLib.h" />
-<file name=".\Generated_Source\PSoC4\SW.h" />
-<file name=".\Generated_Source\PSoC4\SW_aliases.h" />
-<file name=".\Generated_Source\PSoC4\Thermistor.h" />
-<file name=".\Generated_Source\PSoC4\V_HIGH.h" />
-<file name=".\Generated_Source\PSoC4\V_HIGH_aliases.h" />
-<file name=".\Generated_Source\PSoC4\V_LOW.h" />
-<file name=".\Generated_Source\PSoC4\V_LOW_aliases.h" />
-<file name=".\Generated_Source\PSoC4\V_THERM.h" />
-<file name=".\Generated_Source\PSoC4\V_THERM_aliases.h" />
-<file name=".\Generated_Source\PSoC4\Wakeup_ISR.h" />
-<file name=".\Generated_Source\PSoC4\core_cm0.h" />
-<file name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
-<file name=".\Generated_Source\PSoC4\core_cmFunc.h" />
-<file name=".\Generated_Source\PSoC4\core_cmInstr.h" />
-<file name=".\Generated_Source\PSoC4\cyPm.h" />
-<file name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<file name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC4\cyfitter.h" />
-<file name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<file name=".\Generated_Source\PSoC4\cypins.h" />
-<file name=".\Generated_Source\PSoC4\cytypes.h" />
-<file name=".\Generated_Source\PSoC4\project.h" />
 <file name=".\BLE_HTSS.h" />
-<file name=".\CommonFunctions.h" />
-<file name=".\Temperature.h" />
 <file name=".\main.c" />
-<file name=".\CortexM0\ARM_GCC_484\Debug\Temperature.o">
-<dep name=".\Generated_Source\PSoC4\ADC.h" />
-<dep name=".\Generated_Source\PSoC4\ADC_IRQ.h" />
-<dep name=".\Generated_Source\PSoC4\ADC_intClock.h" />
-<dep name=".\Generated_Source\PSoC4\AMuxSeq.h" />
-<dep name=".\Generated_Source\PSoC4\BLE.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_HAL_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_STACK_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_Stack.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_StackGap.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_StackGatt.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_StackGattClient.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_StackGattDb.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_StackGattServer.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_StackHostMain.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_StackL2cap.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_bless_isr.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_dis.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_eventHandler.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_gatt.h" />
-<dep name=".\Generated_Source\PSoC4\BLE_hts.h" />
-<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\SW.h" />
-<dep name=".\Generated_Source\PSoC4\SW_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Thermistor.h" />
-<dep name=".\Generated_Source\PSoC4\V_HIGH.h" />
-<dep name=".\Generated_Source\PSoC4\V_HIGH_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\V_LOW.h" />
-<dep name=".\Generated_Source\PSoC4\V_LOW_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\V_THERM.h" />
-<dep name=".\Generated_Source\PSoC4\V_THERM_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Wakeup_ISR.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
-<dep name=".\Generated_Source\PSoC4\core_cmFunc.h" />
-<dep name=".\Generated_Source\PSoC4\core_cmInstr.h" />
-<dep name=".\Generated_Source\PSoC4\cyPm.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\project.h" />
-<dep name=".\CommonFunctions.h" />
-<dep name=".\Temperature.c" />
-<dep name=".\Temperature.h" />
-</file>
-<file name=".\Temperature.c" />
 <file name=".\CortexM0\ARM_GCC_484\Debug\BLE_HTSS.o">
 <dep name=".\Generated_Source\PSoC4\ADC.h" />
 <dep name=".\Generated_Source\PSoC4\ADC_IRQ.h" />
@@ -1600,59 +1600,14 @@
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="131255109257507809" />
+<deps_time v="131241696666135807" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="718b6b01-68ba-4a17-b632-d38dc61ebb3b">
 <CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b type_name="CyDesigner.Gde.Schematic.Symbolcatalog.CyComponentCatalogControl+CyCompCatalogData" version="1" tab="Cypress">
-<tree_states_tab_names>
-<v>Cypress</v>
-<v>Off-Chip</v>
-</tree_states_tab_names>
-<tree_states>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\Ports and Pins\Digital Output Pin [v2.10]">
-<ExpandedNodeIds>
-<v>Cypress Component Catalog</v>
-<v>Cypress Component Catalog\Ports and Pins</v>
-</ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Cypress Component Catalog</v>
-<v>Cypress Component Catalog\Analog</v>
-<v>Cypress Component Catalog\CapSense</v>
-<v>Cypress Component Catalog\Communications</v>
-<v>Cypress Component Catalog\Digital</v>
-<v>Cypress Component Catalog\Display</v>
-<v>Cypress Component Catalog\Ports and Pins</v>
-<v>Cypress Component Catalog\Ports and Pins\Analog Pin [v2.10]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Bidirectional Pin [v2.10]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Input Pin [v2.10]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Output Pin [v2.10]</v>
-<v>Cypress Component Catalog\System</v>
-<v>Cypress Component Catalog\Thermal Management</v>
-</VisibleNodeIds>
-</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
-<ExpandedNodeIds>
-<v>Off-Chip Component Catalog</v>
-</ExpandedNodeIds>
-<VisibleNodeIds>
-<v>Off-Chip Component Catalog</v>
-<v>Off-Chip Component Catalog\Active</v>
-<v>Off-Chip Component Catalog\Diodes</v>
-<v>Off-Chip Component Catalog\Electro-Mechanical</v>
-<v>Off-Chip Component Catalog\Passive</v>
-<v>Off-Chip Component Catalog\Power</v>
-<v>Off-Chip Component Catalog\Sensors</v>
-<v>Off-Chip Component Catalog\Transistors</v>
-</VisibleNodeIds>
-</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-</tree_states>
+<tree_states_tab_names />
+<tree_states />
 </CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b>
-</dataGuid>
-<dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
-<CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
-<debugger_breakpoint_list />
-</CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>

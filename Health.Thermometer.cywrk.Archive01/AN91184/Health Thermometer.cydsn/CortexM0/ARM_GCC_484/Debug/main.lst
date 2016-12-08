@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 1
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -27,85 +27,42 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 1
   24              	.LFB35:
   25              		.file 1 ".\\main.c"
    1:.\main.c      **** /****************************************************************************
-   2:.\main.c      **** * File Name: main.c
-   3:.\main.c      **** *
-   4:.\main.c      **** * Version: 1.0
-   5:.\main.c      **** *
-   6:.\main.c      **** * Description:
-   7:.\main.c      **** * This file implements the system functions.
-   8:.\main.c      **** *
-   9:.\main.c      **** * Note:
-  10:.\main.c      **** * 
-  11:.\main.c      **** * Owner:
-  12:.\main.c      **** * PMAD
-  13:.\main.c      **** *
-  14:.\main.c      **** ******************************************************************************
-  15:.\main.c      **** * Copyright (2014), Cypress Semiconductor Corporation.
-  16:.\main.c      **** ******************************************************************************
-  17:.\main.c      **** * This software is owned by Cypress Semiconductor Corporation (Cypress) and is
-  18:.\main.c      **** * protected by and subject to worldwide patent protection (United States and
-  19:.\main.c      **** * foreign), United States copyright laws and international treaty provisions.
-  20:.\main.c      **** * Cypress hereby grants to licensee a personal, non-exclusive, non-transferable
-  21:.\main.c      **** * license to copy, use, modify, create derivative works of, and compile the
-  22:.\main.c      **** * Cypress Source Code and derivative works for the sole purpose of creating
-  23:.\main.c      **** * custom software in support of licensee product to be used only in conjunction
-  24:.\main.c      **** * with a Cypress integrated circuit as specified in the applicable agreement.
-  25:.\main.c      **** * Any reproduction, modification, translation, compilation, or representation of
-  26:.\main.c      **** * this software except as specified above is prohibited without the express
-  27:.\main.c      **** * written permission of Cypress.
+   2:.\main.c      **** * 
+   3:.\main.c      **** *****************************************************************************/
+   4:.\main.c      **** #include <project.h>
+   5:.\main.c      **** #include "CommonFunctions.h"
+   6:.\main.c      **** #include "Temperature.h"
+   7:.\main.c      **** #include "BLE_HTSS.h"
+   8:.\main.c      **** 
+   9:.\main.c      **** /*****************************************************************************
+  10:.\main.c      **** * Function Name: main()
+  11:.\main.c      **** ******************************************************************************
+  12:.\main.c      **** * Summary:
+  13:.\main.c      **** * Central function which controls the application flow
+  14:.\main.c      **** *
+  15:.\main.c      **** * Parameters:
+  16:.\main.c      **** * None
+  17:.\main.c      **** *
+  18:.\main.c      **** * Return:
+  19:.\main.c      **** * None
+  20:.\main.c      **** *
+  21:.\main.c      **** * Theory:
+  22:.\main.c      **** * Central function which is entered on power up. This function controls
+  23:.\main.c      **** * the complete application which includes BLE processing, temperature 
+  24:.\main.c      **** * measurement and power mode transitions.
+  25:.\main.c      **** *
+  26:.\main.c      **** * Side Effects:
+  27:.\main.c      **** * None
   28:.\main.c      **** *
-  29:.\main.c      **** * Disclaimer: CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH
-  30:.\main.c      **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-  31:.\main.c      **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-  32:.\main.c      **** * Cypress reserves the right to make changes without further notice to the
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 2
+  29:.\main.c      **** * Note:
+  30:.\main.c      **** *
+  31:.\main.c      **** *****************************************************************************/
+  32:.\main.c      **** int main()
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 2
 
 
-  33:.\main.c      **** * materials described herein. Cypress does not assume any liability arising out
-  34:.\main.c      **** * of the application or use of any product or circuit described herein. Cypress
-  35:.\main.c      **** * does not authorize its products for use as critical components in life-support
-  36:.\main.c      **** * systems where a malfunction or failure may reasonably be expected to result in
-  37:.\main.c      **** * significant injury to the user. The inclusion of Cypress' product in a life-
-  38:.\main.c      **** * support systems application implies that the manufacturer assumes all risk of
-  39:.\main.c      **** * such use and in doing so indemnifies Cypress against all charges. Use may be
-  40:.\main.c      **** * limited by and subject to the applicable Cypress software license agreement.
-  41:.\main.c      **** *****************************************************************************/
-  42:.\main.c      **** 
-  43:.\main.c      **** 
-  44:.\main.c      **** /*****************************************************************************
-  45:.\main.c      **** * Included headers
-  46:.\main.c      **** *****************************************************************************/
-  47:.\main.c      **** #include <project.h>
-  48:.\main.c      **** #include "CommonFunctions.h"
-  49:.\main.c      **** #include "Temperature.h"
-  50:.\main.c      **** #include "BLE_HTSS.h"
-  51:.\main.c      **** 
-  52:.\main.c      **** /*****************************************************************************
-  53:.\main.c      **** * Function Name: main()
-  54:.\main.c      **** ******************************************************************************
-  55:.\main.c      **** * Summary:
-  56:.\main.c      **** * Central function which controls the application flow
-  57:.\main.c      **** *
-  58:.\main.c      **** * Parameters:
-  59:.\main.c      **** * None
-  60:.\main.c      **** *
-  61:.\main.c      **** * Return:
-  62:.\main.c      **** * None
-  63:.\main.c      **** *
-  64:.\main.c      **** * Theory:
-  65:.\main.c      **** * Central function which is entered on power up. This function controls
-  66:.\main.c      **** * the complete application which includes BLE processing, temperature 
-  67:.\main.c      **** * measurement and power mode transitions.
-  68:.\main.c      **** *
-  69:.\main.c      **** * Side Effects:
-  70:.\main.c      **** * None
-  71:.\main.c      **** *
-  72:.\main.c      **** * Note:
-  73:.\main.c      **** *
-  74:.\main.c      **** *****************************************************************************/
-  75:.\main.c      **** int main()
-  76:.\main.c      **** {
-  26              		.loc 1 76 0
+  33:.\main.c      **** {
+  26              		.loc 1 33 0
   27              		.cfi_startproc
   28 0000 90B5     		push	{r4, r7, lr}
   29              		.cfi_def_cfa_offset 12
@@ -116,918 +73,913 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 1
   34              		.cfi_def_cfa_offset 24
   35 0004 00AF     		add	r7, sp, #0
   36              		.cfi_def_cfa_register 7
-  77:.\main.c      ****     /* Powerstate indicators of BLESS */
-  78:.\main.c      ****     CYBLE_LP_MODE_T lpMode = CYBLE_BLESS_DEEPSLEEP;
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 3
-
-
-  37              		.loc 1 78 0
+  34:.\main.c      ****    
+  35:.\main.c      ****     
+  36:.\main.c      ****     /* Powerstate indicators of BLESS */
+  37:.\main.c      ****     CYBLE_LP_MODE_T lpMode = CYBLE_BLESS_DEEPSLEEP;
+  37              		.loc 1 37 0
   38 0006 FB1D     		add	r3, r7, #7
   39 0008 0322     		mov	r2, #3
   40 000a 1A70     		strb	r2, [r3]
-  79:.\main.c      ****     CYBLE_BLESS_STATE_T blessState = CYBLE_BLESS_STATE_DEEPSLEEP;
-  41              		.loc 1 79 0
+  38:.\main.c      ****     CYBLE_BLESS_STATE_T blessState = CYBLE_BLESS_STATE_DEEPSLEEP;
+  41              		.loc 1 38 0
   42 000c BB1D     		add	r3, r7, #6
   43 000e 0622     		mov	r2, #6
   44 0010 1A70     		strb	r2, [r3]
-  80:.\main.c      ****     
-  81:.\main.c      ****     /* Local variable used to store temperature information */
-  82:.\main.c      ****     uint32 temperature;
-  83:.\main.c      ****     
-  84:.\main.c      ****     /* Enable global interrupt, required for BLESS operation */
-  85:.\main.c      ****     CyGlobalIntEnable; 
-  45              		.loc 1 85 0
-  46              	@ 85 ".\main.c" 1
+  39:.\main.c      ****     
+  40:.\main.c      ****     /* Local variable used to store temperature information */
+  41:.\main.c      ****     uint32 temperature;
+  42:.\main.c      ****     
+  43:.\main.c      ****  
+  44:.\main.c      ****     /* Enable global interrupt, required for BLESS operation */
+  45:.\main.c      ****     CyGlobalIntEnable; 
+  45              		.loc 1 45 0
+  46              	@ 45 ".\main.c" 1
   47 0012 62B6     		CPSIE   i
   48              	@ 0 "" 2
-  86:.\main.c      ****     
-  87:.\main.c      ****     /* Initialize the complete system */
-  88:.\main.c      ****     InitializeSystem();
-  49              		.loc 1 88 0
+  46:.\main.c      ****     
+  47:.\main.c      ****     /* Initialize the complete system */
+  48:.\main.c      ****     InitializeSystem();
+  49              		.loc 1 48 0
   50              		.code	16
   51 0014 FFF7FEFF 		bl	InitializeSystem
-  52              	.L9:
-  89:.\main.c      ****     
-  90:.\main.c      ****     /* Infinite loop */
-  91:.\main.c      ****     for(;;)
-  92:.\main.c      ****     {
-  93:.\main.c      ****         /* Process all pending BLE events in the stack */
-  94:.\main.c      ****         CyBle_ProcessEvents();
-  53              		.loc 1 94 0
+  52              	.L8:
+  49:.\main.c      ****     
+  50:.\main.c      ****     /* Infinite loop */
+  51:.\main.c      ****     for(;;)
+  52:.\main.c      ****     {
+  53:.\main.c      ****         /* Process all pending BLE events in the stack */
+  54:.\main.c      ****         CyBle_ProcessEvents();
+  53              		.loc 1 54 0
   54 0018 FFF7FEFF 		bl	CyBle_ProcessEvents
-  95:.\main.c      ****         
-  96:.\main.c      ****         /***********************************************************************
-  97:.\main.c      ****         * Wait for connection established with Central device
-  98:.\main.c      ****         ***********************************************************************/
-  99:.\main.c      ****         if(CyBle_GetState() == CYBLE_STATE_CONNECTED)
-  55              		.loc 1 99 0
-  56 001c 2A4B     		ldr	r3, .L10
+  55:.\main.c      ****         
+  56:.\main.c      ****         /***********************************************************************
+  57:.\main.c      ****         * Wait for connection established with Central device
+  58:.\main.c      ****         ***********************************************************************/
+  59:.\main.c      ****         if(CyBle_GetState() == CYBLE_STATE_CONNECTED)
+  55              		.loc 1 59 0
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 3
+
+
+  56 001c 264B     		ldr	r3, .L9
   57 001e 1B78     		ldrb	r3, [r3]
   58 0020 022B     		cmp	r3, #2
   59 0022 18D1     		bne	.L2
- 100:.\main.c      ****         {
- 101:.\main.c      ****             /* Process all pending BLE events in the stack */
- 102:.\main.c      ****             CyBle_ProcessEvents();
-  60              		.loc 1 102 0
+  60:.\main.c      ****         {
+  61:.\main.c      ****             /* Process all pending BLE events in the stack */
+  62:.\main.c      ****             CyBle_ProcessEvents();
+  60              		.loc 1 62 0
   61 0024 FFF7FEFF 		bl	CyBle_ProcessEvents
- 103:.\main.c      ****             /* Periodically measure temperature and send results to the Client */
- 104:.\main.c      ****             if(SystemFlag & WAKEUP_SOURCE_WDT)
-  62              		.loc 1 104 0
-  63 0028 284B     		ldr	r3, .L10+4
+  63:.\main.c      ****             /* Periodically measure temperature and send results to the Client */
+  64:.\main.c      ****             if(SystemFlag & WAKEUP_SOURCE_WDT)
+  62              		.loc 1 64 0
+  63 0028 244B     		ldr	r3, .L9+4
   64 002a 1A68     		ldr	r2, [r3]
   65 002c 0123     		mov	r3, #1
   66 002e 1340     		and	r3, r2
   67 0030 11D0     		beq	.L2
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 4
-
-
- 105:.\main.c      ****             {
- 106:.\main.c      ****                 /* Clear WDT wakeup source flag */
- 107:.\main.c      ****                 SystemFlag &= ~WAKEUP_SOURCE_WDT;
-  68              		.loc 1 107 0
-  69 0032 264B     		ldr	r3, .L10+4
+  65:.\main.c      ****             {
+  66:.\main.c      ****                 /* Clear WDT wakeup source flag */
+  67:.\main.c      ****                 SystemFlag &= ~WAKEUP_SOURCE_WDT;
+  68              		.loc 1 67 0
+  69 0032 224B     		ldr	r3, .L9+4
   70 0034 1B68     		ldr	r3, [r3]
   71 0036 0122     		mov	r2, #1
   72 0038 191C     		mov	r1, r3
   73 003a 9143     		bic	r1, r2
   74 003c 0A1C     		mov	r2, r1
-  75 003e 234B     		ldr	r3, .L10+4
+  75 003e 1F4B     		ldr	r3, .L9+4
   76 0040 1A60     		str	r2, [r3]
- 108:.\main.c      ****                 /* Wakeup the system from deep sleep */
- 109:.\main.c      ****                 WakeupFromDeepSleep();
-  77              		.loc 1 109 0
+  68:.\main.c      ****                 /* Wakeup the system from deep sleep */
+  69:.\main.c      ****                 WakeupFromDeepSleep();
+  77              		.loc 1 69 0
   78 0042 FFF7FEFF 		bl	WakeupFromDeepSleep
- 110:.\main.c      ****                 /* Measure temperature */
- 111:.\main.c      ****                 temperature = ProcessTemperature();
-  79              		.loc 1 111 0
+  70:.\main.c      ****                 /* Measure temperature */
+  71:.\main.c      ****                 temperature = ProcessTemperature();
+  79              		.loc 1 71 0
   80 0046 FFF7FEFF 		bl	ProcessTemperature
   81 004a 031C     		mov	r3, r0
   82 004c 3B60     		str	r3, [r7]
- 112:.\main.c      ****                 /* Send temperature information over BLE */
- 113:.\main.c      ****                 ProcessBLE(temperature);
-  83              		.loc 1 113 0
+  72:.\main.c      ****                 /* Send temperature information over BLE */
+  73:.\main.c      ****                 ProcessBLE(temperature);    
+  83              		.loc 1 73 0
   84 004e 3B68     		ldr	r3, [r7]
   85 0050 181C     		mov	r0, r3
   86 0052 FFF7FEFF 		bl	ProcessBLE
   87              	.L2:
- 114:.\main.c      ****             }
- 115:.\main.c      ****         }
- 116:.\main.c      ****         
- 117:.\main.c      ****         /* If BLE is successfully initialized, then execute the low power routine */
- 118:.\main.c      ****         if(CyBle_GetState() != CYBLE_STATE_INITIALIZING)
-  88              		.loc 1 118 0
-  89 0056 1C4B     		ldr	r3, .L10
+  74:.\main.c      ****                      
+  75:.\main.c      **** 
+  76:.\main.c      ****                 
+  77:.\main.c      ****             }
+  78:.\main.c      ****         }
+  79:.\main.c      ****         
+  80:.\main.c      ****         if(CyBle_GetState() != CYBLE_STATE_INITIALIZING)
+  88              		.loc 1 80 0
+  89 0056 184B     		ldr	r3, .L9
   90 0058 1B78     		ldrb	r3, [r3]
   91 005a 012B     		cmp	r3, #1
-  92 005c 29D0     		beq	.L3
- 119:.\main.c      ****         {
- 120:.\main.c      ****             /* Disable all hardware blocks */
- 121:.\main.c      ****             PrepareForDeepSleep();
-  93              		.loc 1 121 0
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 4
+
+
+  92 005c 2AD0     		beq	.L3
+  81:.\main.c      ****         {
+  82:.\main.c      ****             /* Disable all hardware blocks */
+  83:.\main.c      ****             PrepareForDeepSleep();
+  93              		.loc 1 83 0
   94 005e FFF7FEFF 		bl	PrepareForDeepSleep
- 122:.\main.c      ****             /* Enter Deep Sleep mode between connection intervals */
- 123:.\main.c      ****             lpMode = CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
-  95              		.loc 1 123 0
+  84:.\main.c      ****             /* Enter Deep Sleep mode between connection intervals */
+  85:.\main.c      ****             lpMode = CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
+  95              		.loc 1 85 0
   96 0062 FC1D     		add	r4, r7, #7
   97 0064 0320     		mov	r0, #3
   98 0066 FFF7FEFF 		bl	CyBle_EnterLPM
   99 006a 031C     		mov	r3, r0
  100 006c 2370     		strb	r3, [r4]
- 124:.\main.c      ****             
- 125:.\main.c      ****             /* Disable global interrupts to avoid race condition */
- 126:.\main.c      ****             CyGlobalIntDisable;
- 101              		.loc 1 126 0
- 102              	@ 126 ".\main.c" 1
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 5
-
-
+  86:.\main.c      ****             
+  87:.\main.c      ****             /* Disable global interrupts to avoid race condition */
+  88:.\main.c      ****             CyGlobalIntDisable;
+ 101              		.loc 1 88 0
+ 102              	@ 88 ".\main.c" 1
  103 006e 72B6     		CPSID   i
  104              	@ 0 "" 2
- 127:.\main.c      ****             blessState = CyBle_GetBleSsState();
- 105              		.loc 1 127 0
+  89:.\main.c      ****             blessState = CyBle_GetBleSsState();
+ 105              		.loc 1 89 0
  106              		.code	16
  107 0070 BC1D     		add	r4, r7, #6
  108 0072 FFF7FEFF 		bl	CyBle_GetBleSsState
  109 0076 031C     		mov	r3, r0
  110 0078 2370     		strb	r3, [r4]
- 128:.\main.c      **** 
- 129:.\main.c      ****             /* Try putting system in DeepSleep mode if BLESS succesfully entered Deep Sleep mode*/
- 130:.\main.c      ****             if(lpMode == CYBLE_BLESS_DEEPSLEEP) 
- 111              		.loc 1 130 0
+  90:.\main.c      **** 
+  91:.\main.c      ****             /* Try putting system in DeepSleep mode if BLESS succesfully entered Deep Sleep mode*/
+  92:.\main.c      ****             if(lpMode == CYBLE_BLESS_DEEPSLEEP) 
+ 111              		.loc 1 92 0
  112 007a FB1D     		add	r3, r7, #7
  113 007c 1B78     		ldrb	r3, [r3]
  114 007e 032B     		cmp	r3, #3
  115 0080 0AD1     		bne	.L4
- 131:.\main.c      ****             {   
- 132:.\main.c      ****                 /* If BLESS is in Deep Sleep or is in the process of waking up from Deep Sleep,
- 133:.\main.c      ****                  * put system in Deep Sleep mode */
- 134:.\main.c      ****                 if(blessState == CYBLE_BLESS_STATE_ECO_ON || blessState == CYBLE_BLESS_STATE_DEEPSL
- 116              		.loc 1 134 0
+  93:.\main.c      ****             {   
+  94:.\main.c      ****                 /* If BLESS is in Deep Sleep or is in the process of waking up from Deep Sleep,
+  95:.\main.c      ****                  * put system in Deep Sleep mode */
+  96:.\main.c      ****                 if(blessState == CYBLE_BLESS_STATE_ECO_ON || blessState == CYBLE_BLESS_STATE_DEEPSL
+ 116              		.loc 1 96 0
  117 0082 BB1D     		add	r3, r7, #6
  118 0084 1B78     		ldrb	r3, [r3]
  119 0086 042B     		cmp	r3, #4
  120 0088 03D0     		beq	.L5
- 121              		.loc 1 134 0 is_stmt 0 discriminator 1
+ 121              		.loc 1 96 0 is_stmt 0 discriminator 1
  122 008a BB1D     		add	r3, r7, #6
  123 008c 1B78     		ldrb	r3, [r3]
  124 008e 062B     		cmp	r3, #6
  125 0090 0ED1     		bne	.L7
  126              	.L5:
- 135:.\main.c      ****                 {
- 136:.\main.c      ****                     CySysPmDeepSleep();
- 127              		.loc 1 136 0 is_stmt 1
+  97:.\main.c      ****                 {
+  98:.\main.c      ****                     CySysPmDeepSleep();
+ 127              		.loc 1 98 0 is_stmt 1
  128 0092 FFF7FEFF 		bl	CySysPmDeepSleep
  129 0096 0BE0     		b	.L7
  130              	.L4:
- 137:.\main.c      ****                 }
- 138:.\main.c      ****             }
- 139:.\main.c      ****             /* If BLESS is in Active state */
- 140:.\main.c      ****             else
- 141:.\main.c      ****             {
- 142:.\main.c      ****                 /* If BLESS Tx/Rx Event is not complete, reduce IMO and put CPU to Sleep */
- 143:.\main.c      ****                 if(blessState != CYBLE_BLESS_STATE_EVENT_CLOSE)
- 131              		.loc 1 143 0
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 5
+
+
+  99:.\main.c      ****                 }
+ 100:.\main.c      ****             }
+ 101:.\main.c      ****             /* If BLESS is in Active state */
+ 102:.\main.c      ****             else
+ 103:.\main.c      ****             {
+ 104:.\main.c      ****                 /* If BLESS Tx/Rx Event is not complete, reduce IMO and put CPU to Sleep */
+ 105:.\main.c      ****                 if(blessState != CYBLE_BLESS_STATE_EVENT_CLOSE)
+ 131              		.loc 1 105 0
  132 0098 BB1D     		add	r3, r7, #6
  133 009a 1B78     		ldrb	r3, [r3]
  134 009c 022B     		cmp	r3, #2
  135 009e 07D0     		beq	.L7
- 144:.\main.c      ****                 {
- 145:.\main.c      ****                     CySysClkWriteImoFreq(IMO_FREQUENCY_3MHZ);
- 136              		.loc 1 145 0
+ 106:.\main.c      ****                 {
+ 107:.\main.c      ****                     CySysClkWriteImoFreq(IMO_FREQUENCY_3MHZ);
+ 136              		.loc 1 107 0
  137 00a0 0320     		mov	r0, #3
  138 00a2 FFF7FEFF 		bl	CySysClkWriteImoFreq
- 146:.\main.c      ****                     CySysPmSleep();
- 139              		.loc 1 146 0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 6
-
-
+ 108:.\main.c      ****                     CySysPmSleep();
+ 139              		.loc 1 108 0
  140 00a6 FFF7FEFF 		bl	CySysPmSleep
- 147:.\main.c      ****                     CySysClkWriteImoFreq(IMO_FREQUENCY_12MHZ);
- 141              		.loc 1 147 0
+ 109:.\main.c      ****                     CySysClkWriteImoFreq(IMO_FREQUENCY_12MHZ);
+ 141              		.loc 1 109 0
  142 00aa 0C20     		mov	r0, #12
  143 00ac FFF7FEFF 		bl	CySysClkWriteImoFreq
  144              	.L7:
- 148:.\main.c      ****                 }
- 149:.\main.c      ****             }
- 150:.\main.c      ****             /* Enable interrupts for normal operation */
- 151:.\main.c      ****             CyGlobalIntEnable;
- 145              		.loc 1 151 0
- 146              	@ 151 ".\main.c" 1
+ 110:.\main.c      ****                 }
+ 111:.\main.c      ****             }
+ 112:.\main.c      ****             /* Enable interrupts for normal operation */
+ 113:.\main.c      ****             CyGlobalIntEnable;
+ 145              		.loc 1 113 0
+ 146              	@ 113 ".\main.c" 1
  147 00b0 62B6     		CPSIE   i
  148              	@ 0 "" 2
- 149              		.code	16
- 150              	.L3:
- 152:.\main.c      ****         }
- 153:.\main.c      ****         
- 154:.\main.c      ****         /* If Hibernate is enabled then put system in hibernate state */
- 155:.\main.c      ****         if(SystemFlag & ENABLE_HIBERNATE)
- 151              		.loc 1 155 0
- 152 00b2 064B     		ldr	r3, .L10+4
- 153 00b4 1A68     		ldr	r2, [r3]
- 154 00b6 0823     		mov	r3, #8
- 155 00b8 1340     		and	r3, r2
- 156 00ba 04D0     		beq	.L8
- 156:.\main.c      ****         {
- 157:.\main.c      ****             /* Enable ISR for the pin to wakeup the device from hibernate */
- 158:.\main.c      ****             Wakeup_ISR_Start();
- 157              		.loc 1 158 0
- 158 00bc FFF7FEFF 		bl	Wakeup_ISR_Start
- 159:.\main.c      ****             
- 160:.\main.c      ****             /* Put sytem to hibernate */
- 161:.\main.c      ****             CySysPmHibernate();
- 159              		.loc 1 161 0
- 160 00c0 FFF7FEFF 		bl	CySysPmHibernate
- 162:.\main.c      ****         }
- 163:.\main.c      ****     }
- 161              		.loc 1 163 0
- 162 00c4 A8E7     		b	.L9
- 163              	.L8:
- 164 00c6 A7E7     		b	.L9
- 165              	.L11:
- 166              		.align	2
- 167              	.L10:
- 168 00c8 00000000 		.word	cyBle_state
- 169 00cc 00000000 		.word	SystemFlag
- 170              		.cfi_endproc
- 171              	.LFE35:
- 172              		.size	main, .-main
- 173              		.text
- 174              	.Letext0:
- 175              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
- 176              		.file 3 ".\\Generated_Source\\PSoC4/BLE_Stack.h"
- 177              		.file 4 ".\\Generated_Source\\PSoC4/BLE_eventHandler.h"
- 178              		.file 5 ".\\CommonFunctions.h"
- 179              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 7
+ 114:.\main.c      ****             
+ 115:.\main.c      ****            
+ 116:.\main.c      ****         }
+ 117:.\main.c      ****         
+ 118:.\main.c      ****         /* If Hibernate is enabled then put system in hibernate state
+ 119:.\main.c      ****         if(SystemFlag & ENABLE_HIBERNATE)
+ 120:.\main.c      ****         {
+ 121:.\main.c      ****             Enable ISR for the pin to wakeup the device from hibernate
+ 122:.\main.c      ****             Wakeup_ISR_Start();
+ 123:.\main.c      ****             
+ 124:.\main.c      ****             Put sytem to hibernate 
+ 125:.\main.c      ****             CySysPmHibernate();
+ 126:.\main.c      ****         }
+ 127:.\main.c      ****         */
+ 128:.\main.c      ****     }
+ 149              		.loc 1 128 0
+ 150              		.code	16
+ 151 00b2 B1E7     		b	.L8
+ 152              	.L3:
+ 153 00b4 B0E7     		b	.L8
+ 154              	.L10:
+ 155 00b6 C046     		.align	2
+ 156              	.L9:
+ 157 00b8 00000000 		.word	cyBle_state
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 6
 
 
- 180              	.Ldebug_info0:
- 181 0000 9A010000 		.4byte	0x19a
- 182 0004 0400     		.2byte	0x4
- 183 0006 00000000 		.4byte	.Ldebug_abbrev0
- 184 000a 04       		.byte	0x4
- 185 000b 01       		.uleb128 0x1
- 186 000c CA000000 		.4byte	.LASF40
- 187 0010 01       		.byte	0x1
- 188 0011 6B010000 		.4byte	.LASF41
- 189 0015 00000000 		.4byte	.LASF42
- 190 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 191 001d 00000000 		.4byte	0
- 192 0021 00000000 		.4byte	.Ldebug_line0
- 193 0025 02       		.uleb128 0x2
- 194 0026 01       		.byte	0x1
- 195 0027 06       		.byte	0x6
- 196 0028 64030000 		.4byte	.LASF0
- 197 002c 02       		.uleb128 0x2
- 198 002d 01       		.byte	0x1
- 199 002e 08       		.byte	0x8
- 200 002f 5D010000 		.4byte	.LASF1
- 201 0033 02       		.uleb128 0x2
- 202 0034 02       		.byte	0x2
- 203 0035 05       		.byte	0x5
- 204 0036 41030000 		.4byte	.LASF2
- 205 003a 02       		.uleb128 0x2
- 206 003b 02       		.byte	0x2
- 207 003c 07       		.byte	0x7
- 208 003d 86010000 		.4byte	.LASF3
- 209 0041 02       		.uleb128 0x2
- 210 0042 04       		.byte	0x4
- 211 0043 05       		.byte	0x5
- 212 0044 5B030000 		.4byte	.LASF4
- 213 0048 02       		.uleb128 0x2
- 214 0049 04       		.byte	0x4
- 215 004a 07       		.byte	0x7
- 216 004b 74010000 		.4byte	.LASF5
- 217 004f 02       		.uleb128 0x2
- 218 0050 08       		.byte	0x8
- 219 0051 05       		.byte	0x5
- 220 0052 D8020000 		.4byte	.LASF6
- 221 0056 02       		.uleb128 0x2
- 222 0057 08       		.byte	0x8
- 223 0058 07       		.byte	0x7
- 224 0059 46010000 		.4byte	.LASF7
- 225 005d 03       		.uleb128 0x3
- 226 005e 04       		.byte	0x4
- 227 005f 05       		.byte	0x5
- 228 0060 696E7400 		.ascii	"int\000"
- 229 0064 02       		.uleb128 0x2
- 230 0065 04       		.byte	0x4
- 231 0066 07       		.byte	0x7
- 232 0067 57020000 		.4byte	.LASF8
- 233 006b 04       		.uleb128 0x4
- 234 006c 29020000 		.4byte	.LASF18
- 235 0070 02       		.byte	0x2
- 236 0071 A3       		.byte	0xa3
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 8
+ 158 00bc 00000000 		.word	SystemFlag
+ 159              		.cfi_endproc
+ 160              	.LFE35:
+ 161              		.size	main, .-main
+ 162              		.text
+ 163              	.Letext0:
+ 164              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
+ 165              		.file 3 ".\\Generated_Source\\PSoC4/BLE_Stack.h"
+ 166              		.file 4 ".\\Generated_Source\\PSoC4/BLE_eventHandler.h"
+ 167              		.file 5 ".\\CommonFunctions.h"
+ 168              		.section	.debug_info,"",%progbits
+ 169              	.Ldebug_info0:
+ 170 0000 9A010000 		.4byte	0x19a
+ 171 0004 0400     		.2byte	0x4
+ 172 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 173 000a 04       		.byte	0x4
+ 174 000b 01       		.uleb128 0x1
+ 175 000c 6E000000 		.4byte	.LASF40
+ 176 0010 01       		.byte	0x1
+ 177 0011 0F010000 		.4byte	.LASF41
+ 178 0015 EF020000 		.4byte	.LASF42
+ 179 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 180 001d 00000000 		.4byte	0
+ 181 0021 00000000 		.4byte	.Ldebug_line0
+ 182 0025 02       		.uleb128 0x2
+ 183 0026 01       		.byte	0x1
+ 184 0027 06       		.byte	0x6
+ 185 0028 6C030000 		.4byte	.LASF0
+ 186 002c 02       		.uleb128 0x2
+ 187 002d 01       		.byte	0x1
+ 188 002e 08       		.byte	0x8
+ 189 002f 01010000 		.4byte	.LASF1
+ 190 0033 02       		.uleb128 0x2
+ 191 0034 02       		.byte	0x2
+ 192 0035 05       		.byte	0x5
+ 193 0036 E5020000 		.4byte	.LASF2
+ 194 003a 02       		.uleb128 0x2
+ 195 003b 02       		.byte	0x2
+ 196 003c 07       		.byte	0x7
+ 197 003d 2A010000 		.4byte	.LASF3
+ 198 0041 02       		.uleb128 0x2
+ 199 0042 04       		.byte	0x4
+ 200 0043 05       		.byte	0x5
+ 201 0044 63030000 		.4byte	.LASF4
+ 202 0048 02       		.uleb128 0x2
+ 203 0049 04       		.byte	0x4
+ 204 004a 07       		.byte	0x7
+ 205 004b 18010000 		.4byte	.LASF5
+ 206 004f 02       		.uleb128 0x2
+ 207 0050 08       		.byte	0x8
+ 208 0051 05       		.byte	0x5
+ 209 0052 7C020000 		.4byte	.LASF6
+ 210 0056 02       		.uleb128 0x2
+ 211 0057 08       		.byte	0x8
+ 212 0058 07       		.byte	0x7
+ 213 0059 EA000000 		.4byte	.LASF7
+ 214 005d 03       		.uleb128 0x3
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 7
 
 
- 237 0072 48000000 		.4byte	0x48
- 238 0076 02       		.uleb128 0x2
- 239 0077 04       		.byte	0x4
- 240 0078 04       		.byte	0x4
- 241 0079 C4000000 		.4byte	.LASF9
- 242 007d 02       		.uleb128 0x2
- 243 007e 08       		.byte	0x8
- 244 007f 04       		.byte	0x4
- 245 0080 1D020000 		.4byte	.LASF10
- 246 0084 02       		.uleb128 0x2
- 247 0085 01       		.byte	0x1
- 248 0086 08       		.byte	0x8
- 249 0087 64020000 		.4byte	.LASF11
- 250 008b 02       		.uleb128 0x2
- 251 008c 04       		.byte	0x4
- 252 008d 07       		.byte	0x7
- 253 008e CF020000 		.4byte	.LASF12
- 254 0092 05       		.uleb128 0x5
- 255 0093 01       		.byte	0x1
- 256 0094 03       		.byte	0x3
- 257 0095 E501     		.2byte	0x1e5
- 258 0097 BB000000 		.4byte	0xbb
- 259 009b 06       		.uleb128 0x6
- 260 009c 70030000 		.4byte	.LASF13
- 261 00a0 01       		.sleb128 1
- 262 00a1 06       		.uleb128 0x6
- 263 00a2 99000000 		.4byte	.LASF14
- 264 00a6 02       		.sleb128 2
- 265 00a7 06       		.uleb128 0x6
- 266 00a8 02030000 		.4byte	.LASF15
- 267 00ac 03       		.sleb128 3
- 268 00ad 06       		.uleb128 0x6
- 269 00ae F1010000 		.4byte	.LASF16
- 270 00b2 04       		.sleb128 4
- 271 00b3 06       		.uleb128 0x6
- 272 00b4 99010000 		.4byte	.LASF17
- 273 00b8 FF01     		.sleb128 255
- 274 00ba 00       		.byte	0
- 275 00bb 07       		.uleb128 0x7
- 276 00bc 4B030000 		.4byte	.LASF19
- 277 00c0 03       		.byte	0x3
- 278 00c1 0102     		.2byte	0x201
- 279 00c3 92000000 		.4byte	0x92
- 280 00c7 05       		.uleb128 0x5
- 281 00c8 01       		.byte	0x1
- 282 00c9 03       		.byte	0x3
- 283 00ca 0502     		.2byte	0x205
- 284 00cc 02010000 		.4byte	0x102
- 285 00d0 06       		.uleb128 0x6
- 286 00d1 67000000 		.4byte	.LASF20
- 287 00d5 01       		.sleb128 1
- 288 00d6 06       		.uleb128 0x6
- 289 00d7 8B020000 		.4byte	.LASF21
- 290 00db 02       		.sleb128 2
- 291 00dc 06       		.uleb128 0x6
- 292 00dd AD010000 		.4byte	.LASF22
- 293 00e1 03       		.sleb128 3
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 9
+ 215 005e 04       		.byte	0x4
+ 216 005f 05       		.byte	0x5
+ 217 0060 696E7400 		.ascii	"int\000"
+ 218 0064 02       		.uleb128 0x2
+ 219 0065 04       		.byte	0x4
+ 220 0066 07       		.byte	0x7
+ 221 0067 FB010000 		.4byte	.LASF8
+ 222 006b 04       		.uleb128 0x4
+ 223 006c CD010000 		.4byte	.LASF18
+ 224 0070 02       		.byte	0x2
+ 225 0071 A3       		.byte	0xa3
+ 226 0072 48000000 		.4byte	0x48
+ 227 0076 02       		.uleb128 0x2
+ 228 0077 04       		.byte	0x4
+ 229 0078 04       		.byte	0x4
+ 230 0079 68000000 		.4byte	.LASF9
+ 231 007d 02       		.uleb128 0x2
+ 232 007e 08       		.byte	0x8
+ 233 007f 04       		.byte	0x4
+ 234 0080 C1010000 		.4byte	.LASF10
+ 235 0084 02       		.uleb128 0x2
+ 236 0085 01       		.byte	0x1
+ 237 0086 08       		.byte	0x8
+ 238 0087 08020000 		.4byte	.LASF11
+ 239 008b 02       		.uleb128 0x2
+ 240 008c 04       		.byte	0x4
+ 241 008d 07       		.byte	0x7
+ 242 008e 73020000 		.4byte	.LASF12
+ 243 0092 05       		.uleb128 0x5
+ 244 0093 01       		.byte	0x1
+ 245 0094 03       		.byte	0x3
+ 246 0095 F801     		.2byte	0x1f8
+ 247 0097 BB000000 		.4byte	0xbb
+ 248 009b 06       		.uleb128 0x6
+ 249 009c 78030000 		.4byte	.LASF13
+ 250 00a0 01       		.sleb128 1
+ 251 00a1 06       		.uleb128 0x6
+ 252 00a2 3D000000 		.4byte	.LASF14
+ 253 00a6 02       		.sleb128 2
+ 254 00a7 06       		.uleb128 0x6
+ 255 00a8 A6020000 		.4byte	.LASF15
+ 256 00ac 03       		.sleb128 3
+ 257 00ad 06       		.uleb128 0x6
+ 258 00ae 95010000 		.4byte	.LASF16
+ 259 00b2 04       		.sleb128 4
+ 260 00b3 06       		.uleb128 0x6
+ 261 00b4 3D010000 		.4byte	.LASF17
+ 262 00b8 FF01     		.sleb128 255
+ 263 00ba 00       		.byte	0
+ 264 00bb 07       		.uleb128 0x7
+ 265 00bc 53030000 		.4byte	.LASF19
+ 266 00c0 03       		.byte	0x3
+ 267 00c1 1402     		.2byte	0x214
+ 268 00c3 92000000 		.4byte	0x92
+ 269 00c7 05       		.uleb128 0x5
+ 270 00c8 01       		.byte	0x1
+ 271 00c9 03       		.byte	0x3
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 8
 
 
- 294 00e2 06       		.uleb128 0x6
- 295 00e3 AB000000 		.4byte	.LASF23
- 296 00e7 04       		.sleb128 4
- 297 00e8 06       		.uleb128 0x6
- 298 00e9 24030000 		.4byte	.LASF24
- 299 00ed 05       		.sleb128 5
- 300 00ee 06       		.uleb128 0x6
- 301 00ef E6020000 		.4byte	.LASF25
- 302 00f3 06       		.sleb128 6
- 303 00f4 06       		.uleb128 0x6
- 304 00f5 3B020000 		.4byte	.LASF26
- 305 00f9 07       		.sleb128 7
- 306 00fa 06       		.uleb128 0x6
- 307 00fb B5020000 		.4byte	.LASF27
- 308 00ff FF01     		.sleb128 255
- 309 0101 00       		.byte	0
- 310 0102 07       		.uleb128 0x7
- 311 0103 DD010000 		.4byte	.LASF28
- 312 0107 03       		.byte	0x3
- 313 0108 0E02     		.2byte	0x20e
- 314 010a C7000000 		.4byte	0xc7
- 315 010e 05       		.uleb128 0x5
- 316 010f 01       		.byte	0x1
- 317 0110 04       		.byte	0x4
- 318 0111 F004     		.2byte	0x4f0
- 319 0113 36010000 		.4byte	0x136
- 320 0117 06       		.uleb128 0x6
- 321 0118 77020000 		.4byte	.LASF29
- 322 011c 00       		.sleb128 0
- 323 011d 06       		.uleb128 0x6
- 324 011e 8A030000 		.4byte	.LASF30
- 325 0122 01       		.sleb128 1
- 326 0123 06       		.uleb128 0x6
- 327 0124 07020000 		.4byte	.LASF31
- 328 0128 02       		.sleb128 2
- 329 0129 06       		.uleb128 0x6
- 330 012a C5010000 		.4byte	.LASF32
- 331 012e 03       		.sleb128 3
- 332 012f 06       		.uleb128 0x6
- 333 0130 80000000 		.4byte	.LASF33
- 334 0134 04       		.sleb128 4
- 335 0135 00       		.byte	0
- 336 0136 07       		.uleb128 0x7
- 337 0137 69020000 		.4byte	.LASF34
- 338 013b 04       		.byte	0x4
- 339 013c FE04     		.2byte	0x4fe
- 340 013e 0E010000 		.4byte	0x10e
- 341 0142 08       		.uleb128 0x8
- 342 0143 24020000 		.4byte	.LASF43
- 343 0147 01       		.byte	0x1
- 344 0148 4B       		.byte	0x4b
- 345 0149 5D000000 		.4byte	0x5d
- 346 014d 00000000 		.4byte	.LFB35
- 347 0151 D0000000 		.4byte	.LFE35-.LFB35
- 348 0155 01       		.uleb128 0x1
- 349 0156 9C       		.byte	0x9c
- 350 0157 86010000 		.4byte	0x186
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 10
+ 272 00ca 1802     		.2byte	0x218
+ 273 00cc 02010000 		.4byte	0x102
+ 274 00d0 06       		.uleb128 0x6
+ 275 00d1 0B000000 		.4byte	.LASF20
+ 276 00d5 01       		.sleb128 1
+ 277 00d6 06       		.uleb128 0x6
+ 278 00d7 2F020000 		.4byte	.LASF21
+ 279 00db 02       		.sleb128 2
+ 280 00dc 06       		.uleb128 0x6
+ 281 00dd 51010000 		.4byte	.LASF22
+ 282 00e1 03       		.sleb128 3
+ 283 00e2 06       		.uleb128 0x6
+ 284 00e3 4F000000 		.4byte	.LASF23
+ 285 00e7 04       		.sleb128 4
+ 286 00e8 06       		.uleb128 0x6
+ 287 00e9 C8020000 		.4byte	.LASF24
+ 288 00ed 05       		.sleb128 5
+ 289 00ee 06       		.uleb128 0x6
+ 290 00ef 8A020000 		.4byte	.LASF25
+ 291 00f3 06       		.sleb128 6
+ 292 00f4 06       		.uleb128 0x6
+ 293 00f5 DF010000 		.4byte	.LASF26
+ 294 00f9 07       		.sleb128 7
+ 295 00fa 06       		.uleb128 0x6
+ 296 00fb 59020000 		.4byte	.LASF27
+ 297 00ff FF01     		.sleb128 255
+ 298 0101 00       		.byte	0
+ 299 0102 07       		.uleb128 0x7
+ 300 0103 81010000 		.4byte	.LASF28
+ 301 0107 03       		.byte	0x3
+ 302 0108 2102     		.2byte	0x221
+ 303 010a C7000000 		.4byte	0xc7
+ 304 010e 05       		.uleb128 0x5
+ 305 010f 01       		.byte	0x1
+ 306 0110 04       		.byte	0x4
+ 307 0111 9505     		.2byte	0x595
+ 308 0113 36010000 		.4byte	0x136
+ 309 0117 06       		.uleb128 0x6
+ 310 0118 1B020000 		.4byte	.LASF29
+ 311 011c 00       		.sleb128 0
+ 312 011d 06       		.uleb128 0x6
+ 313 011e 92030000 		.4byte	.LASF30
+ 314 0122 01       		.sleb128 1
+ 315 0123 06       		.uleb128 0x6
+ 316 0124 AB010000 		.4byte	.LASF31
+ 317 0128 02       		.sleb128 2
+ 318 0129 06       		.uleb128 0x6
+ 319 012a 69010000 		.4byte	.LASF32
+ 320 012e 03       		.sleb128 3
+ 321 012f 06       		.uleb128 0x6
+ 322 0130 24000000 		.4byte	.LASF33
+ 323 0134 04       		.sleb128 4
+ 324 0135 00       		.byte	0
+ 325 0136 07       		.uleb128 0x7
+ 326 0137 0D020000 		.4byte	.LASF34
+ 327 013b 04       		.byte	0x4
+ 328 013c A305     		.2byte	0x5a3
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 9
 
 
- 351 015b 09       		.uleb128 0x9
- 352 015c 83030000 		.4byte	.LASF35
- 353 0160 01       		.byte	0x1
- 354 0161 4E       		.byte	0x4e
- 355 0162 BB000000 		.4byte	0xbb
- 356 0166 02       		.uleb128 0x2
- 357 0167 91       		.byte	0x91
- 358 0168 6F       		.sleb128 -17
- 359 0169 09       		.uleb128 0x9
- 360 016a 30020000 		.4byte	.LASF36
- 361 016e 01       		.byte	0x1
- 362 016f 4F       		.byte	0x4f
- 363 0170 02010000 		.4byte	0x102
- 364 0174 02       		.uleb128 0x2
- 365 0175 91       		.byte	0x91
- 366 0176 6E       		.sleb128 -18
- 367 0177 09       		.uleb128 0x9
- 368 0178 18030000 		.4byte	.LASF37
- 369 017c 01       		.byte	0x1
- 370 017d 52       		.byte	0x52
- 371 017e 6B000000 		.4byte	0x6b
- 372 0182 02       		.uleb128 0x2
- 373 0183 91       		.byte	0x91
- 374 0184 68       		.sleb128 -24
- 375 0185 00       		.byte	0
- 376 0186 0A       		.uleb128 0xa
- 377 0187 A9020000 		.4byte	.LASF38
- 378 018b 04       		.byte	0x4
- 379 018c 6406     		.2byte	0x664
- 380 018e 36010000 		.4byte	0x136
- 381 0192 0B       		.uleb128 0xb
- 382 0193 5C000000 		.4byte	.LASF39
- 383 0197 05       		.byte	0x5
- 384 0198 3C       		.byte	0x3c
- 385 0199 6B000000 		.4byte	0x6b
- 386 019d 00       		.byte	0
- 387              		.section	.debug_abbrev,"",%progbits
- 388              	.Ldebug_abbrev0:
- 389 0000 01       		.uleb128 0x1
- 390 0001 11       		.uleb128 0x11
- 391 0002 01       		.byte	0x1
- 392 0003 25       		.uleb128 0x25
- 393 0004 0E       		.uleb128 0xe
- 394 0005 13       		.uleb128 0x13
- 395 0006 0B       		.uleb128 0xb
- 396 0007 03       		.uleb128 0x3
- 397 0008 0E       		.uleb128 0xe
- 398 0009 1B       		.uleb128 0x1b
- 399 000a 0E       		.uleb128 0xe
- 400 000b 55       		.uleb128 0x55
- 401 000c 17       		.uleb128 0x17
- 402 000d 11       		.uleb128 0x11
- 403 000e 01       		.uleb128 0x1
- 404 000f 10       		.uleb128 0x10
- 405 0010 17       		.uleb128 0x17
- 406 0011 00       		.byte	0
- 407 0012 00       		.byte	0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 11
+ 329 013e 0E010000 		.4byte	0x10e
+ 330 0142 08       		.uleb128 0x8
+ 331 0143 C8010000 		.4byte	.LASF43
+ 332 0147 01       		.byte	0x1
+ 333 0148 20       		.byte	0x20
+ 334 0149 5D000000 		.4byte	0x5d
+ 335 014d 00000000 		.4byte	.LFB35
+ 336 0151 C0000000 		.4byte	.LFE35-.LFB35
+ 337 0155 01       		.uleb128 0x1
+ 338 0156 9C       		.byte	0x9c
+ 339 0157 86010000 		.4byte	0x186
+ 340 015b 09       		.uleb128 0x9
+ 341 015c 8B030000 		.4byte	.LASF35
+ 342 0160 01       		.byte	0x1
+ 343 0161 25       		.byte	0x25
+ 344 0162 BB000000 		.4byte	0xbb
+ 345 0166 02       		.uleb128 0x2
+ 346 0167 91       		.byte	0x91
+ 347 0168 6F       		.sleb128 -17
+ 348 0169 09       		.uleb128 0x9
+ 349 016a D4010000 		.4byte	.LASF36
+ 350 016e 01       		.byte	0x1
+ 351 016f 26       		.byte	0x26
+ 352 0170 02010000 		.4byte	0x102
+ 353 0174 02       		.uleb128 0x2
+ 354 0175 91       		.byte	0x91
+ 355 0176 6E       		.sleb128 -18
+ 356 0177 09       		.uleb128 0x9
+ 357 0178 BC020000 		.4byte	.LASF37
+ 358 017c 01       		.byte	0x1
+ 359 017d 29       		.byte	0x29
+ 360 017e 6B000000 		.4byte	0x6b
+ 361 0182 02       		.uleb128 0x2
+ 362 0183 91       		.byte	0x91
+ 363 0184 68       		.sleb128 -24
+ 364 0185 00       		.byte	0
+ 365 0186 0A       		.uleb128 0xa
+ 366 0187 4D020000 		.4byte	.LASF38
+ 367 018b 04       		.byte	0x4
+ 368 018c 2207     		.2byte	0x722
+ 369 018e 36010000 		.4byte	0x136
+ 370 0192 0B       		.uleb128 0xb
+ 371 0193 00000000 		.4byte	.LASF39
+ 372 0197 05       		.byte	0x5
+ 373 0198 3C       		.byte	0x3c
+ 374 0199 6B000000 		.4byte	0x6b
+ 375 019d 00       		.byte	0
+ 376              		.section	.debug_abbrev,"",%progbits
+ 377              	.Ldebug_abbrev0:
+ 378 0000 01       		.uleb128 0x1
+ 379 0001 11       		.uleb128 0x11
+ 380 0002 01       		.byte	0x1
+ 381 0003 25       		.uleb128 0x25
+ 382 0004 0E       		.uleb128 0xe
+ 383 0005 13       		.uleb128 0x13
+ 384 0006 0B       		.uleb128 0xb
+ 385 0007 03       		.uleb128 0x3
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 10
 
 
- 408 0013 02       		.uleb128 0x2
- 409 0014 24       		.uleb128 0x24
- 410 0015 00       		.byte	0
- 411 0016 0B       		.uleb128 0xb
- 412 0017 0B       		.uleb128 0xb
- 413 0018 3E       		.uleb128 0x3e
- 414 0019 0B       		.uleb128 0xb
- 415 001a 03       		.uleb128 0x3
- 416 001b 0E       		.uleb128 0xe
- 417 001c 00       		.byte	0
- 418 001d 00       		.byte	0
- 419 001e 03       		.uleb128 0x3
- 420 001f 24       		.uleb128 0x24
- 421 0020 00       		.byte	0
- 422 0021 0B       		.uleb128 0xb
- 423 0022 0B       		.uleb128 0xb
- 424 0023 3E       		.uleb128 0x3e
- 425 0024 0B       		.uleb128 0xb
- 426 0025 03       		.uleb128 0x3
- 427 0026 08       		.uleb128 0x8
- 428 0027 00       		.byte	0
- 429 0028 00       		.byte	0
- 430 0029 04       		.uleb128 0x4
- 431 002a 16       		.uleb128 0x16
- 432 002b 00       		.byte	0
- 433 002c 03       		.uleb128 0x3
- 434 002d 0E       		.uleb128 0xe
- 435 002e 3A       		.uleb128 0x3a
- 436 002f 0B       		.uleb128 0xb
- 437 0030 3B       		.uleb128 0x3b
- 438 0031 0B       		.uleb128 0xb
- 439 0032 49       		.uleb128 0x49
- 440 0033 13       		.uleb128 0x13
- 441 0034 00       		.byte	0
- 442 0035 00       		.byte	0
- 443 0036 05       		.uleb128 0x5
- 444 0037 04       		.uleb128 0x4
- 445 0038 01       		.byte	0x1
- 446 0039 0B       		.uleb128 0xb
- 447 003a 0B       		.uleb128 0xb
- 448 003b 3A       		.uleb128 0x3a
- 449 003c 0B       		.uleb128 0xb
- 450 003d 3B       		.uleb128 0x3b
- 451 003e 05       		.uleb128 0x5
- 452 003f 01       		.uleb128 0x1
- 453 0040 13       		.uleb128 0x13
- 454 0041 00       		.byte	0
- 455 0042 00       		.byte	0
- 456 0043 06       		.uleb128 0x6
- 457 0044 28       		.uleb128 0x28
- 458 0045 00       		.byte	0
- 459 0046 03       		.uleb128 0x3
- 460 0047 0E       		.uleb128 0xe
- 461 0048 1C       		.uleb128 0x1c
- 462 0049 0D       		.uleb128 0xd
- 463 004a 00       		.byte	0
- 464 004b 00       		.byte	0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 12
+ 386 0008 0E       		.uleb128 0xe
+ 387 0009 1B       		.uleb128 0x1b
+ 388 000a 0E       		.uleb128 0xe
+ 389 000b 55       		.uleb128 0x55
+ 390 000c 17       		.uleb128 0x17
+ 391 000d 11       		.uleb128 0x11
+ 392 000e 01       		.uleb128 0x1
+ 393 000f 10       		.uleb128 0x10
+ 394 0010 17       		.uleb128 0x17
+ 395 0011 00       		.byte	0
+ 396 0012 00       		.byte	0
+ 397 0013 02       		.uleb128 0x2
+ 398 0014 24       		.uleb128 0x24
+ 399 0015 00       		.byte	0
+ 400 0016 0B       		.uleb128 0xb
+ 401 0017 0B       		.uleb128 0xb
+ 402 0018 3E       		.uleb128 0x3e
+ 403 0019 0B       		.uleb128 0xb
+ 404 001a 03       		.uleb128 0x3
+ 405 001b 0E       		.uleb128 0xe
+ 406 001c 00       		.byte	0
+ 407 001d 00       		.byte	0
+ 408 001e 03       		.uleb128 0x3
+ 409 001f 24       		.uleb128 0x24
+ 410 0020 00       		.byte	0
+ 411 0021 0B       		.uleb128 0xb
+ 412 0022 0B       		.uleb128 0xb
+ 413 0023 3E       		.uleb128 0x3e
+ 414 0024 0B       		.uleb128 0xb
+ 415 0025 03       		.uleb128 0x3
+ 416 0026 08       		.uleb128 0x8
+ 417 0027 00       		.byte	0
+ 418 0028 00       		.byte	0
+ 419 0029 04       		.uleb128 0x4
+ 420 002a 16       		.uleb128 0x16
+ 421 002b 00       		.byte	0
+ 422 002c 03       		.uleb128 0x3
+ 423 002d 0E       		.uleb128 0xe
+ 424 002e 3A       		.uleb128 0x3a
+ 425 002f 0B       		.uleb128 0xb
+ 426 0030 3B       		.uleb128 0x3b
+ 427 0031 0B       		.uleb128 0xb
+ 428 0032 49       		.uleb128 0x49
+ 429 0033 13       		.uleb128 0x13
+ 430 0034 00       		.byte	0
+ 431 0035 00       		.byte	0
+ 432 0036 05       		.uleb128 0x5
+ 433 0037 04       		.uleb128 0x4
+ 434 0038 01       		.byte	0x1
+ 435 0039 0B       		.uleb128 0xb
+ 436 003a 0B       		.uleb128 0xb
+ 437 003b 3A       		.uleb128 0x3a
+ 438 003c 0B       		.uleb128 0xb
+ 439 003d 3B       		.uleb128 0x3b
+ 440 003e 05       		.uleb128 0x5
+ 441 003f 01       		.uleb128 0x1
+ 442 0040 13       		.uleb128 0x13
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 11
 
 
- 465 004c 07       		.uleb128 0x7
- 466 004d 16       		.uleb128 0x16
- 467 004e 00       		.byte	0
- 468 004f 03       		.uleb128 0x3
- 469 0050 0E       		.uleb128 0xe
- 470 0051 3A       		.uleb128 0x3a
- 471 0052 0B       		.uleb128 0xb
- 472 0053 3B       		.uleb128 0x3b
- 473 0054 05       		.uleb128 0x5
- 474 0055 49       		.uleb128 0x49
- 475 0056 13       		.uleb128 0x13
- 476 0057 00       		.byte	0
- 477 0058 00       		.byte	0
- 478 0059 08       		.uleb128 0x8
- 479 005a 2E       		.uleb128 0x2e
- 480 005b 01       		.byte	0x1
- 481 005c 3F       		.uleb128 0x3f
- 482 005d 19       		.uleb128 0x19
- 483 005e 03       		.uleb128 0x3
- 484 005f 0E       		.uleb128 0xe
- 485 0060 3A       		.uleb128 0x3a
- 486 0061 0B       		.uleb128 0xb
- 487 0062 3B       		.uleb128 0x3b
- 488 0063 0B       		.uleb128 0xb
- 489 0064 49       		.uleb128 0x49
- 490 0065 13       		.uleb128 0x13
- 491 0066 11       		.uleb128 0x11
- 492 0067 01       		.uleb128 0x1
- 493 0068 12       		.uleb128 0x12
- 494 0069 06       		.uleb128 0x6
- 495 006a 40       		.uleb128 0x40
- 496 006b 18       		.uleb128 0x18
- 497 006c 9642     		.uleb128 0x2116
- 498 006e 19       		.uleb128 0x19
- 499 006f 01       		.uleb128 0x1
- 500 0070 13       		.uleb128 0x13
- 501 0071 00       		.byte	0
- 502 0072 00       		.byte	0
- 503 0073 09       		.uleb128 0x9
- 504 0074 34       		.uleb128 0x34
- 505 0075 00       		.byte	0
- 506 0076 03       		.uleb128 0x3
- 507 0077 0E       		.uleb128 0xe
- 508 0078 3A       		.uleb128 0x3a
- 509 0079 0B       		.uleb128 0xb
- 510 007a 3B       		.uleb128 0x3b
- 511 007b 0B       		.uleb128 0xb
- 512 007c 49       		.uleb128 0x49
- 513 007d 13       		.uleb128 0x13
- 514 007e 02       		.uleb128 0x2
- 515 007f 18       		.uleb128 0x18
- 516 0080 00       		.byte	0
- 517 0081 00       		.byte	0
- 518 0082 0A       		.uleb128 0xa
- 519 0083 34       		.uleb128 0x34
- 520 0084 00       		.byte	0
- 521 0085 03       		.uleb128 0x3
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 13
+ 443 0041 00       		.byte	0
+ 444 0042 00       		.byte	0
+ 445 0043 06       		.uleb128 0x6
+ 446 0044 28       		.uleb128 0x28
+ 447 0045 00       		.byte	0
+ 448 0046 03       		.uleb128 0x3
+ 449 0047 0E       		.uleb128 0xe
+ 450 0048 1C       		.uleb128 0x1c
+ 451 0049 0D       		.uleb128 0xd
+ 452 004a 00       		.byte	0
+ 453 004b 00       		.byte	0
+ 454 004c 07       		.uleb128 0x7
+ 455 004d 16       		.uleb128 0x16
+ 456 004e 00       		.byte	0
+ 457 004f 03       		.uleb128 0x3
+ 458 0050 0E       		.uleb128 0xe
+ 459 0051 3A       		.uleb128 0x3a
+ 460 0052 0B       		.uleb128 0xb
+ 461 0053 3B       		.uleb128 0x3b
+ 462 0054 05       		.uleb128 0x5
+ 463 0055 49       		.uleb128 0x49
+ 464 0056 13       		.uleb128 0x13
+ 465 0057 00       		.byte	0
+ 466 0058 00       		.byte	0
+ 467 0059 08       		.uleb128 0x8
+ 468 005a 2E       		.uleb128 0x2e
+ 469 005b 01       		.byte	0x1
+ 470 005c 3F       		.uleb128 0x3f
+ 471 005d 19       		.uleb128 0x19
+ 472 005e 03       		.uleb128 0x3
+ 473 005f 0E       		.uleb128 0xe
+ 474 0060 3A       		.uleb128 0x3a
+ 475 0061 0B       		.uleb128 0xb
+ 476 0062 3B       		.uleb128 0x3b
+ 477 0063 0B       		.uleb128 0xb
+ 478 0064 49       		.uleb128 0x49
+ 479 0065 13       		.uleb128 0x13
+ 480 0066 11       		.uleb128 0x11
+ 481 0067 01       		.uleb128 0x1
+ 482 0068 12       		.uleb128 0x12
+ 483 0069 06       		.uleb128 0x6
+ 484 006a 40       		.uleb128 0x40
+ 485 006b 18       		.uleb128 0x18
+ 486 006c 9642     		.uleb128 0x2116
+ 487 006e 19       		.uleb128 0x19
+ 488 006f 01       		.uleb128 0x1
+ 489 0070 13       		.uleb128 0x13
+ 490 0071 00       		.byte	0
+ 491 0072 00       		.byte	0
+ 492 0073 09       		.uleb128 0x9
+ 493 0074 34       		.uleb128 0x34
+ 494 0075 00       		.byte	0
+ 495 0076 03       		.uleb128 0x3
+ 496 0077 0E       		.uleb128 0xe
+ 497 0078 3A       		.uleb128 0x3a
+ 498 0079 0B       		.uleb128 0xb
+ 499 007a 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 12
 
 
- 522 0086 0E       		.uleb128 0xe
- 523 0087 3A       		.uleb128 0x3a
- 524 0088 0B       		.uleb128 0xb
- 525 0089 3B       		.uleb128 0x3b
- 526 008a 05       		.uleb128 0x5
- 527 008b 49       		.uleb128 0x49
- 528 008c 13       		.uleb128 0x13
- 529 008d 3F       		.uleb128 0x3f
- 530 008e 19       		.uleb128 0x19
- 531 008f 3C       		.uleb128 0x3c
- 532 0090 19       		.uleb128 0x19
- 533 0091 00       		.byte	0
- 534 0092 00       		.byte	0
- 535 0093 0B       		.uleb128 0xb
- 536 0094 34       		.uleb128 0x34
- 537 0095 00       		.byte	0
- 538 0096 03       		.uleb128 0x3
- 539 0097 0E       		.uleb128 0xe
- 540 0098 3A       		.uleb128 0x3a
- 541 0099 0B       		.uleb128 0xb
- 542 009a 3B       		.uleb128 0x3b
- 543 009b 0B       		.uleb128 0xb
- 544 009c 49       		.uleb128 0x49
- 545 009d 13       		.uleb128 0x13
- 546 009e 3F       		.uleb128 0x3f
- 547 009f 19       		.uleb128 0x19
- 548 00a0 3C       		.uleb128 0x3c
- 549 00a1 19       		.uleb128 0x19
- 550 00a2 00       		.byte	0
- 551 00a3 00       		.byte	0
- 552 00a4 00       		.byte	0
- 553              		.section	.debug_aranges,"",%progbits
- 554 0000 1C000000 		.4byte	0x1c
- 555 0004 0200     		.2byte	0x2
- 556 0006 00000000 		.4byte	.Ldebug_info0
- 557 000a 04       		.byte	0x4
- 558 000b 00       		.byte	0
- 559 000c 0000     		.2byte	0
- 560 000e 0000     		.2byte	0
- 561 0010 00000000 		.4byte	.LFB35
- 562 0014 D0000000 		.4byte	.LFE35-.LFB35
- 563 0018 00000000 		.4byte	0
- 564 001c 00000000 		.4byte	0
- 565              		.section	.debug_ranges,"",%progbits
- 566              	.Ldebug_ranges0:
- 567 0000 00000000 		.4byte	.LFB35
- 568 0004 D0000000 		.4byte	.LFE35
- 569 0008 00000000 		.4byte	0
- 570 000c 00000000 		.4byte	0
- 571              		.section	.debug_line,"",%progbits
- 572              	.Ldebug_line0:
- 573 0000 BB000000 		.section	.debug_str,"MS",%progbits,1
- 573      02008100 
- 573      00000201 
- 573      FB0E0D00 
- 573      01010101 
- 574              	.LASF42:
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 14
+ 500 007b 0B       		.uleb128 0xb
+ 501 007c 49       		.uleb128 0x49
+ 502 007d 13       		.uleb128 0x13
+ 503 007e 02       		.uleb128 0x2
+ 504 007f 18       		.uleb128 0x18
+ 505 0080 00       		.byte	0
+ 506 0081 00       		.byte	0
+ 507 0082 0A       		.uleb128 0xa
+ 508 0083 34       		.uleb128 0x34
+ 509 0084 00       		.byte	0
+ 510 0085 03       		.uleb128 0x3
+ 511 0086 0E       		.uleb128 0xe
+ 512 0087 3A       		.uleb128 0x3a
+ 513 0088 0B       		.uleb128 0xb
+ 514 0089 3B       		.uleb128 0x3b
+ 515 008a 05       		.uleb128 0x5
+ 516 008b 49       		.uleb128 0x49
+ 517 008c 13       		.uleb128 0x13
+ 518 008d 3F       		.uleb128 0x3f
+ 519 008e 19       		.uleb128 0x19
+ 520 008f 3C       		.uleb128 0x3c
+ 521 0090 19       		.uleb128 0x19
+ 522 0091 00       		.byte	0
+ 523 0092 00       		.byte	0
+ 524 0093 0B       		.uleb128 0xb
+ 525 0094 34       		.uleb128 0x34
+ 526 0095 00       		.byte	0
+ 527 0096 03       		.uleb128 0x3
+ 528 0097 0E       		.uleb128 0xe
+ 529 0098 3A       		.uleb128 0x3a
+ 530 0099 0B       		.uleb128 0xb
+ 531 009a 3B       		.uleb128 0x3b
+ 532 009b 0B       		.uleb128 0xb
+ 533 009c 49       		.uleb128 0x49
+ 534 009d 13       		.uleb128 0x13
+ 535 009e 3F       		.uleb128 0x3f
+ 536 009f 19       		.uleb128 0x19
+ 537 00a0 3C       		.uleb128 0x3c
+ 538 00a1 19       		.uleb128 0x19
+ 539 00a2 00       		.byte	0
+ 540 00a3 00       		.byte	0
+ 541 00a4 00       		.byte	0
+ 542              		.section	.debug_aranges,"",%progbits
+ 543 0000 1C000000 		.4byte	0x1c
+ 544 0004 0200     		.2byte	0x2
+ 545 0006 00000000 		.4byte	.Ldebug_info0
+ 546 000a 04       		.byte	0x4
+ 547 000b 00       		.byte	0
+ 548 000c 0000     		.2byte	0
+ 549 000e 0000     		.2byte	0
+ 550 0010 00000000 		.4byte	.LFB35
+ 551 0014 C0000000 		.4byte	.LFE35-.LFB35
+ 552 0018 00000000 		.4byte	0
+ 553 001c 00000000 		.4byte	0
+ 554              		.section	.debug_ranges,"",%progbits
+ 555              	.Ldebug_ranges0:
+ 556 0000 00000000 		.4byte	.LFB35
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 13
 
 
- 575 0000 433A5C55 		.ascii	"C:\\Users\\Yobely\\Desktop\\Health Thermometer.cywr"
- 575      73657273 
- 575      5C596F62 
- 575      656C795C 
- 575      4465736B 
- 576 002f 6B2E4172 		.ascii	"k.Archive01\\AN91184\\Health Thermometer.cydsn\000"
- 576      63686976 
- 576      6530315C 
- 576      414E3931 
- 576      3138345C 
- 577              	.LASF39:
- 578 005c 53797374 		.ascii	"SystemFlag\000"
- 578      656D466C 
- 578      616700
- 579              	.LASF20:
- 580 0067 4359424C 		.ascii	"CYBLE_BLESS_STATE_ACTIVE\000"
- 580      455F424C 
- 580      4553535F 
- 580      53544154 
- 580      455F4143 
- 581              	.LASF33:
- 582 0080 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
- 582      455F5354 
- 582      4154455F 
- 582      44495343 
- 582      4F4E4E45 
- 583              	.LASF14:
- 584 0099 4359424C 		.ascii	"CYBLE_BLESS_SLEEP\000"
- 584      455F424C 
- 584      4553535F 
- 584      534C4545 
- 584      5000
- 585              	.LASF23:
- 586 00ab 4359424C 		.ascii	"CYBLE_BLESS_STATE_ECO_ON\000"
- 586      455F424C 
- 586      4553535F 
- 586      53544154 
- 586      455F4543 
- 587              	.LASF9:
- 588 00c4 666C6F61 		.ascii	"float\000"
- 588      7400
- 589              	.LASF40:
- 590 00ca 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 590      4320342E 
- 590      382E3420 
- 590      32303134 
- 590      30353236 
- 591 00fd 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 591      20726576 
- 591      6973696F 
- 591      6E203231 
- 591      31333538 
- 592 0130 30202D66 		.ascii	"0 -ffunction-sections\000"
- 592      66756E63 
- 592      74696F6E 
- 592      2D736563 
- 592      74696F6E 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 15
+ 557 0004 C0000000 		.4byte	.LFE35
+ 558 0008 00000000 		.4byte	0
+ 559 000c 00000000 		.4byte	0
+ 560              		.section	.debug_line,"",%progbits
+ 561              	.Ldebug_line0:
+ 562 0000 B9000000 		.section	.debug_str,"MS",%progbits,1
+ 562      02008100 
+ 562      00000201 
+ 562      FB0E0D00 
+ 562      01010101 
+ 563              	.LASF39:
+ 564 0000 53797374 		.ascii	"SystemFlag\000"
+ 564      656D466C 
+ 564      616700
+ 565              	.LASF20:
+ 566 000b 4359424C 		.ascii	"CYBLE_BLESS_STATE_ACTIVE\000"
+ 566      455F424C 
+ 566      4553535F 
+ 566      53544154 
+ 566      455F4143 
+ 567              	.LASF33:
+ 568 0024 4359424C 		.ascii	"CYBLE_STATE_DISCONNECTED\000"
+ 568      455F5354 
+ 568      4154455F 
+ 568      44495343 
+ 568      4F4E4E45 
+ 569              	.LASF14:
+ 570 003d 4359424C 		.ascii	"CYBLE_BLESS_SLEEP\000"
+ 570      455F424C 
+ 570      4553535F 
+ 570      534C4545 
+ 570      5000
+ 571              	.LASF23:
+ 572 004f 4359424C 		.ascii	"CYBLE_BLESS_STATE_ECO_ON\000"
+ 572      455F424C 
+ 572      4553535F 
+ 572      53544154 
+ 572      455F4543 
+ 573              	.LASF9:
+ 574 0068 666C6F61 		.ascii	"float\000"
+ 574      7400
+ 575              	.LASF40:
+ 576 006e 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 576      4320342E 
+ 576      382E3420 
+ 576      32303134 
+ 576      30353236 
+ 577 00a1 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 577      20726576 
+ 577      6973696F 
+ 577      6E203231 
+ 577      31333538 
+ 578 00d4 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 578      66756E63 
+ 578      74696F6E 
+ 578      2D736563 
+ 578      74696F6E 
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 14
 
 
- 593              	.LASF7:
- 594 0146 6C6F6E67 		.ascii	"long long unsigned int\000"
- 594      206C6F6E 
- 594      6720756E 
- 594      7369676E 
- 594      65642069 
- 595              	.LASF1:
- 596 015d 756E7369 		.ascii	"unsigned char\000"
- 596      676E6564 
- 596      20636861 
- 596      7200
- 597              	.LASF41:
- 598 016b 2E5C6D61 		.ascii	".\\main.c\000"
- 598      696E2E63 
- 598      00
- 599              	.LASF5:
- 600 0174 6C6F6E67 		.ascii	"long unsigned int\000"
- 600      20756E73 
- 600      69676E65 
- 600      6420696E 
- 600      7400
- 601              	.LASF3:
- 602 0186 73686F72 		.ascii	"short unsigned int\000"
- 602      7420756E 
- 602      7369676E 
- 602      65642069 
- 602      6E7400
- 603              	.LASF17:
- 604 0199 4359424C 		.ascii	"CYBLE_BLESS_INVALID\000"
- 604      455F424C 
- 604      4553535F 
- 604      494E5641 
- 604      4C494400 
- 605              	.LASF22:
- 606 01ad 4359424C 		.ascii	"CYBLE_BLESS_STATE_SLEEP\000"
- 606      455F424C 
- 606      4553535F 
- 606      53544154 
- 606      455F534C 
- 607              	.LASF32:
- 608 01c5 4359424C 		.ascii	"CYBLE_STATE_ADVERTISING\000"
- 608      455F5354 
- 608      4154455F 
- 608      41445645 
- 608      52544953 
- 609              	.LASF28:
- 610 01dd 4359424C 		.ascii	"CYBLE_BLESS_STATE_T\000"
+ 579              	.LASF7:
+ 580 00ea 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 580      206C6F6E 
+ 580      6720756E 
+ 580      7369676E 
+ 580      65642069 
+ 581              	.LASF1:
+ 582 0101 756E7369 		.ascii	"unsigned char\000"
+ 582      676E6564 
+ 582      20636861 
+ 582      7200
+ 583              	.LASF41:
+ 584 010f 2E5C6D61 		.ascii	".\\main.c\000"
+ 584      696E2E63 
+ 584      00
+ 585              	.LASF5:
+ 586 0118 6C6F6E67 		.ascii	"long unsigned int\000"
+ 586      20756E73 
+ 586      69676E65 
+ 586      6420696E 
+ 586      7400
+ 587              	.LASF3:
+ 588 012a 73686F72 		.ascii	"short unsigned int\000"
+ 588      7420756E 
+ 588      7369676E 
+ 588      65642069 
+ 588      6E7400
+ 589              	.LASF17:
+ 590 013d 4359424C 		.ascii	"CYBLE_BLESS_INVALID\000"
+ 590      455F424C 
+ 590      4553535F 
+ 590      494E5641 
+ 590      4C494400 
+ 591              	.LASF22:
+ 592 0151 4359424C 		.ascii	"CYBLE_BLESS_STATE_SLEEP\000"
+ 592      455F424C 
+ 592      4553535F 
+ 592      53544154 
+ 592      455F534C 
+ 593              	.LASF32:
+ 594 0169 4359424C 		.ascii	"CYBLE_STATE_ADVERTISING\000"
+ 594      455F5354 
+ 594      4154455F 
+ 594      41445645 
+ 594      52544953 
+ 595              	.LASF28:
+ 596 0181 4359424C 		.ascii	"CYBLE_BLESS_STATE_T\000"
+ 596      455F424C 
+ 596      4553535F 
+ 596      53544154 
+ 596      455F5400 
+ 597              	.LASF16:
+ 598 0195 4359424C 		.ascii	"CYBLE_BLESS_HIBERNATE\000"
+ 598      455F424C 
+ 598      4553535F 
+ 598      48494245 
+ 598      524E4154 
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 15
+
+
+ 599              	.LASF31:
+ 600 01ab 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
+ 600      455F5354 
+ 600      4154455F 
+ 600      434F4E4E 
+ 600      45435445 
+ 601              	.LASF10:
+ 602 01c1 646F7562 		.ascii	"double\000"
+ 602      6C6500
+ 603              	.LASF43:
+ 604 01c8 6D61696E 		.ascii	"main\000"
+ 604      00
+ 605              	.LASF18:
+ 606 01cd 75696E74 		.ascii	"uint32\000"
+ 606      333200
+ 607              	.LASF36:
+ 608 01d4 626C6573 		.ascii	"blessState\000"
+ 608      73537461 
+ 608      746500
+ 609              	.LASF26:
+ 610 01df 4359424C 		.ascii	"CYBLE_BLESS_STATE_HIBERNATE\000"
  610      455F424C 
  610      4553535F 
  610      53544154 
- 610      455F5400 
- 611              	.LASF16:
- 612 01f1 4359424C 		.ascii	"CYBLE_BLESS_HIBERNATE\000"
- 612      455F424C 
- 612      4553535F 
- 612      48494245 
- 612      524E4154 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 16
-
-
- 613              	.LASF31:
- 614 0207 4359424C 		.ascii	"CYBLE_STATE_CONNECTED\000"
- 614      455F5354 
- 614      4154455F 
- 614      434F4E4E 
- 614      45435445 
- 615              	.LASF10:
- 616 021d 646F7562 		.ascii	"double\000"
- 616      6C6500
- 617              	.LASF43:
- 618 0224 6D61696E 		.ascii	"main\000"
- 618      00
- 619              	.LASF18:
- 620 0229 75696E74 		.ascii	"uint32\000"
- 620      333200
- 621              	.LASF36:
- 622 0230 626C6573 		.ascii	"blessState\000"
- 622      73537461 
- 622      746500
- 623              	.LASF26:
- 624 023b 4359424C 		.ascii	"CYBLE_BLESS_STATE_HIBERNATE\000"
+ 610      455F4849 
+ 611              	.LASF8:
+ 612 01fb 756E7369 		.ascii	"unsigned int\000"
+ 612      676E6564 
+ 612      20696E74 
+ 612      00
+ 613              	.LASF11:
+ 614 0208 63686172 		.ascii	"char\000"
+ 614      00
+ 615              	.LASF34:
+ 616 020d 4359424C 		.ascii	"CYBLE_STATE_T\000"
+ 616      455F5354 
+ 616      4154455F 
+ 616      5400
+ 617              	.LASF29:
+ 618 021b 4359424C 		.ascii	"CYBLE_STATE_STOPPED\000"
+ 618      455F5354 
+ 618      4154455F 
+ 618      53544F50 
+ 618      50454400 
+ 619              	.LASF21:
+ 620 022f 4359424C 		.ascii	"CYBLE_BLESS_STATE_EVENT_CLOSE\000"
+ 620      455F424C 
+ 620      4553535F 
+ 620      53544154 
+ 620      455F4556 
+ 621              	.LASF38:
+ 622 024d 6379426C 		.ascii	"cyBle_state\000"
+ 622      655F7374 
+ 622      61746500 
+ 623              	.LASF27:
+ 624 0259 4359424C 		.ascii	"CYBLE_BLESS_STATE_INVALID\000"
  624      455F424C 
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 16
+
+
  624      4553535F 
  624      53544154 
- 624      455F4849 
- 625              	.LASF8:
- 626 0257 756E7369 		.ascii	"unsigned int\000"
- 626      676E6564 
- 626      20696E74 
+ 624      455F494E 
+ 625              	.LASF12:
+ 626 0273 73697A65 		.ascii	"sizetype\000"
+ 626      74797065 
  626      00
- 627              	.LASF11:
- 628 0264 63686172 		.ascii	"char\000"
- 628      00
- 629              	.LASF34:
- 630 0269 4359424C 		.ascii	"CYBLE_STATE_T\000"
- 630      455F5354 
- 630      4154455F 
- 630      5400
- 631              	.LASF29:
- 632 0277 4359424C 		.ascii	"CYBLE_STATE_STOPPED\000"
- 632      455F5354 
- 632      4154455F 
- 632      53544F50 
- 632      50454400 
- 633              	.LASF21:
- 634 028b 4359424C 		.ascii	"CYBLE_BLESS_STATE_EVENT_CLOSE\000"
- 634      455F424C 
- 634      4553535F 
- 634      53544154 
- 634      455F4556 
- 635              	.LASF38:
- 636 02a9 6379426C 		.ascii	"cyBle_state\000"
- 636      655F7374 
- 636      61746500 
- 637              	.LASF27:
- 638 02b5 4359424C 		.ascii	"CYBLE_BLESS_STATE_INVALID\000"
- 638      455F424C 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 17
+ 627              	.LASF6:
+ 628 027c 6C6F6E67 		.ascii	"long long int\000"
+ 628      206C6F6E 
+ 628      6720696E 
+ 628      7400
+ 629              	.LASF25:
+ 630 028a 4359424C 		.ascii	"CYBLE_BLESS_STATE_DEEPSLEEP\000"
+ 630      455F424C 
+ 630      4553535F 
+ 630      53544154 
+ 630      455F4445 
+ 631              	.LASF15:
+ 632 02a6 4359424C 		.ascii	"CYBLE_BLESS_DEEPSLEEP\000"
+ 632      455F424C 
+ 632      4553535F 
+ 632      44454550 
+ 632      534C4545 
+ 633              	.LASF37:
+ 634 02bc 74656D70 		.ascii	"temperature\000"
+ 634      65726174 
+ 634      75726500 
+ 635              	.LASF24:
+ 636 02c8 4359424C 		.ascii	"CYBLE_BLESS_STATE_ECO_STABLE\000"
+ 636      455F424C 
+ 636      4553535F 
+ 636      53544154 
+ 636      455F4543 
+ 637              	.LASF2:
+ 638 02e5 73686F72 		.ascii	"short int\000"
+ 638      7420696E 
+ 638      7400
+ 639              	.LASF42:
+ 640 02ef 433A5C55 		.ascii	"C:\\Users\\Shahed\\Desktop\\Yobely- Health Thermome"
+ 640      73657273 
+ 640      5C536861 
+ 640      6865645C 
+ 640      4465736B 
+ 641 031e 7465722E 		.ascii	"ter.cywrk.Archive01\\AN91184\\Health Thermometer.cy"
+ 641      63797772 
+ 641      6B2E4172 
+ 641      63686976 
+ 641      6530315C 
+ 642 034f 64736E00 		.ascii	"dsn\000"
+ 643              	.LASF19:
+ 644 0353 4359424C 		.ascii	"CYBLE_LP_MODE_T\000"
+ 644      455F4C50 
+ 644      5F4D4F44 
+ 644      455F5400 
+ 645              	.LASF4:
+ 646 0363 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccKSrjpg.s 			page 17
 
 
- 638      4553535F 
- 638      53544154 
- 638      455F494E 
- 639              	.LASF12:
- 640 02cf 73697A65 		.ascii	"sizetype\000"
- 640      74797065 
- 640      00
- 641              	.LASF6:
- 642 02d8 6C6F6E67 		.ascii	"long long int\000"
- 642      206C6F6E 
- 642      6720696E 
- 642      7400
- 643              	.LASF25:
- 644 02e6 4359424C 		.ascii	"CYBLE_BLESS_STATE_DEEPSLEEP\000"
- 644      455F424C 
- 644      4553535F 
- 644      53544154 
- 644      455F4445 
- 645              	.LASF15:
- 646 0302 4359424C 		.ascii	"CYBLE_BLESS_DEEPSLEEP\000"
- 646      455F424C 
- 646      4553535F 
- 646      44454550 
- 646      534C4545 
- 647              	.LASF37:
- 648 0318 74656D70 		.ascii	"temperature\000"
- 648      65726174 
- 648      75726500 
- 649              	.LASF24:
- 650 0324 4359424C 		.ascii	"CYBLE_BLESS_STATE_ECO_STABLE\000"
+ 646      20696E74 
+ 646      00
+ 647              	.LASF0:
+ 648 036c 7369676E 		.ascii	"signed char\000"
+ 648      65642063 
+ 648      68617200 
+ 649              	.LASF13:
+ 650 0378 4359424C 		.ascii	"CYBLE_BLESS_ACTIVE\000"
  650      455F424C 
  650      4553535F 
- 650      53544154 
- 650      455F4543 
- 651              	.LASF2:
- 652 0341 73686F72 		.ascii	"short int\000"
- 652      7420696E 
- 652      7400
- 653              	.LASF19:
- 654 034b 4359424C 		.ascii	"CYBLE_LP_MODE_T\000"
- 654      455F4C50 
- 654      5F4D4F44 
- 654      455F5400 
- 655              	.LASF4:
- 656 035b 6C6F6E67 		.ascii	"long int\000"
- 656      20696E74 
- 656      00
- 657              	.LASF0:
- 658 0364 7369676E 		.ascii	"signed char\000"
- 658      65642063 
- 658      68617200 
- 659              	.LASF13:
- 660 0370 4359424C 		.ascii	"CYBLE_BLESS_ACTIVE\000"
- 660      455F424C 
- 660      4553535F 
- 660      41435449 
- 660      564500
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccU5OWyg.s 			page 18
-
-
- 661              	.LASF35:
- 662 0383 6C704D6F 		.ascii	"lpMode\000"
- 662      646500
- 663              	.LASF30:
- 664 038a 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
- 664      455F5354 
- 664      4154455F 
- 664      494E4954 
- 664      49414C49 
- 665              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 650      41435449 
+ 650      564500
+ 651              	.LASF35:
+ 652 038b 6C704D6F 		.ascii	"lpMode\000"
+ 652      646500
+ 653              	.LASF30:
+ 654 0392 4359424C 		.ascii	"CYBLE_STATE_INITIALIZING\000"
+ 654      455F5354 
+ 654      4154455F 
+ 654      494E4954 
+ 654      49414C49 
+ 655              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

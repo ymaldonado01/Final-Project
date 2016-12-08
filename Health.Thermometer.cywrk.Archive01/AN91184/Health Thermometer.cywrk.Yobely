@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Health Thermometer\Health Thermometer\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Health Thermometer\Health Thermometer\Health Thermometer.cydwr">
 <ExpandedNodeIds>
 <v>Health Thermometer</v>
 <v>Health Thermometer\Health Thermometer</v>
@@ -32,16 +32,21 @@
 <v>Health Thermometer\Health Thermometer\Source Files\WatchdogTimer.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC_INT.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC_PM.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_intClock</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_intClock\ADC_intClock.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_intClock\ADC_intClock.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_IRQ</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_IRQ\ADC_IRQ.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_IRQ\ADC_IRQ.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\AMuxSeq</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\AMuxSeq\AMuxSeq.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\AMuxSeq\AMuxSeq.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE_dis.c</v>
@@ -67,6 +72,7 @@
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE_bless_isr</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE_bless_isr\BLE_bless_isr.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE_bless_isr\BLE_bless_isr.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
@@ -87,10 +93,10 @@
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW\SW.c</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW\SW.h</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW\SW_aliases.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Pin_LED</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Pin_LED_1</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\PWM_1</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\PWM_2</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Thermistor</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Thermistor\Thermistor.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Thermistor\Thermistor.h</v>
@@ -106,8 +112,6 @@
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\V_THERM\V_THERM.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\V_THERM\V_THERM.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\V_THERM\V_THERM_aliases.h</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Wakeup_ISR\Wakeup_ISR.c</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Wakeup_ISR\Wakeup_ISR.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cydevice_trm.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
@@ -141,25 +145,25 @@
 <v>Health Thermometer\Health Thermometer\Generated_Source</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC_INT.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC\ADC_PM.c</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_intClock</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_intClock\ADC_intClock.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_intClock\ADC_intClock.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_IRQ</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_IRQ\ADC_IRQ.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\ADC_IRQ\ADC_IRQ.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\AMuxSeq</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\AMuxSeq\AMuxSeq.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\AMuxSeq\AMuxSeq.h</v>
 <v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE_bless_isr</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE_bless_isr\BLE_bless_isr.c</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE_bless_isr\BLE_bless_isr.h</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\cy_boot</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW\SW.c</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW\SW.h</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\SW\SW_aliases.h</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Thermistor</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Thermistor\Thermistor.c</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\Thermistor\Thermistor.h</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\V_HIGH</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\V_HIGH\V_HIGH.c</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\V_HIGH\V_HIGH.h</v>
-<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\V_HIGH\V_HIGH_aliases.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE_dis.c</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE_dis.h</v>
+<v>Health Thermometer\Health Thermometer\Generated_Source\PSoC4\BLE\BLE_eventHandler.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -199,6 +203,8 @@
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HAL_PVT.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_hts.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HTSS.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Clock_1.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Clock_2.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\CommonFunctions.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -209,13 +215,17 @@
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\SW.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_LED.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_LED_1.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_2.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_2_PM.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Temperature.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Thermistor.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\V_HIGH.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\V_LOW.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\V_THERM.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Wakeup_ISR.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\WatchdogTimer.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Health Thermometer.elf</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Health Thermometer.hex</v>
@@ -245,6 +255,8 @@
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HAL_PVT.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_hts.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\BLE_HTSS.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Clock_1.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Clock_2.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Cm0Start.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\CommonFunctions.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -255,12 +267,10 @@
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\cyPm.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\cyutils.lst</v>
 <v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\main.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\SW.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Temperature.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Thermistor.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\V_HIGH.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\V_LOW.lst</v>
-<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\V_THERM.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_LED.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\Pin_LED_1.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1.lst</v>
+<v>Health Thermometer\Health Thermometer\CortexM0\ARM_GCC_484\Debug\Listing Files\PWM_1_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -275,13 +285,14 @@
 <v>Health Thermometer\Health Thermometer\PSoC 4 Architecture TRM</v>
 <v>Health Thermometer\Health Thermometer\PSoC 4200 BLE Family Datasheet</v>
 <v>Health Thermometer\Health Thermometer\System Reference Guide v4_20</v>
-<v>Health Thermometer\Health Thermometer\ADC_SAR_SEQ_P4_v2_0</v>
+<v>Health Thermometer\Health Thermometer\ADC_SAR_SEQ_P4_v2_10</v>
 <v>Health Thermometer\Health Thermometer\AMuxSeq_v1_80</v>
-<v>Health Thermometer\Health Thermometer\BLE_v1_10</v>
-<v>Health Thermometer\Health Thermometer\cy_isr_v1_70</v>
+<v>Health Thermometer\Health Thermometer\BLE_v1_20</v>
+<v>Health Thermometer\Health Thermometer\cy_clock_v2_20</v>
 <v>Health Thermometer\Health Thermometer\cy_pins_v2_10</v>
 <v>Health Thermometer\Health Thermometer\Gnd_v1_0</v>
 <v>Health Thermometer\Health Thermometer\Power_v1_0</v>
+<v>Health Thermometer\Health Thermometer\PWM_v3_30</v>
 <v>Health Thermometer\Health Thermometer\Resistor_v1_0</v>
 <v>Health Thermometer\Health Thermometer\Thermistor_v1_0</v>
 <v>Health Thermometer\Health Thermometer\ThermistorCalc_v1_20</v>
@@ -292,13 +303,14 @@
 <v>Health Thermometer\Health Thermometer\PSoC 4 Architecture TRM</v>
 <v>Health Thermometer\Health Thermometer\PSoC 4200 BLE Family Datasheet</v>
 <v>Health Thermometer\Health Thermometer\System Reference Guide v4_20</v>
-<v>Health Thermometer\Health Thermometer\ADC_SAR_SEQ_P4_v2_0</v>
+<v>Health Thermometer\Health Thermometer\ADC_SAR_SEQ_P4_v2_10</v>
 <v>Health Thermometer\Health Thermometer\AMuxSeq_v1_80</v>
-<v>Health Thermometer\Health Thermometer\BLE_v1_10</v>
-<v>Health Thermometer\Health Thermometer\cy_isr_v1_70</v>
+<v>Health Thermometer\Health Thermometer\BLE_v1_20</v>
+<v>Health Thermometer\Health Thermometer\cy_clock_v2_20</v>
 <v>Health Thermometer\Health Thermometer\cy_pins_v2_10</v>
 <v>Health Thermometer\Health Thermometer\Gnd_v1_0</v>
 <v>Health Thermometer\Health Thermometer\Power_v1_0</v>
+<v>Health Thermometer\Health Thermometer\PWM_v3_30</v>
 <v>Health Thermometer\Health Thermometer\Resistor_v1_0</v>
 <v>Health Thermometer\Health Thermometer\Thermistor_v1_0</v>
 <v>Health Thermometer\Health Thermometer\ThermistorCalc_v1_20</v>
@@ -312,12 +324,25 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Health Thermometer.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\Thermistor.c" />
-<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\V_HIGH.c" />
-<name v=".\Health Thermometer.cydsn\Health Thermometer.cydwr" />
+<name v=".\Health Thermometer.cydsn\BLE_HTSS.h" />
+<name v=".\Health Thermometer.cydsn\Temperature.h" />
+<name v=".\Health Thermometer.cydsn\BLE_HTSS.c" />
+<name v=".\Health Thermometer.cydsn\CommonFunctions.c" />
 <name v=".\Health Thermometer.cydsn\main.c" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\Thermistor.c" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\Thermistor.h" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\V_HIGH.c" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\V_HIGH.h" />
+<name v=".\Health Thermometer.cydsn\Health Thermometer.cydwr" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\ADC.h" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\ADC.c" />
+<name v=".\Health Thermometer.cydsn\Temperature.c" />
+<name v=".\Health Thermometer.cydsn\WatchdogTimer.c" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\Pin_LED.c" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\Pin_LED_1.c" />
+<name v=".\Health Thermometer.cydsn\Generated_Source\PSoC4\PWM_1.c" />
 </OpenDocs>
 <config v="" />
-<AutoUpdate v="false" />
+<AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
 </CyXmlSerializer>

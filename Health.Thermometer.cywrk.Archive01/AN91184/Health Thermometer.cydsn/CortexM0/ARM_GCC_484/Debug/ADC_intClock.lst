@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
   30:.\Generated_Source\PSoC4/ADC_intClock.c **** *
   31:.\Generated_Source\PSoC4/ADC_intClock.c **** * Parameters:
   32:.\Generated_Source\PSoC4/ADC_intClock.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 2
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/ADC_intClock.c **** *    clock is started.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
   60              		.align	2
   61              	.L3:
   62 0024 00000140 		.word	1073807360
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 3
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 3
 
 
   63 0028 40000080 		.word	-2147483584
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
   94:.\Generated_Source\PSoC4/ADC_intClock.c **** *******************************************************************************/
   95:.\Generated_Source\PSoC4/ADC_intClock.c **** void ADC_intClock_Stop(void)
   96:.\Generated_Source\PSoC4/ADC_intClock.c **** {
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 4
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 4
 
 
   75              		.loc 1 96 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  110              		.code	16
  111              		.thumb_func
  112              		.type	ADC_intClock_SetFractionalDividerRegister, %function
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 5
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 5
 
 
  113              	ADC_intClock_SetFractionalDividerRegister:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  146:.\Generated_Source\PSoC4/ADC_intClock.c ****         ((uint32)((uint32)clkDivider <<  ADC_intClock_DIV_INT_SHIFT) & ADC_intClock_DIV_INT_MASK) |
  137              		.loc 1 146 0
  138 001c BB1D     		add	r3, r7, #6
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 6
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 6
 
 
  139 001e 1B88     		ldrh	r3, [r3]
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  161:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
  162:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetDividerRegister
  163:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 7
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 7
 
 
  164:.\Generated_Source\PSoC4/ADC_intClock.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  182:.\Generated_Source\PSoC4/ADC_intClock.c **** 
  183:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
  184:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetFractionalDividerRegister
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 8
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 8
 
 
  185:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
@@ -472,48 +472,48 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  237 0006 00000000 		.4byte	.Ldebug_abbrev0
  238 000a 04       		.byte	0x4
  239 000b 01       		.uleb128 0x1
- 240 000c 8C010000 		.4byte	.LASF25
+ 240 000c 30010000 		.4byte	.LASF25
  241 0010 01       		.byte	0x1
- 242 0011 62000000 		.4byte	.LASF26
- 243 0015 00000000 		.4byte	.LASF27
+ 242 0011 06000000 		.4byte	.LASF26
+ 243 0015 F9010000 		.4byte	.LASF27
  244 0019 00000000 		.4byte	.Ldebug_ranges0+0
  245 001d 00000000 		.4byte	0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 9
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 9
 
 
  246 0021 00000000 		.4byte	.Ldebug_line0
  247 0025 02       		.uleb128 0x2
  248 0026 01       		.byte	0x1
  249 0027 06       		.byte	0x6
- 250 0028 73020000 		.4byte	.LASF0
+ 250 0028 7B020000 		.4byte	.LASF0
  251 002c 02       		.uleb128 0x2
  252 002d 01       		.byte	0x1
  253 002e 08       		.byte	0x8
- 254 002f 0B010000 		.4byte	.LASF1
+ 254 002f AF000000 		.4byte	.LASF1
  255 0033 02       		.uleb128 0x2
  256 0034 02       		.byte	0x2
  257 0035 05       		.byte	0x5
- 258 0036 45020000 		.4byte	.LASF2
+ 258 0036 E9010000 		.4byte	.LASF2
  259 003a 02       		.uleb128 0x2
  260 003b 02       		.byte	0x2
  261 003c 07       		.byte	0x7
- 262 003d 2B010000 		.4byte	.LASF3
+ 262 003d CF000000 		.4byte	.LASF3
  263 0041 02       		.uleb128 0x2
  264 0042 04       		.byte	0x4
  265 0043 05       		.byte	0x5
- 266 0044 55020000 		.4byte	.LASF4
+ 266 0044 5D020000 		.4byte	.LASF4
  267 0048 02       		.uleb128 0x2
  268 0049 04       		.byte	0x4
  269 004a 07       		.byte	0x7
- 270 004b 19010000 		.4byte	.LASF5
+ 270 004b BD000000 		.4byte	.LASF5
  271 004f 02       		.uleb128 0x2
  272 0050 08       		.byte	0x8
  273 0051 05       		.byte	0x5
- 274 0052 08020000 		.4byte	.LASF6
+ 274 0052 AC010000 		.4byte	.LASF6
  275 0056 02       		.uleb128 0x2
  276 0057 08       		.byte	0x8
  277 0058 07       		.byte	0x7
- 278 0059 F4000000 		.4byte	.LASF7
+ 278 0059 98000000 		.4byte	.LASF7
  279 005d 03       		.uleb128 0x3
  280 005e 04       		.byte	0x4
  281 005f 05       		.byte	0x5
@@ -521,46 +521,46 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  283 0064 02       		.uleb128 0x2
  284 0065 04       		.byte	0x4
  285 0066 07       		.byte	0x7
- 286 0067 7F010000 		.4byte	.LASF8
+ 286 0067 23010000 		.4byte	.LASF8
  287 006b 04       		.uleb128 0x4
- 288 006c 4F020000 		.4byte	.LASF9
+ 288 006c F3010000 		.4byte	.LASF9
  289 0070 02       		.byte	0x2
  290 0071 A1       		.byte	0xa1
  291 0072 2C000000 		.4byte	0x2c
  292 0076 04       		.uleb128 0x4
- 293 0077 71010000 		.4byte	.LASF10
+ 293 0077 15010000 		.4byte	.LASF10
  294 007b 02       		.byte	0x2
  295 007c A2       		.byte	0xa2
  296 007d 3A000000 		.4byte	0x3a
  297 0081 04       		.uleb128 0x4
- 298 0082 78010000 		.4byte	.LASF11
+ 298 0082 1C010000 		.4byte	.LASF11
  299 0086 02       		.byte	0x2
  300 0087 A3       		.byte	0xa3
  301 0088 48000000 		.4byte	0x48
  302 008c 02       		.uleb128 0x2
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 10
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 10
 
 
  303 008d 04       		.byte	0x4
  304 008e 04       		.byte	0x4
- 305 008f EE000000 		.4byte	.LASF12
+ 305 008f 92000000 		.4byte	.LASF12
  306 0093 02       		.uleb128 0x2
  307 0094 08       		.byte	0x8
  308 0095 04       		.byte	0x4
- 309 0096 49010000 		.4byte	.LASF13
+ 309 0096 ED000000 		.4byte	.LASF13
  310 009a 02       		.uleb128 0x2
  311 009b 01       		.byte	0x1
  312 009c 08       		.byte	0x8
- 313 009d 16020000 		.4byte	.LASF14
+ 313 009d BA010000 		.4byte	.LASF14
  314 00a1 05       		.uleb128 0x5
- 315 00a2 5C000000 		.4byte	.LASF15
+ 315 00a2 00000000 		.4byte	.LASF15
  316 00a6 02       		.byte	0x2
  317 00a7 4D01     		.2byte	0x14d
  318 00a9 AD000000 		.4byte	0xad
  319 00ad 06       		.uleb128 0x6
  320 00ae 81000000 		.4byte	0x81
  321 00b2 07       		.uleb128 0x7
- 322 00b3 5E020000 		.4byte	.LASF16
+ 322 00b3 66020000 		.4byte	.LASF16
  323 00b7 01       		.byte	0x1
  324 00b8 27       		.byte	0x27
  325 00b9 00000000 		.4byte	.LFB0
@@ -569,7 +569,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  328 00c2 9C       		.byte	0x9c
  329 00c3 D6000000 		.4byte	0xd6
  330 00c7 08       		.uleb128 0x8
- 331 00c8 57010000 		.4byte	.LASF18
+ 331 00c8 FB000000 		.4byte	.LASF18
  332 00cc 01       		.byte	0x1
  333 00cd 27       		.byte	0x27
  334 00ce 81000000 		.4byte	0x81
@@ -578,7 +578,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  337 00d4 74       		.sleb128 -12
  338 00d5 00       		.byte	0
  339 00d6 09       		.uleb128 0x9
- 340 00d7 BC000000 		.4byte	.LASF28
+ 340 00d7 60000000 		.4byte	.LASF28
  341 00db 01       		.byte	0x1
  342 00dc 5F       		.byte	0x5f
  343 00dd 00000000 		.4byte	.LFB1
@@ -586,7 +586,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  345 00e5 01       		.uleb128 0x1
  346 00e6 9C       		.byte	0x9c
  347 00e7 07       		.uleb128 0x7
- 348 00e8 8A000000 		.4byte	.LASF17
+ 348 00e8 2E000000 		.4byte	.LASF17
  349 00ec 01       		.byte	0x1
  350 00ed 86       		.byte	0x86
  351 00ee 00000000 		.4byte	.LFB2
@@ -595,10 +595,10 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  354 00f7 9C       		.byte	0x9c
  355 00f8 35010000 		.4byte	0x135
  356 00fc 08       		.uleb128 0x8
- 357 00fd 3E010000 		.4byte	.LASF19
+ 357 00fd E2000000 		.4byte	.LASF19
  358 0101 01       		.byte	0x1
  359 0102 86       		.byte	0x86
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 11
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 11
 
 
  360 0103 76000000 		.4byte	0x76
@@ -606,7 +606,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  362 0108 91       		.byte	0x91
  363 0109 6E       		.sleb128 -18
  364 010a 08       		.uleb128 0x8
- 365 010b 63010000 		.4byte	.LASF20
+ 365 010b 07010000 		.4byte	.LASF20
  366 010f 01       		.byte	0x1
  367 0110 86       		.byte	0x86
  368 0111 6B000000 		.4byte	0x6b
@@ -614,7 +614,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  370 0116 91       		.byte	0x91
  371 0117 6D       		.sleb128 -19
  372 0118 0A       		.uleb128 0xa
- 373 0119 B4000000 		.4byte	.LASF21
+ 373 0119 58000000 		.4byte	.LASF21
  374 011d 01       		.byte	0x1
  375 011e 88       		.byte	0x88
  376 011f 81000000 		.4byte	0x81
@@ -622,7 +622,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  378 0124 91       		.byte	0x91
  379 0125 74       		.sleb128 -12
  380 0126 0A       		.uleb128 0xa
- 381 0127 50010000 		.4byte	.LASF22
+ 381 0127 F4000000 		.4byte	.LASF22
  382 012b 01       		.byte	0x1
  383 012c 89       		.byte	0x89
  384 012d 81000000 		.4byte	0x81
@@ -631,7 +631,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  387 0133 70       		.sleb128 -16
  388 0134 00       		.byte	0
  389 0135 0B       		.uleb128 0xb
- 390 0136 CE000000 		.4byte	.LASF23
+ 390 0136 72000000 		.4byte	.LASF23
  391 013a 01       		.byte	0x1
  392 013b B0       		.byte	0xb0
  393 013c 76000000 		.4byte	0x76
@@ -640,7 +640,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  396 0148 01       		.uleb128 0x1
  397 0149 9C       		.byte	0x9c
  398 014a 0B       		.uleb128 0xb
- 399 014b 1B020000 		.4byte	.LASF24
+ 399 014b BF010000 		.4byte	.LASF24
  400 014f 01       		.byte	0x1
  401 0150 C6       		.byte	0xc6
  402 0151 6B000000 		.4byte	0x6b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  414 0004 0E       		.uleb128 0xe
  415 0005 13       		.uleb128 0x13
  416 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 12
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 12
 
 
  417 0007 03       		.uleb128 0x3
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  471 003d 3B       		.uleb128 0x3b
  472 003e 05       		.uleb128 0x5
  473 003f 49       		.uleb128 0x49
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 13
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 13
 
 
  474 0040 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  528 0077 19       		.uleb128 0x19
  529 0078 03       		.uleb128 0x3
  530 0079 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 14
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 14
 
 
  531 007a 3A       		.uleb128 0x3a
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  585 00b2 00       		.byte	0
  586 00b3 00       		.byte	0
  587 00b4 00       		.byte	0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 15
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 15
 
 
  588              		.section	.debug_aranges,"",%progbits
@@ -882,161 +882,162 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 1
  624      00000201 
  624      FB0E0D00 
  624      01010101 
- 625              	.LASF27:
- 626 0000 433A5C55 		.ascii	"C:\\Users\\Yobely\\Desktop\\Health Thermometer.cywr"
- 626      73657273 
- 626      5C596F62 
- 626      656C795C 
- 626      4465736B 
- 627 002f 6B2E4172 		.ascii	"k.Archive01\\AN91184\\Health Thermometer.cydsn\000"
- 627      63686976 
- 627      6530315C 
- 627      414E3931 
- 627      3138345C 
- 628              	.LASF15:
- 629 005c 72656733 		.ascii	"reg32\000"
- 629      3200
- 630              	.LASF26:
- 631 0062 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\ADC_intClock.c\000"
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 16
+ 625              	.LASF15:
+ 626 0000 72656733 		.ascii	"reg32\000"
+ 626      3200
+ 627              	.LASF26:
+ 628 0006 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\ADC_intClock.c\000"
+ 628      6E657261 
+ 628      7465645F 
+ 628      536F7572 
+ 628      63655C50 
+ 629              	.LASF17:
+ 630 002e 4144435F 		.ascii	"ADC_intClock_SetFractionalDividerRegister\000"
+ 630      696E7443 
+ 630      6C6F636B 
+ 630      5F536574 
+ 630      46726163 
+ 631              	.LASF21:
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 16
 
 
- 631      6E657261 
- 631      7465645F 
- 631      536F7572 
- 631      63655C50 
- 632              	.LASF17:
- 633 008a 4144435F 		.ascii	"ADC_intClock_SetFractionalDividerRegister\000"
- 633      696E7443 
- 633      6C6F636B 
- 633      5F536574 
- 633      46726163 
- 634              	.LASF21:
- 635 00b4 6D61736B 		.ascii	"maskVal\000"
- 635      56616C00 
- 636              	.LASF28:
- 637 00bc 4144435F 		.ascii	"ADC_intClock_Stop\000"
- 637      696E7443 
- 637      6C6F636B 
- 637      5F53746F 
- 637      7000
- 638              	.LASF23:
- 639 00ce 4144435F 		.ascii	"ADC_intClock_GetDividerRegister\000"
- 639      696E7443 
- 639      6C6F636B 
- 639      5F476574 
- 639      44697669 
- 640              	.LASF12:
- 641 00ee 666C6F61 		.ascii	"float\000"
- 641      7400
- 642              	.LASF7:
- 643 00f4 6C6F6E67 		.ascii	"long long unsigned int\000"
- 643      206C6F6E 
- 643      6720756E 
- 643      7369676E 
- 643      65642069 
- 644              	.LASF1:
- 645 010b 756E7369 		.ascii	"unsigned char\000"
- 645      676E6564 
- 645      20636861 
- 645      7200
- 646              	.LASF5:
- 647 0119 6C6F6E67 		.ascii	"long unsigned int\000"
- 647      20756E73 
- 647      69676E65 
- 647      6420696E 
- 647      7400
- 648              	.LASF3:
- 649 012b 73686F72 		.ascii	"short unsigned int\000"
- 649      7420756E 
- 649      7369676E 
- 649      65642069 
- 649      6E7400
- 650              	.LASF19:
- 651 013e 636C6B44 		.ascii	"clkDivider\000"
- 651      69766964 
- 651      657200
- 652              	.LASF13:
- 653 0149 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 17
+ 632 0058 6D61736B 		.ascii	"maskVal\000"
+ 632      56616C00 
+ 633              	.LASF28:
+ 634 0060 4144435F 		.ascii	"ADC_intClock_Stop\000"
+ 634      696E7443 
+ 634      6C6F636B 
+ 634      5F53746F 
+ 634      7000
+ 635              	.LASF23:
+ 636 0072 4144435F 		.ascii	"ADC_intClock_GetDividerRegister\000"
+ 636      696E7443 
+ 636      6C6F636B 
+ 636      5F476574 
+ 636      44697669 
+ 637              	.LASF12:
+ 638 0092 666C6F61 		.ascii	"float\000"
+ 638      7400
+ 639              	.LASF7:
+ 640 0098 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 640      206C6F6E 
+ 640      6720756E 
+ 640      7369676E 
+ 640      65642069 
+ 641              	.LASF1:
+ 642 00af 756E7369 		.ascii	"unsigned char\000"
+ 642      676E6564 
+ 642      20636861 
+ 642      7200
+ 643              	.LASF5:
+ 644 00bd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 644      20756E73 
+ 644      69676E65 
+ 644      6420696E 
+ 644      7400
+ 645              	.LASF3:
+ 646 00cf 73686F72 		.ascii	"short unsigned int\000"
+ 646      7420756E 
+ 646      7369676E 
+ 646      65642069 
+ 646      6E7400
+ 647              	.LASF19:
+ 648 00e2 636C6B44 		.ascii	"clkDivider\000"
+ 648      69766964 
+ 648      657200
+ 649              	.LASF13:
+ 650 00ed 646F7562 		.ascii	"double\000"
+ 650      6C6500
+ 651              	.LASF22:
+ 652 00f4 72656756 		.ascii	"regVal\000"
+ 652      616C00
+ 653              	.LASF18:
+ 654 00fb 616C6967 		.ascii	"alignClkDiv\000"
+ 654      6E436C6B 
+ 654      44697600 
+ 655              	.LASF20:
+ 656 0107 636C6B46 		.ascii	"clkFractional\000"
+ 656      72616374 
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 17
 
 
- 653      6C6500
- 654              	.LASF22:
- 655 0150 72656756 		.ascii	"regVal\000"
- 655      616C00
- 656              	.LASF18:
- 657 0157 616C6967 		.ascii	"alignClkDiv\000"
- 657      6E436C6B 
- 657      44697600 
- 658              	.LASF20:
- 659 0163 636C6B46 		.ascii	"clkFractional\000"
- 659      72616374 
- 659      696F6E61 
- 659      6C00
- 660              	.LASF10:
- 661 0171 75696E74 		.ascii	"uint16\000"
- 661      313600
- 662              	.LASF11:
- 663 0178 75696E74 		.ascii	"uint32\000"
- 663      333200
- 664              	.LASF8:
- 665 017f 756E7369 		.ascii	"unsigned int\000"
- 665      676E6564 
- 665      20696E74 
- 665      00
- 666              	.LASF25:
- 667 018c 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 667      4320342E 
- 667      382E3420 
- 667      32303134 
- 667      30353236 
- 668 01bf 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 668      20726576 
- 668      6973696F 
- 668      6E203231 
- 668      31333538 
- 669 01f2 30202D66 		.ascii	"0 -ffunction-sections\000"
- 669      66756E63 
- 669      74696F6E 
- 669      2D736563 
- 669      74696F6E 
- 670              	.LASF6:
- 671 0208 6C6F6E67 		.ascii	"long long int\000"
- 671      206C6F6E 
- 671      6720696E 
- 671      7400
- 672              	.LASF14:
- 673 0216 63686172 		.ascii	"char\000"
- 673      00
- 674              	.LASF24:
- 675 021b 4144435F 		.ascii	"ADC_intClock_GetFractionalDividerRegister\000"
- 675      696E7443 
- 675      6C6F636B 
- 675      5F476574 
- 675      46726163 
- 676              	.LASF2:
- 677 0245 73686F72 		.ascii	"short int\000"
- 677      7420696E 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccXq5UuB.s 			page 18
+ 656      696F6E61 
+ 656      6C00
+ 657              	.LASF10:
+ 658 0115 75696E74 		.ascii	"uint16\000"
+ 658      313600
+ 659              	.LASF11:
+ 660 011c 75696E74 		.ascii	"uint32\000"
+ 660      333200
+ 661              	.LASF8:
+ 662 0123 756E7369 		.ascii	"unsigned int\000"
+ 662      676E6564 
+ 662      20696E74 
+ 662      00
+ 663              	.LASF25:
+ 664 0130 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 664      4320342E 
+ 664      382E3420 
+ 664      32303134 
+ 664      30353236 
+ 665 0163 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 665      20726576 
+ 665      6973696F 
+ 665      6E203231 
+ 665      31333538 
+ 666 0196 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 666      66756E63 
+ 666      74696F6E 
+ 666      2D736563 
+ 666      74696F6E 
+ 667              	.LASF6:
+ 668 01ac 6C6F6E67 		.ascii	"long long int\000"
+ 668      206C6F6E 
+ 668      6720696E 
+ 668      7400
+ 669              	.LASF14:
+ 670 01ba 63686172 		.ascii	"char\000"
+ 670      00
+ 671              	.LASF24:
+ 672 01bf 4144435F 		.ascii	"ADC_intClock_GetFractionalDividerRegister\000"
+ 672      696E7443 
+ 672      6C6F636B 
+ 672      5F476574 
+ 672      46726163 
+ 673              	.LASF2:
+ 674 01e9 73686F72 		.ascii	"short int\000"
+ 674      7420696E 
+ 674      7400
+ 675              	.LASF9:
+ 676 01f3 75696E74 		.ascii	"uint8\000"
+ 676      3800
+ 677              	.LASF27:
+ 678 01f9 433A5C55 		.ascii	"C:\\Users\\Shahed\\Desktop\\Yobely- Health Thermome"
+ 678      73657273 
+ 678      5C536861 
+ 678      6865645C 
+ 678      4465736B 
+ 679 0228 7465722E 		.ascii	"ter.cywrk.Archive01\\AN91184\\Health Thermometer.cy"
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\cc1YfIqJ.s 			page 18
 
 
- 677      7400
- 678              	.LASF9:
- 679 024f 75696E74 		.ascii	"uint8\000"
- 679      3800
- 680              	.LASF4:
- 681 0255 6C6F6E67 		.ascii	"long int\000"
- 681      20696E74 
- 681      00
- 682              	.LASF16:
- 683 025e 4144435F 		.ascii	"ADC_intClock_StartEx\000"
- 683      696E7443 
- 683      6C6F636B 
- 683      5F537461 
- 683      72744578 
- 684              	.LASF0:
- 685 0273 7369676E 		.ascii	"signed char\000"
- 685      65642063 
- 685      68617200 
- 686              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 679      63797772 
+ 679      6B2E4172 
+ 679      63686976 
+ 679      6530315C 
+ 680 0259 64736E00 		.ascii	"dsn\000"
+ 681              	.LASF4:
+ 682 025d 6C6F6E67 		.ascii	"long int\000"
+ 682      20696E74 
+ 682      00
+ 683              	.LASF16:
+ 684 0266 4144435F 		.ascii	"ADC_intClock_StartEx\000"
+ 684      696E7443 
+ 684      6C6F636B 
+ 684      5F537461 
+ 684      72744578 
+ 685              	.LASF0:
+ 686 027b 7369676E 		.ascii	"signed char\000"
+ 686      65642063 
+ 686      68617200 
+ 687              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

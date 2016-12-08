@@ -88,9 +88,9 @@ uint32 SystemFlag = 0;
 *****************************************************************************/
 void InitializeSystem (void)
 {
-    /* Clear wakeup pin interrupt */
+    /* Clear wakeup pin interrupt
     SW_ClearInterrupt();
-    
+    */
     /* Generate reference signals for temperature measurement */
     V_HIGH_Write(DRIVE_HIGH);
     V_LOW_Write(DRIVE_LOW);

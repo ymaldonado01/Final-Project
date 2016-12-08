@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="Health Thermometer" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" Version="4.20" Type="Normal">
+  <Project Name="Health Thermometer" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" Version="4.20" Type="Normal">
     <CMSIS_SVD_File>Health Thermometer.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -33,8 +33,8 @@
       <LinkerFile Toolchain="ARM MDK Generic">.\Generated_Source\PSoC4\Cm0RealView.scat</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="BUILD" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+      <Folder BuildType="BUILD" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
           <File BuildType="BUILD" Toolchain="">.\main.c</File>
           <File BuildType="BUILD" Toolchain="">.\BLE_HTSS.c</File>
           <File BuildType="BUILD" Toolchain="">.\Temperature.c</File>
@@ -46,8 +46,8 @@
           <File BuildType="BUILD" Toolchain="">.\CommonFunctions.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Generated_Source\PSoC4">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Generated_Source\PSoC4">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\cymetadata.c</File>
@@ -99,11 +99,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_LOW.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_LOW.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\V_LOW_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\SW.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\SW.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\SW_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Wakeup_ISR.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Wakeup_ISR.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ADC_IRQ.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ADC_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\ADC_intClock.c</File>
@@ -128,64 +123,80 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\core_cmInstr.h</File>
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Generated_Source\PSoC4\CyBootAsmIar.s</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\project.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Pin_LED.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Pin_LED.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Pin_LED_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Clock_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Clock_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Clock_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Clock_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Pin_LED_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Pin_LED_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Pin_LED_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\PWM_2_PM.c</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_GCC_Generic\BLE_v1_10">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
-          <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\BLE_v1_10\gccCyBLEStack_BLE_SOC_PERIPHERAL.a</File>
+      <Folder BuildType="STRICT" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_GCC_Generic\BLE_v1_20">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+          <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\BLE_v1_20\gccCyBLEStack_BLE_SOC_PERIPHERAL.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_GCC_Generic">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_GCC_Generic">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Export\ARM_GCC_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_MDK_Generic\BLE_v1_10">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
-          <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\BLE_v1_10\mdkCyBLEStack_BLE_SOC_PERIPHERAL.a</File>
+      <Folder BuildType="STRICT" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_MDK_Generic\BLE_v1_20">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+          <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\BLE_v1_20\mdkCyBLEStack_BLE_SOC_PERIPHERAL.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_MDK_Generic">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_MDK_Generic">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Export\ARM_MDK_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_IAR_Generic\BLE_v1_10">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
-          <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\BLE_v1_10\mdkCyBLEStack_BLE_SOC_PERIPHERAL.a</File>
+      <Folder BuildType="STRICT" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_IAR_Generic\BLE_v1_20">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+          <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\BLE_v1_20\mdkCyBLEStack_BLE_SOC_PERIPHERAL.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_IAR_Generic">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn\Export\ARM_IAR_Generic">
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn">
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Export\ARM_IAR_Generic\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_951">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC3">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC5">
-        <Files Root="C:\Users\Yobely\Desktop\Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
+        <Files Root="C:\Users\Shahed\Desktop\Yobely- Health Thermometer.cywrk.Archive01\AN91184\Health Thermometer.cydsn" />
       </Folder>
     </Folders>
   </Project>

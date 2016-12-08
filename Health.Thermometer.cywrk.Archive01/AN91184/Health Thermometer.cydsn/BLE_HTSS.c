@@ -200,7 +200,7 @@ void EnableBLE (void)
 }
 
 /*****************************************************************************
-* Function Name: ProcessBLE()
+* Function Name: ()
 ******************************************************************************
 * Summary:
 * If health thermometer indiications are enabled and device is connected then this

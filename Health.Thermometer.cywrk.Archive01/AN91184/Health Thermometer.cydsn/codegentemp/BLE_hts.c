@@ -1,12 +1,12 @@
 /*******************************************************************************
 File Name: CYBLE_hts.c
-Version 1.10
+Version 1.20
 
 Description:
  Contains the source code for Health Thermometer Service.
 
 ********************************************************************************
-Copyright 2014, Cypress Semiconductor Corporation.  All rights reserved.
+Copyright 2014-2015, Cypress Semiconductor Corporation.  All rights reserved.
 You may use this file only in accordance with the license, terms, conditions,
 disclaimers, and limitations in the end user license agreement accompanying
 the software package with which this file was provided.
@@ -401,7 +401,7 @@ CYBLE_GATT_ERR_CODE_T CyBle_HtssWriteEventHandler(CYBLE_GATTS_WRITE_REQ_PARAM_T 
                                 requestValue = CyBle_Get16ByPtr(eventParam->handleValPair.value.val);
                                 if((requestValue != 0u) && ((requestValue < lowerValue) || (requestValue > upperValue)))
                                 {
-                                    gattErr = CYBLE_GATT_ERR_OUT_OF_RANGE;
+                                    gattErr = CYBLE_GATT_ERR_HTS_OUT_OF_RANGE;
                                 }
                             }
                         }

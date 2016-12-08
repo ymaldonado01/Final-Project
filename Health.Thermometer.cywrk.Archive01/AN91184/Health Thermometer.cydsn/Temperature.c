@@ -162,7 +162,10 @@ int32 ProcessTemperature (void)
         /* Compute temperature and remove decimal places */
         temperature = Thermistor_GetTemperature(thermistorResistance);
         temperature = temperature / 100;
+        
+
     }
+    
     #else
     /* Check if measurement interval has expired */
     if (SystemFlag & MEASUREMENT_INTERVAL)
@@ -173,6 +176,9 @@ int32 ProcessTemperature (void)
             temperature = 0;
         }
     }
+    
+    
+    
     #endif
     
     /* Return measured temperature */

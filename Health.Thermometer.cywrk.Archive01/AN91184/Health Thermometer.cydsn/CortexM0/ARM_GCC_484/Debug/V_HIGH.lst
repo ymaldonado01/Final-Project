@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
   30:.\Generated_Source\PSoC4/V_HIGH.c **** ********************************************************************************
   31:.\Generated_Source\PSoC4/V_HIGH.c **** *
   32:.\Generated_Source\PSoC4/V_HIGH.c **** * Summary:
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 2
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/V_HIGH.c **** *  Assign a new value to the digital port's data output register.  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
   66 003c 1A60     		str	r2, [r3]
   47:.\Generated_Source\PSoC4/V_HIGH.c **** }
   67              		.loc 1 47 0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 3
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 3
 
 
   68 003e BD46     		mov	sp, r7
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
   95 0004 00AF     		add	r7, sp, #0
   96              		.cfi_def_cfa_register 7
   97 0006 021C     		mov	r2, r0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 4
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 4
 
 
   98 0008 FB1D     		add	r3, r7, #7
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
   95:.\Generated_Source\PSoC4/V_HIGH.c **** *  
   96:.\Generated_Source\PSoC4/V_HIGH.c **** *******************************************************************************/
   97:.\Generated_Source\PSoC4/V_HIGH.c **** uint8 V_HIGH_Read(void) 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 5
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 5
 
 
   98:.\Generated_Source\PSoC4/V_HIGH.c **** {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  117:.\Generated_Source\PSoC4/V_HIGH.c **** uint8 V_HIGH_ReadDataReg(void) 
  118:.\Generated_Source\PSoC4/V_HIGH.c **** {
  167              		.loc 1 118 0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 6
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 6
 
 
  168              		.cfi_startproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  139:.\Generated_Source\PSoC4/V_HIGH.c ****     *  
  140:.\Generated_Source\PSoC4/V_HIGH.c ****     *******************************************************************************/
  141:.\Generated_Source\PSoC4/V_HIGH.c ****     uint8 V_HIGH_ClearInterrupt(void) 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 7
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 7
 
 
  142:.\Generated_Source\PSoC4/V_HIGH.c ****     {
@@ -415,48 +415,48 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  248 0006 00000000 		.4byte	.Ldebug_abbrev0
  249 000a 04       		.byte	0x4
  250 000b 01       		.uleb128 0x1
- 251 000c 38010000 		.4byte	.LASF24
+ 251 000c DC000000 		.4byte	.LASF24
  252 0010 01       		.byte	0x1
- 253 0011 A0000000 		.4byte	.LASF25
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 8
+ 253 0011 44000000 		.4byte	.LASF25
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 8
 
 
- 254 0015 00000000 		.4byte	.LASF26
+ 254 0015 A0010000 		.4byte	.LASF26
  255 0019 00000000 		.4byte	.Ldebug_ranges0+0
  256 001d 00000000 		.4byte	0
  257 0021 00000000 		.4byte	.Ldebug_line0
  258 0025 02       		.uleb128 0x2
  259 0026 01       		.byte	0x1
  260 0027 06       		.byte	0x6
- 261 0028 05020000 		.4byte	.LASF0
+ 261 0028 0D020000 		.4byte	.LASF0
  262 002c 02       		.uleb128 0x2
  263 002d 01       		.byte	0x1
  264 002e 08       		.byte	0x8
- 265 002f 92000000 		.4byte	.LASF1
+ 265 002f 36000000 		.4byte	.LASF1
  266 0033 02       		.uleb128 0x2
  267 0034 02       		.byte	0x2
  268 0035 05       		.byte	0x5
- 269 0036 EC010000 		.4byte	.LASF2
+ 269 0036 90010000 		.4byte	.LASF2
  270 003a 02       		.uleb128 0x2
  271 003b 02       		.byte	0x2
  272 003c 07       		.byte	0x7
- 273 003d D4000000 		.4byte	.LASF3
+ 273 003d 78000000 		.4byte	.LASF3
  274 0041 02       		.uleb128 0x2
  275 0042 04       		.byte	0x4
  276 0043 05       		.byte	0x5
- 277 0044 FC010000 		.4byte	.LASF4
+ 277 0044 04020000 		.4byte	.LASF4
  278 0048 02       		.uleb128 0x2
  279 0049 04       		.byte	0x4
  280 004a 07       		.byte	0x7
- 281 004b C2000000 		.4byte	.LASF5
+ 281 004b 66000000 		.4byte	.LASF5
  282 004f 02       		.uleb128 0x2
  283 0050 08       		.byte	0x8
  284 0051 05       		.byte	0x5
- 285 0052 B9010000 		.4byte	.LASF6
+ 285 0052 5D010000 		.4byte	.LASF6
  286 0056 02       		.uleb128 0x2
  287 0057 08       		.byte	0x8
  288 0058 07       		.byte	0x7
- 289 0059 7B000000 		.4byte	.LASF7
+ 289 0059 1F000000 		.4byte	.LASF7
  290 005d 03       		.uleb128 0x3
  291 005e 04       		.byte	0x4
  292 005f 05       		.byte	0x5
@@ -464,41 +464,41 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  294 0064 02       		.uleb128 0x2
  295 0065 04       		.byte	0x4
  296 0066 07       		.byte	0x7
- 297 0067 2B010000 		.4byte	.LASF8
+ 297 0067 CF000000 		.4byte	.LASF8
  298 006b 04       		.uleb128 0x4
- 299 006c F6010000 		.4byte	.LASF9
+ 299 006c 9A010000 		.4byte	.LASF9
  300 0070 02       		.byte	0x2
  301 0071 A1       		.byte	0xa1
  302 0072 2C000000 		.4byte	0x2c
  303 0076 04       		.uleb128 0x4
- 304 0077 24010000 		.4byte	.LASF10
+ 304 0077 C8000000 		.4byte	.LASF10
  305 007b 02       		.byte	0x2
  306 007c A3       		.byte	0xa3
  307 007d 48000000 		.4byte	0x48
  308 0081 02       		.uleb128 0x2
  309 0082 04       		.byte	0x4
  310 0083 04       		.byte	0x4
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 9
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 9
 
 
- 311 0084 75000000 		.4byte	.LASF11
+ 311 0084 19000000 		.4byte	.LASF11
  312 0088 02       		.uleb128 0x2
  313 0089 08       		.byte	0x8
  314 008a 04       		.byte	0x4
- 315 008b 1D010000 		.4byte	.LASF12
+ 315 008b C1000000 		.4byte	.LASF12
  316 008f 02       		.uleb128 0x2
  317 0090 01       		.byte	0x1
  318 0091 08       		.byte	0x8
- 319 0092 D4010000 		.4byte	.LASF13
+ 319 0092 78010000 		.4byte	.LASF13
  320 0096 05       		.uleb128 0x5
- 321 0097 5C000000 		.4byte	.LASF14
+ 321 0097 00000000 		.4byte	.LASF14
  322 009b 02       		.byte	0x2
  323 009c 4D01     		.2byte	0x14d
  324 009e A2000000 		.4byte	0xa2
  325 00a2 06       		.uleb128 0x6
  326 00a3 76000000 		.4byte	0x76
  327 00a7 07       		.uleb128 0x7
- 328 00a8 68000000 		.4byte	.LASF15
+ 328 00a8 0C000000 		.4byte	.LASF15
  329 00ac 01       		.byte	0x1
  330 00ad 2A       		.byte	0x2a
  331 00ae 00000000 		.4byte	.LFB0
@@ -507,7 +507,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  334 00b7 9C       		.byte	0x9c
  335 00b8 D9000000 		.4byte	0xd9
  336 00bc 08       		.uleb128 0x8
- 337 00bd 62000000 		.4byte	.LASF17
+ 337 00bd 06000000 		.4byte	.LASF17
  338 00c1 01       		.byte	0x1
  339 00c2 2A       		.byte	0x2a
  340 00c3 6B000000 		.4byte	0x6b
@@ -515,7 +515,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  342 00c8 91       		.byte	0x91
  343 00c9 6F       		.sleb128 -17
  344 00ca 09       		.uleb128 0x9
- 345 00cb 11020000 		.4byte	.LASF22
+ 345 00cb 19020000 		.4byte	.LASF22
  346 00cf 01       		.byte	0x1
  347 00d0 2C       		.byte	0x2c
  348 00d1 6B000000 		.4byte	0x6b
@@ -524,7 +524,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  351 00d7 77       		.sleb128 -9
  352 00d8 00       		.byte	0
  353 00d9 07       		.uleb128 0x7
- 354 00da 09010000 		.4byte	.LASF16
+ 354 00da AD000000 		.4byte	.LASF16
  355 00de 01       		.byte	0x1
  356 00df 49       		.byte	0x49
  357 00e0 00000000 		.4byte	.LFB1
@@ -533,19 +533,19 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  360 00e9 9C       		.byte	0x9c
  361 00ea FD000000 		.4byte	0xfd
  362 00ee 08       		.uleb128 0x8
- 363 00ef B4010000 		.4byte	.LASF18
+ 363 00ef 58010000 		.4byte	.LASF18
  364 00f3 01       		.byte	0x1
  365 00f4 49       		.byte	0x49
  366 00f5 6B000000 		.4byte	0x6b
  367 00f9 02       		.uleb128 0x2
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 10
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 10
 
 
  368 00fa 91       		.byte	0x91
  369 00fb 77       		.sleb128 -9
  370 00fc 00       		.byte	0
  371 00fd 0A       		.uleb128 0xa
- 372 00fe E7000000 		.4byte	.LASF19
+ 372 00fe 8B000000 		.4byte	.LASF19
  373 0102 01       		.byte	0x1
  374 0103 61       		.byte	0x61
  375 0104 6B000000 		.4byte	0x6b
@@ -554,7 +554,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  378 0110 01       		.uleb128 0x1
  379 0111 9C       		.byte	0x9c
  380 0112 0A       		.uleb128 0xa
- 381 0113 D9010000 		.4byte	.LASF20
+ 381 0113 7D010000 		.4byte	.LASF20
  382 0117 01       		.byte	0x1
  383 0118 75       		.byte	0x75
  384 0119 6B000000 		.4byte	0x6b
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  387 0125 01       		.uleb128 0x1
  388 0126 9C       		.byte	0x9c
  389 0127 0B       		.uleb128 0xb
- 390 0128 F3000000 		.4byte	.LASF21
+ 390 0128 97000000 		.4byte	.LASF21
  391 012c 01       		.byte	0x1
  392 012d 8D       		.byte	0x8d
  393 012e 6B000000 		.4byte	0x6b
@@ -572,7 +572,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  396 013a 01       		.uleb128 0x1
  397 013b 9C       		.byte	0x9c
  398 013c 09       		.uleb128 0x9
- 399 013d C7010000 		.4byte	.LASF23
+ 399 013d 6B010000 		.4byte	.LASF23
  400 0141 01       		.byte	0x1
  401 0142 8F       		.byte	0x8f
  402 0143 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  422 000c 17       		.uleb128 0x17
  423 000d 11       		.uleb128 0x11
  424 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 11
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 11
 
 
  425 000f 10       		.uleb128 0x10
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  479 0045 00       		.byte	0
  480 0046 49       		.uleb128 0x49
  481 0047 13       		.uleb128 0x13
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 12
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 12
 
 
  482 0048 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  536 007f 18       		.uleb128 0x18
  537 0080 00       		.byte	0
  538 0081 00       		.byte	0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 13
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 13
 
 
  539 0082 0A       		.uleb128 0xa
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  593 0006 00000000 		.4byte	.Ldebug_info0
  594 000a 04       		.byte	0x4
  595 000b 00       		.byte	0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 14
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 14
 
 
  596 000c 0000     		.2byte	0
@@ -816,150 +816,151 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 1
  626      00000201 
  626      FB0E0D00 
  626      01010101 
- 627              	.LASF26:
- 628 0000 433A5C55 		.ascii	"C:\\Users\\Yobely\\Desktop\\Health Thermometer.cywr"
- 628      73657273 
- 628      5C596F62 
- 628      656C795C 
- 628      4465736B 
- 629 002f 6B2E4172 		.ascii	"k.Archive01\\AN91184\\Health Thermometer.cydsn\000"
- 629      63686976 
- 629      6530315C 
- 629      414E3931 
- 629      3138345C 
- 630              	.LASF14:
- 631 005c 72656733 		.ascii	"reg32\000"
- 631      3200
- 632              	.LASF17:
- 633 0062 76616C75 		.ascii	"value\000"
- 633      6500
- 634              	.LASF15:
- 635 0068 565F4849 		.ascii	"V_HIGH_Write\000"
- 635      47485F57 
- 635      72697465 
- 635      00
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 15
+ 627              	.LASF14:
+ 628 0000 72656733 		.ascii	"reg32\000"
+ 628      3200
+ 629              	.LASF17:
+ 630 0006 76616C75 		.ascii	"value\000"
+ 630      6500
+ 631              	.LASF15:
+ 632 000c 565F4849 		.ascii	"V_HIGH_Write\000"
+ 632      47485F57 
+ 632      72697465 
+ 632      00
+ 633              	.LASF11:
+ 634 0019 666C6F61 		.ascii	"float\000"
+ 634      7400
+ 635              	.LASF7:
+ 636 001f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 636      206C6F6E 
+ 636      6720756E 
+ 636      7369676E 
+ 636      65642069 
+ 637              	.LASF1:
+ 638 0036 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 15
 
 
- 636              	.LASF11:
- 637 0075 666C6F61 		.ascii	"float\000"
- 637      7400
- 638              	.LASF7:
- 639 007b 6C6F6E67 		.ascii	"long long unsigned int\000"
- 639      206C6F6E 
- 639      6720756E 
- 639      7369676E 
- 639      65642069 
- 640              	.LASF1:
- 641 0092 756E7369 		.ascii	"unsigned char\000"
- 641      676E6564 
- 641      20636861 
- 641      7200
- 642              	.LASF25:
- 643 00a0 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\V_HIGH.c\000"
- 643      6E657261 
- 643      7465645F 
- 643      536F7572 
- 643      63655C50 
- 644              	.LASF5:
- 645 00c2 6C6F6E67 		.ascii	"long unsigned int\000"
- 645      20756E73 
- 645      69676E65 
- 645      6420696E 
- 645      7400
- 646              	.LASF3:
- 647 00d4 73686F72 		.ascii	"short unsigned int\000"
- 647      7420756E 
- 647      7369676E 
- 647      65642069 
- 647      6E7400
- 648              	.LASF19:
- 649 00e7 565F4849 		.ascii	"V_HIGH_Read\000"
- 649      47485F52 
- 649      65616400 
- 650              	.LASF21:
- 651 00f3 565F4849 		.ascii	"V_HIGH_ClearInterrupt\000"
- 651      47485F43 
- 651      6C656172 
- 651      496E7465 
- 651      72727570 
- 652              	.LASF16:
- 653 0109 565F4849 		.ascii	"V_HIGH_SetDriveMode\000"
- 653      47485F53 
- 653      65744472 
- 653      6976654D 
- 653      6F646500 
- 654              	.LASF12:
- 655 011d 646F7562 		.ascii	"double\000"
- 655      6C6500
- 656              	.LASF10:
- 657 0124 75696E74 		.ascii	"uint32\000"
- 657      333200
- 658              	.LASF8:
- 659 012b 756E7369 		.ascii	"unsigned int\000"
- 659      676E6564 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 16
+ 638      676E6564 
+ 638      20636861 
+ 638      7200
+ 639              	.LASF25:
+ 640 0044 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\V_HIGH.c\000"
+ 640      6E657261 
+ 640      7465645F 
+ 640      536F7572 
+ 640      63655C50 
+ 641              	.LASF5:
+ 642 0066 6C6F6E67 		.ascii	"long unsigned int\000"
+ 642      20756E73 
+ 642      69676E65 
+ 642      6420696E 
+ 642      7400
+ 643              	.LASF3:
+ 644 0078 73686F72 		.ascii	"short unsigned int\000"
+ 644      7420756E 
+ 644      7369676E 
+ 644      65642069 
+ 644      6E7400
+ 645              	.LASF19:
+ 646 008b 565F4849 		.ascii	"V_HIGH_Read\000"
+ 646      47485F52 
+ 646      65616400 
+ 647              	.LASF21:
+ 648 0097 565F4849 		.ascii	"V_HIGH_ClearInterrupt\000"
+ 648      47485F43 
+ 648      6C656172 
+ 648      496E7465 
+ 648      72727570 
+ 649              	.LASF16:
+ 650 00ad 565F4849 		.ascii	"V_HIGH_SetDriveMode\000"
+ 650      47485F53 
+ 650      65744472 
+ 650      6976654D 
+ 650      6F646500 
+ 651              	.LASF12:
+ 652 00c1 646F7562 		.ascii	"double\000"
+ 652      6C6500
+ 653              	.LASF10:
+ 654 00c8 75696E74 		.ascii	"uint32\000"
+ 654      333200
+ 655              	.LASF8:
+ 656 00cf 756E7369 		.ascii	"unsigned int\000"
+ 656      676E6564 
+ 656      20696E74 
+ 656      00
+ 657              	.LASF24:
+ 658 00dc 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 658      4320342E 
+ 658      382E3420 
+ 658      32303134 
+ 658      30353236 
+ 659 010f 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 659      20726576 
+ 659      6973696F 
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 16
 
 
- 659      20696E74 
- 659      00
- 660              	.LASF24:
- 661 0138 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 661      4320342E 
- 661      382E3420 
- 661      32303134 
- 661      30353236 
- 662 016b 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 662      20726576 
- 662      6973696F 
- 662      6E203231 
- 662      31333538 
- 663 019e 30202D66 		.ascii	"0 -ffunction-sections\000"
- 663      66756E63 
- 663      74696F6E 
- 663      2D736563 
- 663      74696F6E 
- 664              	.LASF18:
- 665 01b4 6D6F6465 		.ascii	"mode\000"
- 665      00
- 666              	.LASF6:
- 667 01b9 6C6F6E67 		.ascii	"long long int\000"
- 667      206C6F6E 
- 667      6720696E 
- 667      7400
- 668              	.LASF23:
- 669 01c7 6D61736B 		.ascii	"maskedStatus\000"
- 669      65645374 
- 669      61747573 
- 669      00
- 670              	.LASF13:
- 671 01d4 63686172 		.ascii	"char\000"
- 671      00
- 672              	.LASF20:
- 673 01d9 565F4849 		.ascii	"V_HIGH_ReadDataReg\000"
- 673      47485F52 
- 673      65616444 
- 673      61746152 
- 673      656700
- 674              	.LASF2:
- 675 01ec 73686F72 		.ascii	"short int\000"
- 675      7420696E 
- 675      7400
- 676              	.LASF9:
- 677 01f6 75696E74 		.ascii	"uint8\000"
- 677      3800
- 678              	.LASF4:
- 679 01fc 6C6F6E67 		.ascii	"long int\000"
- 679      20696E74 
- 679      00
- 680              	.LASF0:
- 681 0205 7369676E 		.ascii	"signed char\000"
- 681      65642063 
- 681      68617200 
- 682              	.LASF22:
- 683 0211 64725661 		.ascii	"drVal\000"
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccN1W2uL.s 			page 17
+ 659      6E203231 
+ 659      31333538 
+ 660 0142 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 660      66756E63 
+ 660      74696F6E 
+ 660      2D736563 
+ 660      74696F6E 
+ 661              	.LASF18:
+ 662 0158 6D6F6465 		.ascii	"mode\000"
+ 662      00
+ 663              	.LASF6:
+ 664 015d 6C6F6E67 		.ascii	"long long int\000"
+ 664      206C6F6E 
+ 664      6720696E 
+ 664      7400
+ 665              	.LASF23:
+ 666 016b 6D61736B 		.ascii	"maskedStatus\000"
+ 666      65645374 
+ 666      61747573 
+ 666      00
+ 667              	.LASF13:
+ 668 0178 63686172 		.ascii	"char\000"
+ 668      00
+ 669              	.LASF20:
+ 670 017d 565F4849 		.ascii	"V_HIGH_ReadDataReg\000"
+ 670      47485F52 
+ 670      65616444 
+ 670      61746152 
+ 670      656700
+ 671              	.LASF2:
+ 672 0190 73686F72 		.ascii	"short int\000"
+ 672      7420696E 
+ 672      7400
+ 673              	.LASF9:
+ 674 019a 75696E74 		.ascii	"uint8\000"
+ 674      3800
+ 675              	.LASF26:
+ 676 01a0 433A5C55 		.ascii	"C:\\Users\\Shahed\\Desktop\\Yobely- Health Thermome"
+ 676      73657273 
+ 676      5C536861 
+ 676      6865645C 
+ 676      4465736B 
+ 677 01cf 7465722E 		.ascii	"ter.cywrk.Archive01\\AN91184\\Health Thermometer.cy"
+ 677      63797772 
+ 677      6B2E4172 
+ 677      63686976 
+ 677      6530315C 
+ 678 0200 64736E00 		.ascii	"dsn\000"
+ 679              	.LASF4:
+ 680 0204 6C6F6E67 		.ascii	"long int\000"
+ 680      20696E74 
+ 680      00
+ 681              	.LASF0:
+ 682 020d 7369676E 		.ascii	"signed char\000"
+ 682      65642063 
+ 682      68617200 
+ 683              	.LASF22:
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccj037rf.s 			page 17
 
 
- 683      6C00
- 684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 684 0219 64725661 		.ascii	"drVal\000"
+ 684      6C00
+ 685              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

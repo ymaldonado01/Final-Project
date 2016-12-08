@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
   31:.\Temperature.c **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
   32:.\Temperature.c **** * Cypress reserves the right to make changes without further notice to the
   33:.\Temperature.c **** * materials described herein. Cypress does not assume any liability arising out
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 2
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 2
 
 
   34:.\Temperature.c **** * of the application or use of any product or circuit described herein. Cypress
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
   80:.\Temperature.c ****     /* Note: If no channels are connected, channel 0 gets connected by this 
   81:.\Temperature.c ****     *  fucntion */
   82:.\Temperature.c ****     AMuxSeq_Next();
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 3
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 3
 
 
   33              		.loc 1 82 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  103:.\Temperature.c **** *****************************************************************************/
  104:.\Temperature.c **** 
  105:.\Temperature.c **** /*****************************************************************************
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 4
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 4
 
 
  106:.\Temperature.c **** * Function Name: ProcessTemperature()
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  142:.\Temperature.c ****     int16 thermistorVoltage = 0;
   85              		.loc 1 142 0
   86 0012 3B1C     		mov	r3, r7
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 5
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 5
 
 
   87 0014 0833     		add	r3, r3, #8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  123 0056 3B1C     		mov	r3, r7
  124 0058 0A33     		add	r3, r3, #10
  125 005a 1A88     		ldrh	r2, [r3]
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 6
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 6
 
 
  126 005c BB1D     		add	r3, r7, #6
@@ -344,29 +344,35 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  162 00a6 054B     		ldr	r3, .L6+4
  163 00a8 1A60     		str	r2, [r3]
  164              	.L4:
- 165:.\Temperature.c ****     }
- 166:.\Temperature.c ****     #else
- 167:.\Temperature.c ****     /* Check if measurement interval has expired */
- 168:.\Temperature.c ****     if (SystemFlag & MEASUREMENT_INTERVAL)
- 169:.\Temperature.c ****     {
- 170:.\Temperature.c ****         temperature++;
- 171:.\Temperature.c ****         if(temperature > 100)
- 172:.\Temperature.c ****         {
- 173:.\Temperature.c ****             temperature = 0;
- 174:.\Temperature.c ****         }
- 175:.\Temperature.c ****     }
- 176:.\Temperature.c ****     #endif
- 177:.\Temperature.c ****     
- 178:.\Temperature.c ****     /* Return measured temperature */
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 7
+ 165:.\Temperature.c ****         
+ 166:.\Temperature.c **** 
+ 167:.\Temperature.c ****     }
+ 168:.\Temperature.c ****     
+ 169:.\Temperature.c ****     #else
+ 170:.\Temperature.c ****     /* Check if measurement interval has expired */
+ 171:.\Temperature.c ****     if (SystemFlag & MEASUREMENT_INTERVAL)
+ 172:.\Temperature.c ****     {
+ 173:.\Temperature.c ****         temperature++;
+ 174:.\Temperature.c ****         if(temperature > 100)
+ 175:.\Temperature.c ****         {
+ 176:.\Temperature.c ****             temperature = 0;
+ 177:.\Temperature.c ****         }
+ 178:.\Temperature.c ****     }
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 7
 
 
- 179:.\Temperature.c ****     return (temperature);
- 165              		.loc 1 179 0
+ 179:.\Temperature.c ****     
+ 180:.\Temperature.c ****     
+ 181:.\Temperature.c ****     
+ 182:.\Temperature.c ****     #endif
+ 183:.\Temperature.c ****     
+ 184:.\Temperature.c ****     /* Return measured temperature */
+ 185:.\Temperature.c ****     return (temperature);
+ 165              		.loc 1 185 0
  166 00aa 044B     		ldr	r3, .L6+4
  167 00ac 1B68     		ldr	r3, [r3]
- 180:.\Temperature.c **** }
- 168              		.loc 1 180 0
+ 186:.\Temperature.c **** }
+ 168              		.loc 1 186 0
  169 00ae 181C     		mov	r0, r3
  170 00b0 BD46     		mov	sp, r7
  171 00b2 04B0     		add	sp, sp, #16
@@ -376,13 +382,13 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  175 00b6 C046     		.align	2
  176              	.L6:
  177 00b8 00000000 		.word	SystemFlag
- 178 00bc 00000000 		.word	temperature.6472
+ 178 00bc 00000000 		.word	temperature.6602
  179              		.cfi_endproc
  180              	.LFE36:
  181              		.size	ProcessTemperature, .-ProcessTemperature
  182              		.bss
  183              		.align	2
- 184              	temperature.6472:
+ 184              	temperature.6602:
  185 0000 00000000 		.space	4
  186              		.text
  187              	.Letext0:
@@ -397,7 +403,7 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  196 000b 01       		.uleb128 0x1
  197 000c 7C000000 		.4byte	.LASF22
  198 0010 01       		.byte	0x1
- 199 0011 E2010000 		.4byte	.LASF23
+ 199 0011 EA010000 		.4byte	.LASF23
  200 0015 80010000 		.4byte	.LASF24
  201 0019 00000000 		.4byte	.Ldebug_ranges0+0
  202 001d 00000000 		.4byte	0
@@ -412,15 +418,15 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  211 002f 0F010000 		.4byte	.LASF1
  212 0033 02       		.uleb128 0x2
  213 0034 02       		.byte	0x2
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 8
+
+
  214 0035 05       		.byte	0x5
- 215 0036 F8010000 		.4byte	.LASF2
+ 215 0036 00020000 		.4byte	.LASF2
  216 003a 02       		.uleb128 0x2
  217 003b 02       		.byte	0x2
  218 003c 07       		.byte	0x7
  219 003d 61010000 		.4byte	.LASF3
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 8
-
-
  220 0041 02       		.uleb128 0x2
  221 0042 04       		.byte	0x4
  222 0043 05       		.byte	0x5
@@ -456,34 +462,34 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  252 007c A3       		.byte	0xa3
  253 007d 48000000 		.4byte	0x48
  254 0081 04       		.uleb128 0x4
- 255 0082 F2010000 		.4byte	.LASF11
+ 255 0082 FA010000 		.4byte	.LASF11
  256 0086 02       		.byte	0x2
  257 0087 A5       		.byte	0xa5
  258 0088 33000000 		.4byte	0x33
  259 008c 04       		.uleb128 0x4
- 260 008d 20020000 		.4byte	.LASF12
+ 260 008d 28020000 		.4byte	.LASF12
  261 0091 02       		.byte	0x2
  262 0092 A6       		.byte	0xa6
  263 0093 41000000 		.4byte	0x41
  264 0097 02       		.uleb128 0x2
  265 0098 04       		.byte	0x4
  266 0099 04       		.byte	0x4
- 267 009a DC010000 		.4byte	.LASF13
+ 267 009a E4010000 		.4byte	.LASF13
  268 009e 02       		.uleb128 0x2
  269 009f 08       		.byte	0x8
  270 00a0 04       		.byte	0x4
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 9
+
+
  271 00a1 4C010000 		.4byte	.LASF14
  272 00a5 02       		.uleb128 0x2
  273 00a6 01       		.byte	0x1
  274 00a7 08       		.byte	0x8
  275 00a8 1D010000 		.4byte	.LASF15
  276 00ac 02       		.uleb128 0x2
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 9
-
-
  277 00ad 04       		.byte	0x4
  278 00ae 07       		.byte	0x7
- 279 00af 17020000 		.4byte	.LASF16
+ 279 00af 1F020000 		.4byte	.LASF16
  280 00b3 05       		.uleb128 0x5
  281 00b4 00000000 		.4byte	.LASF25
  282 00b8 01       		.byte	0x1
@@ -510,9 +516,9 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  303 00e8 8C000000 		.4byte	0x8c
  304 00ec 05       		.uleb128 0x5
  305 00ed 03       		.byte	0x3
- 306 00ee 00000000 		.4byte	temperature.6472
+ 306 00ee 00000000 		.4byte	temperature.6602
  307 00f2 07       		.uleb128 0x7
- 308 00f3 02020000 		.4byte	.LASF18
+ 308 00f3 0A020000 		.4byte	.LASF18
  309 00f7 01       		.byte	0x1
  310 00f8 8C       		.byte	0x8c
  311 00f9 8C000000 		.4byte	0x8c
@@ -532,15 +538,15 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  325 0113 01       		.byte	0x1
  326 0114 8E       		.byte	0x8e
  327 0115 81000000 		.4byte	0x81
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 10
+
+
  328 0119 02       		.uleb128 0x2
  329 011a 91       		.byte	0x91
  330 011b 70       		.sleb128 -16
  331 011c 07       		.uleb128 0x7
  332 011d 22010000 		.4byte	.LASF21
  333 0121 01       		.byte	0x1
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 10
-
-
  334 0122 8F       		.byte	0x8f
  335 0123 81000000 		.4byte	0x81
  336 0127 02       		.uleb128 0x2
@@ -592,15 +598,15 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  382 0022 0B       		.uleb128 0xb
  383 0023 3E       		.uleb128 0x3e
  384 0024 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 11
+
+
  385 0025 03       		.uleb128 0x3
  386 0026 08       		.uleb128 0x8
  387 0027 00       		.byte	0
  388 0028 00       		.byte	0
  389 0029 04       		.uleb128 0x4
  390 002a 16       		.uleb128 0x16
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 11
-
-
  391 002b 00       		.byte	0
  392 002c 03       		.uleb128 0x3
  393 002d 0E       		.uleb128 0xe
@@ -652,15 +658,15 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  439 005c 01       		.uleb128 0x1
  440 005d 12       		.uleb128 0x12
  441 005e 06       		.uleb128 0x6
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 12
+
+
  442 005f 40       		.uleb128 0x40
  443 0060 18       		.uleb128 0x18
  444 0061 9642     		.uleb128 0x2116
  445 0063 19       		.uleb128 0x19
  446 0064 01       		.uleb128 0x1
  447 0065 13       		.uleb128 0x13
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 12
-
-
  448 0066 00       		.byte	0
  449 0067 00       		.byte	0
  450 0068 07       		.uleb128 0x7
@@ -712,15 +718,15 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  496 0024 00000000 		.4byte	0
  497              		.section	.debug_ranges,"",%progbits
  498              	.Ldebug_ranges0:
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 13
+
+
  499 0000 00000000 		.4byte	.LFB35
  500 0004 2C000000 		.4byte	.LFE35
  501 0008 00000000 		.4byte	.LFB36
  502 000c C0000000 		.4byte	.LFE36
  503 0010 00000000 		.4byte	0
  504 0014 00000000 		.4byte	0
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 13
-
-
  505              		.section	.debug_line,"",%progbits
  506              	.Ldebug_line0:
  507 0000 A1000000 		.section	.debug_str,"MS",%progbits,1
@@ -772,15 +778,15 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  523      726500
  524              	.LASF22:
  525 007c 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 14
+
+
  525      4320342E 
  525      382E3420 
  525      32303134 
  525      30353236 
  526 00af 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
  526      20726576 
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 14
-
-
  526      6973696F 
  526      6E203231 
  526      31333538 
@@ -832,51 +838,52 @@ ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 1
  547      7420756E 
  547      7369676E 
  547      65642069 
+ARM GAS  C:\Users\Shahed\AppData\Local\Temp\ccGvnlrh.s 			page 15
+
+
  547      6E7400
  548              	.LASF0:
  549 0174 7369676E 		.ascii	"signed char\000"
  549      65642063 
  549      68617200 
  550              	.LASF24:
-ARM GAS  C:\Users\Yobely\AppData\Local\Temp\ccuSOEge.s 			page 15
-
-
- 551 0180 433A5C55 		.ascii	"C:\\Users\\Yobely\\Desktop\\Health Thermometer.cywr"
+ 551 0180 433A5C55 		.ascii	"C:\\Users\\Shahed\\Desktop\\Yobely- Health Thermome"
  551      73657273 
- 551      5C596F62 
- 551      656C795C 
+ 551      5C536861 
+ 551      6865645C 
  551      4465736B 
- 552 01af 6B2E4172 		.ascii	"k.Archive01\\AN91184\\Health Thermometer.cydsn\000"
+ 552 01af 7465722E 		.ascii	"ter.cywrk.Archive01\\AN91184\\Health Thermometer.cy"
+ 552      63797772 
+ 552      6B2E4172 
  552      63686976 
  552      6530315C 
- 552      414E3931 
- 552      3138345C 
- 553              	.LASF13:
- 554 01dc 666C6F61 		.ascii	"float\000"
- 554      7400
- 555              	.LASF23:
- 556 01e2 2E5C5465 		.ascii	".\\Temperature.c\000"
- 556      6D706572 
- 556      61747572 
- 556      652E6300 
- 557              	.LASF11:
- 558 01f2 696E7431 		.ascii	"int16\000"
- 558      3600
- 559              	.LASF2:
- 560 01f8 73686F72 		.ascii	"short int\000"
- 560      7420696E 
- 560      7400
- 561              	.LASF18:
- 562 0202 74686572 		.ascii	"thermistorResistance\000"
- 562      6D697374 
- 562      6F725265 
- 562      73697374 
- 562      616E6365 
- 563              	.LASF16:
- 564 0217 73697A65 		.ascii	"sizetype\000"
- 564      74797065 
- 564      00
- 565              	.LASF12:
- 566 0220 696E7433 		.ascii	"int32\000"
- 566      3200
- 567              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 553 01e0 64736E00 		.ascii	"dsn\000"
+ 554              	.LASF13:
+ 555 01e4 666C6F61 		.ascii	"float\000"
+ 555      7400
+ 556              	.LASF23:
+ 557 01ea 2E5C5465 		.ascii	".\\Temperature.c\000"
+ 557      6D706572 
+ 557      61747572 
+ 557      652E6300 
+ 558              	.LASF11:
+ 559 01fa 696E7431 		.ascii	"int16\000"
+ 559      3600
+ 560              	.LASF2:
+ 561 0200 73686F72 		.ascii	"short int\000"
+ 561      7420696E 
+ 561      7400
+ 562              	.LASF18:
+ 563 020a 74686572 		.ascii	"thermistorResistance\000"
+ 563      6D697374 
+ 563      6F725265 
+ 563      73697374 
+ 563      616E6365 
+ 564              	.LASF16:
+ 565 021f 73697A65 		.ascii	"sizetype\000"
+ 565      74797065 
+ 565      00
+ 566              	.LASF12:
+ 567 0228 696E7433 		.ascii	"int32\000"
+ 567      3200
+ 568              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
